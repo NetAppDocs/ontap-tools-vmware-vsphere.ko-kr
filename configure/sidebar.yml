@@ -1,0 +1,70 @@
+---
+section: configure
+title: ONTAP 도구를 구성합니다
+entries:
+- title: ONTAP 도구 구성 워크플로
+  url: "/configure/concept_workflow_for_configuring_the_unified_appliance.html"
+- title: ESXi 설정을 구성합니다
+  entries:
+  - title: ESXi 서버 경로 다중화 및 시간 초과 설정을 구성합니다
+    url: "/configure/task_configure_esx_server_multipathing_and_timeout_settings.html"
+  - title: ONTAP 툴을 사용하여 설정된 ESXi 호스트 값입니다
+    url: "/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html"
+- title: 게스트 운영 체제를 구성합니다
+  entries:
+  - title: 게스트 운영 체제 스크립트를 구성합니다
+    url: "/configure/reference_configure_guest_operating_system_scripts.html"
+  - title: Windows 게스트 운영 체제에 대한 시간 초과 값을 설정합니다
+    url: "/configure/task_run_the_gos_timeout_scripts_for_windows.html"
+  - title: Solaris 게스트 운영 체제에 대한 시간 초과 값을 설정합니다
+    url: "/configure/task_run_the_gos_timeout_scripts_for_solaris.html"
+  - title: Linux 게스트 운영 체제에 대한 시간 제한 값을 설정합니다
+    url: "/configure/task_run_the_gos_timeout_scripts_for_rhel4_or_sles9.html"
+- title: 여러 vCenter Server 환경에 VSC를 등록하는 데 필요한 요구 사항
+  url: "/configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html"
+- title: ONTAP 도구 기본 설정 파일을 구성합니다
+  entries:
+  - title: 기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
+    url: "/configure/reference_set_ipv4_or_ipv6.html"
+  - title: 서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
+    url: "/configure/task_enable_datastore_mounting_across_different_subnets.html"
+  - title: VSC용 SSL 인증서를 다시 생성합니다
+    url: "/configure/task_regenerate_an_ssl_certificate_for_vsc.html"
+- title: 스토리지 시스템을 구성합니다
+  entries:
+  - title: ONTAP 툴을 위한 스토리지 시스템 개요
+    url: "/configure/concept_configure_storage_systems_for_ontap_tools_for_vmware_vsphere.html"
+  - title: 스토리지 시스템에 대한 기본 자격 증명을 설정합니다
+    url: "/configure/task_set_default_credentials_for_storage_systems.html"
+  - title: VSC에 스토리지 시스템 추가
+    url: "/configure/task_add_storage_systems.html"
+  - title: 스토리지 시스템 및 호스트를 검색합니다
+    url: "/configure/task_discover_storage_systems_and_hosts.html"
+  - title: 스토리지 시스템 디스플레이를 새로 고칩니다
+    url: "/configure/task_refresh_the_storage_system_display.html"
+  - title: 알람 임계값을 구성합니다
+    url: "/configure/task_configure_alarm_thresholds.html"
+- title: 사용자 역할 및 권한을 구성합니다
+  url: "/configure/task_configure_user_role_and_privileges.html"
+- title: 스토리지 용량 프로필을 구성합니다
+  entries:
+  - title: 스토리지 용량 프로필 개요
+    url: "/configure/concept_configure_storage_capability_profiles.html"
+  - title: 스토리지 용량 프로필을 생성합니다
+    url: "/configure/task_create_storage_capability_profiles.html"
+  - title: 스토리지 기능 프로필을 자동으로 생성합니다
+    url: "/configure/task_automatically_generating_scps.html"
+- title: 데이터 저장소를 구성합니다
+  entries:
+  - title: 기존 데이터 저장소 프로비저닝
+    url: "/configure/task_provision_datastores.html"
+  - title: 스토리지 용량 프로필에 데이터 저장소를 매핑합니다
+    url: "/configure/task_map_storage_to_storage_capability_profiles.html"
+  - title: QoS 정책을 할당합니다
+    url: "/configure/task_assign_qos_policies.html"
+  - title: 데이터 저장소가 매핑된 스토리지 용량 프로파일을 준수하는지 확인합니다
+    url: "/configure/task_check_for_datastore_compliance_with_the_mapped_storage_capability_profile.html"
+  - title: VVOL 데이터 저장소를 프로비저닝합니다
+    url: "/configure/task_provision_vvols_datastores.html"
+  - title: VVOL 데이터 저장소의 균형을 조정합니다
+    url: "/configure/reference_rebalance_vvols_datastore.html"

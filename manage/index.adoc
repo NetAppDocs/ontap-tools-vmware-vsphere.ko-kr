@@ -1,0 +1,11 @@
+---
+permalink: manage/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 관리 가이드 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+

@@ -1,0 +1,46 @@
+---
+section: protect
+title: 데이터 저장소와 가상 머신을 보호합니다
+entries:
+- title: 스토리지 복제 어댑터를 활성화하여 데이터 저장소를 보호합니다
+  url: "/protect/task_enable_storage_replication_adapter.html"
+- title: 재해 복구를 위한 스토리지 시스템 구성
+  entries:
+  - title: SAN 및 NAS에 맞게 스토리지 시스템을 구성합니다
+    url: "/protect/task_configure_storage_replication_adapter_for_san_environment.html"
+  - title: 확장성이 높은 환경에 맞게 스토리지 구성
+    url: "/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html"
+- title: SRM 어플라이언스에서 SRA를 구성합니다
+  url: "/protect/task_configure_sra_on_srm_appliance.html"
+- title: SRA 자격 증명을 업데이트합니다
+  url: "/protect/task_update_sra_credentials.html"
+- title: Windows SRM을 SRM 어플라이언스로 마이그레이션합니다
+  url: "/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
+- title: 가상 머신을 보호하기 위해 VVOL 데이터 저장소의 복제를 구성합니다
+  url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+- title: 보호되지 않는 가상 머신을 보호합니다
+  url: "/protect/task_protect_non_protected_virtual_machines.html"
+- title: 보호 및 복구 사이트를 구성합니다
+  entries:
+  - title: VM 스토리지 정책을 구성합니다
+    url: "/protect/task_configure_vm_storage_policies.html"
+  - title: 보호 그룹을 구성합니다
+    url: "/protect/task_configure_protection_groups.html"
+  - title: 보호 사이트와 복구 사이트 페어링
+    url: "/protect/task_pair_protected_and_recovery_sites.html"
+  - title: 보호 및 복구 사이트 리소스를 구성합니다
+    entries:
+    - title: 네트워크 매핑을 구성합니다
+      url: "/protect/task_configure_network_mappings.html"
+    - title: 폴더 매핑을 구성합니다
+      url: "/protect/task_configure_folder_mappings.html"
+    - title: 리소스 매핑을 구성합니다
+      url: "/protect/task_configure_resource_mappings.html"
+    - title: 스토리지 정책을 매핑합니다
+      url: "/protect/task_map_storage_policies.html"
+    - title: 자리 표시자 데이터 저장소를 구성합니다
+      url: "/protect/task_configure_placeholder_datastores.html"
+    - title: Array Manager를 사용하여 SRA를 구성합니다
+      url: "/protect/task_configure_array_manager.html"
+  - title: 복제된 스토리지 시스템을 확인합니다
+    url: "/protect/task_verify_the_replicated_storage_environment.html"

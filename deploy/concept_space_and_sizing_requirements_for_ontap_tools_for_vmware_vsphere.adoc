@@ -1,0 +1,28 @@
+---
+permalink: deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console,Storage Replication Adapter 
+summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다. 
+---
+= ONTAP 툴에 대한 공간 및 사이징 요구사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다.
+
+* * 설치 패키지 공간 요구 사항 *
++
+** 씬 프로비저닝된 설치의 경우 2.1GB
+** 씩 프로비저닝 설치의 경우 54.0GB
+
+
+* * 호스트 시스템 사이징 요구사항 *
++
+** ESXi 6.5U3 이상
+** 권장 메모리: 12GB RAM
+** 권장 CPU: 2
+
+
+

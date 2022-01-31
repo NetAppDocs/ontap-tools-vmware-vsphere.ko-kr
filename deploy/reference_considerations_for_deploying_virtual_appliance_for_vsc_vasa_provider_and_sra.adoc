@@ -1,0 +1,118 @@
+---
+permalink: deploy/reference_considerations_for_deploying_virtual_appliance_for_vsc_vasa_provider_and_sra.html 
+sidebar: sidebar 
+keywords: Virtual Storage Console,Storage Replication Adapter 
+summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축을 계획하고 사용자 환경에서 ONTAP 툴을 구성하는 방법을 결정하는 것이 좋습니다. 
+---
+= ONTAP 도구 구축을 위한 고려 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere용 ONTAP 툴을 구축하기 전에 구축을 계획하고 사용자 환경에서 ONTAP 툴을 구성하는 방법을 결정하는 것이 좋습니다.
+
+다음 표에서는 ONTAP 도구를 배포하기 전에 고려해야 할 사항을 간략하게 보여 줍니다.
+
+|===
+
+
+| * 고려 사항 * | * 설명 * 
+
+
+ a| 
+ONTAP 툴을 처음 구축하는 경우
+ a| 
+ONTAP 툴을 배포하면 VSC 기능이 자동으로 설치됩니다.
+
+link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["VMware vSphere용 ONTAP 툴 구축 또는 업그레이드"]
+
+link:../deploy/concept_installation_workflow_for_new_users.html["VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우"]
+
+
+
+ a| 
+기존 VSC 배포에서 업그레이드
+ a| 
+기존 VSC에서 ONTAP 툴로의 업그레이드 절차는 VSC의 버전과 ONTAP 툴 구축 여부에 따라 다릅니다. 자세한 내용은 배포 워크플로 및 업그레이드 섹션을 참조하십시오.
+
+link:concept_installation_workflow_for_existing_users_of_vsc.html["기존 ONTAP 도구 사용자를 위한 배포 워크플로"]
+
+업그레이드 전 모범 사례:
+
+* 사용 중인 스토리지 시스템과 해당 자격 증명에 대한 정보를 기록해야 합니다.
++
+업그레이드 후에는 모든 스토리지 시스템이 자동으로 검색되었으며 올바른 자격 증명이 있는지 확인해야 합니다.
+
+* 표준 VSC 역할을 수정한 경우 해당 역할을 복사하여 변경 사항을 저장해야 합니다.
++
+VSC 서비스는 VSC 서비스를 다시 시작할 때마다 표준 역할을 현재 기본값으로 덮어씁니다.
+
+
+
+
+
+ a| 
+VSC용 SSL 인증서를 재생성하는 중입니다
+ a| 
+SSL 인증서는 ONTAP 도구를 배포할 때 자동으로 생성됩니다. 사이트별 인증서를 만들려면 SSL 인증서를 다시 생성해야 할 수 있습니다.
+
+link:../configure/task_regenerate_an_ssl_certificate_for_vsc.html["Virtual Storage Console에 대한 SSL 인증서를 다시 생성합니다"]
+
+
+
+ a| 
+ESXi 서버 값 설정
+ a| 
+대부분의 ESXi 서버 값이 기본적으로 설정되어 있지만 값을 확인하는 것이 좋습니다. 이러한 값은 내부 테스트를 기반으로 합니다. 환경에 따라 성능을 향상시키려면 일부 값을 변경해야 할 수 있습니다.
+
+* link:../configure/task_configure_esx_server_multipathing_and_timeout_settings.html["ESXi 서버 경로 다중화 및 시간 초과 설정을 구성합니다"]
+* link:../configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html["VMware vSphere용 ONTAP 툴을 사용하여 설정된 ESXi 호스트 값"]
+
+
+
+
+ a| 
+게스트 운영 체제 시간 초과 값
+ a| 
+게스트 운영 체제(게스트 OS) 시간 초과 스크립트는 지원되는 Linux, Solaris 및 Windows 게스트 운영 체제에 대한 SCSI I/O 시간 초과 값을 설정하여 올바른 페일오버 동작을 제공합니다.
+
+|===
+다음 표에서는 ONTAP 도구를 구성하는 데 필요한 사항을 간략하게 보여 줍니다.
+
+|===
+
+
+| * 고려 사항 * | * 설명 * 
+
+
+ a| 
+역할 기반 액세스 제어(RBAC) 요구사항
+ a| 
+VSC는 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. vCenter Server에 VSC를 등록하는 데 사용되는 계정('https://<appliance_ip>:8143/Register.html` vCenter Server 관리자 또는 관리자 역할에 할당된 vCenter Server 관리자여야 합니다. 관리자로 VSC를 실행하려는 경우 모든 작업에 필요한 모든 권한과 권한이 있어야 합니다.
+
+귀사에서 vSphere 객체에 대한 액세스를 제한해야 하는 경우, vCenter Server 요구사항을 충족하기 위해 표준 VSC 역할을 생성하여 사용자에게 할당할 수 있습니다.
+
+ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 ONTAP System Manager를 사용하여 권장 ONTAP 역할을 생성할 수 있습니다.
+
+사용자가 올바른 권한 및 권한이 없는 작업을 수행하려고 하면 작업 옵션이 회색으로 표시됩니다.
+
+* link:../concepts/concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html["ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다"]
+* link:../concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html["ONTAP 스토리지 시스템 및 vSphere 객체에 대한 사용 권한"]
+
+
+
+
+ a| 
+ONTAP 버전입니다
+ a| 
+스토리지 시스템에서 ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 이상이 실행되고 있어야 합니다.
+
+
+
+ a| 
+스토리지 용량 프로필
+ a| 
+스토리지 기능 프로파일을 사용하거나 알람을 설정하려면 VASA Provider for ONTAP를 설정해야 합니다. VASA Provider를 활성화한 후 VVol(VMware Virtual Volumes) 데이터 저장소를 구성하고 스토리지 기능 프로필 및 알람을 생성하고 관리할 수 있습니다. 이 경보는 볼륨 또는 애그리게이트는 거의 전체 용량에 달하거나 데이터 저장소가 연결된 스토리지 용량 프로파일을 준수하지 않을 때 경고합니다.
+
+|===

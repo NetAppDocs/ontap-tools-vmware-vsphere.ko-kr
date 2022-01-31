@@ -1,0 +1,44 @@
+---
+permalink: configure/task_configure_user_role_and_privileges.html 
+sidebar: sidebar 
+keywords: user roles 
+summary: ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다. 
+---
+= 사용자 역할 및 권한을 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다.
+
+* 필요한 것 *
+
+* https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip 을 사용하여 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다.
+* ONTAP 9.8 스토리지를 구성해야 합니다.
+* 스토리지 시스템에 대한 관리자 권한으로 로그인해야 합니다.
+
+
+* 단계 *
+
+. 다운로드한 '\https://{virtual_appliance_IP}:9083/vsc/config/VSC_ONTAP_User_Privileges.zip` 파일의 압축을 풉니다.
+. ONTAP 시스템 관리자에 액세스합니다.
+. cluster * > * Settings * > * Users and Roles * 를 클릭합니다.
+. 사용자 추가 * 를 클릭합니다.
+. 사용자 추가 대화 상자에서 * 가상화 제품 * 을 선택합니다.
+. 찾아보기 * 를 클릭하여 ONTAP 권한 JSON 파일을 선택하여 업로드합니다.
++
+제품 필드가 자동으로 채워집니다.
+
+. 제품 기능 드롭다운 메뉴에서 필요한 기능을 선택합니다.
++
+역할 * 필드는 선택한 제품 기능에 따라 자동으로 채워집니다.
+
+. 필요한 사용자 이름과 암호를 입력합니다.
+. 사용자에게 필요한 권한(검색, 스토리지 생성, 스토리지 수정, 스토리지 폐기)을 선택한 다음 * 추가 * 를 클릭합니다.
+
+
+새 역할 및 사용자가 추가되고 구성한 역할 아래에서 자세한 권한을 볼 수 있습니다.
+
+
+NOTE: 제거 작업에서는 VSC 역할을 제거하지 않고 VSC 관련 권한에 대한 지역화된 이름을 제거하고 접두어를 ""XXX missing Privilege""에 추가합니다. 이 동작은 vCenter Server에서 권한을 제거하는 옵션을 제공하지 않기 때문에 발생합니다. VSC를 다시 설치하거나 새로운 버전의 VSC로 업그레이드할 경우 모든 표준 VSC 역할 및 VSC별 권한이 복원됩니다.

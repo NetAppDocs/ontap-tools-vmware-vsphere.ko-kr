@@ -1,0 +1,39 @@
+---
+permalink: configure/reference_rebalance_vvols_datastore.html 
+sidebar: sidebar 
+keywords: vVols datastore,rebalancing 
+summary: ONTAP 도구의 9.8 릴리즈는 데이터 센터의 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다. 
+---
+= VVOL 데이터 저장소의 균형을 조정합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 도구의 9.8 릴리즈는 데이터 센터의 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다.
+
+VVOL 데이터 저장소의 재조정은 LUN 이동 또는 파일 이동을 통해 수행됩니다. VVOL을 재조정하는 동안 고려하는 기준은 다음과 같습니다.
+
+* 기존 FlexVol 볼륨의 크기는 조정되지 않으며 새 FlexVol 볼륨은 추가되지 않습니다
+* 스토리지 기능 또는 볼륨 특성이 동일한 FlexVol 볼륨만 재조정됩니다
+* 공간 활용률이 가장 높은 FlexVol 볼륨은 재조정에 고려됩니다
+* 가상 머신과 관련된 모든 VVOL은 동일한 FlexVol 볼륨으로 이동합니다
+* LUN 및 파일 개수 제한값이 유지됩니다
+* FlexVol 볼륨 공간 활용률 간 델타가 10%인 경우 재조정이 수행되지 않습니다
+
+
+rebalance 명령은 비어 있는 FlexVol 볼륨을 제거하여 다른 데이터 저장소에 대한 공간을 제공합니다. 따라서 명령을 사용하면 불필요한 FlexVol 볼륨을 제거하여 데이터 저장소에서 제거할 수 있습니다. 이 명령은 가상 머신과 관련된 모든 VVol을 동일한 FlexVol 볼륨으로 이동하려고 합니다. 재조정을 시작하기 전에 명령을 통해 사전 점검을 수행하여 장애를 최소화합니다. 그러나 사전 검사가 성공하더라도 하나 이상의 VVOL에 대해 재조정 작업이 실패할 수 있습니다. 이 경우 재조정 작업의 롤백이 없습니다. 따라서 가상 머신과 관련된 VVOL이 서로 다른 FlexVol 볼륨에 배치될 수 있으며 경고 로그가 생성됩니다.
+
+[NOTE]
+====
+* 병렬 데이터 저장소 및 가상 머신 작업은 지원되지 않습니다.
+* 모든 VVol 재조정 작업이 완료된 후 클러스터 재검색 작업을 수행해야 합니다.
+* VVOL 재조정 작업 중에 많은 수의 VVol 데이터스토어가 식별되면 설정된 기본값 이후의 전송 작업 시간이 초과됩니다.
++
+** 이 경우, 값을 'offtap.operation.timeout.period.seconds=29700` 로 설정하고 VASA Provider 서비스를 다시 시작하도록 'vvol.properties` 파일'을 수정해야 합니다.
+
+
+* FlexVol 볼륨에 스냅샷이 있는 경우, VVOL 재조정 작업 중에 공간 활용도에 대한 세부 정보가 부족하기 때문에 VVOL이 올바르게 재조정되지 않습니다.
+
+
+====

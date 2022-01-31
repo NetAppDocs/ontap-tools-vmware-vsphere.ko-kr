@@ -1,0 +1,30 @@
+---
+section: concepts
+title: 개념
+entries:
+- title: ONTAP 도구 개요
+  url: "/concepts/concept_virtual_storage_console_overview.html"
+- title: VVOL을 위한 VASA 공급자 구성
+  url: "/concepts/concept_configure_vvols_datastores.html"
+- title: 재해 복구용 스토리지 복제 어댑터
+  url: "/concepts/concept_manage_disaster_recovery_setup_using_srm.html"
+- title: 역할 기반 액세스 제어
+  entries:
+  - title: ONTAP 도구에 대한 역할 기반 액세스 제어 개요
+    url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
+  - title: vCenter Server 권한의 구성 요소입니다
+    url: "/concepts/reference_components_that_make_up_vcenter_server_permissions.html"
+  - title: vCenter Server에 대한 권한을 할당하고 수정하는 방법에 대한 핵심 사항
+    url: "/concepts/reference_key_points_about_assigning_and_modifying_permissions.html"
+  - title: ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다
+    url: "/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html"
+  - title: VSC 작업에 필요한 권한입니다
+    url: "/concepts/concept_privileges_required_for_vsc_tasks.html"
+  - title: ONTAP 스토리지 시스템 및 vSphere 객체에 대한 사용 권한
+    url: "/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html"
+  - title: ONTAP 툴에 대한 역할 기반 액세스 제어를 구성하는 방법
+    url: "/concepts/concept_how_to_configure_data_ontap_role_based_access_control_for_vsc_for_vmware_vsphere.html"
+- title: ONTAP 툴에 대한 고가용성을 구성합니다
+  url: "/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html"
+- title: ONTAP 도구에서 지원하는 MetroCluster 구성
+  url: "/concepts/reference_metrocluster_configurations_supported_by_ontap_tools_for_vmware_vsphere.html"

@@ -1,0 +1,38 @@
+---
+section: deploy
+title: ONTAP 툴을 구축 및 업그레이드합니다
+entries:
+- title: VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우
+  url: "/deploy/concept_installation_workflow_for_new_users.html"
+- title: 기존 ONTAP 도구 사용자를 위한 배포 워크플로
+  url: "/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html"
+- title: ONTAP 도구 빠른 시작
+  url: "/qsg.html"
+- title: ONTAP 툴 구축 요구사항
+  entries:
+  - title: VSC용 포트 요구사항
+    url: "/deploy/reference_port_requirements_for_vsc.html"
+  - title: ONTAP 툴에 대한 공간 및 사이징 요구사항
+    url: "/deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html"
+  - title: ONTAP 툴을 지원하는 스토리지 시스템, 라이센스 및 애플리케이션
+    url: "/deploy/concept_supported_storage_system_and_applications.html"
+  - title: ONTAP 도구 구축을 위한 고려 사항
+    url: "/deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html"
+- title: ONTAP 툴 구축
+  entries:
+  - title: ONTAP 도구를 다운로드하는 방법
+    url: "/deploy/concept_how_to_download_ontap_tools.html"
+  - title: ONTAP 툴을 구축하는 방법
+    url: "/deploy/task_deploy_ontap_tools.html"
+  - title: 가상 데이터 저장소를 구성하기 위해 VASA Provider를 설정합니다
+    url: "/deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html"
+  - title: NFS VAAI 플러그인을 설치합니다
+    url: "/deploy/task_install_the_nfs_vaai_plug_in.html"
+  - title: vSphere 캐시된 다운로드 플러그인 패키지를 지웁니다
+    url: "/deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html"
+- title: ONTAP 툴을 업그레이드합니다
+  entries:
+  - title: ONTAP 툴의 최신 릴리즈로 업그레이드하십시오
+    url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
+  - title: 스토리지 복제 어댑터를 업그레이드합니다
+    url: "/deploy/task_upgrade_storage_replication_adapter.html"

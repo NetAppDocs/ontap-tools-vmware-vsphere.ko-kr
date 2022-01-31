@@ -1,0 +1,51 @@
+---
+permalink: deploy/task_upgrade_storage_replication_adapter.html 
+sidebar: sidebar 
+keywords: SRA, upgrade 
+summary: 'ONTAP 툴을 업그레이드하거나 최신 버전의 ONTAP 툴을 구축한 후에는 SRA\(스토리지 복제 어댑터)를 업그레이드해야 합니다.' 
+---
+= 스토리지 복제 어댑터를 업그레이드합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 툴을 업그레이드하거나 최신 버전의 ONTAP 툴을 구축한 후에는 SRA(스토리지 복제 어댑터)를 업그레이드해야 합니다.
+
+* 단계 *
+
+. 어댑터에 따라 다음 절차 중 하나를 사용하여 최신 어댑터로 업그레이드해야 합니다.
++
+|===
+
+
+| * 대상... * | * 다음 작업을 수행합니다. * 
+
+
+ a| 
+Windows
+ a| 
+.. SRM Windows Server에 로그인합니다.
+.. SRM 서버에서 기존 SRA_.msi_installer를 제거합니다.
+.. 시스템 경로를 'C:\Program Files\VMware\VMware vCenter Site Recovery Manager\external\perl\c\bin'으로 변경합니다
+.. NetApp Support 사이트에서 다운로드한 _.msi_installer를 두 번 클릭하고 화면에 표시되는 지침을 따릅니다.
+.. 배포된 ONTAP 도구의 IP 주소와 암호를 입력합니다.
+
+
+
+
+ a| 
+어플라이언스 기반 어댑터
+ a| 
+.. SRM 어플라이언스 관리 페이지에 로그인합니다.
+.. 스토리지 복제 어댑터 * 를 클릭하고 * 삭제 * 를 클릭하여 기존 SRA를 제거합니다.
+.. 새 어댑터 * > * 찾아보기 * 를 클릭합니다.
+.. NetApp Support 사이트에서 다운로드한 최신 SRA tarball 파일을 클릭하여 선택하고 * Install * 을 클릭합니다.
+.. SRM 어플라이언스에서 SRA를 구성합니다.
++
+link:../protect/task_configure_sra_on_srm_appliance.html["SRM 어플라이언스에서 SRA 구성"]
+
+
+
+|===
+

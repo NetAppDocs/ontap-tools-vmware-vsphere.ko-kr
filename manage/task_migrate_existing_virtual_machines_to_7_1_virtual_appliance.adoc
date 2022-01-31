@@ -1,0 +1,29 @@
+---
+permalink: manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html 
+sidebar: sidebar 
+keywords:  
+summary: 'VMware vSphere용 최신 버전의 ONTAP 툴을 사용하는 경우 그런 다음 "MaxThroughput Mbps" 또는 "MaxThroughput IOPS" QoS 메트릭으로 프로비저닝된 가상 머신을 최신 버전의 ONTAP 툴의 "Max IOPS" QoS 메트릭으로 프로비저닝된 새로운 VVOL 데이터 저장소로 마이그레이션해야 합니다.' 
+---
+= 이전 스토리지 기능 프로파일이 있는 가상 시스템을 마이그레이션합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere용 최신 버전의 ONTAP 툴을 사용하는 경우 그런 다음 " MaxThroughput Mbps " 또는 " MaxThroughput IOPS " QoS 메트릭으로 프로비저닝된 가상 머신을 최신 버전의 ONTAP 툴의 " max IOPS " QoS 메트릭으로 프로비저닝된 새 VVOL 데이터 저장소로 마이그레이션해야 합니다.
+
+* 이 작업에 대한 정보 *
+
+최신 버전의 ONTAP 툴을 사용하면 각 가상 머신 또는 가상 머신 디스크(VMDK)에 대해 QoS 메트릭을 구성할 수 있습니다. QoS 메트릭은 이전에 ONTAP FlexVol 볼륨 레벨에 적용되었으며 해당 FlexVol 볼륨에 프로비저닝된 모든 가상 머신 또는 VMDK에서 공유되었습니다.
+
+7.2 버전의 ONTAP 툴부터 한 가상 머신의 QoS 메트릭은 다른 가상 머신과 공유되지 않습니다.
+
+
+NOTE: 가상 머신이 규정을 준수하지 않을 수 있으므로 기존 VM 스토리지 정책을 수정하지 않아야 합니다.
+
+* 단계 *
+
+. 필요한 " Max IOPS " 값이 있는 새 스토리지 기능 프로필을 사용하여 VVol 데이터 저장소를 생성합니다.
+. VM 스토리지 정책을 생성한 다음 새 VM 스토리지 정책을 새 스토리지 용량 프로필과 매핑합니다.
+. 새로운 VM Storage Policy를 사용하여 기존 가상 머신을 새로 생성한 VVOL 데이터 저장소로 마이그레이션합니다.
+

@@ -1,0 +1,49 @@
+---
+permalink: configure/reference_configure_guest_operating_system_scripts.html 
+sidebar: sidebar 
+keywords: Guest operating system 
+summary: '게스트 운영 체제 \(OS\) 스크립트의 ISO 이미지는 VMware vSphere 서버용 ONTAP ® 툴에 마운트됩니다. 게스트 OS 스크립트를 사용하여 가상 머신에 대한 스토리지 시간 초과를 설정하려면 vSphere Client에서 스크립트를 마운트해야 합니다.' 
+---
+= 게스트 운영 체제 스크립트를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+게스트 운영 체제(OS) 스크립트의 ISO 이미지는 VMware vSphere 서버용 ONTAP ® 툴에 마운트됩니다. 게스트 OS 스크립트를 사용하여 가상 머신에 대한 스토리지 시간 초과를 설정하려면 vSphere Client에서 스크립트를 마운트해야 합니다.
+
+|===
+
+
+| * 운영 체제 유형 * | * 60초 제한 시간 설정 * | * 190초 제한 시간 설정 * 
+
+
+ a| 
+리눅스
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout-install.iso 으로 문의하십시오
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/linux_gos_timeout_190-install.iso 으로 문의하십시오
+
+
+
+ a| 
+Windows
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout.iso 으로 문의하십시오
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/windows_gos_timeout_190.iso 으로 문의하십시오
+
+
+
+ a| 
+Solaris
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout-install.iso 으로 문의하십시오
+ a| 
+https://<appliance_ip>:8143/vsc/public/writable/solaris_gos_timeout_190-install.iso 으로 문의하십시오
+
+|===
+가상 머신을 관리하는 vCenter Server에 등록된 VSC 인스턴스 복사본에서 스크립트를 설치해야 합니다. 환경에 vCenter Server가 여러 개 포함된 경우 스토리지 시간 초과 값을 설정할 가상 머신이 포함된 서버를 선택해야 합니다.
+
+가상 머신에 로그인한 다음 스크립트를 실행하여 스토리지 시간 초과 값을 설정해야 합니다.

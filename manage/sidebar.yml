@@ -1,0 +1,50 @@
+---
+section: manage
+title: ONTAP 툴 관리
+entries:
+- title: 데이터 저장소를 관리합니다
+  entries:
+  - title: 추가 호스트에 데이터 저장소를 마운트합니다
+    url: "/manage/task_mount_datastores_on_host.html"
+  - title: 데이터 저장소 크기 조정
+    url: "/manage/task_resize_datastores.html"
+  - title: VVOL 데이터 저장소를 편집합니다
+    url: "/manage/task_edit_a_vvols_datastore.html"
+  - title: VVOL 데이터 저장소에 스토리지를 추가합니다
+    url: "/manage/task_add_storage_to_a_vvols_datastore.html"
+  - title: VVOL 데이터 저장소에서 스토리지를 제거합니다
+    url: "/manage/task_remove_storage_from_a_vvols_datastore.html"
+  - title: VVOL 데이터 저장소를 마운트합니다
+    url: "/manage/task_mount_a_vvols_datastore.html"
+- title: 가상 머신 관리
+  entries:
+  - title: 가상 머신의 마이그레이션 또는 클론 생성 시 고려 사항
+    url: "/manage/reference_considerations_for_migrating_virtual_machines.html"
+  - title: 기존 가상 머신을 VVol 데이터 저장소로 마이그레이션합니다
+    url: "/manage/task_migrate_standard_virtual_machines_to_vvols_datastores.html"
+  - title: 이전 스토리지 기능 프로파일이 있는 가상 시스템을 마이그레이션합니다
+    url: "/manage/task_migrate_virtual_machines_with_older_storage_capability_profiles.html"
+- title: ESXi 호스트 설정을 수정합니다
+  url: "/manage/task_edit_esxi_host_settings.html"
+- title: ONTAP 툴 유지보수 콘솔에 액세스합니다
+  entries:
+  - title: ONTAP 툴 유지보수 콘솔 개요
+    url: "/manage/reference_maintenance_console_of_ontap_tools_for_vmware_vsphere.html"
+  - title: VSC 및 VASA 공급자 로그 파일
+    url: "/manage/concept_virtual_storage_console_and_vasa_provider_log_files.html"
+  - title: 관리자 암호를 변경합니다
+    url: "/manage/task_change_the_administrative_password.html"
+  - title: SSH와 함께 작동하도록 VASA Provider를 구성합니다
+    url: "/manage/task_configure_vasa_provider_to_work_with_ssh.html"
+  - title: 원격 진단 액세스를 구성합니다
+    url: "/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
+- title: 로그 파일을 수집합니다
+  url: "/manage/task_collect_the_log_files.html"
+- title: 데이터 저장소 및 VVol 보고서의 성능을 모니터링합니다
+  entries:
+  - title: ONTAP 툴 데이터 저장소 및 가상 머신 보고서 개요
+    url: "/manage/concept_virtual_storage_console_reports.html"
+  - title: 기존 대시보드를 사용하여 성능 데이터를 분석합니다
+    url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
+  - title: VVOL 대시보드를 사용하여 성능 데이터를 분석합니다
+    url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"

@@ -1,0 +1,22 @@
+---
+permalink: concepts/concept_manage_disaster_recovery_setup_using_srm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'VMware의 SRM\(Site Recovery Manager)과 함께 vCenter Server에서 재해 복구 설정을 만들고 관리할 수 있습니다.' 
+---
+= 재해 복구 설정을 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware의 SRM(Site Recovery Manager)과 함께 vCenter Server에서 재해 복구 설정을 생성하고 관리할 수 있습니다.
+
+VASA Provider는 SRA(Storage Replication Adapter)의 기능을 기본적으로 제공합니다. 데이터 센터에서 VVOL 데이터 저장소를 구성한 경우 VVOL 데이터 저장소의 복구를 위해 SRA를 별도로 설치할 필요가 없습니다. SRM(Site Recovery Manager)에서는 보호 사이트와 복구 사이트를 페어링해야 합니다. 사이트 페어링이 발생한 후 SRM 구성의 다음 부분에서는 SRM이 스토리지 시스템과 통신하여 디바이스 및 디바이스 복제를 검색할 수 있도록 스토리지 쌍을 설정하는 작업을 수행합니다. 스토리지 쌍을 구성하려면 먼저 SRM에서 사이트 쌍을 만들어야 합니다.
+
+이번 릴리즈의 ONTAP 도구에서는 재해 복구를 위해 동기식 SnapMirror 구성을 사용하는 옵션을 제공합니다.
+
+
+NOTE: VMware SRM(Site Recovery Manager)은 VVOL 데이터 저장소의 재해 복구를 관리하기 위해 SRA를 사용하지 않습니다. 대신 VASA Provider를 사용하여 ONTAP 9.7 이상의 클러스터에서 VVOL 데이터 저장소의 복제 및 페일오버 제어를 수행할 수 있습니다.
+
+link:../protect/task_enable_storage_replication_adapter.html["스토리지 복제 어댑터를 활성화합니다"]

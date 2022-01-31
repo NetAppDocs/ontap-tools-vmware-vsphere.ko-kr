@@ -1,0 +1,33 @@
+---
+permalink: protect/task_configure_sra_on_srm_appliance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 ONTAP 도구 자격 증명\(IP 주소 및 관리자 암호\)을 저장해야 합니다.' 
+---
+= SRM 어플라이언스에서 SRA를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 ONTAP 도구 자격 증명(IP 주소 및 관리자 암호)을 저장해야 합니다.
+
+* 필요한 것 *
+
+SRM 어플라이언스에 _tar.gz_파일을 업로드해야 합니다.
+
+* 이 작업에 대한 정보 *
+
+SRM 어플라이언스에 SRA를 구성하면 SRA 자격 증명이 SRM 어플라이언스에 저장됩니다.
+
+* 단계 *
+
+. putty를 사용하여 SRM 어플라이언스에 관리자 계정을 사용하여 로그인합니다.
+. 'u root' 명령을 사용하여 root 사용자로 전환합니다
+. 로그 위치에 명령을 입력하여 SRA Docker의 PS-l에 사용되는 Docker ID를 가져옵니다
+. 컨테이너 ID에 로그인하려면 docker 'exec-it-u srm<container id>sh' 명령어를 입력한다
+. "perl command.pl -i <va-ip>administrator <va-password>" 명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다
++
+스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.
+
+
