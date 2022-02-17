@@ -2,7 +2,7 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: 단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다. 
+summary: '단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.' 
 ---
 = 여러 vCenter Server 환경에 VSC를 등록하는 데 필요한 요구 사항
 :icons: font
