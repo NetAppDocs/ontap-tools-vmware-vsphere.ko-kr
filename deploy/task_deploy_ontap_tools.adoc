@@ -20,7 +20,7 @@ summary: 어플라이언스를 사용하려면 사용자 환경에 ONTAP 툴을 
 NOTE: ONTAP 툴은 vCenter Server의 Windows 구축 또는 VMware vCSA(vCenter Server Virtual Appliance) 구축 시 등록할 수 있습니다.
 
 +
-https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴: OTV 9.8"]
+https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"]
 
 * vCenter Server 환경을 구성하고 설정해야 합니다.
 * 가상 머신에 대해 ESXi 호스트를 설정해야 합니다.
@@ -67,7 +67,12 @@ ONTAP 도구에 대한 _.ova_file의 URL을 제공합니다.
 |===
 . 세부 정보를 입력하여 구축 마법사를 사용자 지정합니다.
 +
-을 참조하십시오 link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["배포 사용자 지정 고려 사항"] 을 참조하십시오.
+(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다. 자세한 내용은 다음을 참조하십시오.
+
++
+** link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["배포 사용자 지정 고려 사항"]
+** link:../deploy/vmware_cloud_foundation_mode_deployment.html["ONTAP 툴을 위한 VMware 클라우드 기반 구축 모드입니다"]
+
 
 . 구성 데이터를 검토한 후 * Next * 를 클릭하여 배포를 마칩니다.
 +

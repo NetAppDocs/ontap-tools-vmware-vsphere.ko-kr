@@ -14,7 +14,7 @@ SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 �
 
 * 필요한 것 *
 
-SRM 어플라이언스에 _tar.gz_파일을 업로드해야 합니다.
+에서 _tar.gz_파일을 다운로드해야 합니다 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"].
 
 * 이 작업에 대한 정보 *
 
@@ -22,10 +22,13 @@ SRM 어플라이언스에 SRA를 구성하면 SRA 자격 증명이 SRM 어플라
 
 * 단계 *
 
+. SRM 어플라이언스 화면에서 * 스토리지 복제 어댑터 * > * 새 어댑터 * 를 클릭합니다.
+. SRM에 _.tar.gz_파일을 업로드합니다.
+. 어댑터를 다시 검색하여 SRM 스토리지 복제 어댑터 페이지에서 세부 정보가 업데이트되었는지 확인합니다.
 . putty를 사용하여 SRM 어플라이언스에 관리자 계정을 사용하여 로그인합니다.
 . 'u root' 명령을 사용하여 root 사용자로 전환합니다
-. 로그 위치에 명령을 입력하여 SRA Docker의 PS-l에 사용되는 Docker ID를 가져옵니다
-. 컨테이너 ID에 로그인하려면 docker 'exec-it-u srm<container id>sh' 명령어를 입력한다
+. 로그 위치에 SRA에서 사용하는 Docker ID를 얻기 위한 명령을 입력합니다. docker ps -l
+. 컨테이너 ID에 로그인하려면 docker exec -it -u SRM <컨테이너 ID>sh' 명령을 입력합니다
 . "perl command.pl -i <va-ip>administrator <va-password>" 명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다
 +
 스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.

@@ -24,7 +24,7 @@ https://mysupport.netapp.com/site/global/dashboard[]
 * 스토리지 시스템에 ONTAP 9.3 이상을 사용해야 합니다.
 
 
-ONTAP에서 제공하는 IOPS 데이터는 반올림되어 VVOL 대시보드에 표시됩니다. ONTAP에서 제공하는 실제 IOPS 값과 VVOL 대시보드에 표시되는 IOPS 값이 다를 수 있습니다. ONTAP 툴의 9.8 릴리스부터는 NFS 기반 VVol 데이터 저장소에 대한 성능 모니터링을 사용할 수 있습니다.
+ONTAP에서 제공하는 IOPS 데이터는 반올림되어 VVOL 대시보드에 표시됩니다. ONTAP에서 제공하는 실제 IOPS 값과 VVOL 대시보드에 표시되는 IOPS 값이 다를 수 있습니다. ONTAP 툴은 NFS 기반 VVOL 데이터 저장소의 성능을 모니터링합니다.
 
 
 NOTE: OnCommand API 서비스를 처음으로 등록하는 경우, SAN VVOL 데이터 저장소의 모든 성능 메트릭 데이터를 15~30분 후에만 VVol 대시보드에서 볼 수 있습니다.

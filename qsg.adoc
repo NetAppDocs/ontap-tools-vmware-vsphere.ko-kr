@@ -79,10 +79,10 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
 | * 스토리지, 호스트 및 애플리케이션 * | * 버전 요구 사항 * 
 
 
-| ONTAP | ONTAP 9.1, 9.3, 9.5, 9.6, 9.7, 9.8P1 이상 
+| ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 이상 
 
 
-| VMware vSphere, vCenter Server, ESXi 호스트, SRM(Site Recovery Manager), 플러그인 애플리케이션 및 데이터베이스 열 1 | 를 참조하십시오 https://mysupport.netapp.com/matrix/imt.jsp?components=99343;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"^] 
+| VMware vSphere, vCenter Server, ESXi 호스트, SRM(Site Recovery Manager), 플러그인 애플리케이션 및 데이터베이스 열 1 | 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴: OTV 9.10"] 
 |===
 
 
@@ -117,9 +117,12 @@ SRA를 배포하는 경우 소스 사이트와 대상 사이트 모두에 '.ova'
 . ova 파일의 URL을 입력하거나 .ova 파일이 저장된 폴더를 찾은 후 * 다음 * 을 클릭합니다.
 . 필수 세부 정보를 입력하여 구축을 완료합니다.
 +
+
+NOTE: (선택 사항) vCenter Server에 등록하지 않고 컨테이너를 생성하려면 vCenter 구성 또는 VCF 활성화 섹션에서 VCF(VMware Cloud Foundation) 활성화 확인란을 선택합니다.
+
+
+
 작업 * 탭에서 배포 진행 상황을 보고 배포가 완료될 때까지 기다릴 수 있습니다.
-
-
 
 
 

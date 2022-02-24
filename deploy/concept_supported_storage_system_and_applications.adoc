@@ -14,7 +14,7 @@ VMware vSphere용 ONTAP 툴 구축을 시작하기 전에 기본 스토리지 �
 
 상호 운용성 매트릭스 툴(IMT)에는 지원되는 버전의 ONTAP, vCenter Server, ESXi 호스트, 플러그인 애플리케이션, SRM(사이트 복구 관리자)에 대한 최신 정보가 포함되어 있습니다.
 
-https://mysupport.netapp.com/matrix/["상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"]
 
 VVol(VMware Virtual Volumes) 데이터 저장소에 대한 가상 머신 스냅샷 작업 및 클론 작업을 수행하려면 FlexClone 라이센스를 활성화해야 합니다.
 

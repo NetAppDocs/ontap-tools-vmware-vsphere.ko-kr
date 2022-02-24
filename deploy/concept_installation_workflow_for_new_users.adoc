@@ -10,6 +10,6 @@ summary: VMware를 처음 사용하는 경우 NetApp VSC 제품을 사용하지 
 
 
 [role="lead"]
-VMware를 처음 사용하는 경우 NetApp VSC 제품을 사용하지 않은 경우, ONTAP 툴을 구축 및 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.
+VMware를 처음 사용하는 경우 NetApp ONTAP 툴 제품을 사용하지 않은 경우, ONTAP 툴을 구축하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.
 
-image::../media/new_user_deployment_workflow_vsc_vp_and_sra_7_0.gif[신규 사용자 구축 워크플로우 VSC VP 및 SRA 7 0]
+image::../media/new_user_deployment_workflow_ontap_tools.png[새로운 사용자 배포]

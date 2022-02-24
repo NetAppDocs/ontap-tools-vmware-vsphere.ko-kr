@@ -18,6 +18,8 @@ entries:
   url: "/protect/concept_migration_of_disaster_recovery_setup_from_windows_to_appliance.html"
 - title: 가상 머신을 보호하기 위해 VVOL 데이터 저장소의 복제를 구성합니다
   url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+- title: 기존 데이터 저장소에 대한 VVol 복제를 구성합니다
+  url: "/protect/configure_vvols_replication_existing_datastore.html"
 - title: 보호되지 않는 가상 머신을 보호합니다
   url: "/protect/task_protect_non_protected_virtual_machines.html"
 - title: 보호 및 복구 사이트를 구성합니다

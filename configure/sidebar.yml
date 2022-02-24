@@ -26,6 +26,8 @@ entries:
   entries:
   - title: 기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
     url: "/configure/reference_set_ipv4_or_ipv6.html"
+  - title: 다른 서브넷을 추가합니다
+    url: "/configure/add_different_subnets.html"
   - title: 서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
     url: "/configure/task_enable_datastore_mounting_across_different_subnets.html"
   - title: VSC용 SSL 인증서를 다시 생성합니다

@@ -2,7 +2,7 @@
 permalink: deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html 
 sidebar: sidebar 
 keywords: Virtual Storage Console, Storage Replication Adapter 
-summary: 여기에 제공된 지침에 따라 기존 9.7 설정에서 ONTAP 도구의 9.8 릴리스로 업그레이드할 수 있습니다. 
+summary: 여기에 제공된 지침에 따라 기존 9.7.1 이상의 설정에서 ONTAP 도구의 최신 릴리스로 업그레이드할 수 있습니다. 
 ---
 = ONTAP 툴의 최신 릴리즈로 업그레이드하십시오
 :icons: font
@@ -10,11 +10,11 @@ summary: 여기에 제공된 지침에 따라 기존 9.7 설정에서 ONTAP 도�
 
 
 [role="lead"]
-여기에 제공된 지침에 따라 기존 9.7 설정에서 ONTAP 도구의 9.8 릴리스로 업그레이드할 수 있습니다.
+여기에 제공된 지침에 따라 기존 9.7P1 이상의 릴리스에서 최신 버전의 ONTAP 도구로 현재 위치 업그레이드를 수행할 수 있습니다.
 
 * 필요한 것 *
 
-* ONTAP 도구의 9.8 릴리스용 _.iso_file을 다운로드해야 합니다.
+* 최신 버전의 ONTAP 도구에 대해 _.iso_file을 다운로드해야 합니다.
 * 업그레이드 후 ONTAP 도구가 최적으로 작동하도록 최소 12GB RAM을 예약해야 합니다.
 * vSphere Client 브라우저 캐시를 정리해야 합니다.
 +
@@ -25,7 +25,7 @@ link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["v
 기존 구축 환경에서 VASA Provider의 상태는 업그레이드 후 유지됩니다. 업그레이드 후 요구 사항에 따라 VASA Provider를 수동으로 설정하거나 해제해야 합니다. 하지만 VVol(VMware Virtual Volumes)을 사용하지 않는 경우에도 VASA Provider를 활성화하는 것이 가장 좋습니다. 이를 통해 기존 데이터 저장소 용량 할당 및 스토리지 알람을 위한 스토리지 용량 프로필을 사용할 수 있기 때문입니다.
 
 
-NOTE: 기존 9.7 버전에서만 ONTAP 도구의 9.8 릴리스로 업그레이드할 수 있습니다. ONTAP 도구의 9.7.1 릴리즈로 업그레이드하고 VVOL 복제를 사용하려는 경우 SRM(사이트 복구 관리자)이 설치된 ONTAP 도구를 사용하여 vCenter Server를 하나 더 설정해야 합니다.
+NOTE: 기존 9.7P1 이상 버전에서만 ONTAP 도구의 최신 릴리즈로 현재 위치 업그레이드를 수행할 수 있습니다. ONTAP 도구의 9.7.1 릴리즈로 업그레이드하고 VVOL 복제를 사용하려는 경우 SRM(사이트 복구 관리자)이 설치된 ONTAP 도구를 사용하여 vCenter Server를 하나 더 설정해야 합니다.
 
 * 단계 *
 
@@ -67,10 +67,11 @@ vSphere Client에서 플러그인을 업데이트하는 데 몇 분 정도 걸�
 [NOTE]
 ====
 * 7.0 버전의 ONTAP 툴을 최신 버전의 ONTAP 툴로 업그레이드하는 경우, 기존 VM 스토리지 정책을 편집하기 전에 먼저 스토리지 용량 프로필을 생성해야 합니다. 그렇지 않으면 값이 잘못되었거나 누락된다는 오류가 발생할 수 있습니다.
-* 이전 버전에서 9.8 버전의 ONTAP 도구로 업그레이드하는 경우 vvol.properties 파일에 'vVol.rebalance.threshold' 속성이 없는 것으로 나타납니다.
+* 이전 버전에서 ONTAP 도구의 최신 릴리즈로 업그레이드할 경우 vvol.properties 파일에 'vVol.rebalance.threshold' 속성이 없는 것으로 나타납니다.
 +
 속성의 기본값은 85%로 설정됩니다.
 
+* FIPS가 활성화되어 있지만 FIPS가 지원되지 않는 이전 버전의 vCenter가 있는 최신 OTV(9.10) 릴리즈로 업그레이드한 후에도 여전히 구축이 작동합니다. 하지만 vCenter를 최신 FIPS 지원 버전으로 업그레이드하고 이전 버전의 ONTAP 툴을 사용하는 경우 vCenter에서 FIPS가 비활성화되어 있는 경우에만 구축이 작동합니다.
 
 
 ====

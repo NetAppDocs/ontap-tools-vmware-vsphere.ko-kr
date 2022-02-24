@@ -1,0 +1,53 @@
+---
+permalink: protect/configure_vvols_replication_existing_datastore.html 
+sidebar: sidebar 
+keywords:  
+summary: 'SRM과 스토리지 가상 시스템(SVM\) 간의 상호 작용을 지원하기 위해 SRM\(Site Recovery Manager)의 Array Manager 마법사를 사용하여 SRA\(Storage Replication Adapter\)를 구성할 수 있습니다.' 
+---
+= 기존 데이터 저장소에 대한 VVol 복제를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SRM을 설정하기 전에 생성된 기존 가상 머신에 VVol 복제를 제공하도록 VVOL 복제 기능이 향상되었습니다. 따라서 기존 가상 시스템을 복구하고 복구 사이트에서 보호할 수 있습니다.
+
+* 필요한 것 *
+
+* 클러스터와 SVM이 피어링됩니다.
+* 소스 및 타겟 사이트에 데이터 저장소와 FlexVol 볼륨이 생성됩니다.
+* 소스 및 타겟 사이트에 동일한 스토리지 용량 프로필이 있습니다.
+* FlexVol 볼륨의 SnapMirror 일정이 동일합니다.
+* VVOL 복제가 활성화됩니다.
+
+
+기존 데이터 저장소에 생성된 복제 그룹이 없습니다.
+
+* 단계 *
+
+. Swagger 인터페이스에 액세스합니다.
+. REST API를 실행하여 기존 데이터 저장소에 대한 복제 그룹을 구성합니다.
++
+API:/3.0/admin/{datastore}/replication-groups
+
+. 데이터 저장소를 생성하는 데 사용된 스토리지 기능 프로필을 사용하여 기존 VVol 데이터 저장소에 대한 VM 스토리지 정책을 생성합니다.
++
+사용 가능한 목록에서 복제 정책, 복제 일정 및 호환되는 데이터 저장소를 추가합니다.
+
+
+
+
+NOTE: System Manager를 사용하여 FlexVol 볼륨을 보호하고 스토리지 기능 프로필에 QoS 정책이 '없음'으로 되어 있는 경우, 재해 복구가 성공하려면 * 성능 제한 적용 * 옵션을 선택 취소해야 합니다.
+
+. 보호되지 않는 가상 머신을 액세스하고 VM 스토리지 정책을 편집합니다.
+. VM 스토리지 정책 및 데이터 저장소를 선택합니다.
+. 보호되지 않는 가상 머신에 복제 그룹을 추가합니다.
+
+
+image::../media/vvols_replication_existing_datastore.png[VVol 복제 기존 데이터 저장소]
+
+* 참고: *
+
+* 기존 데이터스토어에 대한 복제를 사용하도록 가상 머신을 구성할 때는 구성 VVol이 있는 FlexVol 볼륨을 확인해야 합니다.
+* 기존 가상 머신의 VVol이 여러 데이터 저장소에 분산되어 있는 경우, 복제를 활성화하기 전에 vMotion을 사용하여 해당 가상 머신의 모든 VVol을 단일 데이터 저장소로 이동해야 합니다.
+
