@@ -445,6 +445,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -634,6 +636,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/index.html">
-        VMware vSphere용 ONTAP 툴 문서
+        VMware vSphere 9.10 문서를 위한 ONTAP 툴
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/release_notes.html">
         릴리스 정보
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         기존 ONTAP 도구 사용자를 위한 배포 워크플로
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        ONTAP 툴을 위한 VMware 클라우드 기반 구축 모드입니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP 도구 빠른 시작
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        다른 서브넷을 추가합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Windows SRM을 SRM 어플라이언스로 마이그레이션합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         가상 머신을 보호하기 위해 VVOL 데이터 저장소의 복제를 구성합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        기존 데이터 저장소에 대한 VVol 복제를 구성합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         보호되지 않는 가상 머신을 보호합니다
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           기존 ONTAP 도구 사용자를 위한 배포 워크플로
@@ -1376,11 +1388,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:07:03 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:17:59 +0000">02/24/2022</time>
     
   
 
 <span>기여자
+  <a target="_blank" href="https://github.com/Netapp-shabaana">
+    <img  class="avatar avatar-small"
+          alt="Netapp-shabaana"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952604?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -1391,7 +1411,7 @@
 <p>VMware vSphere용 ONTAP 툴의 9.x 릴리즈는 최신 버전으로 현재 위치 업그레이드를 지원합니다.</p>
 </div>
 <div class="paragraph">
-<p>ONTAP 툴과 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 설정에 VSC 또는 VASA Provider 또는 SRA가 설치되어 있는 경우 다음 작업을 수행해야 합니다.</p>
+<p>Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x 및 VASA Provider 6.x와 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 구축 과정에서 이러한 기존 버전의 VSC 또는 VASA Provider 또는 SRA가 설치되어 있는 경우 다음 작업을 수행해야 합니다.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1431,7 +1451,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6을 최신 릴리스로 업그레이드할 수 있습니다.</p>
+<p>SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</p>
 <div class="paragraph">
 <p><a href="../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html">"ONTAP 툴의 최신 릴리즈로 업그레이드하십시오"</a></p>
 </div>
@@ -1451,10 +1471,13 @@
 <p>VASA Provider를 구축한 경우 기존 설정에서 업그레이드한 후 '설정 편집' 옵션을 사용하여 ONTAP 도구의 메모리 크기를 12GB로 구성해야 합니다. 또한 가상 메모리 예약을 수정해야 합니다. 메모리 크기를 수정하려면 가상 머신의 전원을 꺼야 합니다.</p>
 </div>
 <div class="paragraph">
-<p>설정에 ONTAP 도구의 7.2 또는 7.2.1 릴리스가 있는 경우 ONTAP 도구의 9.7P1 이상 릴리스로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 ONTAP 툴의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</p>
+<p>VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</p>
 </div>
 <div class="paragraph">
-<p>최신 버전의 ONTAP 도구를 배포하려는 경우 ""ONTAP 도구 배포에 대한 요구 사항" 항목을 참조하십시오. "ONTAP 도구 9.8 릴리스로 업그레이드" 항목에는 현재 위치 업그레이드 수행에 대한 정보가 있습니다.</p>
+<p>ONTAP 도구 9.10으로 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행해야 합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>최신 버전의 ONTAP 도구를 배포하려는 경우 "ONTAP 도구 배포에 대한 요구 사항" 항목을 참조하십시오 'ONTAP 도구의 최신 버전으로 업그레이드' 항목에는 현재 위치 업그레이드를 수행하는 방법에 대한 정보가 들어 있습니다.</p>
 </div>
 <div class="ulist">
 <ul>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head class="at-element-marker">
-  <title>확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다</title>
+  <title>다른 서브넷을 추가합니다</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다" />
+  <meta property="og:title" content="다른 서브넷을 추가합니다" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" />
-	<meta property="og:description" content="SRA(Storage Replication Adapter)\ 에 권장되는 설정에 따라 저장소 시간 초과 간격을 구성하여 고도로 확장된 환경에서 최적의 성능을 발휘해야 합니다." />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html" />
+	<meta property="og:description" content="이제 ONTAP 툴 인터페이스를 사용하여 데이터 저장소 마운팅을 위해 다른 서브넷을 추가할 수 있습니다." />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="SRA(Storage Replication Adapter)\ 에 권장되는 설정에 따라 저장소 시간 초과 간격을 구성하여 고도로 확장된 환경에서 최적의 성능을 발휘해야 합니다.">
+  <meta name="description" content="이제 ONTAP 툴 인터페이스를 사용하여 데이터 저장소 마운팅을 위해 다른 서브넷을 추가할 수 있습니다.">
   <meta name="keywords" content=" ">
   
   
@@ -281,13 +281,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/configure/add_different_subnets.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-tools-vmware-vsphere/configure/add_different_subnets.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-tools-vmware-vsphere/configure/add_different_subnets.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -622,6 +622,15 @@
           
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/ontap-tools-vmware-vsphere/pdfs/pages/configure/add_different_subnets.pdf" >
+    <img src="/ko-kr/ontap-tools-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -1163,7 +1172,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
         다른 서브넷을 추가합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
@@ -1349,7 +1358,7 @@
           <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다
+          다른 서브넷을 추가합니다
         </li>
       </ul>
     </div>
@@ -1372,7 +1381,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다</h1>
+  <h1 class="n-doc__component-detail-heading">다른 서브넷을 추가합니다</h1>
 </div>
 
 
@@ -1392,119 +1401,43 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/netapp-asubhas">
-    <img  class="avatar avatar-small"
-          alt="netapp-asubhas"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/79509513?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>SRA(Storage Replication Adapter)에 권장되는 설정에 따라 스토리지 시간 초과 간격을 구성하여 고도로 확장된 환경에서 최적의 성능을 발휘하도록 해야 합니다.</p>
+<p>ONTAP 툴 인터페이스 또는 REST API를 사용하여 ESXi 호스트의 다른 서브넷을 추가할 수 있습니다. 이렇게 하면 스토리지 시스템을 프로비저닝한 후 데이터 저장소 마운트 작업을 위한 서브넷을 허용하거나 제한할 수 있습니다. ESXi 호스트의 서브넷을 추가하지 않으면 ONTAP 툴이 해당 서브넷에 대한 데이터 저장소 마운트 작업을 차단합니다.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>단계 *</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>vCenter Server 인스턴스에 로그인하고 ONTAP 툴을 액세스합니다.</p>
+</li>
+<li>
+<p>홈페이지에서 * 설정 * &gt; * 서브넷 액세스 관리 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>서브넷 액세스 관리 대화 상자에서 NFS 서브넷 액세스용으로 허용된 서브넷에서 * 선택 * 옵션을 클릭합니다.</p>
+</li>
+<li>
+<p>필요한 서브넷의 값을 입력한 다음 * ADD * 를 클릭합니다.</p>
+</li>
+<li>
+<p>제한된 서브넷의 경우 * 없음 * 또는 * 선택 * 을 선택합니다.</p>
+</li>
+<li>
+<p>iSCSI 서브넷 액세스에 대해 위의 단계를 반복하고 * 적용 * 을 클릭합니다.</p>
+</li>
+</ol>
 </div>
-</div>
-<div class="sect1">
-<h2 id="저장소-공급자-설정">저장소 공급자 설정</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>확장 환경의 경우 SRM에서 다음 시간 초과 값을 설정해야 합니다.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">고급 설정</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">시간 초과 값</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>StorageProvider.재서명시간 초과</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>설정 값을 900초에서 12000초로 늘립니다.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>storageProvider.hostRescandDelaySec을 참조하십시오</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>60</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>storageProvider.hostRescanRepeatCnt 를 참조하십시오</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>20</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>storageProvider.hostRescanTimeoutSec을 참조하십시오</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>높은 값 설정(예: 99999)</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>StorageProvider.autoResignatureMode 옵션도 활성화해야 합니다.</p>
-</div>
-<div class="paragraph">
-<p>스토리지 공급자 설정 수정에 대한 자세한 내용은 VMware 설명서를 참조하십시오.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-E4060824-E3C2-4869-BC39-76E88E2FF9A0.html">"VMware vSphere 설명서: 스토리지 공급자 설정 변경"</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="저장소-설정">저장소 설정</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>크기가 큰 환경의 경우 storage.commandTimeout 및 storage.maxConcurrentCommandCnt 시간 제한 간격을 99,999초로 설정해야 합니다.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/ontap-tools-vmware-vsphere/images/note.svg" alt="참고">
-</td>
-<td class="content">
-지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>또한 SRA가 vvol.properties 파일에서 단일 작업을 수행하는 최대 시간을 설정해야 합니다. offtap.operation.timeout.period.seconds=86400</p>
-</div>
-<div class="paragraph">
-<p><a href="https://kb.netapp.com/app/answers/answer_view/a_id/1001111">"NetApp 기술 자료 답변 1001111: ONTAP용 NetApp 스토리지 복제 어댑터 4.0/7.X 사이징 가이드"</a></p>
-</div>
-<div class="paragraph">
-<p>자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.vmware.com/en/Site-Recovery-Manager/6.5/com.vmware.srm.admin.doc/GUID-711FD223-50DB-414C-A2A7-3BEB8FAFDBD9.html">"VMware Site Recovery Manager 설명서: 스토리지 설정 변경"</a></p>
-</div>
-</div>
+</li>
+</ul>
 </div>
 
     </article>
@@ -1516,8 +1449,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/new?body=Page%3A%20[확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다](https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-tools-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/blob/main/deploy/reference_configure_storage_replication_adapter_for_highly_scaled_environment.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-tools-vmware-vsphere/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/issues/new?body=Page%3A%20[다른 서브넷을 추가합니다](https://docs.netapp.com/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-tools-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-tools-vmware-vsphere/blob/main/configure/add_different_subnets.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-tools-vmware-vsphere/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-tools-vmware-vsphere/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
     </div>
     <div class="page-nav-container">

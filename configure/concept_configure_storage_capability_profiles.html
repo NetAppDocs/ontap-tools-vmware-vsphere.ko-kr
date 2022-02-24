@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/index.html">
-        VMware vSphere용 ONTAP 툴 문서
+        VMware vSphere 9.10 문서를 위한 ONTAP 툴
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/release_notes.html">
         릴리스 정보
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         기존 ONTAP 도구 사용자를 위한 배포 워크플로
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        ONTAP 툴을 위한 VMware 클라우드 기반 구축 모드입니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP 도구 빠른 시작
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        다른 서브넷을 추가합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Windows SRM을 SRM 어플라이언스로 마이그레이션합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         가상 머신을 보호하기 위해 VVOL 데이터 저장소의 복제를 구성합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        기존 데이터 저장소에 대한 VVol 복제를 구성합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         보호되지 않는 가상 머신을 보호합니다
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           스토리지 용량 프로필 개요
@@ -1376,11 +1388,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:07:03 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:17:59 +0000">02/24/2022</time>
     
   
 
 <span>기여자
+  <a target="_blank" href="https://github.com/Netapp-shabaana">
+    <img  class="avatar avatar-small"
+          alt="Netapp-shabaana"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952604?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -1402,10 +1422,13 @@
 <p>VVol 데이터스토어와 함께 사용할 경우 프로비저닝 마법사는 여러 스토리지 기능 프로필을 사용하여 데이터 저장소에 서로 다른 FlexVol 볼륨을 생성할 수 있습니다. VM 스토리지 정책을 사용하여 정의된 대로 적절한 FlexVol 볼륨에서 가상 머신에 대한 VVol을 자동으로 생성할 수 있습니다. 예를 들어, 성능 제한 및 암호화 또는 FabricPool와 같은 기타 기능에 대한 프로파일을 일반 스토리지 클래스에 생성할 수 있습니다. 나중에 가상 머신의 비즈니스 클래스를 나타내는 vCenter Server에서 VM 스토리지 정책을 생성하고 이름을 기준으로 적절한 스토리지 용량 프로필에 연결할 수 있습니다(예: 운영, 테스트, HR).</p>
 </div>
 <div class="paragraph">
-<p>VVOL과 함께 사용할 경우 스토리지 성능 프로필도 개별 가상 머신의 스토리지 성능을 설정하고 성능 요구사항을 가장 충족하는 VVOL 데이터 저장소의 FlexVol 볼륨에 배치합니다. 성능에 대한 최소 및/또는 최대 IOPS로 QoS 정책을 지정할 수 있습니다. 처음에 가상 시스템을 프로비저닝할 때 기본 정책을 사용하거나 비즈니스 요구사항이 변경될 경우 나중에 VM 스토리지 정책을 변경할 수 있습니다. 9.8 릴리스의 ONTAP 도구는 다음과 같은 새로운 기본 스토리지 용량 프로파일을 제공합니다.</p>
+<p>VVOL과 함께 사용할 경우 스토리지 성능 프로필도 개별 가상 머신의 스토리지 성능을 설정하고 성능 요구사항을 가장 충족하는 VVOL 데이터 저장소의 FlexVol 볼륨에 배치합니다. 성능에 대한 최소 및/또는 최대 IOPS로 QoS 정책을 지정할 수 있습니다. 처음에 가상 시스템을 프로비저닝할 때 기본 정책을 사용하거나 비즈니스 요구사항이 변경될 경우 나중에 VM 스토리지 정책을 변경할 수 있습니다. 이번 릴리즈의 ONTAP 툴에 대한 기본 스토리지 기능 프로필은 다음과 같습니다.</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>AFF_Thick</p>
+</li>
 <li>
 <p>FAS_MAX20</p>
 </li>
@@ -1427,13 +1450,19 @@
 <li>
 <p>aff_encrypted_min50</p>
 </li>
+<li>
+<p>플래티넘</p>
+</li>
+<li>
+<p>브론즈</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
 <p>그런 다음 vCenter Server는 LUN 또는 볼륨의 스토리지 기능을 해당 LUN 또는 볼륨에 프로비저닝된 데이터 저장소와 연결합니다. 이를 통해 가상 머신의 스토리지 프로필과 일치하는 데이터 저장소에 가상 머신을 프로비저닝하고 데이터 저장소 클러스터의 모든 데이터 저장소에 동일한 스토리지 서비스 수준이 있는지 확인할 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>VMware vSphere용 ONTAP 툴을 사용하면 동일한 VVOL 데이터 저장소에서 다양한 IOPS 요구 사항에 따라 가상 머신의 프로비저닝을 지원하는 새로운 스토리지 기능 프로필로 모든 VVol(가상 볼륨) 데이터 저장소를 구성할 수 있습니다. IOPS 요구 사항이 있는 VM 프로비저닝 워크플로우를 실행하는 동안 모든 VVol 데이터스토어가 호환 가능한 데이터 저장소 목록에 나열됩니다.</p>
+<p>ONTAP 툴을 사용하면 동일한 VVOL 데이터 저장소에서 다양한 IOPS 요구 사항에 따라 가상 머신의 프로비저닝을 지원하는 새로운 스토리지 기능 프로필로 모든 가상 볼륨(VVol) 데이터 저장소를 구성할 수 있습니다. IOPS 요구 사항이 있는 VM 프로비저닝 워크플로우를 실행하는 동안 모든 VVol 데이터스토어가 호환 가능한 데이터 저장소 목록에 나열됩니다.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1469,7 +1498,7 @@
 <li>
 <p>FAS 및 AFFDatastores 모두에 대해 스토리지 용량 프로필을 구성할 수 있습니다.</p>
 <div class="paragraph">
-<p>FAS 시스템의 경우 공간 예비 공간을 일반 또는 씬 공간으로 구성할 수 있지만 AFF 시스템의 경우 공간 예비 공간을 씬 공간으로 구성할 수 있습니다.</p>
+<p>FAS 및 AFF 시스템의 경우 공간 예비 공간이 일반 또는 씬 공간으로 구성할 수 있습니다.</p>
 </div>
 </li>
 <li>
@@ -1478,7 +1507,7 @@
 <li>
 <p>이전 버전의 VMware vSphere용 ONTAP 툴에서 최신 버전의 ONTAP 툴로 업그레이드한 후에는 기존 스토리지 기능 프로파일(7.2 버전 이전에 생성됨)을 수정할 수 없습니다.</p>
 <div class="paragraph">
-<p>기존 스토리지 기능 프로필은 이전 버전과의 호환성을 위해 유지됩니다. 기본 템플릿을 사용하지 않는 경우 최신 버전의 ONTAP 도구로 업그레이드하는 동안 기존 템플릿이 재정의되어 스토리지 기능 프로필의 성능과 관련된 새 QoS 메트릭을 반영합니다.</p>
+<p>기존 스토리지 기능 프로필은 이전 버전과의 호환성을 위해 유지됩니다. 기본 템플릿을 사용하지 않는 경우 최신 버전의 ONTAP 툴로 업그레이드하는 동안 스토리지 기능 프로필의 성능과 관련된 새로운 QoS 메트릭 및 계층화 정책을 반영하도록 기존 템플릿이 재정의됩니다.</p>
 </div>
 </li>
 <li>

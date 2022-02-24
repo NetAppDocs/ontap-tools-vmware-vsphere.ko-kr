@@ -436,6 +436,8 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -625,6 +627,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -788,6 +792,8 @@
     
 
   
+
+
 
 
 
@@ -1061,7 +1067,7 @@
   });
 </script><div class="sidebar-nav-container">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/index.html">
-        VMware vSphere용 ONTAP 툴 문서
+        VMware vSphere 9.10 문서를 위한 ONTAP 툴
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/release_notes.html">
         릴리스 정보
       </a></li><li class="subfolders "><a href="#">
@@ -1101,6 +1107,8 @@
         VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/concept_installation_workflow_for_existing_users_of_ontap_tools.html">
         기존 ONTAP 도구 사용자를 위한 배포 워크플로
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/deploy/vmware_cloud_foundation_mode_deployment.html">
+        ONTAP 툴을 위한 VMware 클라우드 기반 구축 모드입니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/qsg.html">
         ONTAP 도구 빠른 시작
       </a></li><li class="subfolders "><a href="#">
@@ -1164,6 +1172,8 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/reference_set_ipv4_or_ipv6.html">
         기본 설정 파일을 사용하여 IPv4 또는 IPv6를 설정합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/add_different_subnets.html">
+        다른 서브넷을 추가합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_enable_datastore_mounting_across_different_subnets.html">
         서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/configure/task_regenerate_an_ssl_certificate_for_vsc.html">
@@ -1229,6 +1239,8 @@
         Windows SRM을 SRM 어플라이언스로 마이그레이션합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/concept_configure_replication_for_vvols_datastore.html">
         가상 머신을 보호하기 위해 VVOL 데이터 저장소의 복제를 구성합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/configure_vvols_replication_existing_datastore.html">
+        기존 데이터 저장소에 대한 VVol 복제를 구성합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-tools-vmware-vsphere/protect/task_protect_non_protected_virtual_machines.html">
         보호되지 않는 가상 머신을 보호합니다
       </a></li><li class="subfolders "><a href="#">
@@ -1343,7 +1355,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+          <a href="/ko-kr/ontap-tools-vmware-vsphere/">ONTAP&nbsp;tools&nbsp;for&nbsp;VMware&nbsp;vSphere&nbsp;9.10</a>
         </li>
         <li class="n-breadcrumb__list-item">
           기존 데이터 저장소 프로비저닝
@@ -1376,11 +1388,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-17 07:07:03 +0000">02/17/2022</time>
+    <time datetime="2022-02-24 06:17:59 +0000">02/24/2022</time>
     
   
 
 <span>기여자
+  <a target="_blank" href="https://github.com/Netapp-shabaana">
+    <img  class="avatar avatar-small"
+          alt="Netapp-shabaana"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64952604?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
@@ -1404,13 +1424,13 @@
 <li>
 <p>ESXi 호스트가 연결된 모든 네트워크의 서브넷 세부 정보가 kaminoprefs.xml에 입력되었는지 확인해야 합니다.</p>
 <div class="paragraph">
-<p>VSC 9.8 구축 및 설정 가이드 _ 의 "서로 다른 서브넷에 대한 데이터 저장소 마운트 활성화" 섹션을 참조하십시오.</p>
+<p>"다른 서브넷에 데이터 저장소 마운트 설정"을 참조하십시오.</p>
 </div>
 </li>
 <li>
 <p>NFS 또는 iSCSI를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 kaminoprefs 기본 설정 파일의 NFS 또는 iSCSI 설정에는 ESXi 호스트 서브넷 마스크가 포함되어야 합니다.</p>
 <div class="paragraph">
-<p>이 기본 설정 파일은 VVOL 데이터 저장소 생성에도 적용됩니다. _9.8 릴리즈용 _ONTAP Tools for VMware vSphere Deployment and Setup Guide_에는 기본 설정 파일에 대한 자세한 정보와 서로 다른 서브넷에서 데이터 저장소를 마운트할 수 있는 기능이 나와 있습니다.</p>
+<p>이 기본 설정 파일은 VVOL 데이터 저장소 생성에도 적용됩니다. 자세한 내용은 _다른 서브넷에 대한 데이터 저장소 마운트 활성화_를 참조하고, VSC 기본 설정 파일 구성_을 참조하십시오.</p>
 </div>
 </li>
 <li>
@@ -1457,7 +1477,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>9.8 버전의 ONTAP 툴은 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 지원하며, ASA 및 AFF 9.8 이상을 실행하는 승인된 ONTAP 시스템과 함께 사용할 경우 최대 VMFS LUN과 64TB의 볼륨 크기를 제공합니다.</p>
+<p>ONTAP 툴은 ONTAP 9.8 이상을 실행하는 ASA 및 승인된 AFF 시스템과 함께 사용할 경우 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 최대 VMFS LUN 및 64TB 볼륨 크기까지 지원합니다.</p>
 <div class="paragraph">
 <p>다른 플랫폼에서 지원되는 최대 LUN 크기는 16TB입니다.</p>
 </div>
