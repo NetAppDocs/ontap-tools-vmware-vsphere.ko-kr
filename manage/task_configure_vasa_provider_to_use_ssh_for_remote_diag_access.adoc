@@ -5,6 +5,7 @@ keywords:
 summary: diag 사용자에 대해 SSH 액세스를 허용하도록 ONTAP 도구를 구성할 수 있습니다. 
 ---
 = 원격 진단 액세스를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

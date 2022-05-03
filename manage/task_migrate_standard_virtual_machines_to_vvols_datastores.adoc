@@ -5,6 +5,7 @@ keywords: Migrate traditional virtual machines
 summary: '기존 데이터 저장소에서 VVol(Virtual Volumes) 데이터 저장소로 가상 머신을 마이그레이션하여 정책 기반 VM 관리 및 기타 VVol 기능을 활용할 수 있습니다. VVOL 데이터 저장소를 사용하면 증가하는 워크로드 요구사항을 충족할 수 있습니다.' 
 ---
 = 기존 가상 머신을 VVol 데이터 저장소로 마이그레이션합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

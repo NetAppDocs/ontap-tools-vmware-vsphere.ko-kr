@@ -5,6 +5,7 @@ keywords: Virtual Storage Console,Storage Replication Adapter
 summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축을 계획하고 사용자 환경에서 ONTAP 툴을 구성하는 방법을 결정하는 것이 좋습니다. 
 ---
 = ONTAP 도구 구축을 위한 고려 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

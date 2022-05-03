@@ -5,6 +5,7 @@ keywords:
 summary: VSC를 사용하면 볼륨 임계값과 집계 임계값이 설정된 제한에 도달할 때 알림을 설정할 수 있습니다. 
 ---
 = 알람 임계값을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

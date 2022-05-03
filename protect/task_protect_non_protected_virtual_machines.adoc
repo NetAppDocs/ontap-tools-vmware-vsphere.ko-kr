@@ -5,6 +5,7 @@ keywords: virtual machines, configuring protection
 summary: 복제를 사용하지 않도록 설정한 상태에서 VM 스토리지 정책을 사용하여 생성된 기존의 보호되지 않은 가상 머신에 대한 보호를 구성할 수 있습니다. 보호를 제공하려면 VM 스토리지 정책을 변경하고 복제 그룹을 할당해야 합니다. 
 ---
 = 보호되지 않는 가상 머신을 보호합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 보호된 사이트와 복구 사이트의 네트워크를 매핑하여 이들 간의 통신을 활성화해야 합니다. 
 ---
 = 네트워크 매핑을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

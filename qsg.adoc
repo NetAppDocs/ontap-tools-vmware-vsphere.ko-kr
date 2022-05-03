@@ -8,6 +8,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하고 초기화하는 방법에 �
 :toc: macro
 :hardbreaks:
 :toclevels: 1
+:allow-uri-read: 
 :toc: 
 :toclevels: 1
 :nofooter: 

@@ -5,6 +5,7 @@ keywords:
 summary: vCenter Server는 권한이 아닌 권한을 인식합니다. 각 vCenter Server 권한은 세 가지 구성 요소로 구성됩니다. 
 ---
 = vCenter Server 권한의 구성 요소입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

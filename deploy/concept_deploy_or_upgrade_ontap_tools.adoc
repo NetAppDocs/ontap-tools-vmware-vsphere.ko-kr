@@ -5,6 +5,7 @@ keywords: deploying virtual appliance
 summary: VMware vSphere 환경에서 ONTAP 툴을 다운로드하여 배포한 다음, VSC, VASA 공급자, SRA를 사용하여 수행하려는 작업에 따라 필요한 애플리케이션을 구성해야 합니다. 
 ---
 = VMware vSphere용 ONTAP ® 툴 구축 또는 업그레이드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

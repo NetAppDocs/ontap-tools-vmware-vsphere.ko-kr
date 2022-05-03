@@ -5,6 +5,7 @@ keywords:
 summary: FlexGroup 데이터 저장소의 용량 할당은 데이터 저장소에 스토리지 용량 프로필을 할당할 수 없습니다. 하지만 FlexGroup 기반 데이터 저장소에 생성된 가상 머신에 QoS 정책을 할당할 수 있습니다. 
 ---
 = QoS 정책을 할당합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

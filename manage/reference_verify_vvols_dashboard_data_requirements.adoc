@@ -5,6 +5,7 @@ keywords: vVol dashboard
 summary: 'VVol(VMware Virtual Volumes) 데이터 저장소 및 가상 시스템의 동적 세부 정보를 표시하려면 VVOL 대시보드의 몇 가지 중요한 요구사항을 확인해야 합니다.' 
 ---
 = VVol 대시보드 데이터 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

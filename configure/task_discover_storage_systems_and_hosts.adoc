@@ -5,6 +5,7 @@ keywords:
 summary: 'vSphere Client에서 VSC(Virtual Storage Console)\(Virtual Storage Console)를 처음 실행하면 ESXi 호스트, 해당 LUN 및 NFS 엑스포트, LUN 및 내보내기를 소유하는 NetApp 스토리지 시스템이 검색됩니다.' 
 ---
 = 스토리지 시스템 및 호스트를 검색합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

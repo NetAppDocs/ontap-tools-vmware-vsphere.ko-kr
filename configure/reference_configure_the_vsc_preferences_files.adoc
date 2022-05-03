@@ -5,6 +5,7 @@ keywords: preferences files
 summary: '기본 설정 파일에는 VMware vSphere 작업을 위한 ONTAP ® 툴을 제어하는 설정이 포함되어 있습니다. 대부분의 경우 이러한 파일의 설정을 수정할 필요가 없습니다. 가상 스토리지 콘솔\(VSC\)에서 사용하는 기본 설정 파일을 알면 도움이 됩니다.' 
 ---
 = VSC 기본 설정 파일을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

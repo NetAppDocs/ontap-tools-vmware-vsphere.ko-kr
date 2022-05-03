@@ -5,6 +5,7 @@ keywords:
 summary: VMware vSphere용 ONTAP ® 툴은 ESXi 호스트 다중 경로 설정 및 NetApp 스토리지 시스템에 가장 적합한 HBA 시간 초과 설정을 확인하고 설정합니다. 
 ---
 = ESXi 서버 경로 다중화 및 시간 초과 설정을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

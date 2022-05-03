@@ -5,6 +5,7 @@ keywords:
 summary: VMware vSphere용 ONTAP 툴의 9.x 릴리즈는 최신 버전으로 현재 위치 업그레이드를 지원합니다. 
 ---
 = 기존 ONTAP 도구 사용자를 위한 배포 워크플로
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

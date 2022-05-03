@@ -5,6 +5,7 @@ keywords:
 summary: VMware vSphere 역할을 위한 표준 ONTAP ® 툴을 사용할 경우 따라야 할 몇 가지 지침이 있습니다. 
 ---
 = VSC 표준 역할 사용 지침
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

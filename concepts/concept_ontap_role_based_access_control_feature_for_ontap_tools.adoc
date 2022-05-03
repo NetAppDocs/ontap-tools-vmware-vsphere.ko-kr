@@ -5,6 +5,7 @@ keywords:
 summary: 'ONTAP 역할 기반 액세스 제어\(RBAC\)를 사용하면 특정 스토리지 시스템에 대한 액세스를 제어하고 해당 스토리지 시스템에서 사용자가 수행할 수 있는 작업을 제어할 수 있습니다. VMware vSphere용 ONTAP ® 툴에서 ONTAP RBAC는 vCenter Server RBAC와 함께 사용하여 특정 사용자가 특정 스토리지 시스템의 개체에 대해 수행할 수 있는 가상 스토리지 콘솔\(VSC\) 작업을 결정합니다.' 
 ---
 = ONTAP 스토리지 시스템 및 vSphere 객체에 대한 사용 권한
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

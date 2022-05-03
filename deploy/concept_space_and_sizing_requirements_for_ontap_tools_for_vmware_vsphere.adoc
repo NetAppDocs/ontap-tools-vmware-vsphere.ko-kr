@@ -5,6 +5,7 @@ keywords: Virtual Storage Console,Storage Replication Adapter
 summary: VMware vSphere용 ONTAP 툴을 구축하기 전에 구축 패키지에 대한 공간 요구 사항과 몇 가지 기본 호스트 시스템 요구 사항을 숙지해야 합니다. 
 ---
 = ONTAP 툴에 대한 공간 및 사이징 요구사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

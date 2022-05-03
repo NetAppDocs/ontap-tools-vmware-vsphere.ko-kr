@@ -5,6 +5,7 @@ keywords:
 summary: VSC 인터페이스를 사용하여 스토리지 시스템을 ONTAP 툴에 추가하고 필요한 경우 기본 자격 증명을 설정해야 합니다. 
 ---
 = ONTAP 툴을 위한 스토리지 시스템 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

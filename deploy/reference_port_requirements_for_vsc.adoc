@@ -5,6 +5,7 @@ keywords: port requirements
 summary: '기본적으로 VSC(Virtual Storage Console) \(Virtual Storage Console)에서는 지정된 포트를 사용하여 스토리지 시스템과 VMware vCenter Server를 포함한 구성 요소 간 통신을 지원합니다. 방화벽이 활성화되어 있는 경우, 방화벽을 예외 허용으로 설정해야 합니다.' 
 ---
 = VSC용 포트 요구사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

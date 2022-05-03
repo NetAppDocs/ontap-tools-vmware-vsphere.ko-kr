@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = 관리 가이드 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

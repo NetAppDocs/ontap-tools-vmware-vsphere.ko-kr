@@ -5,6 +5,7 @@ keywords:
 summary: 가상 머신이 호스트 그룹 또는 다른 그룹으로 페일오버되도록 보호 사이트 및 복구 사이트의 리소스를 매핑해야 합니다. 
 ---
 = 리소스 매핑을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

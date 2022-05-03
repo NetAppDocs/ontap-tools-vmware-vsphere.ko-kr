@@ -1443,7 +1443,6 @@
   <block id="3f143e381fbd1594759cc3ef1d2a3af3" category="list-text">vCenter Server에서 ONTAP 데이터 저장소를 사용하는 가상 머신의 수입니다</block>
   <block id="c642ca83ebe4f4e0295711fb1e80d8c2" category="list-text">IOPS, 지연 시간, 처리량, 약정 용량, 가동 시간, 및 논리 공간 - 상위 5개 가상 시스템이 VVol 대시보드에 나열되는 방법을 사용자 지정할 수 있습니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
   <block id="b903ab0865d53d0fb8088440e2b2c347" category="summary">VMware vSphere 및 역할 기반 액세스 제어(RBAC\)에 대한 ONTAP ® 툴로 작업하기 위해 몇 가지 권장되는 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 가상 스토리지 콘솔\(VSC\) 작업에서 실행되는 데 필요한 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함됩니다.</block>
   <block id="07cda92265f02dc6b3431f3719b53172" category="doc">VMware vSphere용 ONTAP 툴을 사용할 때 권장되는 ONTAP 역할</block>
   <block id="235a8def2260474f71ef08e874bf3aa1" category="paragraph">VMware vSphere 및 역할 기반 액세스 제어(RBAC)에 대한 ONTAP ® 툴로 작업하기 위해 몇 가지 권장되는 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 VSC(가상 스토리지 콘솔) 작업에서 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함되어 있습니다.</block>
@@ -1991,4 +1990,8 @@
   <block id="afa73da64573c9300600d9dcda03dbca" category="inline-link">VMware vSphere 9.10용 ONTAP 툴 릴리즈 노트</block>
   <block id="1d39c4b0a8cc202b1cc30e5c2df964fb" category="paragraph">자세한 내용은 를 참조하십시오<block ref="8da3a9cd5d4fe240d226b42d5d3c0796" category="inline-link-rx"></block>.</block>
   <block id="4cf800e4c7e3afad619ba39d635e53c7" category="sidebar">VMware vSphere 9.10 문서를 위한 ONTAP 툴</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
 </blocks>

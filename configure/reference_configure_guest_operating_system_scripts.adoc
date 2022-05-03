@@ -5,6 +5,7 @@ keywords: Guest operating system
 summary: '게스트 운영 체제 \(OS\) 스크립트의 ISO 이미지는 VMware vSphere 서버용 ONTAP ® 툴에 마운트됩니다. 게스트 OS 스크립트를 사용하여 가상 머신에 대한 스토리지 시간 초과를 설정하려면 vSphere Client에서 스크립트를 마운트해야 합니다.' 
 ---
 = 게스트 운영 체제 스크립트를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

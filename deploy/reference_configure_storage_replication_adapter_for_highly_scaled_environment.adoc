@@ -5,6 +5,7 @@ keywords:
 summary: 'SRA(Storage Replication Adapter)\ 에 권장되는 설정에 따라 저장소 시간 초과 간격을 구성하여 고도로 확장된 환경에서 최적의 성능을 발휘해야 합니다.' 
 ---
 = 확장성이 높은 환경에 맞게 스토리지 복제 어댑터를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: '재해 복구를 위해 vCenter Server를 구성하려면 구축 후 SRA(Storage Replication Adapter)\ 를 활성화해야 합니다. ONTAP 툴을 배포하면 기본적으로 VSC가 설치됩니다. ONTAP 툴을 구축한 후 vCenter Server에 대해 SRA를 활성화해야 합니다.' 
 ---
 = 재해 복구를 위해 스토리지 복제 어댑터를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

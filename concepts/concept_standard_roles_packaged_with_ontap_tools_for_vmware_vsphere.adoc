@@ -5,6 +5,7 @@ keywords:
 summary: 'vCenter Server 권한 및 역할 기반 액세스 제어 \(RBAC\)로 작업을 단순화하기 위해 VSC\(Virtual Storage Console)에서는 주요 VSC 작업을 수행할 수 있는 표준 VSC 역할을 제공합니다. VSC 정보를 볼 수는 있지만 작업을 수행할 수 없는 읽기 전용 역할도 합니다.' 
 ---
 = ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

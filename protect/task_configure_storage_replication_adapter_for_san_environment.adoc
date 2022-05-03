@@ -5,6 +5,7 @@ keywords:
 summary: 'SRM\(Site Recovery Manager)에 대해 SRA\(Storage Replication Adapter\)를 실행하기 전에 스토리지 시스템을 설정해야 합니다.' 
 ---
 = SAN 환경에 대한 스토리지 복제 어댑터를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

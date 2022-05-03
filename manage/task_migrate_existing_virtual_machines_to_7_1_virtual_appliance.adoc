@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vSphere용 최신 버전의 ONTAP 툴을 사용하는 경우 그런 다음 "MaxThroughput Mbps" 또는 "MaxThroughput IOPS" QoS 메트릭으로 프로비저닝된 가상 머신을 최신 버전의 ONTAP 툴의 "Max IOPS" QoS 메트릭으로 프로비저닝된 새로운 VVOL 데이터 저장소로 마이그레이션해야 합니다.' 
 ---
 = 이전 스토리지 기능 프로파일이 있는 가상 시스템을 마이그레이션합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 배포 ONTAP 도구를 사용자 지정하는 동안 몇 가지 제한 사항을 고려해야 합니다. 
 ---
 = 배포 사용자 지정 고려 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

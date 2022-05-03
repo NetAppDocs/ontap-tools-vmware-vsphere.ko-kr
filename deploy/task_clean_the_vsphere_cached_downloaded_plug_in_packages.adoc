@@ -5,6 +5,7 @@ keywords: clean up browser cache
 summary: ONTAP 툴을 구축 또는 업그레이드한 후 플러그인이 자동으로 업데이트되지 않는 경우 vCenter Server 플러그인 문제를 해결하려면 브라우저와 vCenter Server에서 캐시된 다운로드 플러그인 패키지를 정리해야 합니다. 
 ---
 = vSphere 캐시된 다운로드 플러그인 패키지를 지웁니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

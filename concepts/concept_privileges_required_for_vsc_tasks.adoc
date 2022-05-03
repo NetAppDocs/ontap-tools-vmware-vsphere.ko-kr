@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vSphere 작업을 위한 다양한 ONTAP 툴에는 가상 스토리지 콘솔\(VSC\) 및 기본 vCenter Server 권한에 따라 서로 다른 권한 조합이 필요합니다.' 
 ---
 = VSC 작업에 필요한 권한입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 스토리지 시스템을 검색하려면 vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링해야 합니다. 
 ---
 = 보호 사이트와 복구 사이트 페어링
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

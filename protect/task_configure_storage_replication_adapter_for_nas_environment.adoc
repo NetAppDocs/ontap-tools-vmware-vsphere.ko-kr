@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vCenter Site Recovery Manager\(SRM\)용 SRA(Storage Replication Adapter\)를 실행하기 전에 스토리지 시스템을 구성해야 합니다.' 
 ---
 = NAS 환경에 대한 스토리지 복제 어댑터를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: VSC
 summary: '고가용성 \(HA\)을 위해 VMware vSphere용 ONTAP 툴이 구축되는 vSphere 환경을 구성할 수 있습니다. VMware HA 기능은 가상 환경에서 하드웨어 장애 및 운영 체제 장애로부터 페일오버 보호 기능을 제공합니다.' 
 ---
 = VMware vSphere HA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

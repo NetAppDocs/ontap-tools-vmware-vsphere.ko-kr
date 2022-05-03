@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.' 
 ---
 = NFS VAAI 플러그인을 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

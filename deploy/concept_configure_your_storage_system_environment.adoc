@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vSphere용 ONTAP ® 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 이 자격 증명은 VSC(가상 스토리지 콘솔) 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 지원하는 데 필요한 ONTAP 권한을 제공합니다.' 
 ---
 = VMware vSphere 스토리지 시스템용 ONTAP ® 툴을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -7,6 +7,7 @@ summary: VMware vSphere용 ONTAP 툴을 사용하면 vCenter Server 환경에서
 ---
 = VMware vSphere용 ONTAP 툴 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -5,6 +5,7 @@ keywords:
 summary: 'VASA Provider for ONTAP를 사용하여 VMware 가상 볼륨(VVol\)을 생성하고 관리할 수 있습니다. VVOL 데이터 저장소를 프로비저닝, 편집, 마운트 및 삭제할 수 있습니다. VVol 데이터 저장소에 스토리지를 추가하거나 VVol 데이터 저장소에서 스토리지를 제거할 수도 있습니다. 유연성을 높일 수 있습니다. 모든 가상 머신 및 관련 VMDK를 프로비저닝하고 관리할 수 있습니다.' 
 ---
 = VVOL을 위한 VASA 공급자 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

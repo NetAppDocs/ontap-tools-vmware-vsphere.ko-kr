@@ -5,6 +5,7 @@ keywords: scope of guide
 summary: 이 가이드를 사용하여 스토리지 용량 할당, 최적화, 데이터 저장소 및 가상 시스템 모니터링과 관련된 작업에 대한 정보를 빠르게 찾을 수 있습니다. 
 ---
 = 이 가이드의 사용 여부를 결정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

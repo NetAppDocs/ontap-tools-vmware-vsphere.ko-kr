@@ -5,6 +5,7 @@ keywords: Remove vVol datastore
 summary: 'VVol(VMware Virtual Volumes) 데이터 저장소에 여러 개의 FlexVol 볼륨이 있는 경우 데이터 저장소를 삭제하지 않고 VVOL 데이터 저장소에서 하나 이상의 FlexVol 볼륨을 제거할 수 있습니다.' 
 ---
 = VVOL 데이터 저장소에서 스토리지를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

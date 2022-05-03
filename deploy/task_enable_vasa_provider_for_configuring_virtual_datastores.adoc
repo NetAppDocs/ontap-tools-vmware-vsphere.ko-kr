@@ -5,6 +5,7 @@ keywords:
 summary: 'VMware vSphere용 ONTAP 툴에는 기본적으로 VASA 공급자 기능이 설정되어 있습니다. 각 VVol 데이터스토어에 필요한 스토리지 기능 프로필을 사용하여 VVol(VMware Virtual Volumes)\) 데이터 저장소를 구성할 수 있습니다.' 
 ---
 = 가상 데이터 저장소를 구성하기 위해 VASA Provider를 설정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

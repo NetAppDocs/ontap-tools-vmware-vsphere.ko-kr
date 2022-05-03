@@ -5,6 +5,7 @@ keywords: Migration
 summary: '재해 복구에 Windows 기반 사이트 복구 관리자\(SRM\)를 사용하는 경우 동일한 설정에 SRM 어플라이언스를 사용하려면 Windows 재해 복구 설정을 어플라이언스 기반 SRM으로 마이그레이션해야 합니다.' 
 ---
 = Windows SRM에서 SRM 어플라이언스로 마이그레이션
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: vVols datastore,rebalancing
 summary: ONTAP 툴은 데이터 센터에서 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다. 
 ---
 = VVOL 데이터 저장소의 균형을 조정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

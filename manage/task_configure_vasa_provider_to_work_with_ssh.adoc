@@ -5,6 +5,7 @@ keywords:
 summary: ONTAP 툴을 구성하여 보안 액세스를 위해 SSH를 사용하도록 VASA Provider를 설정할 수 있습니다. 
 ---
 = SSH와 함께 작동하도록 VASA Provider를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

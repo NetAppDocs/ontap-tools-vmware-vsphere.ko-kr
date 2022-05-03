@@ -5,6 +5,7 @@ keywords:
 summary: VMware vSphere용 ONTAP 툴 구축을 시작하기 전에 기본 스토리지 시스템 요구사항, 애플리케이션 요구사항 및 라이센스 요구사항을 알고 있어야 합니다. 
 ---
 = ONTAP 툴을 지원하는 스토리지 시스템, 라이센스 및 애플리케이션
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

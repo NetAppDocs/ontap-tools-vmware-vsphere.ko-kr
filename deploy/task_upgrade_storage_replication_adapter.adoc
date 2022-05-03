@@ -5,6 +5,7 @@ keywords: SRA, upgrade
 summary: 'ONTAP 툴을 업그레이드하거나 최신 버전의 ONTAP 툴을 구축한 후에는 SRA\(스토리지 복제 어댑터)를 업그레이드해야 합니다.' 
 ---
 = 스토리지 복제 어댑터를 업그레이드합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
