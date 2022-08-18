@@ -41,8 +41,6 @@ NOTE: 원격 진단을 활성화하는 동안 "dIAG" 사용자의 암호를 설�
 . Virtual Storage Console 서비스의 로그 레벨을 변경합니다
 . VASA Provider 및 SRA 서비스의 로그 레벨을 변경합니다
 . TLS 구성을 표시합니다
-. TLS 프로토콜을 활성화합니다
-. TLS 프로토콜을 비활성화합니다
 
 
 

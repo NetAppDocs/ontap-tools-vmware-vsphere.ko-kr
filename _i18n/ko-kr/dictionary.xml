@@ -613,7 +613,6 @@
   <block id="698006ea0b0d4d2d8dca5ee20b2a5286" category="admonition">모든 네트워크가 의미하는 것은 아닙니다. ""모두" 값을 사용하면 호스트와 스토리지 시스템 간의 일치하는 모든 네트워크를 데이터 저장소를 마운트하는 데 사용할 수 있습니다. 호스트 네트워크를 지정할 때 지정된 서브넷에서만 마운트를 활성화할 수 있습니다.</block>
   <block id="223ac40bbc657501b714e17e65ad384a" category="list-text">kaminoprefs.xml 파일을 저장하고 닫습니다.</block>
   <block id="18b21d5b06a5a5f79020d85de9c49a5d" category="doc">VVOL 데이터 저장소의 균형을 조정합니다</block>
-  <block id="fbaf83390e5a4d870b5b750c0656b670" category="paragraph">VVOL 데이터 저장소의 재조정은 LUN 이동 또는 파일 이동을 통해 수행됩니다. VVOL을 재조정하는 동안 고려하는 기준은 다음과 같습니다.</block>
   <block id="b0b15a5664f313c682449715f8797570" category="list-text">기존 FlexVol 볼륨의 크기는 조정되지 않으며 새 FlexVol 볼륨은 추가되지 않습니다</block>
   <block id="5415ed28641dd79c706bfc42b5c7606c" category="list-text">스토리지 기능 또는 볼륨 특성이 동일한 FlexVol 볼륨만 재조정됩니다</block>
   <block id="656a7ca9d5565aff5c4e7369951a72a3" category="list-text">공간 활용률이 가장 높은 FlexVol 볼륨은 재조정에 고려됩니다</block>
@@ -985,13 +984,9 @@
   <block id="b7889df18249aae5d285bb8d5689673e" category="paragraph">대화 상자의 대부분의 필드는 설명이 필요 없습니다. 다음 표에서는 안내가 필요할 수 있는 일부 필드에 대해 설명합니다.</block>
   <block id="d67372be0bd12a2ddbcf795ccfacc7de" category="cell">* 섹션 *</block>
   <block id="0db377921f4ce762c62526131097968f" category="paragraph">일반</block>
-  <block id="5d796cb61105a94007269d4dd1796747" category="paragraph">New Datastore provisioning 대화 상자의 General 섹션에서는 새 데이터 저장소의 대상, 이름, 크기, 유형 및 프로토콜을 입력하는 옵션을 제공합니다. NFS * 또는 * VMFS * 프로토콜을 선택하여 기존 데이터 저장소를 구성할 수 있습니다. 이 릴리즈에서는 최대 64TB 크기의 VMFS 데이터 저장소를 구성할 수 있습니다. "ONTAP 클러스터 전체에 데이터 저장소 데이터 분산" 옵션을 선택하여 스토리지 시스템에서 FlexGroup 볼륨을 프로비저닝할 수 있습니다. 이 옵션을 선택하면 ""스토리지 용량 프로필을 용량 할당에 사용" 확인란의 선택이 자동으로 취소됩니다. FlexGroup 데이터 저장소 프로비저닝의 경우 9.8 이상인 ONTAP 클러스터만 선택할 수 있습니다. VVOL 데이터 저장소 유형은 VVol 데이터 저장소를 구성하는 데 사용됩니다. VASA Provider가 설정된 경우 스토리지 용량 프로필을 사용할지 여부를 결정할 수도 있습니다. Datastore cluster * 옵션은 기존 데이터 저장소에만 사용할 수 있습니다. 고급 * 옵션을 사용하여 * VMFS5 * 또는 * VMFS6 * 파일 시스템을 지정해야 합니다.</block>
   <block id="f31303ddb8ada38aed08c2bb8f9d8e6c" category="paragraph">수행할 수 있습니다</block>
-  <block id="f3a6fc9fb4ad23951edb2fc7ea7ce05b" category="paragraph">일반 섹션에서 옵션을 선택한 경우 나열된 스토리지 용량 프로파일 중 하나를 선택할 수 있습니다. FlexGroup 데이터 저장소를 프로비저닝하는 경우 이 데이터 저장소의 스토리지 용량 프로필은 지원되지 않습니다. 스토리지 시스템 및 스토리지 가상 머신에 대해 시스템 권장 값이 자동으로 채워지는 것이 좋습니다. 그러나 필요한 경우 값을 수정할 수 있습니다.</block>
   <block id="03804e006add62cab43571db2a148f6e" category="paragraph">스토리지 특성</block>
-  <block id="56b417b201b79abcd233bd24a3f67c7f" category="paragraph">기본적으로 VSC는 * 애그리게이트 * 및 * 볼륨 * 옵션의 권장 값을 채웁니다. 요구 사항에 따라 값을 사용자 지정할 수 있습니다. ONTAP가 애그리게이트 선택을 관리하므로 FlexGroup 데이터 저장소에는 애그리게이트 선택이 지원되지 않습니다. 고급* 메뉴에서 사용할 수 있는 * 공간 예약 * 옵션도 채워지며 최적의 결과를 제공합니다.</block>
   <block id="290612199861c31d1036b185b4e69b75" category="paragraph">요약</block>
-  <block id="c00d812223c8931a6abca969bbb9c373" category="paragraph">새 데이터 저장소에 대해 지정한 매개 변수의 요약을 검토할 수 있습니다. 생성된 데이터 저장소의 유형을 구분할 수 있는 새로운 필드 ""볼륨 스타일""이 요약 페이지에 제공됩니다. 볼륨 스타일은 FlexVol 또는 FlexGroup가 될 수 있습니다.</block>
   <block id="ce9642ced5a02053cc009b2bcdc0de38" category="admonition">기존 데이터 저장소의 일부인 FlexGroup는 기존 크기보다 축소될 수 없지만 최대 120% 성장할 수 있습니다. 이러한 FlexGroup 볼륨에서 기본 스냅샷이 활성화됩니다. . 요약 섹션에서 * 마침 * 을 클릭합니다.</block>
   <block id="db25841cad5f4a3789c93e40d334c1b8" category="inline-link">볼륨 상태가 오프라인으로 변경되면 데이터 저장소에 액세스할 수 없습니다</block>
   <block id="e8f51520d45845b237d7483dd8e847f2" category="paragraph"><block ref="e8f51520d45845b237d7483dd8e847f2" category="inline-link-rx"></block></block>
@@ -1970,12 +1965,48 @@
   <block id="57a78a866bc67d01f079d70f0f08d264" category="paragraph">ONTAP 도구의 VCF 배포에서는 컨테이너 생성 워크플로만 사용할 수 있습니다. 데이터 저장소 프로비저닝, 스토리지 기능 프로필 생성 또는 재해 복구 등의 다른 워크플로우를 사용하려면 Register.html 페이지를 사용하여 vCenter Server에 ONTAP 툴을 등록해야 합니다. VCF 모드에서 ONTAP 도구의 제한 사항은 재해 복구를 위해 SRA를 구성할 수 없다는 것입니다.</block>
   <block id="dc6f079855bc9a7477861302bbb0343f" category="image-alt">VMware Cloud Foundation 구축 워크플로우</block>
   <block id="6e87afa480416c8595b0460888551386" category="paragraph"><block ref="6e87afa480416c8595b0460888551386" category="inline-link-macro-rx"></block></block>
-  <block id="afa73da64573c9300600d9dcda03dbca" category="inline-link">VMware vSphere 9.10용 ONTAP 툴 릴리즈 노트</block>
-  <block id="1d39c4b0a8cc202b1cc30e5c2df964fb" category="paragraph">자세한 내용은 를 참조하십시오<block ref="8da3a9cd5d4fe240d226b42d5d3c0796" category="inline-link-rx"></block>.</block>
-  <block id="4cf800e4c7e3afad619ba39d635e53c7" category="sidebar">VMware vSphere 9.10 문서를 위한 ONTAP 툴</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="adc8e197d36a3b2270201bc307f60f15" category="paragraph"><block ref="adc8e197d36a3b2270201bc307f60f15" category="inline-link-rx"></block></block>
+  <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">Kerberos 인증의 경우 다음이 필요합니다.</block>
+  <block id="232c27acd8cefdcf2eab2fd4448e58b7" category="list-text">AD(Active Directory)가 있는 Windows 시스템</block>
+  <block id="3b190489626bc91788e69bde26b23e49" category="list-text">DNS(Domain Name Server)</block>
+  <block id="c33ec8bbf1e9679441ee7b5780300148" category="list-text">KDC(키 배포 센터)</block>
+  <block id="ffc5820bec391adec4d3ea0c0b487f5c" category="list-text">Kerberos가 구성된 ONTAP 스토리지 시스템(클러스터</block>
+  <block id="87e73a2e34acfaa495847cdc56b91075" category="list-text">Kerberos가 구성된 ESXi 호스트입니다</block>
+  <block id="247ab06aaf332c4dffa16f9e44bfb784" category="paragraph">New Datastore provisioning 대화 상자의 General 섹션에서는 새 데이터 저장소의 대상, 이름, 크기, 유형 및 프로토콜을 입력하는 옵션을 제공합니다.</block>
+  <block id="b8f85eda1edc7ce9e1da9898d153444e" category="paragraph">NFS * 또는 * VMFS * 프로토콜 유형을 선택하여 기존 데이터 저장소를 구성할 수 있습니다. NFS의 경우 NFS3 또는 NFS 4.1을 선택할 수 있습니다.</block>
+  <block id="d728bb03f29ad9ea3295bc22a35d9cb0" category="paragraph">이 릴리즈에서는 최대 64TB 크기의 VMFS 데이터 저장소를 구성할 수 있습니다. "ONTAP 클러스터 전체에 데이터 저장소 데이터 분산" 옵션을 선택하여 스토리지 시스템에서 FlexGroup 볼륨을 프로비저닝할 수 있습니다. 이 옵션을 선택하면 ""스토리지 용량 프로필을 용량 할당에 사용" 확인란의 선택이 자동으로 취소됩니다. FlexGroup 데이터 저장소 프로비저닝의 경우 9.8 이상인 ONTAP 클러스터만 선택할 수 있습니다. VVOL 데이터 저장소 유형은 VVol 데이터 저장소를 구성하는 데 사용됩니다. VASA Provider가 설정된 경우 스토리지 용량 프로필을 사용할지 여부를 결정할 수도 있습니다. Datastore cluster * 옵션은 기존 데이터 저장소에만 사용할 수 있습니다. 고급 * 옵션을 사용하여 * VMFS5 * 또는 * VMFS6 * 파일 시스템을 지정해야 합니다.</block>
+  <block id="ad37ded9046268d8e5ea7cb253bb5dda" category="paragraph">Kerberos 인증</block>
+  <block id="3ea519f69263ba3e63c00ba026dfbb01" category="paragraph">일반 * 페이지에서 NFS 4.1을 선택한 경우 보안 수준을 선택합니다.</block>
+  <block id="12f4ceb4f1dabc544795882faae863af" category="paragraph">Kerberos 인증은 FlexVol에 대해서만 지원됩니다.</block>
+  <block id="cd506470f5e5655bb026fe078bbbcdd3" category="paragraph">일반 섹션에서 옵션을 선택한 경우 나열된 스토리지 용량 프로파일 중 하나를 선택할 수 있습니다.</block>
+  <block id="90a7ec5aa6debb1e9f051b3011306ea5" category="list-text">FlexGroup 데이터 저장소를 프로비저닝하는 경우 이 데이터 저장소의 스토리지 용량 프로필은 지원되지 않습니다. 스토리지 시스템 및 스토리지 가상 머신에 대해 시스템 권장 값이 자동으로 채워지는 것이 좋습니다. 그러나 필요한 경우 값을 수정할 수 있습니다.</block>
+  <block id="395cd4e6b9788357ea9b4875980f0735" category="list-text">Kerberos 인증의 경우 Kerberos에 대해 활성화된 스토리지 시스템이 나열됩니다.</block>
+  <block id="d656972a3bb8dc447ca461f90894a1c0" category="paragraph">기본적으로 VSC는 * 애그리게이트 * 및 * 볼륨 * 옵션의 권장 값을 채웁니다. 요구 사항에 따라 값을 사용자 지정할 수 있습니다. ONTAP가 애그리게이트 선택을 관리하므로 FlexGroup 데이터 저장소에는 애그리게이트 선택이 지원되지 않습니다.</block>
+  <block id="11d67c18b6ade2844dac7ac6e8d8e996" category="paragraph">고급* 메뉴에서 사용할 수 있는 * 공간 예약 * 옵션도 채워지며 최적의 결과를 제공합니다.</block>
+  <block id="8f0960fd537565d013c63b424e32e545" category="paragraph">(선택 사항) * 이니시에이터 그룹 이름 변경 * 필드에서 이니시에이터 그룹 이름을 지정할 수 있습니다.</block>
+  <block id="ff34df29001826a51c55234f7899a5c8" category="list-text">이 이름이 없는 경우 새 이니시에이터 그룹이 이 이름으로 생성됩니다.</block>
+  <block id="87d50d4aca5654404d2bd923ef01f39d" category="list-text">프로토콜 이름은 지정된 이니시에이터 그룹 이름에 추가됩니다.</block>
+  <block id="fddf43b7509a27a580ae5b8204ed1b6e" category="list-text">선택한 이니시에이터에서 기존 igroup이 발견되면 igroup의 이름이 제공된 이름으로 바뀌고 다시 사용됩니다.</block>
+  <block id="66f5d92a1b6d185f278cc7e3df89631f" category="list-text">igroup 이름을 지정하지 않으면 기본 이름으로 igroup이 생성됩니다.</block>
+  <block id="f112f880ee3808f45fa645d31a60919e" category="paragraph">새 데이터 저장소에 대해 지정한 매개 변수의 요약을 검토할 수 있습니다.</block>
+  <block id="d95d2027ad4faa7afb16847cf6829317" category="paragraph">"볼륨 스타일" 필드를 사용하면 생성된 데이터 저장소의 유형을 구분할 수 있습니다. 볼륨 스타일은 FlexVol 또는 FlexGroup가 될 수 있습니다.</block>
+  <block id="fe0891bb90d313b1b9098fdd3e5f531a" category="inline-link">Kerberos에 대한 ONTAP 지원</block>
+  <block id="5e31aad48428786bd6d1afc4fa881f95" category="paragraph"><block ref="5e31aad48428786bd6d1afc4fa881f95" category="inline-link-rx"></block></block>
+  <block id="b492eaf1aa700257b5bd87a0787ffbba" category="inline-link">NFS로 Kerberos 구성 요구 사항</block>
+  <block id="2f9647a83c40cf2ae0233ad123484629" category="paragraph"><block ref="2f9647a83c40cf2ae0233ad123484629" category="inline-link-rx"></block></block>
+  <block id="0503dc7bdab97ba0513cd725666d3394" category="inline-link">시스템 관리자 - ONTAP 9.7 이하를 사용하여 Kerberos 영역 서비스를 관리합니다</block>
+  <block id="7fe6d5584982526cfe5bb1b708c9e10f" category="paragraph"><block ref="7fe6d5584982526cfe5bb1b708c9e10f" category="inline-link-rx"></block></block>
+  <block id="1a69d38f7b46901c58e85d024e87b034" category="inline-link">데이터 LIF에서 Kerberos를 사용하도록 설정합니다</block>
+  <block id="bcafb10f2c5e3e1c946d39793d902146" category="paragraph"><block ref="bcafb10f2c5e3e1c946d39793d902146" category="inline-link-rx"></block></block>
+  <block id="b292d4b33c15cd5429a4aec0164b62f4" category="inline-link">Kerberos 인증을 위해 ESXi 호스트를 구성합니다</block>
+  <block id="2775eee214a07dd3ad16007a75341d1d" category="paragraph"><block ref="2775eee214a07dd3ad16007a75341d1d" category="inline-link-rx"></block></block>
+  <block id="f05d67a2632f89a349f888bc1abd2314" category="paragraph">VVOL 데이터 저장소의 재조정은 LUN 이동 또는 파일 이동을 통해 수행됩니다. VVOL을 재조정하는 동안 고려하는 기준은 다음과 같습니다.</block>
+  <block id="4240120fee603161e3f32fa6a4127dc3" category="list-text">NFS VVOL 데이터 저장소는 지원되지 않습니다</block>
+  <block id="325ed2f7ffe6974144615e01682ab317" category="inline-link">VMware vSphere 9.11 릴리즈 노트를 위한 ONTAP 툴</block>
+  <block id="1b4b4851374b4f5e2e06a8e2cdea0bfc" category="paragraph">자세한 내용은 를 참조하십시오<block ref="ef3304265bfcc8fef389579152b8897d" category="inline-link-rx"></block>.</block>
+  <block id="08420002b9383a71acf39a2e9f9d504a" category="sidebar">VMware vSphere 9.11 문서를 위한 ONTAP 툴</block>
 </blocks>
