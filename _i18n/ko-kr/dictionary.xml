@@ -1901,7 +1901,6 @@
   <block id="88da7b011d6c44231a237e4eb64d680f" category="paragraph">iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 VMware vSphere 기본 설정 파일에 대한 ONTAP 툴을 수정해야 합니다. 기본 설정 파일을 수정하지 않으면 VSC(가상 스토리지 콘솔)에서 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.</block>
   <block id="07e86e3a6e2b9123cf44bd39073dcf67" category="paragraph">단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.</block>
   <block id="1242e163636ceb52703fad8214a2bedc" category="list-text">ONTAP 9.8P1 이상의 스토리지를 구성해야 합니다.</block>
-  <block id="b1be7fedf2bae707bc5e880facde39f0" category="inline-link">VMware vSphere 9.10용 ONTAP 툴에 대한 알림</block>
   <block id="169debc36900220172817b74d871e07b" category="summary">여기에 제공된 지침에 따라 기존 9.7.1 이상의 설정에서 ONTAP 도구의 최신 릴리스로 업그레이드할 수 있습니다.</block>
   <block id="c5910340b269c593d16e5bb21c2ce618" category="paragraph">여기에 제공된 지침에 따라 기존 9.7P1 이상의 릴리스에서 최신 버전의 ONTAP 도구로 현재 위치 업그레이드를 수행할 수 있습니다.</block>
   <block id="2dc470ea65bfb20ee49093121123d780" category="list-text">최신 버전의 ONTAP 도구에 대해 _.iso_file을 다운로드해야 합니다.</block>
@@ -1969,7 +1968,6 @@
   <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
-  <block id="adc8e197d36a3b2270201bc307f60f15" category="paragraph"><block ref="adc8e197d36a3b2270201bc307f60f15" category="inline-link-rx"></block></block>
   <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">Kerberos 인증의 경우 다음이 필요합니다.</block>
   <block id="232c27acd8cefdcf2eab2fd4448e58b7" category="list-text">AD(Active Directory)가 있는 Windows 시스템</block>
   <block id="3b190489626bc91788e69bde26b23e49" category="list-text">DNS(Domain Name Server)</block>
@@ -2009,4 +2007,7 @@
   <block id="325ed2f7ffe6974144615e01682ab317" category="inline-link">VMware vSphere 9.11 릴리즈 노트를 위한 ONTAP 툴</block>
   <block id="1b4b4851374b4f5e2e06a8e2cdea0bfc" category="paragraph">자세한 내용은 를 참조하십시오<block ref="ef3304265bfcc8fef389579152b8897d" category="inline-link-rx"></block>.</block>
   <block id="08420002b9383a71acf39a2e9f9d504a" category="sidebar">VMware vSphere 9.11 문서를 위한 ONTAP 툴</block>
+  <block id="f6d09a6ca81951d147ef393d3877b8d5" category="inline-link">VMware vSphere 9.11에 대한 ONTAP 툴 고지 사항</block>
+  <block id="02994633d024cf9b53f3747d971a0667" category="paragraph"><block ref="02994633d024cf9b53f3747d971a0667" category="inline-link-rx"></block></block>
+  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">VMware vSphere용 ONTAP 툴</block>
 </blocks>

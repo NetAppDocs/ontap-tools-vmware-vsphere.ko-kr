@@ -6,6 +6,16 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  versions:
+  - name: VMware vSphere용 ONTAP 툴
+    url: "/ontap-tools-vmware-vsphere"
+    version-number: '9.11'
+  - name: VMware vSphere용 ONTAP 툴
+    url: "/ontap-tools-vmware-vsphere-910"
+    version-number: '9.10'
+  - name: VMware vSphere용 ONTAP 툴
+    url: "/ontap-tools-vmware-vsphere-98"
+    version-number: '9.8'
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
