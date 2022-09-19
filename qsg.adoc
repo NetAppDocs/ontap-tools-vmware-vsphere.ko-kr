@@ -83,7 +83,7 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
 | ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 이상 
 
 
-| VMware vSphere, vCenter Server, ESXi 호스트, SRM(Site Recovery Manager), 플러그인 애플리케이션 및 데이터베이스 열 1 | 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴: OTV 9.10"] 
+| VMware vSphere, vCenter Server, ESXi 호스트, SRM(Site Recovery Manager), 플러그인 애플리케이션 및 데이터베이스 열 1 | 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"^] 
 |===
 
 

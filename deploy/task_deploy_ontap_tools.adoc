@@ -21,7 +21,7 @@ summary: 어플라이언스를 사용하려면 사용자 환경에 ONTAP 툴을 
 NOTE: ONTAP 툴은 vCenter Server의 Windows 구축 또는 VMware vCSA(vCenter Server Virtual Appliance) 구축 시 등록할 수 있습니다.
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=103229;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"^]
 
 * vCenter Server 환경을 구성하고 설정해야 합니다.
 * 가상 머신에 대해 ESXi 호스트를 설정해야 합니다.
