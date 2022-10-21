@@ -63,3 +63,8 @@ IPv6
 
 
 |===
+사용자 인터페이스를 사용하여 IPv4 또는 IPv6를 구성하려면 다음 섹션을 참조하십시오.
+
+* link:../configure/add_different_subnets.html["다른 서브넷을 추가합니다"]
+* link:../configure/task_enable_datastore_mounting_across_different_subnets.html["서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다"]
+
