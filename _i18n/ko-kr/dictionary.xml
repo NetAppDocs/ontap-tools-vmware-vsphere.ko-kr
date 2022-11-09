@@ -1851,7 +1851,6 @@
   <block id="2efb0fa4cef9462e9a212abf6778b626" category="list-text">iSCSI 서브넷 액세스에 대해 위의 단계를 반복하고 * 적용 * 을 클릭합니다.</block>
   <block id="481a4353946c90ce05d5219831e46abe" category="summary">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. VSC(Virtual Storage Console) 세트는 내부 NetApp 테스트를 기반으로 합니다.</block>
   <block id="e9df7d5252c2104198351b64e368569b" category="paragraph">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. ONTAP 툴 세트가 제공하는 가치는 내부 NetApp 테스트를 기반으로 합니다.</block>
-  <block id="b38bf8be6e7b723590f1617ac2c54cc5" category="paragraph">vSphere 6.0 이상을 사용하는 경우 ESXi 호스트 6.x의 경우 값을 512로 설정하고 ESXi 7.x의 경우 값을 1024로 설정합니다.</block>
   <block id="56cfa018d4e9a7aa0b73e64b0dd88f77" category="paragraph">"다른 서브넷에 데이터 저장소 마운트 설정"을 참조하십시오.</block>
   <block id="8df76ca12987982377e22db05992acb3" category="paragraph">이 기본 설정 파일은 VVOL 데이터 저장소 생성에도 적용됩니다. 자세한 내용은 _다른 서브넷에 대한 데이터 저장소 마운트 활성화_를 참조하고, VSC 기본 설정 파일 구성_을 참조하십시오.</block>
   <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 ASA 및 승인된 AFF 시스템과 함께 사용할 경우 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 최대 VMFS LUN 및 64TB 볼륨 크기까지 지원합니다.</block>
@@ -2002,4 +2001,5 @@
   <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">사용자 인터페이스를 사용하여 IPv4 또는 IPv6를 구성하려면 다음 섹션을 참조하십시오.</block>
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
+  <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">vSphere 6.X 릴리즈에는 6.5U3 및 6.7U3 릴리즈를 제외하고 이 값을 512MB로 설정해야 합니다. vSphere 6.5U3 및 6.7U3 릴리즈의 경우 이 값을 1024MB로 설정합니다. vSphere 7.0 이상 버전을 사용하는 경우 이 값을 1024MB로 설정해야 합니다.</block>
 </blocks>
