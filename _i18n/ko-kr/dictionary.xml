@@ -1894,7 +1894,6 @@
   <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x 및 VASA Provider 6.x와 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 구축 과정에서 이러한 기존 버전의 VSC 또는 VASA Provider 또는 SRA가 설치되어 있는 경우 다음 작업을 수행해야 합니다.</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</block>
-  <block id="4bd884e7fb553fa43999861fb99f4795" category="paragraph">ONTAP 도구 9.10으로 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행해야 합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
   <block id="b718294cda68e2103389a24908b155e6" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 "ONTAP 도구 배포에 대한 요구 사항" 항목을 참조하십시오 'ONTAP 도구의 최신 버전으로 업그레이드' 항목에는 현재 위치 업그레이드를 수행하는 방법에 대한 정보가 들어 있습니다.</block>
   <block id="ff22f9429bb46603451057ba28a08029" category="paragraph">(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다. 자세한 내용은 다음을 참조하십시오.</block>
   <block id="db87f0e7d398509389710de2acd5bc37" category="list-text"><block ref="db87f0e7d398509389710de2acd5bc37" category="inline-link-macro-rx"></block></block>
@@ -2002,4 +2001,5 @@
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">vSphere 6.X 릴리즈에는 6.5U3 및 6.7U3 릴리즈를 제외하고 이 값을 512MB로 설정해야 합니다. vSphere 6.5U3 및 6.7U3 릴리즈의 경우 이 값을 1024MB로 설정합니다. vSphere 7.0 이상 버전을 사용하는 경우 이 값을 1024MB로 설정해야 합니다.</block>
+  <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">ONTAP 도구 9.10 이상 릴리즈에서 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
 </blocks>
