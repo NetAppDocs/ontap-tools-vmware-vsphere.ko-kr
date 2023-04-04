@@ -1816,7 +1816,6 @@
   <block id="d75bd630a4a4d5d445ca5dcb7d3bf5c4" category="list-text">SRM에 _.tar.gz_파일을 업로드합니다.</block>
   <block id="9d58dbd20800ce51e37de67c2297da5f" category="list-text">로그 위치에 SRA에서 사용하는 Docker ID를 얻기 위한 명령을 입력합니다. docker ps -l</block>
   <block id="7202896d218d74a45a1995fe74164f61" category="list-text">컨테이너 ID에 로그인하려면 docker exec -it -u SRM &lt;컨테이너 ID&gt;sh' 명령을 입력합니다</block>
-  <block id="6408528f5006f0df83e2b2cc7b5f3eae" category="list-text">"perl command.pl -i &lt;va-ip&gt;administrator &lt;va-password&gt;" 명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다</block>
   <block id="8ec4d083f1f58ff4d24863f551d313e7" category="paragraph">SRM을 설정하기 전에 생성된 기존 가상 머신에 VVol 복제를 제공하도록 VVOL 복제 기능이 향상되었습니다. 따라서 기존 가상 시스템을 복구하고 복구 사이트에서 보호할 수 있습니다.</block>
   <block id="7bb0ac2008249d1c5d6777d0a276762d" category="list-text">클러스터와 SVM이 피어링됩니다.</block>
   <block id="66f6503e9d4345aa09d4da6511c79764" category="list-text">소스 및 타겟 사이트에 데이터 저장소와 FlexVol 볼륨이 생성됩니다.</block>
@@ -2002,4 +2001,5 @@
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">vSphere 6.X 릴리즈에는 6.5U3 및 6.7U3 릴리즈를 제외하고 이 값을 512MB로 설정해야 합니다. vSphere 6.5U3 및 6.7U3 릴리즈의 경우 이 값을 1024MB로 설정합니다. vSphere 7.0 이상 버전을 사용하는 경우 이 값을 1024MB로 설정해야 합니다.</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">ONTAP 도구 9.10 이상 릴리즈에서 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
+  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
 </blocks>
