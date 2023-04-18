@@ -154,7 +154,7 @@ SRA는 Windows SRM 서버 또는 8.2 SRM 어플라이언스에 배포할 수 있
 . 루트 사용자로 전환합니다: 'u root'
 . 로그 위치에 명령을 입력하여 SRA Docker에서 사용하는 Docker ID를 docker ps -l로 가져옵니다
 . 컨테이너 ID: docker exec -it -u SRM <컨테이너 ID>sh'에 로그인합니다
-. ONTAP 도구로 SRM 구성 IP 주소 및 암호: " perl command.pl -i <va-ip>administrator <va-password>" 저장 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.
+. ONTAP 도구 IP 주소 및 암호를 사용하여 SRM 구성: `perl command.pl -I <otv-IP> administrator <otv-password>`스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.
 
 
 
@@ -171,7 +171,7 @@ SRA는 Windows SRM 서버 또는 8.2 SRM 어플라이언스에 배포할 수 있
 . perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.
 +
 .. "CD/SRM/SRA/"
-.. "perl command.pl -i <va-ip>administrator <va-password>"
+.. `perl command.pl -I <otv-IP> administrator <otv-password>`
 
 
 

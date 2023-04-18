@@ -410,7 +410,6 @@
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text">rm-rf *</block>
   <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
   <block id="325c22d13dffac10de126d900c39ff29" category="list-text">"CD/SRM/SRA/"</block>
-  <block id="000595390ba91f5d02fbc87c52ad2a40" category="list-text">"perl command.pl -i &lt;va-ip&gt;administrator &lt;va-password&gt;"</block>
   <block id="ec693a334ebe41a6ec4d900861dd2669" category="summary">SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 ONTAP 도구 자격 증명\(IP 주소 및 관리자 암호\)을 저장해야 합니다.</block>
   <block id="d9319bd2560b0e7b32d6e64d1fa88c4d" category="doc">SRM 어플라이언스에서 SRA를 구성합니다</block>
   <block id="4eab10fcfd22f8b9588d3abf04497ad7" category="paragraph">SRM 어플라이언스를 배포한 후에는 SRM 어플라이언스에 SRA를 구성해야 합니다. SRA를 성공적으로 구성하면 SRM 어플라이언스가 재해 복구 관리를 위해 SRA와 통신할 수 있습니다. SRM 어플라이언스와 SRA 간의 통신을 활성화하려면 SRM 어플라이언스에 ONTAP 도구 자격 증명(IP 주소 및 관리자 암호)을 저장해야 합니다.</block>
@@ -1741,7 +1740,6 @@
   <block id="be280321d69d14f5dfce8709e117a691" category="list-text">루트 사용자로 전환합니다: 'u root'</block>
   <block id="9d7f1b1965b299ca0f83a93983a67fa9" category="list-text">로그 위치에 명령을 입력하여 SRA Docker에서 사용하는 Docker ID를 docker ps -l로 가져옵니다</block>
   <block id="a3fbfd6ca26f7eba2deb3733ea046eb1" category="list-text">컨테이너 ID: docker exec -it -u SRM &lt;컨테이너 ID&gt;sh'에 로그인합니다</block>
-  <block id="c93a0f0ebeda9ccb76c7ccdb97a1b6fc" category="list-text">ONTAP 도구로 SRM 구성 IP 주소 및 암호: " perl command.pl -i &lt;va-ip&gt;administrator &lt;va-password&gt;" 저장 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.</block>
   <block id="3849324d415efa553fdff378e6dd712e" category="section-title">SRA 자격 증명 업데이트</block>
   <block id="744ec7526945686620ba725a3be0778f" category="list-text">다음을 사용하여 /SRM/SRA/conf 디렉토리의 내용을 삭제합니다.</block>
   <block id="9394c3b706fe8eb791b91c156fbd1c93" category="section-title">VASA Provider 및 SRA를 사용하도록 설정합니다</block>
@@ -2001,5 +1999,7 @@
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="9ed575bd998ffefe31b2b6708094410d" category="paragraph">vSphere 6.X 릴리즈에는 6.5U3 및 6.7U3 릴리즈를 제외하고 이 값을 512MB로 설정해야 합니다. vSphere 6.5U3 및 6.7U3 릴리즈의 경우 이 값을 1024MB로 설정합니다. vSphere 7.0 이상 버전을 사용하는 경우 이 값을 1024MB로 설정해야 합니다.</block>
   <block id="ed2b91672ee08a221afee30153dc24a9" category="paragraph">ONTAP 도구 9.10 이상 릴리즈에서 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
-  <block id="65f6fb9b3fd7c8798ba4a7010e84a65b" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="2ca82e2fa9750815c3356b6e1692f9ca" prefix=" " category="inline-code"></block></block>
+  <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">ONTAP 도구 IP 주소 및 암호를 사용하여 SRM 구성:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.</block>
+  <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
+  <block id="b8e3b3982008f247b4868b6fd9b104d8" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block></block>
 </blocks>
