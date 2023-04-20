@@ -1,0 +1,29 @@
+---
+permalink: configure/reference_delete_vvols.html 
+sidebar: sidebar 
+keywords: vVols datastore,delete vVol 
+summary: ONTAP 툴은 데이터 센터에서 FlexVol 볼륨을 삭제하는 명령을 지원합니다. 
+---
+= VVOL 데이터 저장소를 삭제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+vCenter의 ONTAP 도구에서 VVol 데이터 저장소 작업을 삭제하면 다음과 같은 작업이 가능합니다.
+
+* VVOL 컨테이너를 마운트 해제합니다.
+* iGroup 청소 igroup을 사용하고 있지 않으면 igroup에서 iqn을 제거합니다.
+* VVol 컨테이너를 삭제합니다.
+* Flex 볼륨을 스토리지 배열에 그대로 둡니다.
+
+
+vCenter에서 ONTAP Tools에서 VVOL 데이터 저장소를 삭제하려면 다음 단계를 수행하십시오.
+
+단계:
+
+. Inventory * 보기에서 * 데이터 저장소를 선택합니다.
+. VVOL 데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * > * Delete VVol datastore * 를 선택합니다.
+. 스토리지 어레이와 igroup에서 Flex 볼륨을 정리합니다.
+

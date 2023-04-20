@@ -54,21 +54,21 @@ NOTE: ONTAP 도구의 9.10 릴리스는 모든 ASA(SAN 어레이) 유형 ONTAP 9
  a| 
 데이터 센터에 있는 모든 호스트
  a| 
-데이터 센터를 마우스 오른쪽 버튼으로 클릭하고 * NetApp VSC * > * Provision Datastore * 를 선택합니다.
+데이터 센터를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * > * Provision Datastore * 를 선택합니다.
 
 
 
  a| 
 클러스터의 모든 호스트
  a| 
-클러스터를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp VSC * > * Provision Datastore * 를 선택합니다.
+클러스터를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * > * Provision Datastore * 를 선택합니다.
 
 
 
  a| 
 단일 호스트
  a| 
-호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp VSC * > * Provision Datastore * 를 선택합니다.
+호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * > * Provision Datastore * 를 선택합니다.
 
 |===
 . New Datastore 대화 상자의 필드를 입력하여 데이터 저장소를 생성합니다.
@@ -86,6 +86,11 @@ NOTE: ONTAP 도구의 9.10 릴리스는 모든 ASA(SAN 어레이) 유형 ONTAP 9
 일반
  a| 
 New Datastore 대화 상자의 General 섹션에서는 새 데이터 저장소의 위치, 이름, 설명, 유형 및 프로토콜을 입력하는 옵션을 제공합니다. VVOL 데이터 저장소 유형은 VVol 데이터 저장소를 구성하는 데 사용됩니다.
+
+VASA 공급자 기능이 활성화된 경우 VVOL 데이터 저장소를 프로비저닝할 수 있습니다. 를 참조하십시오. link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["가상 데이터 저장소를 구성하기 위해 VASA Provider를 설정합니다"] 를 참조하십시오. VVOL 데이터 저장소는 NFS, iSCSI, FC/FEoE 및 NVMe/FC 프로토콜을 지원합니다.
+
+
+NOTE: ONTAP 툴이 vCenter 8.0 이상에 등록되어 있고 ONTAP 버전이 ONTAP 9.91P3 이상인 경우 VVOL 데이터 저장소에 대한 NVMe/FC 프로토콜을 사용할 수 있습니다.
 
 
 NOTE: VVOL 복제를 위해 iSCSI VVOL 데이터 저장소를 프로비저닝하고 타겟 사이트에서 VVol 데이터 저장소를 생성하기 전에 SnapMirror 업데이트 및 클러스터 재검색을 수행해야 합니다.
@@ -115,7 +120,7 @@ FlexVol 볼륨이 생성되고 ONTAP에서 SnapMirror를 초기화한 후에는 
 
 
 |===
-. 요약 섹션에서 ** 완료**를 클릭합니다.
+. 요약 섹션에서 * 마침 * 을 클릭합니다.
 
 
 결과 *

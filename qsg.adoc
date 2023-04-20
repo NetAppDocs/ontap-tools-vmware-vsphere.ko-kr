@@ -80,7 +80,7 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
 | * 스토리지, 호스트 및 애플리케이션 * | * 버전 요구 사항 * 
 
 
-| ONTAP | ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 이상 
+| ONTAP | ONTAP 9.7, 9.8P1 이상 
 
 
 | VMware vSphere, vCenter Server, ESXi 호스트, SRM(Site Recovery Manager), 플러그인 애플리케이션 및 데이터베이스 열 1 | 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"^] 
@@ -95,51 +95,67 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
 * ONTAP 도구를 배포하는 동안 브라우저 캐시 문제가 발생하지 않도록 브라우저 캐시를 삭제합니다.
 * 가상 어플라이언스가 ICMP 핑에 응답하도록 기본 게이트웨이를 구성합니다.
 * 가상 어플라이언스에 대한 유효한 DNS 호스트 이름입니다.
-* VVOL 대시보드를 보려면 ONTAP 9.6 이하 버전용 OnCommand API 서비스를 다운로드하여 설치하십시오. ONTAP 9.7 이상을 사용하는 경우 VASA Provider를 통해 OnCommand API 서비스를 등록할 필요가 없습니다.
 
 
 
 
 === SRA에 대한 선택적 요구 사항
 
-VMware Site Recovery Manager와 함께 사용할 가상 어플라이언스를 구축하는 경우 SRM(Site Recovery Manager) 재해 복구 솔루션을 구성하려는 경우에만 SRA 플러그인의 `.msi' 파일을 다운로드해야 합니다. 1열 * SRM 어플라이언스를 사용하는 경우 SRA용 '.tar.gz' 파일을 다운로드했습니다.
+VMware Site Recovery Manager와 함께 사용하기 위해 가상 어플라이언스를 구축하는 경우 다음을 설치해야 합니다. * 를 다운로드했습니다 `.tar.gz` SRM 어플라이언스를 사용하는 경우 SRA용 파일입니다.
 
 
 
 == ONTAP 도구 배포
 
 .단계
-. 에서 '.ova' 파일을 다운로드합니다 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"^] ONTAP 툴을 구축하는 vSphere 클라이언트 시스템으로
+. 다운로드 `.zip` 에서 받은 바이너리와 서명된 인증서가 포함된 파일입니다 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp Support 사이트"^] ONTAP 툴을 구축하는 vSphere 클라이언트 시스템으로
+. 의 압축을 풉니다 `.zip` 파일을 만들고 를 배포합니다 `.ova` 파일.
 +
 SRA를 배포하는 경우 소스 사이트와 대상 사이트 모두에 '.ova' 파일을 배포해야 합니다.
 
-. vSphere Web Client에 로그인하고 * Home * > * Host & Clusters * 를 선택합니다.
+. vSphere Web Client에 로그인하고 * Home * > * Host and Clusters * 를 선택합니다.
 . 필요한 데이터 센터를 마우스 오른쪽 단추로 클릭한 다음 * Deploy OVF template * 을 클릭합니다.
++
+vCenter7.0u3e 및 이후 릴리스를 사용하는 경우 다음 작업을 수행하고 그렇지 않은 경우 5단계를 진행합니다. OVA 바이너리 무결성이 훼손되지 않았는지 확인하는 선택적 단계입니다.
+
++
+** NetApp Support 사이트에서 _OTV_INTER_ROOT_CERT_CH체인.PEM_파일을 다운로드합니다.
+** vCenter * > * administration * > * certificate management * 로 이동합니다.
+** Add trusted root certificate * 옵션을 클릭합니다.
+** 찾아보기 * 를 클릭하고 _OTV_INTER_ROOT_CERT_CH체인.pem_파일 경로를 입력합니다.
+** 추가 * 를 클릭합니다.
++
+
+NOTE: Entrust Code Signing - OVCS2(신뢰할 수 있는 인증서) 메시지는 다운로드한 OVA 파일의 무결성을 확인합니다. Entrust Code Signing - OVCS2 (Invalid certificate) 메시지가 표시되면 VMware vCenter Server를 7.0U3E 이상 버전으로 업그레이드합니다.
+
+
+
 . ova 파일의 URL을 입력하거나 .ova 파일이 저장된 폴더를 찾은 후 * 다음 * 을 클릭합니다.
 . 필수 세부 정보를 입력하여 구축을 완료합니다.
-+
+
+
 
 NOTE: (선택 사항) vCenter Server에 등록하지 않고 컨테이너를 생성하려면 vCenter 구성 또는 VCF 활성화 섹션에서 VCF(VMware Cloud Foundation) 활성화 확인란을 선택합니다.
 
-
-
 작업 * 탭에서 배포 진행 상황을 보고 배포가 완료될 때까지 기다릴 수 있습니다.
+
+구축 체크섬 검증의 일부로 수행됩니다. 배포에 실패하면 다음을 수행합니다.
+
+. vpserver/logs/checksum.log를 확인합니다. "checksum verification failed(체크섬 확인 실패)"라고 표시되면 실패한 jar의 확인을 동일한 로그에서 볼 수 있습니다.
++
+로그 파일에는 _sha256sum -c/opt/netapp/vpserver/conf/checksum_ 실행이 포함되어 있습니다.
+
+. vscserver/log/checksum.log를 확인합니다. "checksum verification failed(체크섬 확인 실패)"라고 표시되면 실패한 jar의 확인을 동일한 로그에서 볼 수 있습니다.
++
+로그 파일에는 _sha256sum -c/opt/NetApp/vscerver/etc/checksum_ 실행이 포함되어 있습니다.
+
+
 
 
 
 === SRM에 SRA 배포
 
 SRA는 Windows SRM 서버 또는 8.2 SRM 어플라이언스에 배포할 수 있습니다.
-
-
-
-==== Windows SRM 서버에 SRA 설치
-
-.단계
-. NetApp Support 사이트에서 SRA 플러그인의 '.msi' 설치 프로그램을 다운로드합니다.
-. SRA 플러그인에 대해 다운로드한 '.msi' 설치 프로그램을 두 번 클릭하고 화면의 지침을 따릅니다.
-. 배포된 가상 어플라이언스의 IP 주소와 암호를 입력하여 SRM 서버에 SRA 플러그인 설치를 완료합니다.
-
 
 
 
@@ -181,9 +197,9 @@ SRA는 Windows SRM 서버 또는 8.2 SRM 어플라이언스에 배포할 수 있
 ==== VASA Provider 및 SRA를 사용하도록 설정합니다
 
 .단계
-. 구축 중에 지정한 IP 주소를 사용하여 vSphere 웹 클라이언트에 로그인합니다.
-. OTV * 아이콘을 클릭하고 배포 중에 지정한 사용자 이름과 암호를 입력한 다음 * 로그인 * 을 클릭합니다.
-. OTV의 왼쪽 창에서 * 설정 > 관리 설정 > 기능 관리 * 를 선택하고 필요한 기능을 활성화합니다.
+. OVA ONTAP 툴 구축 중에 제공된 vCenter IP를 사용하여 vSphere 웹 클라이언트에 로그인합니다.
+. 바로 가기 페이지에서 플러그인 섹션에서 * NetApp ONTAP tools * 를 클릭합니다.
+. ONTAP 도구 왼쪽 창에서 * 설정 > 관리 설정 > 기능 관리 * 를 선택하고 필요한 기능을 활성화합니다.
 +
 
 NOTE: VASA Provider는 기본적으로 설정되어 있습니다. VVOL 데이터 저장소의 복제 기능을 사용하려면 VVol 복제 활성화 전환 버튼을 사용합니다.

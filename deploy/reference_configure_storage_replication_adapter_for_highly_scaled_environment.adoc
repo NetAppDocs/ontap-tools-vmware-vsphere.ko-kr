@@ -69,7 +69,7 @@ NOTE: 지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과
 
 또한 SRA가 vvol.properties 파일에서 단일 작업을 수행하는 최대 시간을 설정해야 합니다. offtap.operation.timeout.period.seconds=86400
 
-https://kb.netapp.com/app/answers/answer_view/a_id/1001111["NetApp 기술 자료 답변 1001111: ONTAP용 NetApp 스토리지 복제 어댑터 4.0/7.X 사이징 가이드"]
+https://kb.netapp.com/mgmt/OTV/SRA/NetApp_Storage_Replication_Adapter_4.0%2F%2F7.X_for_ONTAP_Sizing_Guide["NetApp 기술 자료 답변 1001111: ONTAP용 NetApp 스토리지 복제 어댑터 4.0/7.X 사이징 가이드"]
 
 자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.
 

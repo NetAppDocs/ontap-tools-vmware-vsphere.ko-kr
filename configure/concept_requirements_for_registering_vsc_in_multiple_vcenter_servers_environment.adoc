@@ -11,7 +11,7 @@ summary: '단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server �
 
 
 [role="lead"]
-단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.
+단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 7.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.
 
 
 NOTE: vCenter Server에서 VSC를 사용하려면 관리할 모든 vCenter Server 인스턴스에 대해 VSC 인스턴스를 하나 이상 설정하거나 등록해야 합니다. 등록된 각 VSC 인스턴스의 버전은 동일해야 합니다.
@@ -36,7 +36,7 @@ VMware 인벤토리에 VSC 서버가 등록되지 않은 vCenter Server가 포�
 
 
 
-vCenter Server를 지정해야 하는 작업을 수행하는 경우 * vCenter Server * 드롭다운 상자에 사용 가능한 vCenter Server가 영숫자 순서로 표시됩니다. 기본 vCenter Server는 항상 드롭다운 목록의 첫 번째 서버입니다.
+vCenter Server를 지정해야 하는 작업을 수행하는 경우 화면 왼쪽 상단 모서리에 있는 * instance * 선택기에 사용 가능한 vCenter Server가 영숫자 순서로 표시됩니다. 기본 vCenter Server는 항상 드롭다운 목록의 첫 번째 서버입니다.
 
 스토리지의 위치를 알고 있는 경우(예: 프로비저닝 마법사를 사용하고 데이터 저장소가 특정 vCenter Server에서 관리하는 호스트에 있는 경우) vCenter Server 목록이 읽기 전용 옵션으로 표시됩니다. 이 문제는 vSphere Web Client에서 마우스 오른쪽 버튼 클릭 옵션을 사용하여 항목을 선택하는 경우에만 발생합니다.
 

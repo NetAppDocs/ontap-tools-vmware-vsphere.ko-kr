@@ -44,7 +44,7 @@ link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html
 
 . vSphere Client에 로그인합니다.
 . 홈 * > * 호스트 및 클러스터 * 를 선택합니다.
-. 필요한 데이터 센터를 마우스 오른쪽 단추로 클릭한 다음 * OVA 템플릿 배포 * 를 클릭합니다.
+. 필요한 데이터 센터를 마우스 오른쪽 단추로 클릭한 다음 * Deploy OVF template... * 를 클릭합니다.
 . ONTAP 도구에 대한 배포 파일을 제공할 적절한 방법을 선택한 후 * 다음 * 을 클릭합니다.
 +
 |===
@@ -63,7 +63,7 @@ ONTAP 도구에 대한 _.ova_file의 URL을 제공합니다.
  a| 
 폴더
  a| 
-저장된 위치에서 ONTAP 도구에 대한 _.ova_file을 선택합니다.
+로컬 시스템에 .ova 파일이 포함된 .zip 파일의 압축을 풉니다. OVF 템플릿 선택 페이지에서 압축을 푼 폴더 내의 .ova 파일 위치를 지정합니다.
 
 |===
 . 세부 정보를 입력하여 구축 마법사를 사용자 지정합니다.
@@ -81,7 +81,7 @@ ONTAP 도구에 대한 _.ova_file의 URL을 제공합니다.
 
 . ONTAP 툴 가상 머신의 전원을 켠 다음 ONTAP 툴을 실행하는 가상 머신의 콘솔을 엽니다.
 . 배포가 완료된 후 ONTAP 도구가 실행 중인지 확인합니다.
-. ONTAP 툴이 vCenter Server에 등록되지 않은 경우, ''\https://appliance_ip:8143/Register.html` 를 사용하여 VSC 인스턴스를 등록합니다.
+. vCenter Server에 ONTAP 툴이 등록되지 않은 경우 를 사용합니다 `\https://appliance_ip:8143/Register.html` VSC 인스턴스를 등록합니다. Register.html 을 클릭하면 Swagger 페이지로 이동합니다. ONTAP 툴 9.12 이후 vCenter에 ONTAP 툴을 등록하는 작업은 swagger 페이지에서 수행됩니다.
 . 구축된 ONTAP 툴을 보려면 vSphere Client에서 로그아웃한 후 다시 로그인하십시오.
 +
 vSphere Client에서 플러그인을 업데이트하는 데 몇 분 정도 걸릴 수 있습니다.
@@ -93,9 +93,6 @@ vSphere Client에서 플러그인을 업데이트하는 데 몇 분 정도 걸�
 link:../deploy/task_clean_the_vsphere_cached_downloaded_plug_in_packages.html["vSphere 캐시된 다운로드 플러그인 패키지를 지웁니다"]
 
 
-
-
-NOTE: ONTAP 9.6 이하 버전을 사용하는 경우, VVOL 대시보드를 보려면 OnCommand API 서비스를 다운로드하고 설치해야 합니다. 그러나 ONTAP 9.7의 경우 OnCommand API 서비스를 VASA Provider에 등록할 필요가 없습니다.
 
 link:../deploy/task_enable_vasa_provider_for_configuring_virtual_datastores.html["가상 데이터 저장소를 구성하기 위해 VASA Provider를 설정합니다"]
 

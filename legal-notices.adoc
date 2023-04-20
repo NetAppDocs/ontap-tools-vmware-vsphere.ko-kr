@@ -41,4 +41,4 @@ https://www.netapp.com/us/media/patents-page.pdf[]
 
 https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2883434["VMware vSphere 9.11에 대한 ONTAP 툴 고지 사항"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2885834["VMware vSphere 9.12용 ONTAP 툴에 대한 알림"^]

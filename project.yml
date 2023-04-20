@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP tools for VMware vSphere 9.11
+  name: ONTAP tools for VMware vSphere 9.12
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
   - name: VMware vSphere용 ONTAP 툴
     url: "/ontap-tools-vmware-vsphere"
+    version-number: '9.12'
+  - name: VMware vSphere용 ONTAP 툴
+    url: "/ontap-tools-vmware-vsphere-911"
     version-number: '9.11'
   - name: VMware vSphere용 ONTAP 툴
     url: "/ontap-tools-vmware-vsphere-910"
@@ -19,7 +22,7 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: VMware vSphere 9.11 문서를 위한 ONTAP 툴
+  - title: VMware vSphere 9.12 문서를 위한 ONTAP 툴
     url: "/index.html"
   - title: 릴리스 정보
     url: "/release_notes.html"
@@ -35,7 +38,7 @@ homepage:
   - title: 시작하십시오
     links:
     - title: 릴리스 정보
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883436
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885833
     - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
       url: "/concepts/concept_virtual_storage_console_overview.html"
     - title: ONTAP 도구 빠른 시작

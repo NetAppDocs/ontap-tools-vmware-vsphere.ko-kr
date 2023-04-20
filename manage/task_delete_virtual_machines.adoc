@@ -1,0 +1,25 @@
+---
+permalink: manage/task_delete_virtual_machines.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 섹션의 단계를 사용하여 VASA 정리를 수행합니다. 
+---
+= VASA 정리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 섹션의 단계를 사용하여 VASA 정리를 수행합니다.
+
+
+NOTE: VASA Cleanup을 수행하기 전에 모든 VVol 데이터 저장소를 제거하는 것이 좋습니다.
+
+* 단계 *
+
+. 로 이동하여 플러그인 등록을 취소합니다 https://OTV_IP:8143/Register.html[]
+. vCenter에서 플러그인을 더 이상 사용할 수 없는지 확인합니다.
+. VMware vSphere VM용 ONTAP 툴을 종료합니다
+. VMware vSphere VM용 ONTAP 툴을 삭제합니다
+

@@ -29,8 +29,8 @@ ONTAP 툴의 기존 대시보드를 사용하면 NFS 데이터 저장소 또는 
 * 단계 *
 
 . vSphere Client 홈 페이지에서 * ONTAP tools for VMware vSphere * 를 클릭합니다.
-. vCenter Server 드롭다운 메뉴를 사용하여 필요한 vCenter Server를 선택하여 데이터 저장소를 표시합니다.
-. 기존 대시보드 * 를 클릭합니다.
+. 인스턴스 * 선택기를 사용하여 데이터 저장소를 보는 데 필요한 vCenter Server를 선택합니다.
+. 개요 > 기존 대시보드 * 를 클릭합니다.
 +
 데이터 저장소 포틀릿은 다음과 같은 세부 정보를 제공합니다.
 

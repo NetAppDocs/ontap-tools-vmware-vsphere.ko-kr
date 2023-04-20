@@ -19,8 +19,8 @@ VMware vSphere용 ONTAP 툴은 ESXi 호스트 다중 경로 설정과 NetApp 스
 
 * 단계 *
 
-. VMware vSphere Web Client 홈 페이지에서 * vCenter * > * Hosts * 를 클릭합니다.
-. 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * Actions * > * NetApp VSC * > * Set Recommended Values * 를 선택합니다.
+. VMware vSphere Web Client 홈 페이지에서 * 호스트 및 클러스터 * 를 클릭합니다.
+. 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * Actions * > * NetApp ONTAP tools * > * Set Recommended Values * 를 선택합니다.
 . NetApp 권장 설정 대화 상자에서 시스템에 가장 적합한 값을 선택합니다.
 +
 표준 권장 값은 기본적으로 설정됩니다.

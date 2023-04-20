@@ -26,8 +26,6 @@ ONTAP 툴을 처음 구축하는 경우
  a| 
 ONTAP 툴을 배포하면 VSC 기능이 자동으로 설치됩니다.
 
-link:../deploy/concept_deploy_or_upgrade_ontap_tools.html["ONTAP 툴을 구축 및 업그레이드합니다"]
-
 link:../deploy/concept_installation_workflow_for_new_users.html["VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우"]
 
 
@@ -107,7 +105,7 @@ ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 ONTAP System Manage
  a| 
 ONTAP 버전입니다
  a| 
-스토리지 시스템에서 ONTAP 9.3, 9.5, 9.6, 9.7, 9.8P1 이상이 실행되고 있어야 합니다.
+스토리지 시스템에서 ONTAP 9.7, 9.8P1 이상이 실행되고 있어야 합니다.
 
 
 
@@ -125,9 +123,9 @@ ONTAP 버전입니다
 
 
 
-=== 어플라이언스 관리자 사용자 암호입니다
+=== 응용 프로그램 사용자 암호입니다
 
-관리자 암호에 공백을 사용해서는 안 됩니다.
+관리자 계정에 할당된 암호입니다. 보안상의 이유로 암호 길이는 8-30자로, 최소 1자, 1자, 1자리, 1개의 특수 문자를 포함하는 것이 좋습니다. 암호가 90일 후에 만료됩니다.
 
 
 
@@ -142,6 +140,12 @@ ONTAP 버전입니다
 ONTAP 툴을 구축하는 동안 vCenter Server에 대한 관리자 자격 증명을 설정할 수 있습니다.
 
 vCenter Server의 암호가 변경되면 구축 중에 제공한 ONTAP 툴의 IP 주소가 "https://<IP>:8143/Register.html`" URL을 사용하여 관리자 암호를 업데이트할 수 있습니다.
+
+
+
+=== Derby 데이터베이스 암호입니다
+
+보안상의 이유로 암호 길이는 8-30자로, 최소 1자, 1자, 1자리, 1개의 특수 문자를 포함하는 것이 좋습니다. 암호가 90일 후에 만료됩니다.
 
 
 

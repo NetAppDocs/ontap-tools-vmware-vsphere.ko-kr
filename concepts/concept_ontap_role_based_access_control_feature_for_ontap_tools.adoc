@@ -51,17 +51,7 @@ ONTAP RBAC와 vCenter Server RBAC를 모두 사용하면 다음과 같은 이점
 
 VMware vSphere 및 역할 기반 액세스 제어(RBAC)에 대한 ONTAP ® 툴로 작업하기 위해 몇 가지 권장되는 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 VSC(가상 스토리지 콘솔) 작업에서 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함되어 있습니다.
 
-새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. 다음 중 하나를 사용하여 ONTAP 역할을 만들 수 있습니다.
-
-* ONTAP 시스템 관리자 9.8P1 이상
-+
-link:../configure/task_configure_user_role_and_privileges.html["사용자 역할 및 권한을 구성합니다"]
-
-* RBAC ONTAP용 사용자 작성자 도구(ONTAP 9.6 이하를 사용하는 경우)
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203["VSC, VASA 공급자 및 VMware vSphere용 스토리지 복제 어댑터 7.0용 RBAC 사용자 작성 툴"]
-
-
+새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오 link:../configure/task_configure_user_role_and_privileges.html["사용자 역할 및 권한을 구성합니다"] 를 참조하십시오.
 
 각 ONTAP 역할에는 해당 역할의 자격 증명을 구성하는 연결된 사용자 이름 및 암호 쌍이 있습니다. 이러한 자격 증명을 사용하여 로그인하지 않으면 해당 역할과 연결된 스토리지 작업에 액세스할 수 없습니다.
 

@@ -26,7 +26,7 @@ ONTAP 툴의 9.7.1 릴리즈로 업그레이드하기 전에 VASA 공급자 기�
 * 단계 *
 
 . VMware vSphere의 웹 사용자 인터페이스에 로그인합니다.
-. vSphere 클라이언트에서 * 메뉴 * > * ONTAP 툴 콘솔 * 을 클릭합니다.
+. vSphere 클라이언트에서 * 메뉴 * > * NetApp ONTAP 툴 * 콘솔을 클릭합니다.
 . 설정 * 을 클릭합니다.
 . 관리 설정 탭에서 * 기능 관리 * 를 클릭합니다.
 . Manage Capabilities 대화 상자에서 사용할 VASA Provider 확장을 선택합니다.
@@ -34,8 +34,10 @@ ONTAP 툴의 9.7.1 릴리즈로 업그레이드하기 전에 VASA 공급자 기�
 . ONTAP 도구의 IP 주소와 관리자 암호를 입력한 다음 * 적용 * 을 클릭합니다.
 +
 
-NOTE: VASA Provider extsion을 설정한 후에도 VASA Provider 상태가 ""오프라인""으로 표시되면 /var/log/vmware/vmware-SPS/sps.log 파일에서 VASA Provider의 연결 오류를 확인하거나 ""VMware-SPS" 서비스를 다시 시작하십시오.
+NOTE: VASA Provider 확장을 설정한 후에도 VASA Provider 상태가 ""오프라인""으로 표시되면 /var/log/vmware/vmware-SPS/sps.log 파일에서 VASA Provider의 연결 오류를 확인하거나 ""VMware-SPS" 서비스를 다시 시작하십시오.
 
 
 
-ONTAP 9.6 또는 이전 클러스터를 사용하는 경우, SAN VVOL VM 및 SAN VVOL 데이터 저장소 보고서에 사용된 VVol 데이터 저장소 및 가상 시스템에 대한 세부 정보를 얻기 위해 VASA Provider를 통해 OnCommand API Services를 등록해야 합니다. 그러나 ONTAP 9.7 이상을 사용하는 경우에는 VASA Provider를 통해 OnCommand API 서비스를 등록할 필요가 없습니다.
+* 관련 정보 *
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]

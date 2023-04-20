@@ -15,10 +15,7 @@ VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for
 
 * 필요한 것 *
 
-* NetApp Support 사이트에서 VAAI용 NFS 플러그인('.vib')의 설치 패키지를 다운로드해야 합니다.
-+
-https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
-
+* VAAI용 NFS 플러그인의 설치 패키지를 다운로드해야 합니다 (``.vib`)NetApp Support 사이트 를 클릭합니다. https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
 * ESXi 호스트 6.5 이상 및 ONTAP 9.1 이상을 설치해야 합니다.
 * ESXi 호스트의 전원을 켜고 NFS 데이터 저장소를 마운트해야 합니다.
 * "다카무버.HardwareAcceleratedMove", "다카무버.HardwareAcceleratedInit", "VMFS3.HardwareAcceleratedLocking" 호스트 설정의 값을 ""1"로 설정해야 합니다.
@@ -27,6 +24,7 @@ https://mysupport.netapp.com/site/global/dashboard["NetApp 지원"]
 
 * "vserver NFS modify -vserver vserver_name -vStorage enabled" 명령을 사용하여 SVM(스토리지 가상 시스템)에서 vStorage 옵션을 활성화해야 합니다.
 * NetApp NFS VAAI 플러그인 2.0을 사용하는 경우 ESXi 7.0 업데이트1 이상이 있어야 합니다.
+* vSphere 6.5가 더 이상 사용되지 않고 vSphere 8.x는 지원되지 않으므로 vSphere 7.x 릴리즈가 있어야 합니다.
 
 
 * 단계 *
