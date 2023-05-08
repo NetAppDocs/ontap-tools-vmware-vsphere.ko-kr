@@ -8,50 +8,36 @@ summary: ONTAP 툴을 구축 또는 업그레이드한 후 플러그인이 자�
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
+:revnumber: 
+:revdate: you should clean up the cached download plug-in packages on the browser and on the vCenter Server to resolve vCenter Server plug-in issues.
 
-
-[role="lead"]
-ONTAP 툴을 구축 또는 업그레이드한 후 플러그인이 자동으로 업데이트되지 않는 경우 vCenter Server 플러그인 문제를 해결하려면 브라우저와 vCenter Server에서 캐시된 다운로드 플러그인 패키지를 정리해야 합니다.
 
 * 단계 *
 
-. 기존 vSphere 웹 클라이언트 또는 vSphere Client에서 로그아웃합니다.
+. 기존 vSphere 웹 클라이언트 또는 vSphere-UI에서 로그아웃합니다.
 . 브라우저 캐시를 제거합니다.
-. vSphere Client 캐시된 플러그인 패키지를 제거합니다.
+. vSphere Client 캐시된 플러그인 패키지를 제거합니다. VCSA의 경우 다음을 수행합니다.
 +
-|===
-
-
-| * 를 사용하는 경우... * | * 다음 작업을 수행합니다. * 
-
-
- a| 
-Windows vCenter Server를 참조하십시오
- a| 
-다음 폴더( com.netapp.vasa.vvol.webclient-x.x.x.xxxx` , com.netapp.nvpf.webclient-x.x.x.xxxx` , com.netapp.vsch5-x.x.x.xxxx` )를 제거합니다.
-
-** vSphere Web Client 경로: 'C:\ProgramData\VMware\vCenterServer\cfg\vSphere-client\VC-packages\vSphere-client-enesity'
-** vSphere Client(HTML5) 경로: 'C:\ProgramData\VMware\vCenterServer\cfg\vSphere-UI\VC-packages\vSphere-client-serenity'
-
-
-
-
- a| 
-VCSA
- a| 
 .. VCSA 어플라이언스에 SSH로 연결합니다.
-.. "cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-environment"를 사용하여 디렉토리를 vCenter 웹 클라이언트 UI 확장 디렉토리로 변경합니다
-.. "rm-rf" 명령을 사용하여 NetApp과 관련된 캐시된 플러그인 패키지를 제거합니다. 예: 여기 x.x.x.xxxx는 플러그인 버전입니다. rm-rm-rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm-rf com.netapp.nvpf.webclient-x.x.x.xxxx rm-rf com.netapp.vsch5-x.x.x.xxxx ---
-.. 'cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-environment'를 사용하여 디렉토리를 vCenter Client(HTML5) UI 확장 디렉토리로 변경합니다
-.. "rm-rf" 명령을 사용하여 NetApp 플러그인과 관련된 캐시된 플러그인 패키지를 제거합니다. 예: x.x.x.xxxx는 플러그인 버전입니다. ---rm-rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm-rm com.netapp.nvpf.webclient-x.x.x.xxxx-rf com.netapp.vsch5-x.x.x.xxxx ----
-
-
-|===
-. 다음 명령을 사용하여 vSphere에 로그인하고 vSphere Web Client 및 vSphere Client 서비스를 다시 시작합니다.
+.. VMware vSphere Client 서비스를 중지합니다.
+`service-control --stop vsphere-ui`
+.. 디렉토리를 vCenter 클라이언트 UI 확장 디렉토리로 변경합니다. `cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity`
+.. 를 사용하여 NetApp과 관련된 캐시된 플러그인 패키지를 제거합니다 `rm -rf` 명령:
 +
-[listing]
-----
-service-control --stop vsphere-client vsphere-ui
-service-control --start vsphere-client vsphere-ui
-----
+`rm -rf com.netapp.nvpf.webclient-*`
+
++
+`rm -rf com.netapp.vasa.vvol.webclient-*`
+
++
+`rm -rf com.netapp.vsch5-*`
+
+.. VMware vSphere Client 서비스를 시작합니다.
+`service-control --start vsphere-ui`
+
+
 

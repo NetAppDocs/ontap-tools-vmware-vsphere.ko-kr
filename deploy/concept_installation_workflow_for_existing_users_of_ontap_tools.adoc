@@ -46,7 +46,7 @@ VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴
 
 ONTAP 도구 9.10 이상으로 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행해야 합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.
 
-최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 link:..deploy/concept_requirements_for_deploying_ontap_tools_for_vmware_vsphere.html["ONTAP 툴 구축 요구사항"]. 주제입니다 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["ONTAP 툴의 최신 릴리즈로 업그레이드하십시오"] 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.
+최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 link:../deploy/concept_space_and_sizing_requirements_for_ontap_tools_for_vmware_vsphere.html["ONTAP 툴에 대한 공간 및 사이징 요구사항"]. 주제입니다 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["ONTAP 툴의 최신 릴리즈로 업그레이드하십시오"] 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.
 
 * 관련 정보 *
 

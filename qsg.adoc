@@ -31,7 +31,7 @@ VMware vSphere용 ONTAP 툴은 VSC, VASA 공급자, SRA(스토리지 복제 어�
 
 === 구현할 수 있습니다
 
-ONTAP 툴은 Windows vCenter Server 또는 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.
+ONTAP 툴은 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.
 
 최소 공간 및 호스트 사이징 요구사항은 다음과 같습니다.
 
@@ -63,16 +63,10 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
 | * 추가 요구 사항 * | * 설명 열 * 
 
 
-| 9083 | VASA Provider와 SRA 모두 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 
-
-
-| 443 | 자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다. 
+| 9083 | VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 번들 다운로드, 웹 CLI 사용자 인터페이스 및 VMware에서 VP로의 제어 경로 통신을 지원합니다. SRA는 이 포트 번호로 백엔드 SRA 서비스와 통신합니다. 
 
 
 | 8143 | VSC는 이 포트에서 보안 통신을 수신합니다. 
-
-
-| 7 | VSC는 내성을 확인하기 위해 ONTAP에 에코 요청을 전송하며 스토리지 시스템을 추가할 때만 필요하며 나중에 비활성화할 수 있습니다. 
 |===
 최소 스토리지 및 애플리케이션 요구사항:
 

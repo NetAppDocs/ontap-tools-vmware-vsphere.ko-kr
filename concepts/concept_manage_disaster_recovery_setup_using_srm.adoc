@@ -20,4 +20,19 @@ VASA Provider는 SRA(Storage Replication Adapter)의 기능을 기본적으로 �
 
 NOTE: VMware SRM(Site Recovery Manager)은 VVOL 데이터 저장소의 재해 복구를 관리하기 위해 SRA를 사용하지 않습니다. 대신 VASA Provider를 사용하여 ONTAP 9.7 이상의 클러스터에서 VVOL 데이터 저장소의 복제 및 페일오버 제어를 수행할 수 있습니다.
 
-link:../protect/task_enable_storage_replication_adapter.html["스토리지 복제 어댑터를 활성화합니다"]
+을 참조하십시오 link:../protect/task_enable_storage_replication_adapter.html["스토리지 복제 어댑터를 활성화합니다"] 섹션을 참조하십시오.
+
+.Quick_Resync 기능 활성화
+SRA에서 Reprotect 및 Restore 작업을 수행하기 위해 quick_resync 플래그를 활성화할 수 있습니다. 이 옵션은 비동기식 SnapMirror 관계가 있는 볼륨에서 지원되는 데이터 저장소에만 적용됩니다. quick_resync 플래그를 사용하면 새 데이터가 전송되기 전에 재동기화로 스토리지 효율성 오버헤드가 발생하지 않으므로 대상 볼륨의 재동기화 시간을 단축할 수 있습니다. quick_resync는 기본적으로 설정되어 있지 않습니다. quick_resync 플래그를 활성화하는 것이 좋습니다.
+
+* 재동기화의 소스에 볼륨 효율성이 설정되지 않은 경우
+* 재동기화 시간을 줄이는 것이 네트워크에서 가능한 모든 스토리지 효율성을 유지하는 것보다 더 중요합니다.
+
+
+다음 단계에 따라 quick_resync 플래그를 활성화합니다.
+
+.단계
+. https://<IP address>: 9083_에서 제어판에 로그인하고 웹 기반 CLI 인터페이스를 클릭합니다.
+. 명령을 실행합니다 `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`.
+. 명령을 실행합니다 `vp reloadconfig`.
+

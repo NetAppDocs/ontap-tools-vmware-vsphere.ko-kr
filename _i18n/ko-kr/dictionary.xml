@@ -2,24 +2,11 @@
 <blocks>
   <block id="147526bf2b5a3f09ae14e12840a1138e" category="summary">ONTAP 툴을 구축 또는 업그레이드한 후 플러그인이 자동으로 업데이트되지 않는 경우 vCenter Server 플러그인 문제를 해결하려면 브라우저와 vCenter Server에서 캐시된 다운로드 플러그인 패키지를 정리해야 합니다.</block>
   <block id="629c3602e821ea228948769460d948fb" category="doc">vSphere 캐시된 다운로드 플러그인 패키지를 지웁니다</block>
-  <block id="2486f16fb02b577c6c3375ba9a93762d" category="paragraph">ONTAP 툴을 구축 또는 업그레이드한 후 플러그인이 자동으로 업데이트되지 않는 경우 vCenter Server 플러그인 문제를 해결하려면 브라우저와 vCenter Server에서 캐시된 다운로드 플러그인 패키지를 정리해야 합니다.</block>
   <block id="4839d2f25cc35b249d5db15efa1afd75" category="paragraph">* 단계 *</block>
-  <block id="928a0fc17a8823d170fddc579679a74b" category="list-text">기존 vSphere 웹 클라이언트 또는 vSphere Client에서 로그아웃합니다.</block>
   <block id="a0616a23fd099dfad3eb5032733a31a3" category="list-text">브라우저 캐시를 제거합니다.</block>
-  <block id="a81218cfa1b12253d3738424f7fe41f1" category="list-text">vSphere Client 캐시된 플러그인 패키지를 제거합니다.</block>
-  <block id="d3f8fbc38c70102f80ae8f7fad51a2ba" category="cell">* 를 사용하는 경우... *</block>
   <block id="a8ec31e018bc514e0369f015f6ef9156" category="cell">* 다음 작업을 수행합니다. *</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="6022f5a040dd9eabb5e196140c0a3837" category="paragraph">Windows vCenter Server를 참조하십시오</block>
-  <block id="08ade16156fae5f96326f33fb911645a" category="paragraph">다음 폴더( com.netapp.vasa.vvol.webclient-x.x.x.xxxx` , com.netapp.nvpf.webclient-x.x.x.xxxx` , com.netapp.vsch5-x.x.x.xxxx` )를 제거합니다.</block>
-  <block id="c50bfe91c2a67370ca4e01f0fbcaa60b" category="list-text">vSphere Web Client 경로: 'C:\ProgramData\VMware\vCenterServer\cfg\vSphere-client\VC-packages\vSphere-client-enesity'</block>
-  <block id="dd286c989dcb346e3dcbcdcffb367513" category="list-text">vSphere Client(HTML5) 경로: 'C:\ProgramData\VMware\vCenterServer\cfg\vSphere-UI\VC-packages\vSphere-client-serenity'</block>
-  <block id="32b6ae27b932f6df4adc3773921186b2" category="paragraph">VCSA</block>
   <block id="7828ebc558b735f6dff95945a2060819" category="list-text">VCSA 어플라이언스에 SSH로 연결합니다.</block>
-  <block id="c2893b865600d46b6cf4853c3e95aaef" category="list-text">"cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-environment"를 사용하여 디렉토리를 vCenter 웹 클라이언트 UI 확장 디렉토리로 변경합니다</block>
-  <block id="c967b27fa47f0711ff8f4f94f6001d1c" category="list-text">"rm-rf" 명령을 사용하여 NetApp과 관련된 캐시된 플러그인 패키지를 제거합니다. 예: 여기 x.x.x.xxxx는 플러그인 버전입니다. rm-rm-rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm-rf com.netapp.nvpf.webclient-x.x.x.xxxx rm-rf com.netapp.vsch5-x.x.x.xxxx ---</block>
-  <block id="e8472057a9b51ca61b841e7cba26f994" category="list-text">"rm-rf" 명령을 사용하여 NetApp 플러그인과 관련된 캐시된 플러그인 패키지를 제거합니다. 예: x.x.x.xxxx는 플러그인 버전입니다. ---rm-rf com.netapp.vasa.vvol.webclient-x.x.x.xxxx rm-rm com.netapp.nvpf.webclient-x.x.x.xxxx-rf com.netapp.vsch5-x.x.x.xxxx ----</block>
-  <block id="04817d905fd962e9edfde7e6036e0241" category="list-text">다음 명령을 사용하여 vSphere에 로그인하고 vSphere Web Client 및 vSphere Client 서비스를 다시 시작합니다.</block>
   <block id="c2432e79b26d7739c80b57e903da42dd" category="summary">VMware vSphere 환경에서 ONTAP 툴을 다운로드하여 배포한 다음, VSC, VASA 공급자, SRA를 사용하여 수행하려는 작업에 따라 필요한 애플리케이션을 구성해야 합니다.</block>
   <block id="393b74542943f1a1de1ffaae3172f6dc" category="doc">VMware vSphere용 ONTAP ® 툴 구축 또는 업그레이드</block>
   <block id="c095be7ad7eeac4688f58caf8b3b7feb" category="summary">ONTAP 툴을 업그레이드하거나 최신 버전의 ONTAP 툴을 구축한 후에는 SRA\(스토리지 복제 어댑터)를 업그레이드해야 합니다.</block>
@@ -49,13 +36,9 @@
   <block id="ac234df83bfcb986ebeb55e2c7819fd9" category="cell">* 기본 포트 번호 *</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="cell">* 설명 *</block>
   <block id="a44ba9086b2b83ccf2baf7c678723449" category="paragraph">9083</block>
-  <block id="ecd50ff405da370c550857b00f4bbf8c" category="paragraph">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다.</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443</block>
-  <block id="b0ed24c095ae71a9e7a0b8c829f59e5e" category="paragraph">자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다.</block>
   <block id="0c95054981de037de06e544a52eb3613" category="paragraph">8143</block>
   <block id="c0874a8cac213072d254da44f2516ac3" category="paragraph">VSC는 이 포트에서 보안 통신을 수신합니다.</block>
-  <block id="8f14e45fceea167a5a36dedd4bea2543" category="paragraph">7</block>
-  <block id="f4f368700c2fc35eed8f90ab56432358" category="paragraph">VSC는 내성을 확인하기 위해 ONTAP에 에코 요청을 전송하며 스토리지 시스템을 추가할 때만 필요하며 나중에 비활성화할 수 있습니다.</block>
   <block id="6b4c21d373aa9752550838c028733812" category="admonition">ONTAP 도구를 배포하기 전에 ICMP(인터넷 제어 메시지 프로토콜)를 활성화해야 합니다.</block>
   <block id="63d4de9135523662dddc6029dfe2f1cf" category="paragraph">ICMP가 비활성화되면 ONTAP 도구의 초기 구성에 장애가 발생하고 구축 후 VSC 및 VASA 공급자 서비스를 시작할 수 없습니다. 구축 후에는 VSC 및 VASA Provider 서비스를 수동으로 설정해야 합니다.</block>
   <block id="105bd7e8e3884c05e1a664cb5cb1d3e0" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 전에 구축을 계획하고 사용자 환경에서 ONTAP 툴을 구성하는 방법을 결정하는 것이 좋습니다.</block>
@@ -134,7 +117,6 @@
   <block id="b619f377f35b0b908b2adf21a0d31ee8" category="doc">ONTAP 도구를 다운로드하는 방법</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
   <block id="759c03b6b17de770a7b5c6d4c2dfcc3f" category="paragraph">ONTAP 도구 배포에서 SRA를 활성화하려면 SRM(Site Recovery Manager) 서버에 SRA 플러그인을 설치해야 합니다. 소프트웨어 다운로드 섹션의 * ONTAP * 용 스토리지 복제 어댑터 메뉴에서 SRA 플러그인의 설치 파일을 다운로드할 수 있습니다.</block>
-  <block id="b63375020fe42de81afebfc9fc66baae" category="summary">ONTAP 툴을 배포하기 전에 배포 요구 사항을 알고 있어야 하며 수행할 작업을 결정해야 합니다. 작업에 따라 ONTAP 도구 배포에 사용할 배포 모델을 선택할 수 있습니다</block>
   <block id="578d9149fa04c3d4f2229ad419fbfec3" category="doc">ONTAP 툴 구축 요구사항</block>
   <block id="777cba99b6ebad9bd658f48a39359faf" category="summary">재해 복구를 위해 vCenter Server를 구성하려면 구축 후 SRA(Storage Replication Adapter)\ 를 활성화해야 합니다. ONTAP 툴을 배포하면 기본적으로 VSC가 설치됩니다. ONTAP 툴을 구축한 후 vCenter Server에 대해 SRA를 활성화해야 합니다.</block>
   <block id="64bbec2c2278d651590f0c3af9e22597" category="doc">재해 복구를 위해 스토리지 복제 어댑터를 구성합니다</block>
@@ -1552,7 +1534,6 @@
   <block id="940e6992d6d93b47b8889b1f27daa310" category="section-title">설치 준비 중</block>
   <block id="8ee2af7eaf4bb800c6978db4ecfbf9c8" category="paragraph">플러그인을 가상 어플라이언스로 구축하면 각 제품을 vCenter Server에 별도로 설치 및 등록하는 수고를 줄일 수 있습니다.</block>
   <block id="ff31982aef870d546d52f49bb30ef34b" category="section-title">구현할 수 있습니다</block>
-  <block id="7dbc03160c35d84d113cf544dad5f6f0" category="paragraph">ONTAP 툴은 Windows vCenter Server 또는 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
   <block id="b1b9e64fcb7143271a2c70320984f7a7" category="paragraph">최소 공간 및 호스트 사이징 요구사항은 다음과 같습니다.</block>
   <block id="dc1ecf8620e5c055a2b23392f8e7f25d" category="cell">* 시스템 *</block>
   <block id="d54802040021d687335cbcb507d0a765" category="cell">* 최소 요구 사항 *</block>
@@ -1569,7 +1550,6 @@
   <block id="d80c1bd338ebb1110423911faecee190" category="paragraph">ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.</block>
   <block id="89a71adc7ceff2f08a2162d1abfd9de6" category="cell">* 추가 요구 사항 *</block>
   <block id="ad3fbba845249aa049a193e4e344bf61" category="cell">* 설명 열 *</block>
-  <block id="f6bfd6bd8ed886acfafded075083f4f4" category="cell">VASA Provider와 SRA 모두 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다.</block>
   <block id="97157b0bbe0ba304414559c34c463fa8" category="paragraph">최소 스토리지 및 애플리케이션 요구사항:</block>
   <block id="495d63c3f347c7d241c61c9f988a6523" category="cell">* 스토리지, 호스트 및 애플리케이션 *</block>
   <block id="beb34180fd99ea25331033f185458b28" category="cell">* 버전 요구 사항 *</block>
@@ -1737,7 +1717,6 @@
   <block id="c24f54bbbe4e8d99ba7daa84a6860772" category="list-text">이전 버전에서 ONTAP 도구의 최신 릴리즈로 업그레이드할 경우 vvol.properties 파일에 'vVol.rebalance.threshold' 속성이 없는 것으로 나타납니다.</block>
   <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">VMware를 처음 사용하는 경우 NetApp ONTAP 툴 제품을 사용하지 않은 경우, ONTAP 툴을 구축하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">새로운 사용자 배포</block>
-  <block id="bd102b609640a336d673bcb7001cf07e" category="list-text">'cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-environment'를 사용하여 디렉토리를 vCenter Client(HTML5) UI 확장 디렉토리로 변경합니다</block>
   <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x 및 VASA Provider 6.x와 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 구축 과정에서 이러한 기존 버전의 VSC 또는 VASA Provider 또는 SRA가 설치되어 있는 경우 다음 작업을 수행해야 합니다.</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</block>
@@ -1861,7 +1840,6 @@
   <block id="7ea5502ed4cc89cb1fc4be2cc51190f4" category="admonition">Register.html 은 향후 출시될 ONTAP 도구에서 제거됩니다.</block>
   <block id="af2e98a831555badce1ec02cfe100834" category="paragraph">ONTAP용 SRA(Storage Replication Adapter) 4.0도 VASA Provider를 사용하므로 VASA Provider를 등록 취소한 다음 최신 버전의 ONTAP 툴을 구축해야 합니다. 서버의 이전 릴리즈입니다 <block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix="(" category="inline-code"></block>)는 업그레이드가 완료되면 제거할 수 있습니다.</block>
   <block id="c20f9adcd877706d050f9e7249f16810" category="paragraph">ONTAP 도구 9.10 이상으로 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행해야 합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
-  <block id="9540fc60d33ac231357b4fd7310065a9" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 <block ref="1f5f630effbb534deb34c8700cc819c7" category="inline-link-macro-rx"></block>. 주제입니다 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.</block>
   <block id="bd5b59e1812c598c5458ce040cc8fd66" category="doc">VMware vSphere 스토리지 시스템용 ONTAP 툴을 구성합니다</block>
   <block id="8854c86add608ae836aaeb597474bb7b" category="paragraph">스토리지 시스템을 VSC에 추가할 때는 스토리지 시스템의 IP 주소와 해당 시스템과 관련된 사용자 이름 및 암호 쌍을 제공해야 합니다. 스토리지 시스템 검색 프로세스 중에 VSC에서 사용할 기본 자격 증명을 설정하거나, 스토리지 시스템이 검색될 때 자격 증명을 수동으로 입력할 수 있습니다. VSC에 추가된 스토리지 시스템의 세부 정보는 구축 시 사용하도록 설정한 확장 내용에 자동으로 푸시됩니다. VASA Provider 및 SRA(Storage Replication Adapter)에 스토리지를 수동으로 추가할 필요가 없습니다. VSC 및 SRA는 모두 클러스터 수준 및 SVM(스토리지 가상 머신) 레벨에서 자격 증명 추가를 지원합니다. VASA Provider는 스토리지 시스템을 추가하기 위한 클러스터 레벨 자격 증명만 지원합니다. 스토리지 시스템을 추가할 때 ONTAP 툴 플러그인과 스토리지 시스템 간의 통신이 상호 인증되어야 합니다.</block>
   <block id="f3adfda90e905d04465d600d9b713b48" category="list-text">스토리지 시스템 페이지 또는 호스트 또는 데이터 센터에서 * 모두 다시 검색 * 버튼을 클릭하여 * 작업 * 메뉴( * 작업 * &gt; * NetApp ONTAP 툴 * &gt; * 호스트 및 스토리지 데이터 업데이트 *)에서 선택할 수 있습니다. 개요 섹션의 시작하기 탭에서 * 검색 * 을 클릭할 수도 있습니다.</block>
@@ -2089,4 +2067,30 @@
   <block id="ffca6b6ccf577f01ebec5049ed6530d7" category="inline-link">VMware vSphere 9.12용 ONTAP 툴에 대한 알림</block>
   <block id="58c791a72760f6b1607675a232883816" category="paragraph"><block ref="58c791a72760f6b1607675a232883816" category="inline-link-rx"></block></block>
   <block id="a80f3275e655b331da24a4073b9c6ed4" category="sidebar">VMware vSphere 9.12 문서를 위한 ONTAP 툴</block>
+  <block id="fb6e6c413e9963fd23d2a0dd101c04ac" category="admonition">VVOL 데이터 저장소는 직접 SVM에서 지원되지 않습니다.</block>
+  <block id="017f8e6e7370b01bd1fed75ddba8b8d3" category="paragraph">을 참조하십시오 <block ref="97253b89ed0b6873167793a2fe7f5831" category="inline-link-macro-rx"></block> 섹션을 참조하십시오.</block>
+  <block id="69ac127712ba2f454cf4501e9db7a265" category="paragraph-title">Quick_Resync 기능 활성화</block>
+  <block id="107cd024dfeeb71b9a8570d7f9a25a64" category="paragraph">SRA에서 Reprotect 및 Restore 작업을 수행하기 위해 quick_resync 플래그를 활성화할 수 있습니다. 이 옵션은 비동기식 SnapMirror 관계가 있는 볼륨에서 지원되는 데이터 저장소에만 적용됩니다. quick_resync 플래그를 사용하면 새 데이터가 전송되기 전에 재동기화로 스토리지 효율성 오버헤드가 발생하지 않으므로 대상 볼륨의 재동기화 시간을 단축할 수 있습니다. quick_resync는 기본적으로 설정되어 있지 않습니다. quick_resync 플래그를 활성화하는 것이 좋습니다.</block>
+  <block id="1c52dcdd4491d0706b3364ecaca3636e" category="list-text">재동기화의 소스에 볼륨 효율성이 설정되지 않은 경우</block>
+  <block id="9fff6c8ee7fb3c43cbe3124a1d4883a7" category="list-text">재동기화 시간을 줄이는 것이 네트워크에서 가능한 모든 스토리지 효율성을 유지하는 것보다 더 중요합니다.</block>
+  <block id="91a71eb29f05d0e0d765dd24efd35e07" category="paragraph">다음 단계에 따라 quick_resync 플래그를 활성화합니다.</block>
+  <block id="992e4c552a6e3e8132e2ff5dcf4d9ba2" category="list-text">https://&lt;IP address&gt;: 9083_에서 제어판에 로그인하고 웹 기반 CLI 인터페이스를 클릭합니다.</block>
+  <block id="933360919bcc7a54c2c15a9ba3062f75" category="list-text">명령을 실행합니다<block ref="a20fbe11e2f20ab8ef5cc0bc3aa22e41" prefix=" " category="inline-code"></block>.</block>
+  <block id="ba2a1e4d95dc56709260e82cca20a789" category="list-text">명령을 실행합니다<block ref="6d83e9fce5e947159c3c34b9f499e80e" prefix=" " category="inline-code"></block>.</block>
+  <block id="bec4fe8b0a1c02393fd0700875750a56" category="list-text">기존 vSphere 웹 클라이언트 또는 vSphere-UI에서 로그아웃합니다.</block>
+  <block id="fae0172133f0506cbb207e15e1eb4aef" category="list-text">vSphere Client 캐시된 플러그인 패키지를 제거합니다. VCSA의 경우 다음을 수행합니다.</block>
+  <block id="a8f3b27f04ef4962a5caf70a06ae28fb" category="list-text">VMware vSphere Client 서비스를 중지합니다.<block ref="4ad331c0aae87e53252a4e9c0fb7b3fe" prefix=" " category="inline-code"></block></block>
+  <block id="2096eb0aa64e2928992af27ac4402e59" category="list-text">디렉토리를 vCenter 클라이언트 UI 확장 디렉토리로 변경합니다.<block ref="877ddb80b516a509c7c154978a1ff7ee" prefix=" " category="inline-code"></block></block>
+  <block id="dc37c1c22c04fc5e7386e3092519eac8" category="list-text">를 사용하여 NetApp과 관련된 캐시된 플러그인 패키지를 제거합니다<block ref="373d5cc730dd449760c437daf3d5a6d5" prefix=" " category="inline-code"></block> 명령:</block>
+  <block id="ea51a159279a27e3f4ac4547881ff688" category="paragraph"><block ref="91fa5c8593259f0cb6f0845470d72256" prefix="" category="inline-code"></block></block>
+  <block id="5e9e6efcbe65718c4f8940b263317a69" category="paragraph"><block ref="7f4891afcb11aecd70e2cfd4c1573829" prefix="" category="inline-code"></block></block>
+  <block id="5547d8d27b62c49e4555e1f79122a342" category="paragraph"><block ref="9e427bf42ac054021120757914ef1809" prefix="" category="inline-code"></block></block>
+  <block id="b8ace162f3094fd5ac1138ced112d7a7" category="list-text">VMware vSphere Client 서비스를 시작합니다.<block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix=" " category="inline-code"></block></block>
+  <block id="02026f27af003e00469addac855d370b" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>. 주제입니다 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.</block>
+  <block id="36716d5924fd9465137a810fd76c2f48" category="paragraph">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.</block>
+  <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 443 포트는 보안 연결에 대해 기본적으로 설정됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다.</block>
+  <block id="8678399a2b31de4e8e3f91c25fdbb6f4" category="paragraph">VSC는 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다. 이 포트는 VSC 서비스 및 VSC 서버 로그 내보내기에 사용됩니다. register.html 페이지는 이 포트에서 호스팅됩니다. 나머지 Swagger가 이 포트에 노출되었습니다.</block>
+  <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 툴은 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
+  <block id="21076231e2fb130435663c1226fafb7f" category="cell">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 번들 다운로드, 웹 CLI 사용자 인터페이스 및 VMware에서 VP로의 제어 경로 통신을 지원합니다. SRA는 이 포트 번호로 백엔드 SRA 서비스와 통신합니다.</block>
+  <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
 </blocks>
