@@ -45,7 +45,7 @@ NOTE: System Manager를 사용하여 FlexVol 볼륨을 보호하고 스토리지
 . 보호되지 않는 가상 머신에 복제 그룹을 추가합니다.
 
 
-image::../media/vvols_replication_existing_datastore.png[VVol 복제 기존 데이터 저장소]
+image::../media/vvols_replication_existing_datastore.png[새 사용자 및 기존 사용자 워크플로]
 
 * 참고: *
 

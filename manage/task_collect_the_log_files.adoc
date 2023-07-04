@@ -19,11 +19,11 @@ VASA Provider 로그 파일이 필요한 경우 Vendor Provider Control Panel �
 
 '\https://vm_ip:9083`
 
-VSC GUI의 ""VSC 로그 내보내기" 기능을 사용하여 VSC 로그 파일을 수집할 수 있습니다. VASA Provider가 설정된 VSC 로그 번들을 수집할 경우 VSC 로그 번들에는 VP 로그도 포함됩니다. 다음 단계에서는 VSC 로그 파일을 수집하는 방법을 설명합니다.
+VSC GUI의 ""Export ONTAP tools for VMware vSphere Logs"" 기능을 사용하여 VMware vSphere Log 파일용 ONTAP 툴을 수집할 수 있습니다. VASA Provider가 설정된 VMware vSphere 로그 번들에 대한 ONTAP 툴을 수집하는 경우 ONTAP VMware vSphere 로그 번들에는 VP 로그도 포함됩니다. 다음 단계에서는 VMware vSphere 로그 파일용 ONTAP 툴을 수집하는 방법을 설명합니다.
 
 * 단계 *
 
-. ONTAP 도구 홈 페이지에서 * 구성 * > * VSC 로그 내보내기 * 를 클릭합니다.
+. ONTAP 툴 홈 페이지에서 * 구성 * > * VMware vSphere 로그 * 용 ONTAP 툴 내보내기 를 클릭합니다.
 +
 이 작업은 몇 분 정도 걸릴 수 있습니다.
 

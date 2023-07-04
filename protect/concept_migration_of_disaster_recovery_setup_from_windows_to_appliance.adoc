@@ -15,12 +15,12 @@ summary: '재해 복구에 Windows 기반 사이트 복구 관리자\(SRM\)를 �
 
 재해 복구 마이그레이션과 관련된 단계는 다음과 같습니다.
 
-. 기존 ONTAP 도구를 9.7.1 릴리즈로 업그레이드합니다.
+. 기존 ONTAP 도구 어플라이언스를 최신 릴리즈로 업그레이드하십시오.
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["ONTAP 툴의 최신 릴리즈로 업그레이드하십시오"]
 
-. Windows 기반 스토리지 복제 어댑터를 어플라이언스 기반 SRA로 마이그레이션
-. Windows SRM 데이터를 SRM 어플라이언스로 마이그레이션
+. Windows 기반 스토리지 복제 어댑터를 어플라이언스 기반 SRA로 마이그레이션합니다.
+. Windows SRM 데이터를 SRM 어플라이언스로 마이그레이션합니다.
 
 
 을 참조하십시오 https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-F39A84D3-2E3D-4018-97DD-5D7F7E041B43.html["Windows용 Site Recovery Manager에서 Site Recovery Manager 가상 어플라이언스로 마이그레이션합니다"] 를 참조하십시오

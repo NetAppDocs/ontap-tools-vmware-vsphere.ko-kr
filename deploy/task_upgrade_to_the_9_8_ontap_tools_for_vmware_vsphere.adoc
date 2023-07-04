@@ -42,17 +42,20 @@ NOTE: ONTAP 툴 9.12의 일부로 모든 스토리지 시스템 인증 및 통�
 
 인증서 인증 없이 스토리지 시스템을 추가하는 것은 제한됩니다.
 
-json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용자로 스토리지 시스템을 추가하고 9.12로 업그레이드하려면 ONTAP CLI에서 다음 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 활성화하십시오.
+json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용자로 스토리지 시스템을 추가하고 9.12로 업그레이드하려는 경우
+업그레이드하기 전에 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간에 인증서 기반 통신을 활성화하십시오.
 
-. _security login role create -role <role-name> -cmddirname "security login show" -access all _
-. _security login role create -role <role-name> -cmddirname "security certificate show" -access all _
-. _security login role create -role <role-name> -cmddirname "security certificate install" -access all _
+. _security login role create -role <existing-role-name> -cmddirname "security login show" -access all _
+. _security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all _
+. _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all _
 
 
 json 파일을 사용하여 사용자 지정된 SVM 범위의 사용자로 스토리지 시스템을 추가하고 9.12로 업그레이드하려는 경우, 그런 다음 업그레이드하기 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 다음 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간에 인증서 기반 통신을 설정하십시오.
 
-. _security login role create -role <role-name> -cmddirname "security certificate install" -access all -vserver <vserver-name> _
-. _security login role create -role <role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name> _
+. _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver <vserver-name> _
+. _security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name> _
+. _security login create-user-or-group-name <user>-application http-authentication-method cert-role <existing-role-name>-vserver <vserver-name> _
+. _security login create-user-or-group-name <user>-application ontapi-authentication-method cert-role <existing-role-name>-vserver <vserver-name> _
 
 
 * 단계 *
@@ -65,7 +68,7 @@ json 파일을 사용하여 사용자 지정된 SVM 범위의 사용자로 스�
 
 
 . 배포된 ONTAP 도구의 요약 탭에 액세스합니다.
-. 를 클릭합니다image:../media/launch_maintenance_console.gif[""]를 눌러 유지보수 콘솔을 시작합니다.
+. 유지보수 콘솔을 시작합니다.
 . "Main Menu" 프롬프트에서 * System Configuration * 에 대한 옵션 2를 입력한 다음 * Upgrade * 에 대한 옵션 8을 입력합니다.
 +
 업그레이드가 완료되면 ONTAP 도구가 다시 시작됩니다. ONTAP 툴은 업그레이드 전과 동일한 IP 주소를 사용하여 vCenter Server에 등록됩니다.
