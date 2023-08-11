@@ -18,7 +18,7 @@ entries:
     url: "/concepts/reference_key_points_about_assigning_and_modifying_permissions.html"
   - title: ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다
     url: "/concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html"
-  - title: VSC 작업에 필요한 권한입니다
+  - title: ONTAP 도구 작업에 필요한 권한
     url: "/concepts/concept_privileges_required_for_vsc_tasks.html"
   - title: ONTAP 스토리지 시스템 및 vSphere 객체에 대한 사용 권한
     url: "/concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html"

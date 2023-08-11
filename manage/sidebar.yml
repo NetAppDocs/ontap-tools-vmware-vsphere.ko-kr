@@ -52,3 +52,5 @@ entries:
     url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
   - title: VVOL 대시보드를 사용하여 성능 데이터를 분석합니다
     url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+- title: VASA Provider 재해 복구
+  url: "/manage/vasa_provider_disaster_recovery.html"

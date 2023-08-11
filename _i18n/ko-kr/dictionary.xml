@@ -27,18 +27,12 @@
   <block id="350fb10f18835a2d8f74ab8a99f59d94" category="list-text">SRM 어플라이언스에서 SRA를 구성합니다.</block>
   <block id="06e0b13e99109afd1553218d06e4287d" category="inline-link-macro">SRM 어플라이언스에서 SRA 구성</block>
   <block id="a7b1731ee7a384d42899d1089c98fcd0" category="paragraph"><block ref="a7b1731ee7a384d42899d1089c98fcd0" category="inline-link-macro-rx"></block></block>
-  <block id="b71a941e1814d82255169b70e7887395" category="summary">기본적으로 VSC(Virtual Storage Console) \(Virtual Storage Console)에서는 지정된 포트를 사용하여 스토리지 시스템과 VMware vCenter Server를 포함한 구성 요소 간 통신을 지원합니다. 방화벽이 활성화되어 있는 경우, 방화벽을 예외 허용으로 설정해야 합니다.</block>
-  <block id="829473db3a0de5d067b9dd905c8a9da0" category="doc">VSC용 포트 요구사항</block>
-  <block id="49a58a3955e265e3985c722625928e45" category="paragraph">기본적으로 VSC(Virtual Storage Console)에서는 스토리지 시스템과 VMware vCenter Server를 비롯한 구성 요소 간의 통신을 지원하기 위해 지정된 포트를 사용합니다. 방화벽이 활성화되어 있는 경우, 방화벽을 예외 허용으로 설정해야 합니다.</block>
-  <block id="396f242373aff4dd5fd8216b09f0dfae" category="paragraph">Windows 이외의 방화벽의 경우 VSC에서 사용하는 특정 포트에 대한 액세스를 수동으로 부여해야 합니다. 이러한 포트에 대한 액세스 권한을 부여하지 않으면 다음과 같은 오류 메시지가 표시됩니다.</block>
   <block id="77508822eda5d675bed0a20bfe5cf0ff" category="paragraph">서버와 통신할 수 없습니다</block>
-  <block id="60a5cb8bad06dbd50e4b20c4a0e54bdc" category="paragraph">VSC는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.</block>
   <block id="ac234df83bfcb986ebeb55e2c7819fd9" category="cell">* 기본 포트 번호 *</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="cell">* 설명 *</block>
   <block id="a44ba9086b2b83ccf2baf7c678723449" category="paragraph">9083</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443</block>
   <block id="0c95054981de037de06e544a52eb3613" category="paragraph">8143</block>
-  <block id="c0874a8cac213072d254da44f2516ac3" category="paragraph">VSC는 이 포트에서 보안 통신을 수신합니다.</block>
   <block id="6b4c21d373aa9752550838c028733812" category="admonition">ONTAP 도구를 배포하기 전에 ICMP(인터넷 제어 메시지 프로토콜)를 활성화해야 합니다.</block>
   <block id="63d4de9135523662dddc6029dfe2f1cf" category="paragraph">ICMP가 비활성화되면 ONTAP 도구의 초기 구성에 장애가 발생하고 구축 후 VSC 및 VASA 공급자 서비스를 시작할 수 없습니다. 구축 후에는 VSC 및 VASA Provider 서비스를 수동으로 설정해야 합니다.</block>
   <block id="105bd7e8e3884c05e1a664cb5cb1d3e0" category="summary">VMware vSphere용 ONTAP 툴을 구축하기 전에 구축을 계획하고 사용자 환경에서 ONTAP 툴을 구성하는 방법을 결정하는 것이 좋습니다.</block>
@@ -46,20 +40,14 @@
   <block id="159ff9dca93ef2a15cf0dbc005d72672" category="paragraph">다음 표에서는 ONTAP 도구를 배포하기 전에 고려해야 할 사항을 간략하게 보여 줍니다.</block>
   <block id="3e9bc72742890f528f7e2682241bee8c" category="cell">* 고려 사항 *</block>
   <block id="1e3729b9b89d348b8c6b35a455bf76ec" category="paragraph">ONTAP 툴을 처음 구축하는 경우</block>
-  <block id="16c8cc5efbc7e453a64933678b8562f7" category="paragraph">ONTAP 툴을 배포하면 VSC 기능이 자동으로 설치됩니다.</block>
   <block id="13b48cbdd252f4608b35c2d647aacc28" category="inline-link-macro">ONTAP 툴을 구축 및 업그레이드합니다</block>
   <block id="3ae61be31aa01d055d528fae2744ec15" category="inline-link-macro">VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우</block>
   <block id="4c33ba4d1376693557bea306916b8d27" category="paragraph"><block ref="4c33ba4d1376693557bea306916b8d27" category="inline-link-macro-rx"></block></block>
-  <block id="ddbc1d140bb7bfbd2a72c73be5aeccc2" category="paragraph">기존 VSC 배포에서 업그레이드</block>
-  <block id="8ad9da1ad11147ec2973637a19e7a370" category="paragraph">기존 VSC에서 ONTAP 툴로의 업그레이드 절차는 VSC의 버전과 ONTAP 툴 구축 여부에 따라 다릅니다. 자세한 내용은 배포 워크플로 및 업그레이드 섹션을 참조하십시오.</block>
   <block id="de48798a02181429a319c23b6ef01a3a" category="inline-link-macro">기존 ONTAP 도구 사용자를 위한 배포 워크플로</block>
   <block id="54de7ac6b6a106543c0f1add37d56ce5" category="paragraph"><block ref="54de7ac6b6a106543c0f1add37d56ce5" category="inline-link-macro-rx"></block></block>
   <block id="708822da1391b85edd88bf31bc5f6c80" category="paragraph">업그레이드 전 모범 사례:</block>
   <block id="985891724c140ff1738f6e5f372c2aa8" category="list-text">사용 중인 스토리지 시스템과 해당 자격 증명에 대한 정보를 기록해야 합니다.</block>
   <block id="fe5d0412a91ef8d1b0aaff837ddcb6a6" category="paragraph">업그레이드 후에는 모든 스토리지 시스템이 자동으로 검색되었으며 올바른 자격 증명이 있는지 확인해야 합니다.</block>
-  <block id="47bbe35f5b1561f6b841937ae496d964" category="list-text">표준 VSC 역할을 수정한 경우 해당 역할을 복사하여 변경 사항을 저장해야 합니다.</block>
-  <block id="8e4f7403b4602e82371c0652d2d3a23d" category="paragraph">VSC 서비스는 VSC 서비스를 다시 시작할 때마다 표준 역할을 현재 기본값으로 덮어씁니다.</block>
-  <block id="6a49802b256bdff219e188fd3c68251f" category="paragraph">VSC용 SSL 인증서를 재생성하는 중입니다</block>
   <block id="52e62d2dcf4932d58c41ff38296d6eee" category="paragraph">SSL 인증서는 ONTAP 도구를 배포할 때 자동으로 생성됩니다. 사이트별 인증서를 만들려면 SSL 인증서를 다시 생성해야 할 수 있습니다.</block>
   <block id="7a77e32a055e6275e64bb08b9acbc01d" category="inline-link-macro">Virtual Storage Console에 대한 SSL 인증서를 다시 생성합니다</block>
   <block id="3ea110cfb5c6fe467c8f9095b59884bd" category="paragraph"><block ref="3ea110cfb5c6fe467c8f9095b59884bd" category="inline-link-macro-rx"></block></block>
@@ -73,8 +61,6 @@
   <block id="9e792b89924c615f7b4ffebb0a38b32d" category="paragraph">게스트 운영 체제(게스트 OS) 시간 초과 스크립트는 지원되는 Linux, Solaris 및 Windows 게스트 운영 체제에 대한 SCSI I/O 시간 초과 값을 설정하여 올바른 페일오버 동작을 제공합니다.</block>
   <block id="6e2da0322acbde03099b09d1d6e243d3" category="paragraph">다음 표에서는 ONTAP 도구를 구성하는 데 필요한 사항을 간략하게 보여 줍니다.</block>
   <block id="41e3c086373eb94bd53162317558cb17" category="paragraph">역할 기반 액세스 제어(RBAC) 요구사항</block>
-  <block id="b68ddacbc102ff1f4ef50ac4bee04d4d" category="paragraph">VSC는 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. vCenter Server에 VSC를 등록하는 데 사용되는 계정('https://&lt;appliance_ip&gt;:8143/Register.html` vCenter Server 관리자 또는 관리자 역할에 할당된 vCenter Server 관리자여야 합니다. 관리자로 VSC를 실행하려는 경우 모든 작업에 필요한 모든 권한과 권한이 있어야 합니다.</block>
-  <block id="243e3f638b08849491129b8f3460690d" category="paragraph">귀사에서 vSphere 객체에 대한 액세스를 제한해야 하는 경우, vCenter Server 요구사항을 충족하기 위해 표준 VSC 역할을 생성하여 사용자에게 할당할 수 있습니다.</block>
   <block id="9fc8af37850fff94dfaee9d2c16a4e2a" category="paragraph">ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 ONTAP System Manager를 사용하여 권장 ONTAP 역할을 생성할 수 있습니다.</block>
   <block id="2969f17b1d37023acfb2431cca2058fb" category="paragraph">사용자가 올바른 권한 및 권한이 없는 작업을 수행하려고 하면 작업 옵션이 회색으로 표시됩니다.</block>
   <block id="80bcb999ba82a6a1735d3b331e492294" category="inline-link-macro">ONTAP 툴과 함께 패키지로 제공되는 표준 역할입니다</block>
@@ -101,14 +87,8 @@
   <block id="223cab0cfcd710c6e63b615833cd6aaa" category="admonition">IPv6은 vCenter Server 6.7 이상에서만 지원됩니다.</block>
   <block id="a53aea41d5ffe3351ece21f3ed31566c" category="section-title">어플라이언스 네트워크 속성입니다</block>
   <block id="6240e8bd04b4c174a6de46ff02f517d8" category="paragraph">DHCP를 사용하지 않는 경우 유효한 DNS 호스트 이름(unqualified)과 ONTAP 툴 및 기타 네트워크 매개 변수의 정적 IP 주소를 지정합니다. 이러한 매개 변수는 모두 올바른 설치 및 작동에 필요합니다.</block>
-  <block id="943a0a91e2e47ea889874a0788bdea47" category="summary">VMware vSphere용 ONTAP ® 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 이 자격 증명은 VSC(가상 스토리지 콘솔) 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 지원하는 데 필요한 ONTAP 권한을 제공합니다.</block>
-  <block id="70d0d796e1ae8de516c95867f195e5f2" category="paragraph">VMware vSphere용 ONTAP ® 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 이 자격 증명은 VSC(가상 스토리지 콘솔) 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 지원하는 데 필요한 ONTAP 권한을 제공합니다.</block>
-  <block id="464307069eb50e906f70d7ca60a08a73" category="paragraph">VSC에서 스토리지 리소스를 표시하고 관리하기 전에 VSC에서 스토리지 시스템을 검색해야 합니다. 검색 프로세스 중에 스토리지 시스템에 대한 ONTAP 자격 증명을 제공해야 합니다. 각 스토리지 시스템에 할당된 사용자 이름 및 암호 쌍과 연결된 권한(또는 역할)입니다. 이러한 사용자 이름 및 암호 쌍은 ONTAP 역할 기반 액세스 제어(RBAC)를 사용하며 ONTAP 내에서 설정해야 합니다. VSC 내에서는 이러한 자격 증명을 변경할 수 없습니다. ONTAP 시스템 관리자를 사용하여 ONTAP RBAC 역할을 정의할 수 있습니다.</block>
   <block id="0a09bf4ec5abf2c9dccc5acf37f50e03" category="admonition">관리자로 로그인하면 해당 스토리지 시스템에 대한 모든 권한이 자동으로 부여됩니다.</block>
-  <block id="271d9e623efba2d6039e43eda2c976c5" category="paragraph">환경에 여러 vCenter Server 인스턴스가 포함된 경우 스토리지 시스템 페이지에서 VSC에 스토리지 시스템을 추가하면 스토리지 시스템 추가 대화 상자에 스토리지 시스템을 추가할 vCenter Server 인스턴스를 지정할 수 있는 vCenter Server 상자가 표시됩니다. 데이터 센터 이름을 마우스 오른쪽 버튼으로 클릭하여 스토리지 시스템을 추가하는 경우 서버가 이미 해당 데이터 센터에 연결되어 있으므로 vCenter Server 인스턴스를 지정할 수 있는 옵션이 없습니다.</block>
   <block id="be76ee8abd349be70f1ab6e1a48149c5" category="paragraph">검색은 다음 방법 중 하나로 수행됩니다. 각각의 경우 새로 검색된 스토리지 시스템에 대한 자격 증명을 제공해야 합니다.</block>
-  <block id="b74bb3e7dfc6e02d8ff50587ced2b158" category="list-text">VSC 서비스가 시작되면 VSC는 자동 백그라운드 검색 프로세스를 시작합니다.</block>
-  <block id="c62bb22aec88a0c9ce10597b8a469f0b" category="paragraph">모든 VSC 기능을 사용하려면 작업을 수행하기 위한 특정 권한이 필요합니다. ONTAP 역할과 연결된 자격 증명을 기준으로 사용자가 수행할 수 있는 작업을 제한할 수 있습니다. 스토리지 시스템 사용자 이름과 암호 쌍이 같은 모든 사용자는 동일한 스토리지 시스템 자격 증명 세트를 공유하며 동일한 작업을 수행할 수 있습니다.</block>
   <block id="bcbd9f9d2ccf0cb7b5832aca2ca7d2b1" category="summary">배포 ONTAP 도구를 사용자 지정하는 동안 몇 가지 제한 사항을 고려해야 합니다.</block>
   <block id="c939783f93b1afb10f97a0d5e171777b" category="doc">배포 사용자 지정 고려 사항</block>
   <block id="9f06240dce78a8c112ac76d8a18ec234" category="paragraph">vCenter Server의 암호가 변경되면 다음 url:\https://&lt;IP&gt;:8143/Register.html 을 사용하여 관리자 암호를 업데이트할 수 있습니다. 여기서 IP 주소는 구축 중에 제공한 ONTAP 툴의 IP 주소입니다.</block>
@@ -141,7 +121,6 @@
   <block id="24e7885391999df72b5723c443057435" category="list-text">ONTAP 툴을 IPv6 주소로 vCenter Server에 등록하려면 다음을 수행해야 합니다.</block>
   <block id="ef2f48aaf47db00aecbde92ca530b9e5" category="list-text">ONTAP 도구 등록을 취소합니다.</block>
   <block id="0e5744a65a94ed45fe17a961682c9f10" category="list-text">ONTAP 툴의 IPv6 주소를 * Register * 페이지를 사용하여 vCenter Server에 등록합니다.</block>
-  <block id="c3cdfa422f14c321c2399156555048c3" category="list-text">등록 후 VSC 및 VASA 공급자 인증서를 다시 생성합니다.</block>
   <block id="795266ce73fa3a8fd4f9b95fc13397c3" category="list-text">구축된 ONTAP 툴을 보려면 vSphere Client에서 로그아웃한 후 다시 로그인하십시오.</block>
   <block id="9098af0aa0d2e17756e66bb4ea0f2682" category="list-text">기존 vSphere 웹 클라이언트 또는 vSphere Client에서 로그아웃하고 창을 닫습니다.</block>
   <block id="e05d3373241b1e3693c29fe99b1c3027" category="list-text">vSphere Client에 로그인합니다.</block>
@@ -284,7 +263,6 @@
   <block id="9f9554604b180d4f12390e136147beb7" category="paragraph"><block ref="9f9554604b180d4f12390e136147beb7" category="inline-link-macro-rx"></block></block>
   <block id="b306db6d6bcaf976db5689e930b5aee2" category="paragraph">VASA Provider 6.X에서 업그레이드하는 경우 업그레이드하기 전에 VASA Provider를 등록 취소해야 합니다. 자세한 내용은 현재 릴리즈의 설명서를 참조하십시오.</block>
   <block id="6db555bae030dd891aa85762ae9d5b14" category="paragraph"><block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block></block>
-  <block id="5df401ea01c055d3d0545c3236d0342d" category="list-text">SRA 2.1 또는 3.0을 사용하는 경우 먼저 기존 사이트 구성 세부 정보를 기록해야 합니다.</block>
   <block id="774ccd148aa50c00b3379665779164a3" category="paragraph">VASA Provider를 구축한 경우 기존 설정에서 업그레이드한 후 '설정 편집' 옵션을 사용하여 ONTAP 도구의 메모리 크기를 12GB로 구성해야 합니다. 또한 가상 메모리 예약을 수정해야 합니다. 메모리 크기를 수정하려면 가상 머신의 전원을 꺼야 합니다.</block>
   <block id="018a6c6cf17ec407286da80c59f6b29c" category="paragraph"><block ref="018a6c6cf17ec407286da80c59f6b29c" category="inline-link-rx"></block></block>
   <block id="cb0b3fe7df304baf3d39da385a4ec459" category="summary">새로운 기능 및 개선 사항, 해결된 문제, 알려진 문제, 주의 및 제한 사항을 비롯하여 VMware vSphere용 ONTAP 툴 릴리스에 대한 중요 정보를 제공합니다.</block>
@@ -499,7 +477,6 @@
   <block id="d9ad1cd9ed6154c08811ffdbeec40f42" category="paragraph">'torageProvider.hostRescanTimeoutSec'입니다</block>
   <block id="c30b7c029fe2d9044307db1e0f6ea417" category="paragraph">또한 'torageProvider.autoResignatureMode` 옵션을 활성화해야 합니다.</block>
   <block id="686f64fc789747485a424cbfcfd51b54" category="paragraph">고도로 확장된 환경의 경우 'torage.commandTimeout` 및 'storage.maxConcurrentCommandCnt' 시간 제한 간격을 99,999초로 설정해야 합니다.</block>
-  <block id="4c65a82e131543c386c904a5ada59e9d" category="summary">VMware vSphere용 ONTAP 툴은 VSC와 함께 SRA 기능을 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.</block>
   <block id="22bf2e5e3e861785a0e8f1eb7bd7492e" category="doc">SRA를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="84bd345b022206ae6f8ba4389abae9b4" category="list-text">ONTAP 툴을 구축해야 합니다.</block>
   <block id="ca11a9887f9c1b0920793fa77409fe5e" category="inline-link">Site Recovery Manager 설치 및 구성 사이트 복구 관리자 8.2</block>
@@ -554,22 +531,15 @@
   <block id="442ea0eca66e22693105f5c322b9b5bc" category="summary">ONTAP 툴을 구성하려면 스토리지 시스템을 구성하고, 스토리지 기능 프로필을 생성하고, 데이터 저장소를 프로비저닝하며, 재해 복구를 위해 SRA를 선택적으로 구성해야 합니다.</block>
   <block id="d9d16dc3acbe809713bf4f3dbd3f8e9a" category="doc">ONTAP 도구 구성 워크플로</block>
   <block id="8aaac5ebacc67a7b948b0cfc0d1ddfb1" category="image-alt">ONTAP 도구 구성 워크플로</block>
-  <block id="b99c66e545699af17ae5ea16a32c40b2" category="summary">VSC(Virtual Storage Console)\ 를 사용하여 vCenter Server에서 데이터 저장소와 가상 머신을 구성할 수 있습니다. VSC에서 프로비저닝한 데이터 저장소와 가상 머신이 VSC의 대시보드에 표시됩니다. 따라서 이러한 데이터 저장소와 가상 머신을 쉽게 모니터링하고 관리할 수 있습니다.</block>
   <block id="8c9aff8d70d2347574f52228c778a94e" category="doc">기존 데이터 저장소 및 가상 머신을 구성합니다</block>
-  <block id="d18aaaa0e20d11c7476650aff63f8a22" category="paragraph">VSC(Virtual Storage Console)를 사용하여 vCenter Server에서 데이터 저장소와 가상 머신을 구성할 수 있습니다. VSC에서 프로비저닝한 데이터 저장소와 가상 머신이 VSC의 대시보드에 표시됩니다. 따라서 이러한 데이터 저장소와 가상 머신을 쉽게 모니터링하고 관리할 수 있습니다.</block>
-  <block id="74f8f4e87cd59ef221e9633c0cfaedfe" category="summary">VSC(가상 스토리지 콘솔)는 다양한 환경을 지원합니다. 이러한 환경에서 일부 기능을 사용하려면 추가 구성이 필요할 수 있습니다.</block>
   <block id="4de1c4f6191ac837f89defd159014d4f" category="doc">VMware vSphere용 ONTAP 툴을 구성합니다</block>
-  <block id="f96ffe9497085e47531718c2a7e14e0c" category="paragraph">VSC(가상 스토리지 콘솔)는 다양한 환경을 지원합니다. 이러한 환경에서 일부 기능을 사용하려면 추가 구성이 필요할 수 있습니다.</block>
-  <block id="bdcc28b6110cd972221a01345793b8d3" category="paragraph">ESXi 호스트, 게스트 운영 체제 및 VSC를 구성하려면 다음 작업 중 일부를 수행해야 할 수 있습니다.</block>
   <block id="04bb4e8cfaa2cf221d467d6c433ac8cf" category="list-text">UNMAP 설정을 비롯한 ESXi 호스트 설정 확인</block>
   <block id="bd12dce47bd477f58597d2dfef8ab312" category="list-text">게스트 운영 체제에 대한 시간 초과 값을 추가하는 중입니다</block>
-  <block id="824b3645042da8dccf05eac204575471" category="list-text">VSC SSL 인증서를 재생성하는 중입니다</block>
   <block id="863bbf4e5f415e5065421619e9a957b2" category="list-text">스토리지 용량 프로파일 및 임계값 알람 생성</block>
   <block id="b9e9e0e5bb3e2a5dc0746aa6ce797f41" category="list-text">서로 다른 서브넷에서 데이터 저장소를 마운트할 수 있도록 기본 설정 파일을 수정합니다</block>
   <block id="5e76a0ccaa822c77f5e23f13a579496f" category="summary">VASA Provider for ONTAP와 연결된 데이터 저장소를 스토리지 기능 프로필에 매핑할 수 있습니다. 스토리지 용량 프로필과 연결되지 않은 데이터 저장소에 프로필을 할당할 수 있습니다.</block>
   <block id="ff83d16bc5d8d21cbb8ed4893d197bbc" category="doc">스토리지 용량 프로필에 데이터 저장소를 매핑합니다</block>
   <block id="864a235837f74c38931fcb45b71806b3" category="list-text">VMware vSphere용 ONTAP ® 툴을 사용하여 VASA 공급자 인스턴스를 등록해야 합니다.</block>
-  <block id="f667df65ae1560ffb26c05c57bca8712" category="list-text">VSC(가상 스토리지 콘솔)에서 스토리지를 이미 검색했을 것입니다.</block>
   <block id="8a358e6391d59ae579402da8d6e291c3" category="paragraph">기존 데이터 저장소를 스토리지 용량 프로필과 매핑하거나 데이터 저장소와 연결된 스토리지 용량 프로필을 변경할 수 있습니다. VASA Provider는 Storage Mappings 페이지에 가상 볼륨(VVol) 데이터 저장소를 _ 표시_하지 않습니다. 이 작업에서 참조하는 모든 데이터 저장소는 기존 데이터 저장소입니다.</block>
   <block id="764e609670f8fb94b487aa9c382e63bf" category="list-text">ONTAP 도구 홈 페이지에서 * 스토리지 매핑 * 을 클릭합니다.</block>
   <block id="a2371a3cd2ab488d3ae2de58f6cafee3" category="paragraph">Storage Mapping 페이지에서 다음 정보를 확인할 수 있습니다.</block>
@@ -580,33 +550,20 @@
   <block id="33a7a3b198ae7b0d6d0fbd880a32ccc5" category="paragraph">데이터 저장소는 여러 프로파일을 일치시킬 수 있지만 데이터 저장소는 하나의 프로파일에만 연결될 수 있습니다.</block>
   <block id="cff7c1995554c990ada1cf0a3c16ad1a" category="list-text">데이터 저장소가 연결된 프로파일을 준수하는지 여부</block>
   <block id="8ec568b325ee9c481d8fc0cacd8b360a" category="list-text">스토리지 용량 프로파일을 데이터 저장소에 매핑하거나 데이터 저장소의 기존 프로파일을 변경하려면 데이터 저장소를 선택합니다.</block>
-  <block id="b0aeb62ffe9f64bf9c0e425fc17746eb" category="paragraph">스토리지 매핑 페이지에서 특정 데이터 저장소나 기타 정보를 찾으려면 검색 상자에 이름이나 부분 문자열을 입력합니다. VSC 대화 상자에 검색 결과가 표시됩니다. 전체 화면으로 돌아가려면 검색 상자에서 텍스트를 제거한 다음 * Enter * 를 클릭합니다.</block>
   <block id="944d3e4355cbecd9c46d6dea768755f1" category="list-text">작업 메뉴에서 * 일치하는 프로파일 할당 * 을 선택합니다.</block>
   <block id="0a487d427138230806e2d7a0c605a45d" category="list-text">데이터 저장소에 매핑할 프로파일을 * 데이터 저장소에 할당 * 대화 상자에 제공된 일치하는 프로파일 목록에서 선택한 다음 * 확인 * 을 클릭하여 선택한 프로파일을 데이터 저장소에 매핑합니다.</block>
   <block id="d02bdbb6934a1b9f5cbb8a64f89f22f1" category="list-text">화면을 새로 고쳐 새 할당을 확인합니다.</block>
-  <block id="6065b86534f4e1dc9696d0369170eb2d" category="summary">단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.</block>
   <block id="1e0319b0e97f2097276080f0446901c2" category="doc">여러 vCenter Server 환경에 VSC를 등록하는 데 필요한 요구 사항</block>
-  <block id="b2a4034dbb48a31012f1a45709e80824" category="admonition">vCenter Server에서 VSC를 사용하려면 관리할 모든 vCenter Server 인스턴스에 대해 VSC 인스턴스를 하나 이상 설정하거나 등록해야 합니다. 등록된 각 VSC 인스턴스의 버전은 동일해야 합니다.</block>
   <block id="8f13650de3b253cee4bb94c4e8ef4c31" category="paragraph">연결된 모드는 vCenter Server 구축 중에 자동으로 설치됩니다. 연결 모드는 Microsoft ADAM(Active Directory Application Mode)을 사용하여 여러 vCenter Server 시스템에 데이터를 저장하고 동기화합니다.</block>
-  <block id="e6cfd5982bbaee7f14a2ba36e09e5955" category="paragraph">vSphere HTML5 클라이언트를 사용하여 여러 vCenter Server에서 VSC 작업을 수행하려면 다음이 필요합니다.</block>
-  <block id="27883ac01f316c8093d900162cab2869" category="list-text">관리하려는 VMware 인벤토리의 각 vCenter Server에는 고유한 1:1 페어링에 단일 VSC 서버가 등록되어 있어야 합니다.</block>
-  <block id="44904ed1facc0e7733e4fcf77657bdc9" category="paragraph">예를 들어, VSC 서버 A에 등록된 VSC 서버 A, vCenter Server B에 등록된 VSC 서버 B, vCenter Server C에 등록된 VSC 서버 C 등의 작업을 수행할 수 있습니다.</block>
-  <block id="c930c55efadd9bde4b99ca86b4b9b434" category="paragraph">vCenter Server A와 vCenter Server B 모두에 VSC 서버 A를 등록할 수 없습니다</block>
-  <block id="e907872de0cdc2855cd34273c79c02cd" category="paragraph">VMware 인벤토리에 VSC 서버가 등록되지 않은 vCenter Server가 포함되어 있지만 VSC에 등록된 vCenter Server가 하나 이상 있는 경우, 그런 다음 VSC의 인스턴스를 확인하고 VSC를 등록한 vCenter Server에 대해 VSC 작업을 수행할 수 있습니다.</block>
-  <block id="2d1201ca098b0b97e9069fc3d236a524" category="list-text">SSO(Single Sign-On)에 등록된 각 vCenter Server에 대한 VSC별 View 권한이 있어야 합니다.</block>
   <block id="4761cd3f6bc97791b43b3bed2079a0da" category="paragraph">또한 올바른 RBAC 권한도 있어야 합니다.</block>
   <block id="f62f41aed81b66751673f14a9b636d11" category="paragraph">스토리지의 위치를 알고 있는 경우(예: 프로비저닝 마법사를 사용하고 데이터 저장소가 특정 vCenter Server에서 관리하는 호스트에 있는 경우) vCenter Server 목록이 읽기 전용 옵션으로 표시됩니다. 이 문제는 vSphere Web Client에서 마우스 오른쪽 버튼 클릭 옵션을 사용하여 항목을 선택하는 경우에만 발생합니다.</block>
-  <block id="e6a6f5d441b83abd74e7e1b7023bae3c" category="paragraph">VSC는 관리하지 않는 개체를 선택하려고 할 때 경고합니다.</block>
-  <block id="8a7c95e2a3e0cf209a6d78fd05449510" category="paragraph">VSC 요약 페이지에서 특정 vCenter Server를 기반으로 스토리지 시스템을 필터링할 수 있습니다. vCenter Server에 등록된 모든 VSC 인스턴스에 대한 요약 페이지가 나타납니다. 특정 VSC 인스턴스 및 vCenter Server와 연관된 스토리지 시스템을 관리할 수 있지만, VSC의 여러 인스턴스를 실행하는 경우 각 스토리지 시스템의 등록 정보를 별도로 유지해야 합니다.</block>
   <block id="5385433ee01cd2037e0f3275521224ae" category="summary">VMware vSphere용 ONTAP ® 툴을 사용하여 vCenter Server의 스토리지 시스템에 대한 기본 자격 증명을 설정할 수 있습니다.</block>
   <block id="3cabeb9f2dfaeed94f3553f24bb6697f" category="doc">스토리지 시스템에 대한 기본 자격 증명을 설정합니다</block>
   <block id="c741ed49a5385413c6168a727f99799f" category="paragraph">VMware vSphere용 ONTAP 툴을 사용하여 vCenter Server의 스토리지 시스템에 대한 기본 자격 증명을 설정할 수 있습니다.</block>
   <block id="79709e46ab199855d00cbacbb6cc6473" category="paragraph">기본 자격 증명을 생성하는 데 사용할 vCenter Server를 선택해야 합니다.</block>
-  <block id="46c51e183c41280ff488d30f29d31b40" category="paragraph">스토리지 시스템에 대한 기본 자격 증명을 설정하면 VSC(가상 스토리지 콘솔)에서 이러한 자격 증명을 사용하여 VSC가 방금 검색한 스토리지 시스템에 로그인합니다. 기본 자격 증명이 작동하지 않는 경우 스토리지 시스템에 수동으로 로그인해야 합니다. VSC 및 SRA는 클러스터 수준 또는 SVM 수준에서 스토리지 시스템 자격 증명의 추가를 지원합니다. 그러나 VASA Provider는 클러스터 레벨 자격 증명에서만 작동합니다.</block>
   <block id="975c4484ae2524f3de4c1fe48b561c9e" category="list-text">ONTAP 도구 홈 페이지에서 * 설정 * &gt; * 관리 설정 * &gt; * 스토리지 시스템의 기본 자격 증명 구성 * 을 클릭합니다.</block>
   <block id="4753a60fdd29d20db04cca9e9d56fba7" category="list-text">스토리지 시스템 기본 자격 증명 대화 상자에서 스토리지 시스템의 사용자 이름과 암호를 입력합니다.</block>
   <block id="b241564d6daa7ecf800e2fce4f75c26d" category="paragraph">스토리지 컨트롤러 자격 증명은 사용자 이름 및 암호 쌍에 따라 ONTAP에 할당됩니다. 스토리지 컨트롤러 자격 증명은 관리자 계정 또는 RBAC(역할 기반 액세스 제어)를 사용하는 사용자 지정 계정일 수 있습니다.</block>
-  <block id="0531c42765c09f7aa9cbe5b09c93063e" category="paragraph">VSC를 사용하여 스토리지 컨트롤러의 사용자 이름 및 암호 쌍과 관련된 역할을 변경할 수는 없습니다. ONTAP 도구에 사용할 새 ONTAP 사용자 역할을 수정하거나 작성하려면 시스템 관리자를 사용하십시오.</block>
   <block id="5d647a0e64f2ce6656770c3697c2e747" category="list-text">기본 자격 증명을 저장하려면 * 확인 * 을 클릭합니다.</block>
   <block id="cee064a38177c0438cb03601edf062b9" category="summary">ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다.</block>
   <block id="637136b177eed37009281c2b49416083" category="doc">사용자 역할 및 권한을 구성합니다</block>
@@ -661,8 +618,6 @@
   <block id="126693f2f424f78320ecec4ac94596d1" category="list-text">None(없음): 볼륨 데이터가 용량 계층으로 이동되는 것을 방지합니다</block>
   <block id="83bf640160dedb8468e8186c590aa6c1" category="list-text">요약 페이지에서 선택 사항을 검토한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="ed71ffea131ae10f25c64748e2046414" category="paragraph">프로파일을 생성한 후 스토리지 매핑 페이지로 돌아가 어떤 프로파일이 어떤 데이터 저장소와 일치하는지 확인할 수 있습니다.</block>
-  <block id="9ca928ba65b1c44005ef01cdf6d26ec7" category="summary">SSL 인증서는 VSC(Virtual Storage Console)\ 를 설치할 때 생성됩니다. SSL 인증서에 대해 생성된 고유 이름 \(DN\)은 클라이언트 컴퓨터가 인식하는 일반 이름 \(CN\)이 아닐 수 있습니다. 키 저장소 및 개인 키 암호를 변경하여 인증서를 다시 생성하고 사이트별 인증서를 만들 수 있습니다.</block>
-  <block id="9a492f5c022c2ff2a745a96c541959f7" category="paragraph">SSL 인증서는 VSC(Virtual Storage Console)를 설치할 때 생성됩니다. SSL 인증서에 대해 생성된 DN(고유 이름)은 클라이언트 컴퓨터에서 인식하는 CN(일반 이름)이 아닐 수 있습니다. 키 저장소 및 개인 키 암호를 변경하여 인증서를 다시 생성하고 사이트별 인증서를 만들 수 있습니다.</block>
   <block id="3f401b3e8f8f4b1b523ddd65e0bafd07" category="paragraph">유지보수 콘솔을 사용하여 원격 진단을 활성화하고 사이트별 인증서를 생성할 수 있습니다.</block>
   <block id="198cc30ac53c3cd09ebeb0c95455013c" category="inline-link">가상 스토리지 콘솔: CA 서명 인증서 구현</block>
   <block id="242fdf0a7f57f76859f5a36880054cd4" category="paragraph"><block ref="242fdf0a7f57f76859f5a36880054cd4" category="inline-link-rx"></block></block>
@@ -717,7 +672,6 @@
   <block id="abee77fec5734e47dadcf71227420618" category="list-text">SVM에 IPv6 데이터 LIF가 없으면 SVM에서 사용 가능한 경우 IPv4 데이터 LIF를 통해 프로비저닝이 수행됩니다.</block>
   <block id="bce020686d90e8252dee43d649f8a08f" category="summary">VASA Provider for ONTAP를 사용하면 기존 데이터 저장소에 대한 스토리지 기능 프로필을 자동으로 생성할 수 있습니다. 데이터 저장소에 대한 자동 생성 옵션을 선택하면 VASA Provider가 해당 데이터 저장소에서 사용하는 스토리지 기능을 포함하는 프로파일을 생성합니다.</block>
   <block id="14714704cfb64e568d5cce277e1ddf7b" category="doc">스토리지 기능 프로필을 자동으로 생성합니다</block>
-  <block id="a4d4dd09f22aca91ae030df1f26509b9" category="list-text">VASA 공급자 인스턴스를 VSC(가상 스토리지 콘솔)에 등록해야 합니다.</block>
   <block id="25c5d8286adf7d0b2589c3d4d2a9c944" category="list-text">VSC에서 스토리지를 검색한 상태여야 합니다.</block>
   <block id="21a82950f4aaef73263a8305f5527549" category="paragraph">스토리지 용량 프로필을 생성한 후 더 많은 기능을 포함하도록 프로필을 수정할 수 있습니다. 스토리지 용량 프로파일 생성 마법사는 프로파일에 포함할 수 있는 기능에 대한 정보를 제공합니다.</block>
   <block id="6199f82e00cbf632c7b7f901c1c261b1" category="list-text">사용 가능한 목록에서 데이터 저장소를 선택합니다.</block>
@@ -781,9 +735,7 @@
   <block id="c42d74ef2cf303a1d971798e0bf38c6f" category="paragraph">Red Hat Enterprise Linux 5, Red Hat Enterprise Linux 6 및 Red Hat Enterprise Linux 7의 경우 다음과 유사한 메시지가 표시됩니다.</block>
   <block id="04336d4b9bf21d52125df44458219a0d" category="paragraph">SUSE Linux Enterprise Server 10 또는 SUSE Linux Enterprise Server 11의 경우 다음과 유사한 메시지가 표시됩니다.</block>
   <block id="10b4996a7204aa24b697bff8cd333f39" category="list-text">ISO 이미지를 마운트 해제합니다.</block>
-  <block id="759353c66286da27e863db604db19270" category="summary">VMware vSphere용 ONTAP ® 툴에서 제공하는 업데이트 기능을 사용하여 스토리지 시스템에 대한 정보를 업데이트하고 가상 스토리지 콘솔\(VSC\)에서 스토리지 시스템을 강제로 검색할 수 있습니다.</block>
   <block id="aa9742a8c89b1a51af38fb3122936dfa" category="doc">스토리지 시스템 디스플레이를 새로 고칩니다</block>
-  <block id="403c417c18b1cf269e4a6d842dcf6dd6" category="paragraph">VMware vSphere용 ONTAP ® 툴에서 제공하는 업데이트 기능을 사용하여 스토리지 시스템에 대한 정보를 업데이트하고 VSC(가상 스토리지 콘솔)를 통해 스토리지 시스템을 강제로 검색할 수 있습니다.</block>
   <block id="4bb5cb1ed310f90a7d75fa02aaf4c306" category="paragraph">시스템 설정에 따라 이 작업을 완료하는 데 시간이 오래 걸릴 수 있습니다.</block>
   <block id="f6f602e0b8bacecaeac351913bc637cb" category="list-text">업데이트를 시작합니다.</block>
   <block id="7b416e3f92a63b80fb0f0143f877ca7e" category="cell">* 이 위치는... * 입니다</block>
@@ -839,7 +791,6 @@
   <block id="34b553ab502acf33954e76f4e17df28d" category="summary">데이터 저장소를 프로비저닝하면 가상 머신 및 해당 가상 머신 디스크(VMDK\)에 대한 논리적 컨테이너가 생성됩니다. 데이터 저장소를 프로비저닝한 다음 데이터 저장소를 단일 호스트, 클러스터의 모든 호스트 또는 데이터 센터의 모든 호스트에 연결할 수 있습니다.</block>
   <block id="91a9cfdbaaa44e0a9ad72e92533f763f" category="doc">기존 데이터 저장소 프로비저닝</block>
   <block id="c53f3e45361114dbca83e15f27cc7784" category="paragraph">데이터 저장소를 프로비저닝하면 가상 머신 및 해당 VMDK(가상 머신 디스크)에 대한 논리적 컨테이너가 생성됩니다. 데이터 저장소를 프로비저닝한 다음 데이터 저장소를 단일 호스트, 클러스터의 모든 호스트 또는 데이터 센터의 모든 호스트에 연결할 수 있습니다.</block>
-  <block id="707c11c00618352bf95bc486f82548e1" category="list-text">VSC(가상 스토리지 콘솔)에 직접 연결된 SVM에서 데이터 저장소를 프로비저닝하려면 기본 vsadmin 사용자 계정 또는 vsadmin 역할이 아닌 적절한 권한이 있는 사용자 계정을 사용하여 SVM을 VSC에 추가해야 합니다.</block>
   <block id="802a4f1d1dae8ff618b3bd8bc49a2553" category="paragraph">클러스터를 추가하여 데이터 저장소를 프로비저닝할 수도 있습니다.</block>
   <block id="07e5734f83e5a805c9f92162f3fb98b4" category="list-text">ESXi 호스트가 연결된 모든 네트워크의 서브넷 세부 정보가 kaminoprefs.xml에 입력되었는지 확인해야 합니다.</block>
   <block id="96dab00082b21800df659d3a26741c05" category="list-text">NFS 또는 iSCSI를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 kaminoprefs 기본 설정 파일의 NFS 또는 iSCSI 설정에는 ESXi 호스트 서브넷 마스크가 포함되어야 합니다.</block>
@@ -848,9 +799,6 @@
   <block id="64e03b083d70c2d810f723dad414a6b6" category="paragraph">Provision Datastore * 옵션을 사용하면 데이터 저장소에 대한 스토리지 용량 프로필을 지정할 수 있습니다. 스토리지 기능 프로필을 통해 일관된 서비스 수준 목표(SLO)를 지정하고 프로비저닝 프로세스를 간소화할 수 있습니다. VASA Provider를 설정한 경우에만 스토리지 용량 프로파일을 지정할 수 있습니다. VMware vSphere용 ONTAP 툴은 다음 프로토콜을 지원합니다.</block>
   <block id="d381d999826d4e61587a2570d1e51324" category="list-text">NFSv3과 NFSv4.1</block>
   <block id="c95106f0432e13b79e1223e1c8f1ab3b" category="list-text">VMFS5 및 VMFS6</block>
-  <block id="82076a44279d878e94f3ddedb0ba5372" category="paragraph">VSC는 NFS 볼륨 또는 LUN에 데이터 저장소를 생성할 수 있습니다.</block>
-  <block id="82d33f871b3062b8ba93e89a1f89457c" category="list-text">NFS 데이터 저장소의 경우 VSC는 스토리지 시스템에 NFS 볼륨을 생성한 다음 엑스포트 정책을 업데이트합니다.</block>
-  <block id="c6685a6031e6ac137cce7e91a817070d" category="list-text">VMFS 데이터 저장소의 경우 VSC는 새 볼륨을 생성한(또는 옵션을 선택한 경우 기존 볼륨 사용) LUN 및 igroup을 생성합니다.</block>
   <block id="e5c5d2c6aa619e098374e32171e7bd4a" category="paragraph">다른 플랫폼에서 지원되는 최대 LUN 크기는 16TB입니다.</block>
   <block id="5164789a1859f790f66a6451331546d0" category="list-text">VMware는 데이터 저장소 클러스터가 포함된 NFSv4.1을 지원하지 않습니다.</block>
   <block id="ee22d75c46a9756a729cb381af5d2d48" category="paragraph">용량 할당 중에 스토리지 용량 프로필을 지정하지 않은 경우 나중에 스토리지 매핑 페이지를 사용하여 데이터 저장소를 스토리지 용량 프로필에 매핑할 수 있습니다. FlexGroup 백업 데이터 저장소에 프로비저닝된 가상 머신의 데이터 VMDK 파일에 스토리지 QoS 설정, 처리량 한도(최대 IOPS) 및 처리량 공간(최소 IOPS)을 적용할 수 있습니다. 데이터 저장소 수준이나 개별 가상 시스템 수준에서 데이터 저장소를 마우스 오른쪽 버튼으로 클릭하여 QoS 설정을 적용할 수 있습니다. 마우스 오른쪽 버튼 클릭 옵션은 FlexGroup 데이터 저장소가 지원하는 데이터 저장소 또는 가상 머신에서만 사용할 수 있습니다. 데이터 저장소에 QoS가 적용되면 기존의 모든 데이터 저장소 또는 가상 머신 QoS 설정이 재정의됩니다. ONTAP은 SVM 관리 레벨에서 QoS를 지원하지 않으므로 직접 SVM에 프로비저닝된 데이터 저장소에 대한 QoS 설정이나 가상 시스템 수준에서는 적용할 수 없습니다.</block>
@@ -917,8 +865,6 @@
   <block id="244d0e8e256c3993154967878caa0ec7" category="paragraph">VVol 데이터 저장소가 구성되면 백엔드에서 복제 그룹이 생성됩니다.</block>
   <block id="1301eee3894cdde4884748d9472841bb" category="inline-link-macro">VVOL 대시보드를 사용하여 성능 데이터를 분석합니다</block>
   <block id="c6f86e205896dda442288a84af6c1576" category="paragraph"><block ref="c6f86e205896dda442288a84af6c1576" category="inline-link-macro-rx"></block></block>
-  <block id="aaa836e25fb185fee1317857ddce72dd" category="summary">기본 설정 파일에는 VMware vSphere 작업을 위한 ONTAP ® 툴을 제어하는 설정이 포함되어 있습니다. 대부분의 경우 이러한 파일의 설정을 수정할 필요가 없습니다. 가상 스토리지 콘솔\(VSC\)에서 사용하는 기본 설정 파일을 알면 도움이 됩니다.</block>
-  <block id="606c74803a7912dab1b0536c6a336192" category="doc">VSC 기본 설정 파일을 구성합니다</block>
   <block id="aa4bf828eff76dff8a2b141a1477e8cc" category="summary">오류가 발생하면 /opt/netapp/vscserver/log 디렉토리와 /opt/netapp/vpserver/log 디렉토리에 있는 로그 파일을 확인할 수 있습니다.</block>
   <block id="1d6a471fef204e76f1f7461e7af5d1ef" category="paragraph">오류가 발생하면 '/opt/netapp/vscserver/log' 디렉토리와 '/opt/netapp/vpserver/log' 디렉토리에서 로그 파일을 확인할 수 있습니다.</block>
   <block id="36e045806c22990cd1f1419da09e8f67" category="paragraph">다음 세 개의 로그 파일은 문제를 식별하는 데 도움이 될 수 있습니다.</block>
@@ -944,9 +890,7 @@
   <block id="b4d831b667663d1bb2f657654d79526d" category="paragraph">다음 메시지가 표시됩니다.</block>
   <block id="7460e6f5de2b12d15925acab5fa0e6da" category="paragraph">''D:\WINDOWS_Gos_TIMEOUT.reg'에 포함된 키와 값이 레지스트리에 추가되었습니다.</block>
   <block id="af6e0ae7e86d1ccccb039c404db5a306" category="list-text">Windows 게스트 OS를 재부팅합니다.</block>
-  <block id="6678e6ff7d72945da8486c6fb5146984" category="summary">VSC 인터페이스를 사용하여 스토리지 시스템을 ONTAP 툴에 추가하고 필요한 경우 기본 자격 증명을 설정해야 합니다.</block>
   <block id="e739dd2faba4528a9c24fcd814c5a416" category="doc">ONTAP 툴을 위한 스토리지 시스템 개요</block>
-  <block id="80bd799c519d5539d28e60537d3291ce" category="paragraph">VMware vSphere용 ONTAP 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 이 자격 증명은 VSC(가상 스토리지 콘솔) 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 지원하는 데 필요한 ONTAP 권한을 제공합니다.</block>
   <block id="657cdc66cb1eee939ff3a277ccb61e5e" category="list-text">스토리지 시스템 * 페이지 또는 호스트 또는 데이터 센터에서 모두 다시 검색 버튼을 클릭하여 * 작업 * 메뉴( * 작업 * &gt; * NetApp ONTAP 툴 * &gt; * 호스트 및 스토리지 데이터 업데이트 *)에서 선택할 수 있습니다. '개요' 섹션의 * 시작하기 * 탭에서 * 검색 * 을 클릭할 수도 있습니다.</block>
   <block id="d9cf595bd31604d4a74bc6fcf1e62921" category="summary">데이터 저장소가 데이터 저장소에 매핑된 스토리지 용량 프로파일과 호환되는지 빠르게 확인할 수 있습니다.</block>
   <block id="5be7a5b775451d57b89974daf5933bd5" category="doc">데이터 저장소가 매핑된 스토리지 용량 프로파일을 준수하는지 확인합니다</block>
@@ -987,16 +931,13 @@
   <block id="49d72ec77a1c9ef34ba00af4bc7e47a9" category="paragraph">Solaris 10의 경우 다음과 유사한 메시지가 표시됩니다.</block>
   <block id="ff7962acf1e40c3bdacdc576b16178a8" category="summary">데이터 저장소의 크기를 조정하면 가상 머신 파일의 스토리지를 늘리거나 줄일 수 있습니다. 인프라스트럭처 요구 사항이 변경됨에 따라 데이터 저장소의 크기를 변경해야 할 수 있습니다.</block>
   <block id="73d1fe01f71de127c64c0c37cbfcb20f" category="doc">데이터 저장소 크기 조정</block>
-  <block id="3d7de81ead511dc0d2bd3eeb864ff231" category="paragraph">VMFS 데이터 저장소의 크기를 조정할 때 VSC에서 포함하는 볼륨의 크기를 조정하도록 하려면 VMFS 데이터 저장소를 처음 프로비저닝할 때 Storage Attributes 섹션에서 * Use existing volume * 옵션을 사용하지 말고 대신 각 데이터 저장소에 대한 새 볼륨을 자동으로 생성하도록 해야 합니다.</block>
   <block id="b6b2c55f92e8e04471c740483e69a795" category="paragraph">NFS 데이터 저장소의 크기를 늘리거나 줄일 수 있지만 VMFS 데이터 저장소의 경우 크기를 늘릴 수만 있습니다. 자동 확장 및 축소 옵션이 있는 FlexGroup 데이터 저장소에도 데이터 저장소 크기 조정이 지원됩니다. VVOL 데이터 저장소의 일부인 기존 데이터 저장소 및 FlexVol 볼륨의 일부인 FlexGroup는 기존 크기보다 축소될 수 없지만 최대 120% 성장할 수 있습니다. 이러한 FlexGroup 및 FlexVol 볼륨에서 기본 스냅샷이 활성화됩니다.</block>
   <block id="d78120895b47b61a42063d7f497c4cc0" category="list-text">vSphere Client 홈 페이지에서 * 호스트 및 클러스터 * 를 클릭합니다.</block>
   <block id="0e6fc56cbe91d72cb03e33a904ae9ab3" category="list-text">탐색 창에서 데이터 저장소가 포함된 데이터 센터를 선택합니다.</block>
   <block id="a15d1bf5dee929fddbf2e03ae0f830e9" category="list-text">데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Assign QoS * 를 선택합니다.</block>
   <block id="425e99780c82b74f333dd7da3068f492" category="list-text">크기 조정 대화 상자에서 데이터 저장소의 새 크기를 지정한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="29b33d6a4971ded7e90ffb22fa8e685d" category="paragraph">스토리지 시스템 메뉴에서 * 모두 다시 검색 * 옵션을 실행하여 스토리지 시스템 및 대시보드에서 스토리지 목록을 수동으로 업데이트하거나 다음 예정된 새로 고침을 기다릴 수 있습니다.</block>
-  <block id="4ab0f64ae83512e7fbbf600986f5a269" category="summary">VSC 그래픽 사용자 인터페이스(GUI\)에서 제공하는 옵션으로부터 VMware vSphere용 ONTAP ® 툴에 대한 로그 파일을 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
   <block id="84fd2e9f48ced2057b35ca005d2e23dd" category="doc">로그 파일을 수집합니다</block>
-  <block id="3a7126e89509a7e2ce3446580acdf318" category="paragraph">VSC 그래픽 사용자 인터페이스(GUI)에서 제공하는 옵션을 통해 VMware vSphere용 ONTAP 툴 로그 파일을 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
   <block id="ef1070995ad39c34df59dcf7aa1fbea4" category="paragraph">VASA Provider 로그 파일이 필요한 경우 Vendor Provider Control Panel 화면에서 지원 번들을 생성할 수 있습니다. 이 페이지는 가상 어플라이언스의 콘솔에서 액세스할 수 있는 VASA Provider 유지 보수 메뉴의 일부입니다.</block>
   <block id="8f124924c0fbddac76336e23aaeb30d9" category="paragraph">'\https://vm_ip:9083`</block>
   <block id="5f3b52e4c0acfbc3bae5a10aef3314ae" category="paragraph">이 작업은 몇 분 정도 걸릴 수 있습니다.</block>
@@ -1131,7 +1072,6 @@
   <block id="9033fc122eb8d14655a469deac25b881" category="list-text">메뉴 * &gt; * 호스트 및 클러스터 * 를 클릭합니다.</block>
   <block id="faf001843ae9d4cefb27739c25f80e99" category="list-text">필요한 ESXi 호스트를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Set Recommended Value * 를 선택합니다.</block>
   <block id="3b964c8251e2099e6450ff22cc671892" category="paragraph">ESXi 호스트 시스템 포틀릿입니다</block>
-  <block id="fcf38b8bd8d07a28c0b6f84181512221" category="list-text">VSC의 개요 섹션에서 * 기존 대시보드 * 탭을 클릭합니다.</block>
   <block id="d084061e0205c9a03b3a6bc6c848c31d" category="list-text">Edit ESXi Host Settings * 를 클릭합니다.</block>
   <block id="f18b0198d21fa7f233b4346b63d6791c" category="list-text">호스트 설정 및 상태 탭에서 설정을 수정할 ESXi 호스트 이름을 선택하고 * NEXT * 를 클릭합니다.</block>
   <block id="eadcb7e379a3c92209b7c27a79641d9b" category="list-text">권장 호스트 설정 탭에서 필요한 설정을 선택한 후 * 다음 * 을 클릭합니다.</block>
@@ -1276,11 +1216,8 @@
   <block id="3f143e381fbd1594759cc3ef1d2a3af3" category="list-text">vCenter Server에서 ONTAP 데이터 저장소를 사용하는 가상 머신의 수입니다</block>
   <block id="c642ca83ebe4f4e0295711fb1e80d8c2" category="list-text">IOPS, 지연 시간, 처리량, 약정 용량, 가동 시간, 및 논리 공간 - 상위 5개 가상 시스템이 VVol 대시보드에 나열되는 방법을 사용자 지정할 수 있습니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="b903ab0865d53d0fb8088440e2b2c347" category="summary">VMware vSphere 및 역할 기반 액세스 제어(RBAC\)에 대한 ONTAP ® 툴로 작업하기 위해 몇 가지 권장되는 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 가상 스토리지 콘솔\(VSC\) 작업에서 실행되는 데 필요한 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함됩니다.</block>
   <block id="07cda92265f02dc6b3431f3719b53172" category="doc">VMware vSphere용 ONTAP 툴을 사용할 때 권장되는 ONTAP 역할</block>
   <block id="5bc83c5da5e874a1f3cd46def8b7086a" category="paragraph">각 ONTAP 역할에는 해당 역할의 자격 증명을 구성하는 연결된 사용자 이름 및 암호 쌍이 있습니다. 이러한 자격 증명을 사용하여 로그인하지 않으면 해당 역할과 연결된 스토리지 작업에 액세스할 수 없습니다.</block>
-  <block id="92bedc01b7222f50b165fadee33a0cdd" category="paragraph">보안 조치로서 VSC별 ONTAP 역할은 계층적으로 정렬됩니다. 즉, 첫 번째 역할이 가장 제한적인 역할이며 가장 기본적인 VSC 스토리지 운영 세트와 연관된 권한만 가집니다. 다음 역할에는 자신의 권한과 이전 역할과 연결된 모든 권한이 모두 포함됩니다. 각각의 추가 역할은 지원되는 스토리지 작업과 관련하여 덜 제한적입니다.</block>
-  <block id="92e1f75474e9be7c3cf34b3eb30f325e" category="paragraph">다음은 VSC를 사용할 때 권장되는 ONTAP RBAC 역할 중 일부입니다. 이러한 역할을 생성한 후에는 가상 시스템 프로비저닝과 같은 스토리지 관련 작업을 수행해야 하는 사용자에게 역할을 할당할 수 있습니다.</block>
   <block id="a1c4eb450799cb3f30c400d0201414e7" category="list-text">탐색</block>
   <block id="02621f852bb8e8078b864aaa378a1b3b" category="paragraph">이 역할을 통해 스토리지 시스템을 추가할 수 있습니다.</block>
   <block id="765b7167d2cfb7c36210a70c5d8b606e" category="list-text">스토리지 생성</block>
@@ -1291,18 +1228,8 @@
   <block id="021f124189b20e2f6f27d6d11b2002aa" category="paragraph">이 역할을 사용하면 스토리지를 제거할 수 있습니다. 이 역할에는 검색 역할, 스토리지 생성 역할 및 스토리지 수정 역할과 연결된 모든 권한도 포함됩니다.</block>
   <block id="9d64075f7476840c8c1339f43bb2904c" category="paragraph">VASA Provider for ONTAP를 사용하는 경우 PBM(정책 기반 관리) 역할도 설정해야 합니다. 이 역할을 통해 스토리지 정책을 사용하여 스토리지를 관리할 수 있습니다. 이 역할을 수행하려면 "Discovery" 역할도 설정해야 합니다.</block>
   <block id="7712ea81e3c4db4ba1e5de4da46ebdfc" category="summary">VMware vSphere 역할을 위한 표준 ONTAP ® 툴을 사용할 경우 따라야 할 몇 가지 지침이 있습니다.</block>
-  <block id="cd95c894061348d94270b79552c7d4e6" category="doc">VSC 표준 역할 사용 지침</block>
-  <block id="922640343960d117a758e3d8ddd5a162" category="paragraph">표준 역할을 직접 수정해서는 안 됩니다. VSC를 업그레이드하면 VSC를 업그레이드할 때마다 변경 사항을 덮어쓰게 됩니다. VSC를 업그레이드할 때마다 설치 관리자가 표준 역할 정의를 업데이트합니다. 이렇게 하면 현재 VSC 버전뿐만 아니라 지원되는 모든 vCenter Server 버전에 대해서도 역할을 수행할 수 있습니다.</block>
-  <block id="502d9306683970425e2f8fe5cda2ecba" category="paragraph">그러나 표준 역할을 사용하여 사용자 환경에 맞는 역할을 만들 수 있습니다. 이렇게 하려면 VSC 표준 역할을 복사한 다음 복사된 역할을 편집해야 합니다. VSC Windows 서비스를 다시 시작하거나 업그레이드한 경우에도 새 역할을 생성하여 이 역할을 유지할 수 있습니다.</block>
-  <block id="4ed53badcb742d5458411142edf7ba11" category="paragraph">VSC 표준 역할을 사용하는 방법에는 다음과 같은 것이 있습니다.</block>
-  <block id="8d2466b45472bbf17842e131d8037395" category="list-text">모든 VSC 작업에 표준 VSC 역할을 사용합니다.</block>
-  <block id="9937036c4c192203bf14c685008e4a3f" category="paragraph">이 시나리오에서는 표준 역할이 사용자가 VSC 작업을 수행하는 데 필요한 모든 권한을 제공합니다.</block>
   <block id="3239d640f79cc377e8d8fe33bfb02164" category="list-text">역할을 결합하여 사용자가 수행할 수 있는 작업을 확장합니다.</block>
-  <block id="27936fcee2af580e6401a6316cfed059" category="paragraph">표준 VSC 역할이 환경에 너무 세밀하게 제공하는 경우, 여러 역할을 포함하는 상위 레벨 그룹을 생성하여 역할을 확장할 수 있습니다.</block>
-  <block id="fa5db155848f958f1575fd5767f27f66" category="paragraph">사용자가 추가적인 기본 vCenter Server 권한이 필요한 VSC 이외의 다른 작업을 수행해야 하는 경우, 이러한 권한을 제공하는 역할을 생성하여 그룹에도 추가할 수 있습니다.</block>
   <block id="ed7f08e236934f84eff400f2a6307549" category="list-text">보다 세분화된 역할을 만듭니다.</block>
-  <block id="f934fe4ede361b2778e687b9b91cd305" category="paragraph">표준 VSC 역할보다 더 제한적인 역할을 구축해야 하는 경우 VSC 역할을 사용하여 새 역할을 생성할 수 있습니다.</block>
-  <block id="52559a3597647289ddc42175b58d675c" category="paragraph">이 경우 필요한 VSC 역할을 클론 생성한 다음, 클론 복제된 역할을 편집하여 사용자에게 필요한 권한만 갖게 됩니다.</block>
   <block id="c69756aca5576df11336d4f750a7fb7d" category="summary">VASA Provider for ONTAP를 사용하여 VMware 가상 볼륨(VVol\)을 생성하고 관리할 수 있습니다. VVOL 데이터 저장소를 프로비저닝, 편집, 마운트 및 삭제할 수 있습니다. VVol 데이터 저장소에 스토리지를 추가하거나 VVol 데이터 저장소에서 스토리지를 제거할 수도 있습니다. 유연성을 높일 수 있습니다. 모든 가상 머신 및 관련 VMDK를 프로비저닝하고 관리할 수 있습니다.</block>
   <block id="0bc53908165e8112244704360fb1a404" category="doc">VVOL을 위한 VASA 공급자 구성</block>
   <block id="c05b981b9e51411011f8958371285b88" category="paragraph">ONTAP용 VASA Provider를 사용하여 VMware 가상 볼륨(VVol)을 생성 및 관리할 수 있습니다. VVOL 데이터 저장소를 프로비저닝, 편집, 마운트 및 삭제할 수 있습니다. VVol 데이터 저장소에 스토리지를 추가하거나 VVol 데이터 저장소에서 스토리지를 제거할 수도 있습니다. 유연성을 높일 수 있습니다. 모든 가상 머신 및 관련 VMDK를 프로비저닝하고 관리할 수 있습니다.</block>
@@ -1334,14 +1261,9 @@
   <block id="823d854786bb307b0a8fb9efbf5b6809" category="list-text">감사 정보</block>
   <block id="16d1034d74164e0d782a4f32f3af3698" category="list-text">사용 편의성</block>
   <block id="2d7d9bf238d879f4a632c0e18e45ae8a" category="paragraph">모든 컨트롤러 자격 증명을 한 곳에서 유지 관리할 수 있습니다.</block>
-  <block id="1633df946f0d6e82efbce7d3e6e50cc6" category="summary">VMware vSphere용 ONTAP 툴은 ONTAP용 MetroCluster IP 및 FC 구성을 사용하는 환경을 지원합니다. 대부분의 지원은 자동입니다. 하지만 MetroCluster 환경을 VSC 및 VASA 공급자와 함께 사용하면 몇 가지 차이점이 있을 수 있습니다.</block>
   <block id="926c545e813337f4bef6900a78c65bfc" category="doc">ONTAP 도구에서 지원하는 MetroCluster 구성</block>
   <block id="39e2af895ac75a278cab1467d55da02b" category="admonition">SRA는 MetroCluster 구성을 지원하지 않습니다.</block>
-  <block id="c597f54ee0a1243d7b9c7375f618e230" category="section-title">MetroCluster 구성 및 VSC를 누릅니다</block>
-  <block id="bcdb5437029518d0b8c61965f0fd8883" category="paragraph">VSC는 운영 사이트와 2차 사이트에서 스토리지 시스템 컨트롤러를 검색하는지 확인해야 합니다. 일반적으로 VSC는 스토리지 컨트롤러를 자동으로 검색합니다. 클러스터 관리 LIF를 사용하는 경우, VSC가 두 사이트에서 클러스터를 검색했는지 확인하는 것이 좋습니다. 그렇지 않으면 스토리지 컨트롤러를 VSC에 수동으로 추가할 수 있습니다. VSC에서 스토리지 컨트롤러에 연결하는 데 사용하는 사용자 이름과 암호 쌍을 수정할 수도 있습니다.</block>
   <block id="07e195d60b7b7cc8a76a0e66e6ec1692" category="paragraph">전환이 발생하면 보조 사이트의 SVM이 대신 사용됩니다. 이러한 SVM에는 이름에 ""-mc" 접미사가 붙습니다. 데이터 저장소 프로비저닝과 같은 작업을 수행하는 동안 전환 작업이 발생하는 경우 데이터 저장소가 상주하는 SVM의 이름이 ""-mc" 접미사를 포함하도록 변경됩니다. 스위치백을 수행할 때 이 접미사가 삭제되며 운영 사이트의 SVM에서 제어를 재개합니다.</block>
-  <block id="7cd2c3bac5ab94194da3b50926a8bd68" category="admonition">MetroCluster 구성을 VSC에 직접 SVM을 추가한 경우, 전환 후 SVM 이름의 변경(""-mc" 접미사 추가)이 반영되지 않습니다. 다른 모든 스위치오버 작업은 정상적으로 계속 실행됩니다.</block>
-  <block id="7ccec9527848c16a412153c03594136b" category="paragraph">스위치오버 또는 스위치백을 수행할 때 VSC에서 클러스터를 자동으로 감지하여 검색하는 데 몇 분 정도 걸릴 수 있습니다. 데이터 저장소 프로비저닝과 같은 VSC 작업을 수행하는 동안 이 문제가 발생하면 지연이 발생할 수 있습니다.</block>
   <block id="25a08ebfd4f1cc837be8e7fd29c9e2a1" category="section-title">MetroCluster 구성 및 VASA 공급자</block>
   <block id="99f2236cef71d63edd309e83692bae51" category="paragraph">VASA Provider는 MetroCluster 구성을 사용하는 환경을 자동으로 지원합니다. VASA Provider 환경에서는 전환이 투명합니다. VASA Provider에 직접 SVM을 추가할 수 없습니다.</block>
   <block id="aa01ce52a20efe46b8d9f8d571874ece" category="admonition">VASA Provider는 전환 후 보조 사이트의 SVM 이름에 ""-mc" 접미사를 추가하지 않습니다.</block>
@@ -1355,13 +1277,10 @@
   <block id="66c5b34575bb610e09f6281aecda93e6" category="paragraph">HA를 구성하는 절차는 vCenter Server 버전에 따라 다릅니다. 예를 들어 다음 참조 링크를 사용하여 필요한 vCenter Server 버전을 선택하여 HA 구성 단계를 볼 수 있습니다.</block>
   <block id="9c506678975809e892cfdd7c14758cae" category="inline-link">VMware vSphere 설명서: 내결함성 요구 사항, 제한 사항 및 라이센스</block>
   <block id="20422418e9f27ff480459f880734075a" category="paragraph"><block ref="20422418e9f27ff480459f880734075a" category="inline-link-rx"></block></block>
-  <block id="7d95f88d5acd32cda8bb48c562c0a438" category="doc">VSC 작업에 필요한 권한입니다</block>
   <block id="6b894d7e8f2bb219ece874c3c249c3f7" category="inline-link">가상 스토리지 콘솔에 대한 RBAC 구성 방법</block>
   <block id="14d107055fdbd0aa4ef3c23300469f88" category="paragraph"><block ref="14d107055fdbd0aa4ef3c23300469f88" category="inline-link-rx"></block></block>
   <block id="8169f681458fdeab0f3382d2821b913f" category="section-title">VMware vSphere용 ONTAP 툴에 필요한 제품 레벨 권한입니다</block>
   <block id="f205df396c677fd2dbb183f5747cadfa" category="cell">* 권한 *</block>
-  <block id="7946e40cd710abd7ae3684408b1d8501" category="paragraph">할당 수준은 UI에서 볼 수 있는 부분을 결정합니다. 루트 개체(폴더)에서 보기 권한을 할당하면 NetApp 아이콘을 클릭하여 VSC를 입력할 수 있습니다.</block>
-  <block id="930346a19ded89cc76abc052a073ea48" category="paragraph">다른 vSphere 오브젝트 레벨에 보기 권한을 할당할 수 있지만, 이렇게 하면 VSC 메뉴를 표시 및 사용할 수 없습니다.</block>
   <block id="74d56f13e9a7c977cac9a88a879fcbfc" category="paragraph">루트 개체는 보기 권한이 포함된 권한을 할당하는 데 권장되는 장소입니다.</block>
   <block id="6b3c5cff95a01171d231d2c77b8852ff" category="doc">VMware vSphere용 ONTAP 툴에 대한 ONTAP 역할 기반 액세스 제어를 구성하는 방법</block>
   <block id="ac9f97a99a048cbef4e6c1dd7488effe" category="paragraph">새 사용자를 생성하고 클러스터 또는 SVM을 ONTAP 툴에 연결하려면 다음을 수행해야 합니다.</block>
@@ -1424,7 +1343,6 @@
   <block id="b9fb193a2e0ec11e6325daf26766f10a" category="section-title">권한을 수정합니다</block>
   <block id="a8e01cabe9b5f1e74700dfe84ecb64df" category="paragraph">언제든지 하나의 권한을 수정할 수 있습니다.</block>
   <block id="738c71d468b929e0b80b012e95674531" category="paragraph">권한 내에서 권한을 변경하는 경우 해당 권한과 연결된 사용자는 로그아웃한 다음 다시 로그인하여 업데이트된 권한을 활성화해야 합니다.</block>
-  <block id="3cd4a44b3b904a2571f0a38e4172e2af" category="summary">VMware vSphere GUI용 ONTAP ® 툴에 액세스하려면 올바른 vSphere 오브젝트 레벨에 지정된 VSC별 보기 권한이 있어야 합니다. 이 권한 없이 로그인하는 경우 NetApp 아이콘을 클릭하면 VSC에 오류 메시지가 표시되며 사용자가 VSC에 액세스할 수 없습니다.</block>
   <block id="a2b6bdbaa7f478b53edca02553c0dd6b" category="doc">ONTAP 도구의 역할 기반 액세스 제어 개요</block>
   <block id="4e97a87c57d50537bba2389e33f34a93" category="paragraph">루트 객체(루트 폴더라고도 함)에 vCenter Server 권한을 설정할 수 있습니다. 그런 다음 이러한 권한이 필요하지 않은 자식 엔터티를 제한하여 보안을 강화할 수 있습니다.</block>
   <block id="2bf690158e044812ab33988c70464eba" category="summary">ONTAP 툴은 고가용성 \(HA\) 구성을 지원하여 장애 시 ONTAP 툴의 무중단 기능을 제공합니다.</block>
@@ -1611,7 +1529,6 @@
   <block id="9a58b5aa20d973302c3a17ded0496b1a" category="paragraph">* 참고: *</block>
   <block id="c1c8479c1167662eb9257d77ff142920" category="list-text">기존 데이터스토어에 대한 복제를 사용하도록 가상 머신을 구성할 때는 구성 VVol이 있는 FlexVol 볼륨을 확인해야 합니다.</block>
   <block id="d702ff1bee15d5d3b7250939fe4b588d" category="list-text">기존 가상 머신의 VVol이 여러 데이터 저장소에 분산되어 있는 경우, 복제를 활성화하기 전에 vMotion을 사용하여 해당 가상 머신의 모든 VVol을 단일 데이터 저장소로 이동해야 합니다.</block>
-  <block id="390444b5184e09f391fad8737a8150f9" category="paragraph">VMware vSphere 및 역할 기반 액세스 제어(RBAC)에 대한 ONTAP 툴로 작업하기 위해 권장되는 여러 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 VSC(가상 스토리지 콘솔) 작업에서 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함되어 있습니다.</block>
   <block id="677ff51eca7b8b3b89d23a32fc0b88c9" category="paragraph">VMware vSphere용 ONTAP 툴과 함께 역할 기반 액세스 제어를 사용하려면 스토리지 시스템에서 RBAC(ONTAP 역할 기반 액세스 제어)를 구성해야 합니다. ONTAP RBAC 기능을 사용하여 액세스 권한이 제한된 사용자 지정 사용자 계정을 하나 이상 생성할 수 있습니다.</block>
   <block id="9a86245c5660ac4a8f92791d010a719a" category="summary">이제 ONTAP 툴 인터페이스를 사용하여 데이터 저장소 마운팅을 위해 다른 서브넷을 추가할 수 있습니다.</block>
   <block id="e3f1e946f13da34f037007dfeb749365" category="doc">다른 서브넷을 추가합니다</block>
@@ -1622,10 +1539,8 @@
   <block id="baaba2dd51e19eb3810587e012c613f0" category="list-text">필요한 서브넷의 값을 입력한 다음 * ADD * 를 클릭합니다.</block>
   <block id="9f2795032a02caa39c4ce4f98d5fb258" category="list-text">제한된 서브넷의 경우 * 없음 * 또는 * 선택 * 을 선택합니다.</block>
   <block id="2efb0fa4cef9462e9a212abf6778b626" category="list-text">iSCSI 서브넷 액세스에 대해 위의 단계를 반복하고 * 적용 * 을 클릭합니다.</block>
-  <block id="481a4353946c90ce05d5219831e46abe" category="summary">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. VSC(Virtual Storage Console) 세트는 내부 NetApp 테스트를 기반으로 합니다.</block>
   <block id="e9df7d5252c2104198351b64e368569b" category="paragraph">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. ONTAP 툴 세트가 제공하는 가치는 내부 NetApp 테스트를 기반으로 합니다.</block>
   <block id="56cfa018d4e9a7aa0b73e64b0dd88f77" category="paragraph">"다른 서브넷에 데이터 저장소 마운트 설정"을 참조하십시오.</block>
-  <block id="8df76ca12987982377e22db05992acb3" category="paragraph">이 기본 설정 파일은 VVOL 데이터 저장소 생성에도 적용됩니다. 자세한 내용은 _다른 서브넷에 대한 데이터 저장소 마운트 활성화_를 참조하고, VSC 기본 설정 파일 구성_을 참조하십시오.</block>
   <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 ASA 및 승인된 AFF 시스템과 함께 사용할 경우 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 최대 VMFS LUN 및 64TB 볼륨 크기까지 지원합니다.</block>
   <block id="1e188467952fdbff98e3068f89af769c" category="summary">ONTAP 툴은 데이터 센터에서 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다.</block>
   <block id="fa9a1fa5791bef6093574e858ba2d47b" category="list-text">컨테이너 재조정 작업 중에 시간 초과가 발생하면 VASA Provider property_enable.update.vVol.through.discovery_to true 로 설정하여 ONTAP 툴과 ONTAP 간에 일관된 데이터를 얻을 수 있습니다.</block>
@@ -1658,7 +1573,6 @@
   <block id="c24f54bbbe4e8d99ba7daa84a6860772" category="list-text">이전 버전에서 ONTAP 도구의 최신 릴리즈로 업그레이드할 경우 vvol.properties 파일에 'vVol.rebalance.threshold' 속성이 없는 것으로 나타납니다.</block>
   <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">VMware를 처음 사용하는 경우 NetApp ONTAP 툴 제품을 사용하지 않은 경우, ONTAP 툴을 구축하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">새로운 사용자 배포</block>
-  <block id="5584c9cd70ee56e5a5efd81211571c12" category="paragraph">Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x 및 VASA Provider 6.x와 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 구축 과정에서 이러한 기존 버전의 VSC 또는 VASA Provider 또는 SRA가 설치되어 있는 경우 다음 작업을 수행해야 합니다.</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</block>
   <block id="ff22f9429bb46603451057ba28a08029" category="paragraph">(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다. 자세한 내용은 다음을 참조하십시오.</block>
@@ -1704,10 +1618,6 @@
   <block id="dbc193f27160367293b40befb64f71f4" category="paragraph">"https://&lt;machine_IP&gt;/api/storage/volumes/{uuid}`</block>
   <block id="dc6f079855bc9a7477861302bbb0343f" category="image-alt">VMware Cloud Foundation 구축 워크플로우</block>
   <block id="6e87afa480416c8595b0460888551386" category="paragraph"><block ref="6e87afa480416c8595b0460888551386" category="inline-link-macro-rx"></block></block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">Kerberos 인증의 경우 다음이 필요합니다.</block>
   <block id="232c27acd8cefdcf2eab2fd4448e58b7" category="list-text">AD(Active Directory)가 있는 Windows 시스템</block>
   <block id="3b190489626bc91788e69bde26b23e49" category="list-text">DNS(Domain Name Server)</block>
@@ -1721,7 +1631,6 @@
   <block id="cd506470f5e5655bb026fe078bbbcdd3" category="paragraph">일반 섹션에서 옵션을 선택한 경우 나열된 스토리지 용량 프로파일 중 하나를 선택할 수 있습니다.</block>
   <block id="90a7ec5aa6debb1e9f051b3011306ea5" category="list-text">FlexGroup 데이터 저장소를 프로비저닝하는 경우 이 데이터 저장소의 스토리지 용량 프로필은 지원되지 않습니다. 스토리지 시스템 및 스토리지 가상 머신에 대해 시스템 권장 값이 자동으로 채워지는 것이 좋습니다. 그러나 필요한 경우 값을 수정할 수 있습니다.</block>
   <block id="395cd4e6b9788357ea9b4875980f0735" category="list-text">Kerberos 인증의 경우 Kerberos에 대해 활성화된 스토리지 시스템이 나열됩니다.</block>
-  <block id="d656972a3bb8dc447ca461f90894a1c0" category="paragraph">기본적으로 VSC는 * 애그리게이트 * 및 * 볼륨 * 옵션의 권장 값을 채웁니다. 요구 사항에 따라 값을 사용자 지정할 수 있습니다. ONTAP가 애그리게이트 선택을 관리하므로 FlexGroup 데이터 저장소에는 애그리게이트 선택이 지원되지 않습니다.</block>
   <block id="11d67c18b6ade2844dac7ac6e8d8e996" category="paragraph">고급* 메뉴에서 사용할 수 있는 * 공간 예약 * 옵션도 채워지며 최적의 결과를 제공합니다.</block>
   <block id="8f0960fd537565d013c63b424e32e545" category="paragraph">(선택 사항) * 이니시에이터 그룹 이름 변경 * 필드에서 이니시에이터 그룹 이름을 지정할 수 있습니다.</block>
   <block id="ff34df29001826a51c55234f7899a5c8" category="list-text">이 이름이 없는 경우 새 이니시에이터 그룹이 이 이름으로 생성됩니다.</block>
@@ -1771,7 +1680,6 @@
   <block id="2cdba874d869148b30cb8051d47b193e" category="paragraph">관리자 계정에 할당된 암호입니다. 보안상의 이유로 암호 길이는 8-30자로, 최소 1자, 1자, 1자리, 1개의 특수 문자를 포함하는 것이 좋습니다. 암호가 90일 후에 만료됩니다.</block>
   <block id="10d4861f8b8fd56252476f425d02f1bc" category="section-title">Derby 데이터베이스 암호입니다</block>
   <block id="f202a45ff64b0023adf3770934d9621d" category="paragraph">보안상의 이유로 암호 길이는 8-30자로, 최소 1자, 1자, 1자리, 1개의 특수 문자를 포함하는 것이 좋습니다. 암호가 90일 후에 만료됩니다.</block>
-  <block id="c6a690eb0fc572481c091d280abd06c0" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료되면 스토리지 시스템을 추가하고 REST API를 사용하여 컨테이너를 생성할 수 있습니다. API 호출을 인증하는 _appliance-api-token_을 생성하는 새로운 API가 도입되었습니다. 기존 API 중 일부는 _appliance-API-token_header를 포함하도록 수정되었습니다. ONTAP 툴 9.12 릴리즈에서는 Swagger가 1.0 API를 지원하지 않습니다. 이전에는 1.0에서 있었던 포인터는 2.0 또는 3.0 API로 이동됩니다.</block>
   <block id="9bce19d28c8d6414e9a815b1d04c0355" category="paragraph">/2.0/admin/containers</block>
   <block id="bd578684e72c99c2c61de9a27aaa47d0" category="paragraph">/2.0/vcf/사용자/로그인</block>
   <block id="97edf630b423fd2b7cbfb2303987c271" category="paragraph">/3.0/스토리지/클러스터</block>
@@ -1780,7 +1688,6 @@
   <block id="af2e98a831555badce1ec02cfe100834" category="paragraph">ONTAP용 SRA(Storage Replication Adapter) 4.0도 VASA Provider를 사용하므로 VASA Provider를 등록 취소한 다음 최신 버전의 ONTAP 툴을 구축해야 합니다. 서버의 이전 릴리즈입니다 <block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix="(" category="inline-code"></block>)는 업그레이드가 완료되면 제거할 수 있습니다.</block>
   <block id="c20f9adcd877706d050f9e7249f16810" category="paragraph">ONTAP 도구 9.10 이상으로 업그레이드하려면 가상 어플라이언스 9.7P1 이상을 실행해야 합니다. 가상 어플라이언스의 9.7P1 이전 버전에서 업그레이드할 수 없습니다.</block>
   <block id="bd5b59e1812c598c5458ce040cc8fd66" category="doc">VMware vSphere 스토리지 시스템용 ONTAP 툴을 구성합니다</block>
-  <block id="8854c86add608ae836aaeb597474bb7b" category="paragraph">스토리지 시스템을 VSC에 추가할 때는 스토리지 시스템의 IP 주소와 해당 시스템과 관련된 사용자 이름 및 암호 쌍을 제공해야 합니다. 스토리지 시스템 검색 프로세스 중에 VSC에서 사용할 기본 자격 증명을 설정하거나, 스토리지 시스템이 검색될 때 자격 증명을 수동으로 입력할 수 있습니다. VSC에 추가된 스토리지 시스템의 세부 정보는 구축 시 사용하도록 설정한 확장 내용에 자동으로 푸시됩니다. VASA Provider 및 SRA(Storage Replication Adapter)에 스토리지를 수동으로 추가할 필요가 없습니다. VSC 및 SRA는 모두 클러스터 수준 및 SVM(스토리지 가상 머신) 레벨에서 자격 증명 추가를 지원합니다. VASA Provider는 스토리지 시스템을 추가하기 위한 클러스터 레벨 자격 증명만 지원합니다. 스토리지 시스템을 추가할 때 ONTAP 툴 플러그인과 스토리지 시스템 간의 통신이 상호 인증되어야 합니다.</block>
   <block id="f3adfda90e905d04465d600d9b713b48" category="list-text">스토리지 시스템 페이지 또는 호스트 또는 데이터 센터에서 * 모두 다시 검색 * 버튼을 클릭하여 * 작업 * 메뉴( * 작업 * &gt; * NetApp ONTAP 툴 * &gt; * 호스트 및 스토리지 데이터 업데이트 *)에서 선택할 수 있습니다. 개요 섹션의 시작하기 탭에서 * 검색 * 을 클릭할 수도 있습니다.</block>
   <block id="f056e37e2646ccbf027d27be6a8cc71d" category="summary">여기에 제공된 지침에 따라 기존 9.10 이상의 설정에서 ONTAP 도구의 최신 릴리스로 업그레이드할 수 있습니다.</block>
   <block id="20f1e803dc0cd0cd8a34402229733015" category="paragraph">여기에 제공된 지침에 따라 기존 9.10 이상 릴리스에서 최신 버전의 ONTAP 도구로 바로 업그레이드할 수 있습니다.</block>
@@ -1832,10 +1739,8 @@
   <block id="2fff4b3285884f6e5273db65c9b89b6a" category="paragraph">다음은 스토리지 용량 프로파일을 생성 및 편집할 때 고려해야 할 사항입니다.</block>
   <block id="ed39c0980c6abd9d27685c2f324f54fe" category="admonition">ONTAP 9.7 이상을 사용하여 SAN VVOL 데이터 저장소 및 가상 머신을 구성한 경우에만 VVol 대시보드에 성능 메트릭이 표시됩니다.</block>
   <block id="94146fafc4aad47d35d13099ea8a934b" category="admonition">VASA Provider 확장을 설정한 후에도 VASA Provider 상태가 ""오프라인""으로 표시되면 /var/log/vmware/vmware-SPS/sps.log 파일에서 VASA Provider의 연결 오류를 확인하거나 ""VMware-SPS" 서비스를 다시 시작하십시오.</block>
-  <block id="73f5f362287600e9ae1bc00b5a312c6f" category="paragraph">를 클릭합니다<block ref="03b62516184fb6ef591f45bd4974b753" prefix=" " category="inline-code"></block> 인증 오류가 발생한 후 스토리지 시스템의 기본 자격 증명을 변경한 경우 이 옵션이 유용합니다. 스토리지 시스템에서 을 보고한 후 스토리지 시스템 자격 증명을 변경한 경우 항상 업데이트 작업을 수행해야 합니다<block ref="67fa3611161880533d6d25b5af943cfc" prefix=" " category="inline-code"></block>. 업데이트 작업 중에 VSC는 새 자격 증명을 사용하여 스토리지 시스템에 연결하려고 시도합니다.</block>
   <block id="9d762dc4c048594163d4a5df7dc826ea" category="list-text">VMware vSphere Client 홈 페이지에서 * Storage * 를 클릭합니다.</block>
   <block id="08cf0556f98b3c5f3a7105031a1e2976" category="paragraph">데이터 센터를 마우스 오른쪽 단추로 클릭한 다음 * NetApp ONTAP 도구 * &gt; * 호스트 및 스토리지 데이터 업데이트 * 를 클릭합니다.</block>
-  <block id="d911389ec3f9b55dca0a518206a84f7e" category="paragraph">특정 상황에서 기본 설정 파일을 수정해야 할 수 있습니다. 예를 들어 iSCSI, NFS 또는 NVMe/FC를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 기본 설정 파일을 수정해야 합니다. 기본 설정 파일에서 설정을 수정하지 않으면 VSC에서 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.</block>
   <block id="0104e222e6d889d9cfa97f5dea6922c7" category="paragraph">특정 상황에서 기본 설정 파일을 수정해야 할 수 있습니다. 예를 들어 iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 다른 경우 기본 설정 파일을 수정해야 합니다. 기본 설정 파일에서 설정을 수정하지 않으면 VSC에서 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.</block>
   <block id="6f3852c8999eb43e3657a91a3d195fc3" category="summary">인증서가 만료되거나 인증서가 수동으로 변경될 때 인증서를 업데이트해야 합니다. 클라이언트 또는 클러스터 인증서가 만료되거나 일치하지 않으면 ONTAP 시스템과의 통신이 중단됩니다.</block>
   <block id="936cf7a80db369399f08599f07507feb" category="doc">인증서를 업데이트합니다</block>
@@ -1850,7 +1755,6 @@
   <block id="15832ce0214678b75a59a2afbbc09836" category="paragraph">데이터 저장소 창 밖으로 이동하는 것을 확인하는 다음과 같은 메시지가 표시됩니다.</block>
   <block id="7aab78a1b39daabb0255f06097941141" category="paragraph">_ 이(가) 현재 워크플로우를 닫고 입력한 데이터를 제거하고 스토리지 용량 프로파일 생성 워크플로우를 엽니다. 계속하시겠습니까? _</block>
   <block id="f604eb859718e32220986583f0dd60f8" category="list-text">Yes * 를 클릭하여 Create storage capability profile 창을 엽니다.</block>
-  <block id="bc4bfd7118a18ad7636a91c335e32eeb" category="paragraph">단일 VMware vSphere HTML5 클라이언트가 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우, VSC와 vCenter Server 간에 1:1 페어링이 있을 수 있도록 각 vCenter Server에 VSC 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 7.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.</block>
   <block id="f5881ae95eaddf3eaa37ea9dfa5a4025" category="paragraph">vCenter Server를 지정해야 하는 작업을 수행하는 경우 화면 왼쪽 상단 모서리에 있는 * instance * 선택기에 사용 가능한 vCenter Server가 영숫자 순서로 표시됩니다. 기본 vCenter Server는 항상 드롭다운 목록의 첫 번째 서버입니다.</block>
   <block id="3ba26e2ef418a8000e72bed69c2b1204" category="list-text">vSphere 8.0 릴리즈에서는 NVMe/FC 프로토콜이 지원됩니다.</block>
   <block id="cfbd5fccaf4fd8045e424e51da259e46" category="paragraph">NFS *, * VMFS * 또는 * VVol * 유형을 선택하여 데이터 저장소를 구성할 수 있습니다. VVOL 유형을 선택하면 NVMe/FC 프로토콜을 사용할 수 있습니다.</block>
@@ -1871,7 +1775,6 @@
   <block id="b5d3f62910840da363dc00c277bb04bb" category="paragraph">'계속할 수 없습니다. 컨트롤러의 커널 IP 주소 및 주소를 상호 참조할 때 IP 주소를 찾을 수 없습니다. NFS 마운트 볼륨과 일치하는 네트워크를 찾을 수 없습니다.'</block>
   <block id="dd21e95246bd9b59a210f7335f293a0f" category="paragraph"><block ref="dd21e95246bd9b59a210f7335f293a0f" category="inline-link-macro-rx"></block></block>
   <block id="2384e9746fd49297b20eb475ef6c5bce" category="paragraph">를 참조하십시오 <block ref="e3114922664a9d29184df9e8de358b9e" category="inline-link-macro-rx"></block>섹션을 참조하십시오.</block>
-  <block id="a7a0527cebc15eca28857ecb92fe4359" category="paragraph">스토리지 시스템이 보고되었기 때문에 스토리지 시스템 자격 증명을 업데이트한 경우<block ref="b7aa7656b58c3a7862a86f5f8cd10336" prefix=" " category="inline-code"></block> 상태, 스토리지 시스템 페이지에서 사용할 수 있는 * 모두 다시 검색 * 옵션을 클릭해야 합니다. 이렇게 하면 VSC에서 새 자격 증명을 사용하여 스토리지 시스템에 연결하려고 시도합니다.</block>
   <block id="fdd13b82fb6d2a4ce51b8d8b17c621f9" category="paragraph">클러스터를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * &gt; * Provision Datastore * 를 선택합니다.</block>
   <block id="c3cee4f156cedf6cebe2ab86a8a41d7c" category="paragraph">호스트를 마우스 오른쪽 버튼으로 클릭한 다음 * NetApp ONTAP tools * &gt; * Provision Datastore * 를 선택합니다.</block>
   <block id="d1866eae9a3efecf8de082c109301663" category="paragraph">VASA 공급자 기능이 활성화된 경우 VVOL 데이터 저장소를 프로비저닝할 수 있습니다. 를 참조하십시오. <block ref="b6e18cc642479d1ec82545b2ffe73f70" category="inline-link-macro-rx"></block> 를 참조하십시오. VVOL 데이터 저장소는 NFS, iSCSI, FC/FEoE 및 NVMe/FC 프로토콜을 지원합니다.</block>
@@ -1927,7 +1830,6 @@
   <block id="ef9991a7cf13c45bcebdc7db419b4a5b" category="summary">VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템을 사용하는 VMware 환경에서 가상 머신에 대한 엔드 투 엔드 라이프사이클 관리를 제공합니다. 관리자는 vCenter Server 내의 스토리지를 직접 관리할 수 있으므로 VMware 환경의 스토리지 및 데이터 관리가 간소화됩니다.</block>
   <block id="35b93a81a0436a7a2cfd708e05194805" category="paragraph">ONTAP 툴은 vSphere 클라이언트와 통합되며 SSO(Single Sign-On) 서비스를 사용할 수 있습니다. vCenter Server 인스턴스가 여러 개 있는 환경에서는 관리하려는 각 vCenter Server 인스턴스에 고유한 ONTAP 툴 등록 인스턴스가 있어야 합니다.</block>
   <block id="2ac7202045cf4e40997393c5933fcb14" category="paragraph">VMware vSphere Client 원격 플러그인 툴은 vCenter Server 내부에서 실행할 필요 없이 플러그인 기능을 vSphere Client에 통합하도록 설계되었습니다. 따라서 플러그인을 격리하고 대규모 vSphere 환경에서 작동하는 플러그인을 스케일아웃할 수 있습니다.</block>
-  <block id="8f22fdcdb403a975c8e0128536d37a24" category="paragraph">VMware vSphere GUI용 ONTAP ® 툴에 액세스하려면 올바른 vSphere 오브젝트 레벨에 지정된 VSC별 보기 권한이 있어야 합니다. 이 권한 없이 로그인하는 경우 NetApp 아이콘을 클릭하면 VSC에 오류 메시지가 표시되며 사용자가 VSC에 액세스할 수 없습니다. View * 권한에서 VSC GUI에 액세스할 수 있습니다. 이 권한을 통해 VSC 내에서 작업을 수행할 수 없습니다. VSC 작업을 수행하려면 해당 작업에 대한 올바른 VSC 및 기본 vCenter Server 권한이 있어야 합니다.</block>
   <block id="b0fc0bed1deb4cd0ac1733c83406a338" category="list-text">ONTAP System Manager 9.8P1 이상을 사용하여 클러스터 관리자 또는 SVM 관리자 역할을 생성합니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="36a3e078a9ae64bd58305972fd6b6a14" category="paragraph">새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="057bdc0890b14e869dc32365d6dbda14" category="paragraph">새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오<block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
@@ -2021,7 +1923,6 @@
   <block id="02026f27af003e00469addac855d370b" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>. 주제입니다 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.</block>
   <block id="36716d5924fd9465137a810fd76c2f48" category="paragraph">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.</block>
   <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 443 포트는 보안 연결에 대해 기본적으로 설정됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다.</block>
-  <block id="8678399a2b31de4e8e3f91c25fdbb6f4" category="paragraph">VSC는 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다. 이 포트는 VSC 서비스 및 VSC 서버 로그 내보내기에 사용됩니다. register.html 페이지는 이 포트에서 호스팅됩니다. 나머지 Swagger가 이 포트에 노출되었습니다.</block>
   <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 툴은 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
   <block id="21076231e2fb130435663c1226fafb7f" category="cell">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 번들 다운로드, 웹 CLI 사용자 인터페이스 및 VMware에서 VP로의 제어 경로 통신을 지원합니다. SRA는 이 포트 번호로 백엔드 SRA 서비스와 통신합니다.</block>
   <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
@@ -2076,7 +1977,6 @@
   <block id="9c3b83950ecbb194500ebb7d4d7f928a" category="paragraph">모든 ONTAP 툴 및 VASA 공급자 관련 작업에는 보기 권한이 필요합니다.</block>
   <block id="6184e53410d6b5ab34cba7a9371730c5" category="paragraph">사용 권한은 vCenter Server, ESXi 호스트, 가상 머신, 데이터 저장소, 데이터 센터 등의 vSphere 객체와 연결됩니다. 및 폴더. 모든 vSphere 객체에 권한을 할당할 수 있습니다. vSphere 객체에 할당된 권한에 따라 vCenter Server는 해당 객체에 대해 수행할 수 있는 작업을 결정합니다. ONTAP 툴 관련 작업의 경우 다른 엔티티가 아닌 루트 폴더 레벨(vCenter Server)에서만 사용 권한이 할당 및 검증됩니다. VAAI 플러그인 작업을 제외하고 관련 ESXi에 대해 사용 권한이 확인됩니다.</block>
   <block id="c96c57a6929739514fab2431c7bbc08d" category="paragraph">Active Directory(또는 로컬 vCenter Server 머신)를 사용하여 사용자 및 사용자 그룹을 설정할 수 있습니다. 그런 다음 vCenter Server 권한을 사용하여 이러한 사용자 또는 그룹에 액세스 권한을 부여하여 특정 ONTAP 툴 작업을 수행할 수 있도록 설정할 수 있습니다.</block>
-  <block id="f358a2c90c11b3244eb955405bd0f5a8" category="admonition">이러한 vCenter Server 권한은 VSC 관리자가 아니라 ONTAP 툴 vCenter 사용자에게 적용됩니다. 기본적으로 VSC 관리자는 제품에 대한 모든 액세스 권한을 가지며 권한을 부여하지 않습니다.</block>
   <block id="dc5d790d99534de49ddf3a4c3ac9d8c4" category="paragraph">권한을 할당하는 위치에 따라 사용자가 수행할 수 있는 ONTAP 도구 작업이 결정됩니다.</block>
   <block id="2f9673497a70f9c3bf375ca62d587891" category="paragraph">생성한 권한은 vSphere가 아닌 객체에 적용됩니다. 예를 들어, 스토리지 시스템은 vSphere 객체가 아닙니다. 스토리지 시스템에 권한이 적용되는 경우 할당할 수 있는 vSphere 객체가 없으므로 해당 권한이 포함된 권한을 ONTAP 툴 루트 객체에 할당해야 합니다.</block>
   <block id="ba77066270ccf036939e8215dffdec6b" category="paragraph">예를 들어, ONTAP 도구 권한 "스토리지 시스템 추가/수정/건너뛰기"와 같은 권한이 포함된 모든 권한은 루트 개체 레벨에 할당되어야 합니다.</block>
@@ -2098,13 +1998,11 @@
   <block id="174f603ffaa2e2f55a79dec8ba83c657" category="list-text">_security login create-user-or-group-name &lt;user&gt;-application http-authentication-method cert-role &lt;existing-role-name&gt;-vserver &lt;vserver-name&gt; _</block>
   <block id="15fe50c1cf5cc9a20b0c2914724a8ed1" category="list-text">_security login create-user-or-group-name &lt;user&gt;-application ontapi-authentication-method cert-role &lt;existing-role-name&gt;-vserver &lt;vserver-name&gt; _</block>
   <block id="df3b9e22c3ad1804e7de3391d62fd333" category="list-text">유지보수 콘솔을 시작합니다.</block>
-  <block id="5b2f94f8fc7fac6c5b65ae92f973ae81" category="paragraph">VSC GUI의 ""Export ONTAP tools for VMware vSphere Logs"" 기능을 사용하여 VMware vSphere Log 파일용 ONTAP 툴을 수집할 수 있습니다. VASA Provider가 설정된 VMware vSphere 로그 번들에 대한 ONTAP 툴을 수집하는 경우 ONTAP VMware vSphere 로그 번들에는 VP 로그도 포함됩니다. 다음 단계에서는 VMware vSphere 로그 파일용 ONTAP 툴을 수집하는 방법을 설명합니다.</block>
   <block id="6ab0668e8afff4a2efaec36739183097" category="list-text">ONTAP 툴 홈 페이지에서 * 구성 * &gt; * VMware vSphere 로그 * 용 ONTAP 툴 내보내기 를 클릭합니다.</block>
   <block id="f2bf379ad5a0f05a54bbcdb5678a796e" category="inline-image-macro">재생 버튼</block>
   <block id="f09ce17953135a26f2f12c89bb1b9a79" category="paragraph">배포된 ONTAP 도구의 * 요약 * 탭을 사용하여 유지보수 콘솔에 액세스해야 합니다. 를 클릭합니다  <block ref="80abd5c70dec820fc31b07b6e3d6acac" category="inline-image-macro-rx" type="image"></block>, 유지보수 콘솔이 시작됩니다.</block>
   <block id="ad6409a6647b6007d0c59236c9a9526d" category="inline-image-macro">지구본 아이콘</block>
   <block id="de0b37295bc569e05978d71253c5fc03" category="list-text">를 클릭합니다 <block ref="10af7a3d6b71a29635365f6da600da8a" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 새 네트워크 매핑을 생성합니다.</block>
-  <block id="01a4b38a822503fac9ae3f0ec3e92ed5" category="list-text">VMware SRM 어플라이언스 관리 인터페이스를 액세스한 다음 SRM 어플라이언스의 스토리지 복제 어댑터 페이지로 이동합니다.</block>
   <block id="a86a5be1650520ca8fdf9ff8bc76967f" category="list-text">기존 ONTAP 도구 어플라이언스를 최신 릴리즈로 업그레이드하십시오.</block>
   <block id="ceafa9243433e49b5a0576a4ed1cd4b5" category="list-text">Windows 기반 스토리지 복제 어댑터를 어플라이언스 기반 SRA로 마이그레이션합니다.</block>
   <block id="81f65208775e1359f20f81e36c085f41" category="list-text">Windows SRM 데이터를 SRM 어플라이언스로 마이그레이션합니다.</block>
@@ -2113,4 +2011,112 @@
   <block id="69e0c20cc370e4f2eb4bdc1e3bc3a684" category="list-text">폴더 * 아이콘을 선택하여 새 폴더 매핑을 생성합니다.</block>
   <block id="a4c7d7c61679768abcab3550525c4661" category="inline-image-macro">검색 및 추가 아이콘</block>
   <block id="46f855aaeb43b702265b4d4aae505653" category="list-text">를 클릭합니다 <block ref="b95cf97b2492098c584f14080a443ee3" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 새 자리 표시자 데이터 저장소를 생성합니다.</block>
+  <block id="8653444f6b7adf4ff1ca2abe19b5fb97" category="paragraph">표준 역할을 직접 수정해서는 안 됩니다. 이렇게 하면 ONTAP 도구를 업그레이드할 때마다 ONTAP 도구가 변경 내용을 덮어씁니다. 설치 프로그램은 ONTAP 도구를 업그레이드할 때마다 표준 역할 정의를 업데이트합니다. 이렇게 하면 현재 사용 중인 버전의 ONTAP 툴 및 지원되는 모든 버전의 vCenter Server에 대한 역할이 최신 상태로 유지됩니다.</block>
+  <block id="ae69a7642796247dd4ab1a5822b18ab5" category="summary">VMware vSphere용 ONTAP 툴은 ONTAP용 MetroCluster IP 및 FC 구성을 사용하는 환경을 지원합니다. 대부분의 지원은 자동입니다. 그러나 ONTAP 툴과 VASA Provider를 통해 MetroCluster 환경을 사용하면 몇 가지 차이점이 있을 수 있습니다.</block>
+  <block id="1ba242e43bb7c11afc06f729f6a7415c" category="section-title">MetroCluster 구성 및 ONTAP 도구</block>
+  <block id="c331ac16d9e7b13ad7a4a75aa464d6ea" category="paragraph">ONTAP 툴이 기본 사이트와 2차 사이트에서 스토리지 시스템 컨트롤러를 검색하도록 해야 합니다. 일반적으로 ONTAP 툴은 스토리지 컨트롤러를 자동으로 검색합니다. 클러스터 관리 LIF를 사용 중인 경우 ONTAP 툴이 두 사이트에서 클러스터를 검색하는지 확인하는 것이 좋습니다. 그렇지 않으면 스토리지 컨트롤러를 ONTAP 툴에 수동으로 추가할 수 있습니다. ONTAP 툴에서 스토리지 컨트롤러에 연결하는 데 사용하는 사용자 이름 및 암호 쌍을 수정할 수도 있습니다.</block>
+  <block id="ca3c055a0d73232471b999ed97546b28" category="admonition">MetroCluster 구성을 통해 직접 SVM을 ONTAP 툴에 추가한 경우 전환 후 SVM 이름의 변경("- mc" 접미사 추가)이 반영되지 않습니다. 다른 모든 스위치오버 작업은 정상적으로 계속 실행됩니다.</block>
+  <block id="7a511c80520e04ad9374d9fd7500420c" category="paragraph">스위치오버 또는 스위치백이 발생하면 ONTAP 툴이 클러스터를 자동으로 감지하고 검색하는 데 몇 분이 걸릴 수 있습니다. 데이터 저장소 프로비저닝과 같은 ONTAP 툴 작업을 수행하는 동안 이 문제가 발생할 경우 지연이 발생할 수 있습니다.</block>
+  <block id="67b31b3144022f4700d1a10879f47237" category="admonition">이러한 vCenter Server 사용 권한은 ONTAP 툴 vCenter 사용자에게 적용되며 ONTAP 툴 관리자에게는 적용되지 않습니다. 기본적으로 ONTAP 도구 관리자는 제품에 대한 모든 액세스 권한을 가지며, 이러한 권한을 부여하지 않아도 됩니다.</block>
+  <block id="33a2a3a823a058359e24f236eb526860" category="summary">VMware vSphere GUI용 ONTAP 툴에 액세스하려면 올바른 vSphere 객체 레벨에서 제품 레벨 ONTAP 툴별 보기 권한이 할당되어야 합니다. 이 권한 없이 로그인하는 경우 ONTAP 도구에서 NetApp 아이콘을 클릭하면 오류 메시지가 표시되며 ONTAP 툴에 액세스할 수 없습니다.</block>
+  <block id="5762ca4baa75561e0b6f833567ce6096" category="paragraph">VMware vSphere GUI용 ONTAP ® 툴에 액세스하려면 올바른 vSphere 객체 수준에서 제품 수준의 ONTAP 툴별 보기 권한이 할당되어 있어야 합니다. 이 권한 없이 로그인하는 경우 ONTAP 도구에서 NetApp 아이콘을 클릭하면 오류 메시지가 표시되며 ONTAP 툴에 액세스할 수 없습니다.
+보기 * 권한에서 ONTAP 도구 GUI에 액세스할 수 있습니다. 이 권한은 ONTAP 도구 내에서 작업을 수행할 수 없습니다. ONTAP 툴 작업을 수행하려면 해당 작업에 대한 올바른 ONTAP 툴과 기본 vCenter Server 권한이 있어야 합니다.</block>
+  <block id="64ce0b477578e09db855c8fd5d2a9c73" category="summary">VMware vSphere 및 역할 기반 액세스 제어(RBAC\)에 대한 ONTAP ® 툴로 작업하기 위해 몇 가지 권장되는 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 ONTAP 툴 작업에 의해 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함되어 있습니다.</block>
+  <block id="95d6102c2b97fc1611d099336db2e0a9" category="paragraph">VMware vSphere 및 역할 기반 액세스 제어(RBAC)에 대한 ONTAP 툴로 작업하기 위해 권장되는 여러 ONTAP 역할을 설정할 수 있습니다. 이러한 역할에는 ONTAP 툴 작업에 의해 실행되는 필수 스토리지 작업을 수행하는 데 필요한 ONTAP 권한이 포함되어 있습니다.</block>
+  <block id="d2d9d75ad75bd8f07c048d74285c7e91" category="inline-link">공유 복구 사이트 구성의 사이트 복구 관리자</block>
+  <block id="dd89cac1b35b4e56e683a7ae3c4191e3" category="paragraph">VMware vSphere용 ONTAP 툴은 VMware의 SRM 공유 복구 사이트 구성을 지원합니다. 자세한 내용은 다음을 참조하십시오.<block ref="0ffb02f2a9ebd31e751e8881460965d1" category="inline-link-rx"></block>.</block>
+  <block id="2ecc9eaf40eeff2a5d5bfdebc62550bb" category="inline-link">SRM 공유 복구 사이트에서 SRA를 구성하는 방법</block>
+  <block id="15057a3e38aae03f9f465ba7ab620903" category="paragraph">를 클릭합니다<block ref="5415c0f790a03b5f7964b877faa0433d" category="inline-link-rx"></block> KB 문서에서는 SRM 공유 복구 사이트 구성을 지원하도록 SRA를 설정하는 절차에 대해 자세히 설명합니다.</block>
+  <block id="cd407a7dc68ec4931863b0a4b9511c12" category="summary">VMware vSphere용 ONTAP 툴은 SRA 기능을 ONTAP 툴과 함께 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.</block>
+  <block id="75d26898739bfbd118ceb40ee609588b" category="list-text">다음 URL을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스합니다.<block ref="65934cfc97d2d08e8dbabc6019658190" category="inline-link-rx"></block>그런 다음 VMware SRM Appliance Management Interface의 Storage Replication Adapters 로 이동합니다.</block>
+  <block id="6f2f61122e8b19c8714ba7e9dc8afbae" category="cell">ONTAP 도구는 이 포트에서 보안 통신을 수신합니다.</block>
+  <block id="fcfc4d0541fcfaef918a6982404c79f6" category="paragraph">ONTAP 툴이 VMFS 데이터 저장소의 크기를 조정할 때 포함된 볼륨의 크기를 조정하도록 하려면 VMFS 데이터 저장소를 처음 프로비저닝할 때 Storage attributes 섹션의 * Use existing volume * 옵션을 사용하지 말고 대신 각 데이터 저장소에 대한 새 볼륨을 자동으로 생성하도록 해야 합니다.</block>
+  <block id="0660b9689bf2b0fa8177b2047a37e93b" category="paragraph">스토리지 시스템에 대한 기본 자격 증명을 설정하는 경우 ONTAP 툴에서 이러한 자격 증명을 사용하여 ONTAP 툴이 방금 검색한 스토리지 시스템에 로그인합니다. 기본 자격 증명이 작동하지 않는 경우 스토리지 시스템에 수동으로 로그인해야 합니다. ONTAP 툴 및 SRA를 통해 클러스터 레벨 또는 SVM 레벨에서 스토리지 시스템 자격 증명을 추가할 수 있습니다. 그러나 VASA Provider는 클러스터 레벨 자격 증명에서만 작동합니다.</block>
+  <block id="4dc8b39d7d7b6d7c31dfedf281c6ce67" category="paragraph">ONTAP 툴을 사용하여 스토리지 컨트롤러의 사용자 이름 및 암호 쌍에 연결된 역할을 변경할 수는 없습니다. ONTAP 도구에 사용할 새 ONTAP 사용자 역할을 수정하거나 작성하려면 시스템 관리자를 사용하십시오.</block>
+  <block id="abfa917bee29e9d6901145eb371db3c3" category="paragraph">스토리지 시스템이 보고되었기 때문에 스토리지 시스템 자격 증명을 업데이트한 경우<block ref="b7aa7656b58c3a7862a86f5f8cd10336" prefix=" " category="inline-code"></block> 상태, 스토리지 시스템 페이지에서 사용할 수 있는 * 모두 다시 검색 * 옵션을 클릭해야 합니다. 이렇게 하면 ONTAP 툴에서 새로운 자격 증명을 사용하여 스토리지 시스템에 연결을 시도합니다.</block>
+  <block id="51f5ef577515311d873f15616c367953" category="summary">VASA Provider(VP) 가상 어플라이언스가 손실되었거나 액세스할 수 없거나 작동하지 않는 경우 VP 재해 복구를 수행해야 할 수 있습니다. </block>
+  <block id="b8d4b381d817836a8a1f3e5c51418019" category="doc">VASA Provider 재해 복구</block>
+  <block id="6799b6ec743f9159edf3b43790210a11" category="inline-link">VASA Provider 재해 복구 - 해결 가이드를 수행하는 방법</block>
+  <block id="8ddd69dbd7e32f9100a31c9917dec7fe" category="paragraph">VASA Provider(VP) 가상 어플라이언스가 손실되었거나 액세스할 수 없거나 작동하지 않는 경우 VP 재해 복구를 수행해야 할 수 있습니다.
+자세한 내용은 을 참조하십시오<block ref="4f93ad428ff5409cfa4e0415508a7d46" category="inline-link-rx"></block></block>
+  <block id="aaed3a0449e88e224602fbed57441135" category="list-text">ONTAP 도구의 개요 섹션에서 * 기존 대시보드 * 탭을 클릭합니다.</block>
+  <block id="7a045a9aece435d3dce410c093a75c11" category="summary">ONTAP 툴 그래픽 사용자 인터페이스\(GUI\)에서 사용 가능한 옵션을 통해 VMware vSphere용 ONTAP ® 툴에 대한 로그 파일을 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
+  <block id="9e6b4a70561c2cfee8a253d124baff0c" category="paragraph">ONTAP 툴 GUI(그래픽 사용자 인터페이스)에서 사용 가능한 옵션을 통해 VMware vSphere용 ONTAP 툴에 대한 로그 파일을 수집할 수 있습니다. 기술 지원 부서에서 문제 해결을 위해 로그 파일을 수집하도록 요청할 수 있습니다.</block>
+  <block id="2d445690eb615817d0b2740dcfac6191" category="paragraph">ONTAP 툴 GUI의 ""VMware vSphere 로그용 ONTAP 툴 내보내기"" 기능을 사용하여 VMware vSphere 로그 파일용 ONTAP 툴을 수집할 수 있습니다. VASA Provider가 설정된 VMware vSphere 로그 번들에 대한 ONTAP 툴을 수집하는 경우 ONTAP VMware vSphere 로그 번들에는 VP 로그도 포함됩니다. 다음 단계에서는 VMware vSphere 로그 파일용 ONTAP 툴을 수집하는 방법을 설명합니다.</block>
+  <block id="860cb3a1e157de73905768ead4786f8c" category="list-text">ONTAP 툴이 스토리지를 검색해야 합니다.</block>
+  <block id="2c1017b8e116f8d34809a64ef6de7e0b" category="admonition">컴플라이언스 점검 * 버튼을 클릭하면 ONTAP 툴이 모든 스토리지에 대해 재검색 작업을 수행하는데, 이 작업은 몇 분이 걸릴 수 있습니다.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="01e2b5b5fcf186e7b7100689f3b0ca33" category="paragraph">POST API를 사용하여 9.12부터 vCenter에 ONTAP 툴을 등록합니다.</block>
+  <block id="6c77dd60acdd9097984c36a1058002be" category="summary">기본적으로 ONTAP 툴은 지정된 포트를 사용하여 스토리지 시스템과 VMware vCenter Server를 포함한 구성 요소 간의 통신을 지원합니다. 방화벽이 활성화되어 있는 경우, 방화벽을 예외 허용으로 설정해야 합니다.</block>
+  <block id="bb2c0d8b6eeb0ef9df51f908f8cbb78f" category="doc">ONTAP 도구에 대한 포트 요구 사항</block>
+  <block id="e3881a3679f162ef63388ad246262521" category="paragraph">Windows 이외의 방화벽의 경우 ONTAP 도구가 사용하는 특정 포트에 대한 액세스를 수동으로 부여해야 합니다. 이러한 포트에 대한 액세스 권한을 부여하지 않으면 다음과 같은 오류 메시지가 표시됩니다.</block>
+  <block id="e04b5741a9c357f37599a57840cf34e9" category="paragraph">ONTAP 도구는 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다. 이 포트는 ONTAP 도구 서비스 및 ONTAP 도구 서버 로그를 내보내는 데 사용됩니다. register.html 페이지는 이 포트에서 호스팅됩니다. 나머지 Swagger가 이 포트에 노출되었습니다.</block>
+  <block id="e13fdf31d3a41342db277470931ffb2e" category="paragraph">ICMP가 비활성화되어 있으면 ONTAP 툴의 초기 구성이 실패하고 구축 후 ONTAP 툴이 ONTAP 툴 및 VASA Provider 서비스를 시작할 수 없습니다. 구축 후에는 ONTAP 툴 및 VASA Provider 서비스를 수동으로 설정해야 합니다.</block>
+  <block id="fe7b1552b46ac33387d90b7759403e3d" category="list-text">등록 후 ONTAP 툴 및 VASA Provider 인증서를 다시 생성합니다.</block>
+  <block id="2c8bb591ffc4698d3c84beb4337902a7" category="paragraph">ONTAP 도구를 배포하면 ONTAP 도구 기능이 자동으로 설치됩니다.</block>
+  <block id="008966674e9fe6d19e425e562eb6a24f" category="paragraph">기존 ONTAP 도구 배포에서 업그레이드</block>
+  <block id="4f6b1239013e22e4bcecec3c929c1220" category="paragraph">기존 ONTAP 도구 구축에서 ONTAP 도구로 업그레이드하는 절차는 ONTAP 도구 버전과 ONTAP 도구의 배포 여부에 따라 달라집니다. 자세한 내용은 배포 워크플로 및 업그레이드 섹션을 참조하십시오.</block>
+  <block id="68ebbba5fb36a973cd5157cd94e42fc9" category="list-text">표준 ONTAP 도구 역할을 수정한 경우 해당 역할을 복사하여 변경 내용을 저장해야 합니다.</block>
+  <block id="f66ea2f32309f5fd90d089228f08f046" category="paragraph">ONTAP 도구는 ONTAP 도구 서비스를 다시 시작할 때마다 표준 역할을 현재 기본값으로 덮어씁니다.</block>
+  <block id="b071f3cf67c6e55902fe91a4007f42ae" category="paragraph">ONTAP 도구에 대한 SSL 인증서 재생성</block>
+  <block id="6e8b75f6c005f85260a875936558a351" category="paragraph">ONTAP 툴은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. ONTAP 툴을 vCenter Server에 등록하는 데 사용되는 계정입니다 <block ref="7bf1a148120c785c8303f17e0bb4f7eb" prefix="(" category="inline-code"></block>vCenter Server 관리자 또는 관리자 역할에 할당된 vCenter Server 관리자여야 합니다. ONTAP 도구를 관리자로 실행하려면 모든 작업에 필요한 모든 권한과 권한이 있어야 합니다.</block>
+  <block id="d28eff23707dc2a1b9f4540d883d2254" category="paragraph">회사에서 vSphere 객체에 대한 액세스를 제한하도록 요구하는 경우 vCenter Server 요구 사항을 충족하기 위해 표준 ONTAP 툴 역할을 생성하고 사용자에게 할당할 수 있습니다.</block>
+  <block id="1582cc9629306ba6f3639270bdf4eb44" category="paragraph">생성되는 ONTAP 툴 및 VASA 인증서의 유형은 구축 중에 제공한 IP 주소(IPv4 또는 IPv6)에 따라 다릅니다. ONTAP 도구를 배포하는 동안 정적 IP 세부 정보와 DHCP를 입력하지 않은 경우 네트워크는 IPv4 및 IPv6 주소를 모두 제공합니다.</block>
+  <block id="86bb68a12bd0cf7f26f81f22d3f0750c" category="paragraph">ONTAP 툴과 VASA 인증서는 모두 vCenter Server 등록 중에 사용되는 것과 동일한 유형의 IP 주소를 사용하여 생성됩니다.</block>
+  <block id="82f408b562b890390f80688a77d415b7" category="inline-link">Swagger-UI에서 ONTAP 툴에 스토리지 추가</block>
+  <block id="388c8beb5db60ef8f333013e0bff7505" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료되면 스토리지 시스템을 추가하고 REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다.<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>.</block>
+  <block id="836347fc532979d6200eb11861e66236" category="paragraph">API 호출을 인증하는 _appliance-api-token_을 생성하는 새로운 API가 도입되었습니다. 기존 API 중 일부는 _appliance-API-token_header를 포함하도록 수정되었습니다. ONTAP 툴 9.12 릴리즈에서는 Swagger가 1.0 API를 지원하지 않습니다. 이전에는 1.0에서 있었던 포인터는 2.0 또는 3.0 API로 이동됩니다.</block>
+  <block id="3b7d87c8639d968f41f7f7a7da57f7bb" category="summary">VMware vSphere용 ONTAP 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 자격 증명은 ONTAP 툴 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 필요한 ONTAP 권한을 제공합니다.</block>
+  <block id="81077972c7560c903eb8f825a5ccfb3f" category="paragraph">VMware vSphere용 ONTAP ® 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 자격 증명은 ONTAP 툴 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 필요한 ONTAP 권한을 제공합니다.</block>
+  <block id="206a8ab8f173d67e0c18c8ffd9a8c590" category="paragraph">ONTAP 툴이 스토리지 리소스를 표시하고 관리하기 전에 먼저 ONTAP 툴이 스토리지 시스템을 검색해야 합니다. 검색 프로세스 중에 스토리지 시스템에 대한 ONTAP 자격 증명을 제공해야 합니다. 각 스토리지 시스템에 할당된 사용자 이름 및 암호 쌍과 연결된 권한(또는 역할)입니다. 이러한 사용자 이름 및 암호 쌍은 ONTAP 역할 기반 액세스 제어(RBAC)를 사용하며 ONTAP 내에서 설정해야 합니다. ONTAP 도구 내에서는 이러한 자격 증명을 변경할 수 없습니다. ONTAP 시스템 관리자를 사용하여 ONTAP RBAC 역할을 정의할 수 있습니다.</block>
+  <block id="fc0a785de469968336247ac901c6487f" category="paragraph">스토리지 시스템을 ONTAP 툴에 추가할 때 스토리지 시스템의 IP 주소와 해당 시스템과 연결된 사용자 이름 및 암호 쌍을 제공해야 합니다. 스토리지 시스템 검색 프로세스 중에 ONTAP 툴에서 사용할 기본 자격 증명을 설정하거나 스토리지 시스템이 검색될 때 자격 증명을 수동으로 입력할 수 있습니다. ONTAP 툴에 추가된 스토리지 시스템의 세부 정보는 배포에서 사용하도록 설정한 확장 기능으로 자동 푸시됩니다. VASA Provider 및 SRA(Storage Replication Adapter)에 스토리지를 수동으로 추가할 필요가 없습니다. ONTAP 툴과 SRA는 모두 클러스터 레벨 및 SVM(스토리지 가상 머신) 레벨에서 자격 증명 추가를 지원합니다. VASA Provider는 스토리지 시스템을 추가하기 위한 클러스터 레벨 자격 증명만 지원합니다. 스토리지 시스템을 추가할 때 ONTAP 툴 플러그인과 스토리지 시스템 간의 통신이 상호 인증되어야 합니다.</block>
+  <block id="8ca8a0003223f94c4049f792324a962f" category="paragraph">환경에 vCenter Server 인스턴스가 여러 개 포함된 경우 스토리지 시스템 페이지에서 스토리지 시스템을 ONTAP 툴에 추가하면 스토리지 시스템을 추가할 vCenter Server 인스턴스를 지정할 수 있는 vCenter Server 상자가 스토리지 시스템 추가 대화 상자에 표시됩니다. 데이터 센터 이름을 마우스 오른쪽 버튼으로 클릭하여 스토리지 시스템을 추가하는 경우 서버가 이미 해당 데이터 센터에 연결되어 있으므로 vCenter Server 인스턴스를 지정할 수 있는 옵션이 없습니다.</block>
+  <block id="270e99ee7e6569db96340456d69479ef" category="list-text">ONTAP 툴 서비스가 시작되면 ONTAP 툴이 자동 백그라운드 검색 프로세스를 시작합니다.</block>
+  <block id="9be326f7ea10c6d9cc867e6980f9ebae" category="paragraph">모든 ONTAP 도구 기능을 사용하려면 특정 권한이 있어야 작업을 수행할 수 있습니다. ONTAP 역할과 연결된 자격 증명을 기준으로 사용자가 수행할 수 있는 작업을 제한할 수 있습니다. 스토리지 시스템 사용자 이름과 암호 쌍이 같은 모든 사용자는 동일한 스토리지 시스템 자격 증명 세트를 공유하며 동일한 작업을 수행할 수 있습니다.</block>
+  <block id="496aa770fc6b65183e974e0f92bc5065" category="paragraph">Virtual Storage Console 6.x, Storage Replication Adapter 2.x, 3.x, 4.x 및 VASA Provider 6.x와 같은 개별 애플리케이션의 이전 릴리즈에서는 다른 업그레이드 프로세스를 사용합니다. 설정에 이러한 레거시 버전의 VSC, VASA Provider 또는 SRA가 설치되어 있는 경우 기술 지원 팀에 문의하여 다음 작업을 수행하십시오.</block>
+  <block id="439ddc929b683fbc26b8f18fe8726b21" category="list-text">SRA 2.1 또는 3.0을 사용하는 경우 먼저 기존 사이트 구성 세부 정보를 기록해야 합니다. 새로운 배포 및 마이그레이션에 대해서는 기술 지원 부서에 문의하십시오.</block>
+  <block id="0eb97646b0c599d5a52640d91c53744c" category="summary">스토리지 시스템을 ONTAP 툴에 추가하고 필요한 경우 ONTAP 툴 인터페이스를 사용하여 기본 자격 증명을 설정해야 합니다.</block>
+  <block id="5aa7078e110abcf41dc2bb6ff35f9326" category="summary">SSL 인증서는 ONTAP 도구를 설치할 때 생성됩니다. SSL 인증서에 대해 생성된 고유 이름 \(DN\)은 클라이언트 컴퓨터가 인식하는 일반 이름 \(CN\)이 아닐 수 있습니다. 키 저장소 및 개인 키 암호를 변경하여 인증서를 다시 생성하고 사이트별 인증서를 만들 수 있습니다.</block>
+  <block id="230db58c51faeed75fa7395e8c5e32a8" category="paragraph">SSL 인증서는 ONTAP 도구를 설치할 때 생성됩니다. SSL 인증서에 대해 생성된 DN(고유 이름)은 클라이언트 컴퓨터에서 인식하는 CN(일반 이름)이 아닐 수 있습니다. 키 저장소 및 개인 키 암호를 변경하여 인증서를 다시 생성하고 사이트별 인증서를 만들 수 있습니다.</block>
+  <block id="64fc605937f812409950ab780857807a" category="list-text">ONTAP 툴을 사용하여 VASA Provider 인스턴스를 등록해야 합니다.</block>
+  <block id="d2b93d3eebeddd4bf53683cee6e8a309" category="summary">VMware vSphere용 ONTAP ® 툴에서 제공하는 업데이트 기능을 사용하여 스토리지 시스템에 대한 정보를 업데이트하고 ONTAP 툴이 스토리지 시스템을 강제로 검색할 수 있습니다.</block>
+  <block id="1a44599da47e552e779dcbe8164b4799" category="paragraph">를 클릭합니다<block ref="03b62516184fb6ef591f45bd4974b753" prefix=" " category="inline-code"></block> 인증 오류가 발생한 후 스토리지 시스템의 기본 자격 증명을 변경한 경우 이 옵션이 유용합니다. 스토리지 시스템에서 을 보고한 후 스토리지 시스템 자격 증명을 변경한 경우 항상 업데이트 작업을 수행해야 합니다<block ref="67fa3611161880533d6d25b5af943cfc" prefix=" " category="inline-code"></block>. 업데이트 작업 중에 ONTAP 툴은 새 자격 증명을 사용하여 스토리지 시스템에 연결을 시도합니다.</block>
+  <block id="9168dfdad2b302656e702106289684a8" category="summary">단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 ONTAP 툴 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.</block>
+  <block id="415331dd04beeabf95c76adf6d78d369" category="doc">여러 vCenter Server 환경에서 ONTAP 툴을 등록하기 위한 요구 사항</block>
+  <block id="38021e56a4e16925b32167852714cfa8" category="paragraph">단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우 ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 ONTAP 툴 인스턴스 하나를 등록해야 합니다. 이렇게 하면 vCenter 7.0 이상을 실행하는 모든 서버를 단일 vSphere HTML5 클라이언트에서 연결 모드 및 연결되지 않은 모드로 관리할 수 있습니다.</block>
+  <block id="04cb87cffe72b6223c16b16b8d26a6ff" category="admonition">vCenter Server에서 ONTAP 툴을 사용하려면 관리할 모든 vCenter Server 인스턴스에 대해 하나의 ONTAP 툴 인스턴스를 설정하거나 등록해야 합니다. 등록된 각 ONTAP 도구 인스턴스는 동일한 버전이어야 합니다.</block>
+  <block id="4289e9102aea6ecd03d65cb28665a4c0" category="paragraph">vSphere HTML5 클라이언트를 사용하여 여러 vCenter Server에서 ONTAP 툴 작업을 수행하려면 다음이 필요합니다.</block>
+  <block id="2d1261da28dee01edc309fde0b0ef9a7" category="list-text">관리할 VMware 인벤토리의 각 vCenter Server에 고유한 1:1 페어링으로 등록된 단일 ONTAP 툴 서버가 있어야 합니다.</block>
+  <block id="2d4f08e0702e9c3b4c4f573b81fa80f2" category="paragraph">예를 들어 ONTAP 툴 서버 A가 vCenter 서버 A에 등록되고 ONTAP 툴 서버 B가 vCenter 서버 B에 등록되고 ONTAP 툴 서버 C가 vCenter Server C에 등록되도록 할 수 있습니다.</block>
+  <block id="75eeabbfb6ed09812464302a2e058a27" category="paragraph">ONTAP 툴 서버 A를 vCenter Server A와 vCenter Server B 모두에 등록할 수 없습니다</block>
+  <block id="f055a3e4efeac0eef3ca5642b1333117" category="paragraph">VMware 인벤토리에 ONTAP Tools 서버가 등록되어 있지 않지만 ONTAP 툴에 등록된 vCenter Server가 하나 이상 있는 vCenter Server가 포함되어 있는 경우 그런 다음 ONTAP 툴의 인스턴스를 보고 ONTAP 툴이 등록된 vCenter Server에 대해 ONTAP 툴 작업을 수행할 수 있습니다.</block>
+  <block id="409675c70db15ea20e73f10dc55b0a6b" category="list-text">SSO(Single Sign-On)에 등록된 각 vCenter Server에 대해 ONTAP 툴별 보기 권한이 있어야 합니다.</block>
+  <block id="be0d2cf67607a72917889613634181ee" category="paragraph">ONTAP 도구는 관리하지 않는 개체를 선택하려고 할 때 경고 메시지를 표시합니다.</block>
+  <block id="6c316307129bde8fe65c2e82c758793d" category="paragraph">ONTAP 툴 요약 페이지에서 특정 vCenter Server를 기준으로 스토리지 시스템을 필터링할 수 있습니다. vCenter Server에 등록된 모든 ONTAP Tools 인스턴스에 대해 요약 페이지가 나타납니다. 특정 ONTAP 툴 인스턴스 및 vCenter Server에 연결된 스토리지 시스템을 관리할 수 있지만 ONTAP 툴의 여러 인스턴스를 실행하는 경우에는 각 스토리지 시스템에 대한 등록 정보를 별도로 유지해야 합니다.</block>
+  <block id="983806af9066d83804057ba4ccd40555" category="summary">기본 설정 파일에는 VMware vSphere 작업을 위한 ONTAP ® 툴을 제어하는 설정이 포함되어 있습니다. 대부분의 경우 이러한 파일의 설정을 수정할 필요가 없습니다. ONTAP 도구가 사용하는 환경설정 파일을 아는 것이 좋습니다.</block>
+  <block id="6737554c1e4f43aca77f4ded18d316ff" category="doc">ONTAP 도구 환경설정 파일을 구성합니다</block>
+  <block id="e1beb598a21a46e7c4ad7e97ba6db7d9" category="paragraph">기본 설정 파일에는 VMware vSphere 작업을 위한 ONTAP 툴을 제어하는 설정이 포함되어 있습니다. 대부분의 경우 이러한 파일의 설정을 수정할 필요가 없습니다. ONTAP 도구가 사용하는 환경설정 파일을 아는 것이 좋습니다.</block>
+  <block id="1a8af5dca707257ec98dc82b41fb1860" category="paragraph">ONTAP 도구에는 여러 기본 설정 파일이 있습니다. 이러한 파일에는 ONTAP 도구가 다양한 작업을 수행하는 방법을 결정하는 입력 키와 값이 포함됩니다. 다음은 ONTAP 도구에서 사용하는 환경설정 파일 중 일부입니다.</block>
+  <block id="f60b528414cdb8ba4c7d230256610266" category="paragraph">특정 상황에서 기본 설정 파일을 수정해야 할 수 있습니다. 예를 들어 iSCSI, NFS 또는 NVMe/FC를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 기본 설정 파일을 수정해야 합니다. 기본 설정 파일의 설정을 수정하지 않으면 ONTAP 툴이 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.</block>
+  <block id="3ea2aa15bb4ab73e37d1ade629804dc7" category="list-text">ONTAP 툴에 직접 연결된 SVM에서 데이터 저장소를 프로비저닝하려면 기본 vsadmin 사용자 계정 또는 vsadmin 역할이 아닌 적절한 권한이 있는 사용자 계정을 사용하여 SVM을 ONTAP 툴에 추가해야 합니다.</block>
+  <block id="28eb9150110c4f831f0228d0d7a5b2e5" category="paragraph">이 기본 설정 파일은 VVOL 데이터 저장소 생성에도 적용됩니다. 자세한 내용은 _여러 서브넷에 대한 데이터 저장소 마운트 설정_ 및 _ONTAP 도구 환경 설정 파일 구성_ 을 참조하십시오.</block>
+  <block id="5ed812ef1937fc66843cd41c3bda8712" category="paragraph">ONTAP 툴은 NFS 볼륨 또는 LUN에 데이터 저장소를 생성할 수 있습니다.</block>
+  <block id="812c064fa03f220c21757a9ded61ddcb" category="list-text">NFS 데이터 저장소의 경우 ONTAP 툴이 스토리지 시스템에 NFS 볼륨을 생성한 다음 엑스포트 정책을 업데이트합니다.</block>
+  <block id="fce86d4eef777d5e48ee3c35c55e5975" category="list-text">VMFS 데이터 저장소의 경우 ONTAP 툴에서 새 볼륨을 생성하거나 이 옵션을 선택한 경우 기존 볼륨을 사용)한 다음 LUN 및 igroup을 생성합니다.</block>
+  <block id="69592bead19d7dfb39de5e406135785f" category="paragraph">기본적으로 ONTAP 툴은 * Aggregates * 및 * Volumes * 옵션에 대한 권장 값을 채웁니다. 요구 사항에 따라 값을 사용자 지정할 수 있습니다. ONTAP가 애그리게이트 선택을 관리하므로 FlexGroup 데이터 저장소에는 애그리게이트 선택이 지원되지 않습니다.</block>
+  <block id="a49a0837e41a222ce743713e0c5cd9b8" category="inline-link">가상 스토리지 콘솔: JSON 파일을 검색하여 사용자 역할 및 권한을 구성하는 방법</block>
+  <block id="a1739259cc73da39040bcb27fee49c22" category="paragraph">KB 문서 -<block ref="f570808767cb759d95e66df23ec84de1" category="inline-link-rx"></block> ONTAP 권한 파일을 WebCLI에서 다운로드하는 방법에 대한 지침을 참조하십시오.</block>
+  <block id="47e64920b11aec7857310ee5fd8c0323" category="list-text">ONTAP 툴이 스토리지를 이미 검색했어야 합니다.</block>
+  <block id="7bdf0059e8a1ef602e99caf8b665e18b" category="paragraph">스토리지 매핑 페이지에서 특정 데이터 저장소나 기타 정보를 찾으려면 검색 상자에 이름이나 부분 문자열을 입력합니다. ONTAP 도구는 대화 상자에 검색 결과를 표시합니다. 전체 화면으로 돌아가려면 검색 상자에서 텍스트를 제거한 다음 * Enter * 를 클릭합니다.</block>
+  <block id="fa0abf64888de4c94dacb5a7652d58d0" category="summary">ONTAP 툴은 수많은 환경을 지원합니다. 이러한 환경에서 일부 기능을 사용하려면 추가 구성이 필요할 수 있습니다.</block>
+  <block id="41f0d5d36394297256afcd5376ca3397" category="paragraph">ESXi 호스트, 게스트 운영 체제 및 ONTAP 툴을 구성하기 위해 다음 작업 중 일부를 수행해야 할 수도 있습니다.</block>
+  <block id="00d05dc82a56c2b5c54c0026652008fc" category="list-text">ONTAP 도구 SSL 인증서를 재생성하는 중입니다</block>
+  <block id="535f47691e05fee56d1f18e523c6a360" category="summary">ONTAP 툴을 사용하여 vCenter Server에서 데이터 저장소와 가상 머신을 구성할 수 있습니다. ONTAP 툴을 통해 프로비저닝한 데이터 저장소 및 가상 머신은 ONTAP 툴의 대시보드에 표시됩니다. 따라서 이러한 데이터 저장소와 가상 머신을 쉽게 모니터링하고 관리할 수 있습니다.</block>
 </blocks>

@@ -1,0 +1,15 @@
+---
+permalink: manage/vasa_provider_disaster_recovery.html 
+sidebar: sidebar 
+keywords: scope of guide 
+summary: 'VASA Provider(VP) 가상 어플라이언스가 손실되었거나 액세스할 수 없거나 작동하지 않는 경우 VP 재해 복구를 수행해야 할 수 있습니다. ' 
+---
+= VASA Provider 재해 복구
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VASA Provider(VP) 가상 어플라이언스가 손실되었거나 액세스할 수 없거나 작동하지 않는 경우 VP 재해 복구를 수행해야 할 수 있습니다.
+자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/How_to_perform_a_VASA_Provider_Disaster_Recovery_-_Resolution_Guide["VASA Provider 재해 복구 - 해결 가이드를 수행하는 방법"]

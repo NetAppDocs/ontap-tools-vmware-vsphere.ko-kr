@@ -2,7 +2,7 @@
 permalink: protect/task_enable_storage_replication_adapter.html 
 sidebar: sidebar 
 keywords:  
-summary: VMware vSphere용 ONTAP 툴은 VSC와 함께 SRA 기능을 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다. 
+summary: VMware vSphere용 ONTAP 툴은 SRA 기능을 ONTAP 툴과 함께 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다. 
 ---
 = SRA를 활성화하여 데이터 저장소를 보호합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: VMware vSphere용 ONTAP 툴은 VSC와 함께 SRA 기능을 사용하여
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴은 VSC와 함께 SRA 기능을 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.
+VMware vSphere용 ONTAP 툴은 SRA 기능을 ONTAP 툴과 함께 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.
 
 * 필요한 것 *
 
@@ -40,7 +40,7 @@ VASA Provider 및 SRA 기능을 유연하게 사용하면 기업에 필요한 �
 * SRM 어플라이언스 * 용
 
 +
-.. VMware SRM 어플라이언스 관리 인터페이스를 액세스한 다음 SRM 어플라이언스의 스토리지 복제 어댑터 페이지로 이동합니다.
+.. 다음 URL을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스합니다. https://:<srm_ip>:5480[]그런 다음 VMware SRM Appliance Management Interface의 Storage Replication Adapters 로 이동합니다.
 .. 새 어댑터 * 를 클릭합니다.
 .. SRA 플러그인의 _.tar.gz_installer를 SRM에 업로드합니다.
 .. 어댑터를 다시 검색하여 SRM 스토리지 복제 어댑터 페이지에서 세부 정보가 업데이트되었는지 확인합니다.
