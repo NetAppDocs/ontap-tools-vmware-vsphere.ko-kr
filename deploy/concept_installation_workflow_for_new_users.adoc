@@ -2,7 +2,7 @@
 permalink: deploy/concept_installation_workflow_for_new_users.html 
 sidebar: sidebar 
 keywords:  
-summary: VMware를 처음 사용하는 경우 NetApp VSC 제품을 사용하지 않은 경우, ONTAP 툴을 구축 및 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다. 
+summary: VMware를 처음 사용하는 경우 NetApp ONTAP 툴 제품을 사용하지 않은 경우, ONTAP 툴을 구축하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다. 
 ---
 = VMware vSphere용 ONTAP 툴의 신규 사용자를 위한 구축 워크플로우
 :allow-uri-read: 

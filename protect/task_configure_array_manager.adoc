@@ -39,7 +39,7 @@ NOTE: VMware는 SRM에 대해 NFS4.1 프로토콜을 지원하지 않습니다.
 *** SVM에 직접 연결하는 경우 SVM 관리 LIF의 IP 주소를 입력해야 합니다.
 +
 
-NOTE: 스토리지 관리자를 구성할 때는 Virtual Storage Console의 Storage Systems 메뉴에서 스토리지 시스템을 추가하는 데 사용된 스토리지 시스템에 대해 동일한 접속 및 자격 증명을 사용해야 합니다. 예를 들어, 어레이 관리자 구성의 범위가 SVM인 경우 SVM 레벨에서 VSC 지원 스토리지를 추가해야 합니다.
+NOTE: 스토리지 관리자를 구성할 때는 Virtual Storage Console의 Storage Systems 메뉴에서 스토리지 시스템을 추가하는 데 사용된 스토리지 시스템에 대해 동일한 접속 및 자격 증명을 사용해야 합니다. 예를 들어, 어레이 관리자 구성이 SVM 범위인 경우 ONTAP 툴에 있는 스토리지를 SVM 레벨에서 추가해야 합니다.
 
 
 

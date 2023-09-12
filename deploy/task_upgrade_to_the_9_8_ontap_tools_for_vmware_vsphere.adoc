@@ -38,11 +38,11 @@ OpenSSL dgst-sha256-verify csc-prod-oTV-SRA-TGZ.pub-signature NetApp-ONTAP-tools
 NOTE: 기존 9.10 이상 버전에서만 최신 버전의 ONTAP 도구로 현재 위치 업그레이드를 수행할 수 있습니다.
 
 
-NOTE: ONTAP 툴 9.12의 일부로 모든 스토리지 시스템 인증 및 통신 프로세스가 ONTAP 스토리지 인증서를 자동으로 신뢰하여 기본 인증에서 인증서 기반 인증으로 변경됩니다. 사용자가 수행할 작업이 없습니다.
+NOTE: ONTAP 툴 9.12에서 업그레이드 모든 스토리지 시스템 인증 및 통신 프로세스가 ONTAP 스토리지 인증서를 자동 신뢰하여 기본 인증에서 인증서 기반 인증으로 변경됩니다. 사용자가 수행할 작업이 없습니다.
 
 인증서 인증 없이 스토리지 시스템을 추가하는 것은 제한됩니다.
 
-json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용자로 스토리지 시스템을 추가하고 9.12로 업그레이드하려는 경우
+json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용자로 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려는 경우
 업그레이드하기 전에 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간에 인증서 기반 통신을 활성화하십시오.
 
 . _security login role create -role <existing-role-name> -cmddirname "security login show" -access all _
@@ -50,7 +50,8 @@ json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용�
 . _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all _
 
 
-json 파일을 사용하여 사용자 지정된 SVM 범위의 사용자로 스토리지 시스템을 추가하고 9.12로 업그레이드하려는 경우, 그런 다음 업그레이드하기 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 다음 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간에 인증서 기반 통신을 설정하십시오.
+json 파일을 사용하여 사용자 정의된 SVM 범위 사용자로 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려면 다음을 수행합니다
+업그레이드 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere와 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 활성화하십시오.
 
 . _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver <vserver-name> _
 . _security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name> _

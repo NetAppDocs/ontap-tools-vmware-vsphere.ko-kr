@@ -45,4 +45,4 @@ KB 문서 - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Stora
 새 역할 및 사용자가 추가되고 구성한 역할 아래에서 자세한 권한을 볼 수 있습니다.
 
 
-NOTE: 제거 작업에서는 VSC 역할을 제거하지 않고 VSC 관련 권한에 대한 지역화된 이름을 제거하고 접두어를 ""XXX missing Privilege""에 추가합니다. 이 동작은 vCenter Server에서 권한을 제거하는 옵션을 제공하지 않기 때문에 발생합니다. VSC를 다시 설치하거나 새로운 버전의 VSC로 업그레이드할 경우 모든 표준 VSC 역할 및 VSC별 권한이 복원됩니다.
+NOTE: 제거 작업은 ONTAP 도구 역할을 제거하지 않지만 ONTAP 도구 관련 권한에 대해 지역화된 이름을 제거하고 ""XXX missing privilege""에 접두사를 추가합니다. 이 동작은 vCenter Server에서 권한을 제거하는 옵션을 제공하지 않기 때문에 발생합니다. ONTAP 도구를 다시 설치하거나 최신 버전의 ONTAP 도구로 업그레이드하면 모든 표준 ONTAP 도구 역할 및 ONTAP 도구별 권한이 복원됩니다.

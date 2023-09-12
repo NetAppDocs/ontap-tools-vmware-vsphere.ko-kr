@@ -104,7 +104,7 @@ NOTE: VVOL 복제를 위해 iSCSI VVOL 데이터 저장소를 프로비저닝하
 
 * 참고: * ONTAP에서 FlexVol 볼륨을 생성하는 동안 스토리지 용량 프로필에서 선택하려는 속성을 사용하여 생성해야 합니다. 읽기 쓰기 및 데이터 보호 FlexVol 볼륨은 모두 유사한 특성을 가져야 합니다.
 
-FlexVol 볼륨이 생성되고 ONTAP에서 SnapMirror를 초기화한 후에는 VSC에서 스토리지 재검색을 실행하여 새 볼륨을 볼 수 있어야 합니다.
+FlexVol 볼륨을 생성하고 ONTAP에서 SnapMirror를 초기화한 후에는 ONTAP 툴에서 스토리지 재검색을 실행하여 새 볼륨을 볼 수 있어야 합니다.
 
 
 

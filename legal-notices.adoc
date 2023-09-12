@@ -1,13 +1,13 @@
 ---
-sidebar: sidebar 
 permalink: legal-notices.html 
+sidebar: sidebar 
 keywords:  
 summary:  
 ---
 = 법적 고지
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -41,4 +41,10 @@ link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://
 
 link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2885834["VMware vSphere 9.12용 ONTAP 툴에 대한 알림"^]
+
+
+== 오픈 소스
+
+통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886293["VMware vSphere 9.13용 ONTAP 툴에 대한 고지 사항"^]

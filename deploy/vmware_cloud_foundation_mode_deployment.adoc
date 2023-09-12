@@ -15,7 +15,10 @@ VMware vSphere용 ONTAP 툴은 VCF(VMware Cloud Foundation) 환경에 구축할 
 
 VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료되면 스토리지 시스템을 추가하고 REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Swagger-UI에서 ONTAP 툴에 스토리지 추가"].
 
-API 호출을 인증하는 _appliance-api-token_을 생성하는 새로운 API가 도입되었습니다. 기존 API 중 일부는 _appliance-API-token_header를 포함하도록 수정되었습니다. ONTAP 툴 9.12 릴리즈에서는 Swagger가 1.0 API를 지원하지 않습니다. 이전에는 1.0에서 있었던 포인터는 2.0 또는 3.0 API로 이동됩니다.
+API 호출을 인증하는 _appliance-api-token_을 생성하는 새로운 API가 도입되었습니다. 기존 API 중 일부는 _appliance-API-token_header를 포함하도록 수정되었습니다. Swagger는 ONTAP tools 9.12 릴리스 이후 버전에서 1.0 API를 지원하지 않습니다. 이전에는 1.0에서 있었던 포인터는 2.0 또는 3.0 API로 이동됩니다.
+
+
+NOTE: VMware vSphere 9.13 릴리즈용 ONTAP 툴에서는 2.0 스토리지 기능 프로파일 API를 더 이상 사용할 수 없습니다.
 
 VCF 배포 모드에 사용할 수 있는 API는 다음과 같습니다.
 
@@ -143,13 +146,11 @@ API/svm/SVM
 컨테이너 생성 API를 실행하는 동안 컨테이너에 기존 볼륨을 추가할 수 있습니다. 하지만 기존 볼륨의 압축 및 중복제거 값이 컨테이너의 스토리지 기능과 일치하는지 확인해야 합니다. 값이 일치하지 않으면 가상 머신 생성이 실패합니다. 다음 표에는 해당 스토리지 용량 프로파일에 대해 기존 볼륨에 있어야 하는 값에 대한 세부 정보가 나와 있습니다.
 
 |===
-
-
 | * 컨테이너 저장소 기능 프로파일 * | * 데이터 중복 제거 * | * 압축 * 
 
 
  a| 
-플래티넘
+플래티넘_AFF_A
  a| 
 둘 다 해당되며
  a| 
@@ -158,7 +159,7 @@ API/svm/SVM
 
 
  a| 
-AFF_Thick
+플래티넘_AFF_C
  a| 
 둘 다 해당되며
  a| 
@@ -167,7 +168,7 @@ AFF_Thick
 
 
  a| 
-AFF_Default(기본값)
+플래티넘_ASA_A
  a| 
 둘 다 해당되며
  a| 
@@ -176,7 +177,7 @@ AFF_Default(기본값)
 
 
  a| 
-AFF_계층화
+AFF_NVMe_AFF_A입니다
  a| 
 둘 다 해당되며
  a| 
@@ -185,7 +186,7 @@ AFF_계층화
 
 
  a| 
-AFF_암호화됨
+AFF_NVMe_AFF_C입니다
  a| 
 둘 다 해당되며
  a| 
@@ -194,7 +195,7 @@ AFF_암호화됨
 
 
  a| 
-AFF_Encrypted_Tiering을 참조하십시오
+AFF_NVMe_ASA_A입니다
  a| 
 둘 다 해당되며
  a| 
@@ -203,7 +204,7 @@ AFF_Encrypted_Tiering을 참조하십시오
 
 
  a| 
-aff_encrypted_min50
+AFF_일반_AFF_A입니다
  a| 
 둘 다 해당되며
  a| 
@@ -212,7 +213,25 @@ aff_encrypted_min50
 
 
  a| 
-FAS_Default를 선택합니다
+AFF_일반_AFF_C
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_일반_ASA_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_기본_AFF_A입니다
  a| 
 배경
  a| 
@@ -221,11 +240,128 @@ FAS_Default를 선택합니다
 
 
  a| 
-FAS_Max20
+AFF_Default_AFF_C의 약어입니다
  a| 
 배경
  a| 
 없음
+
+
+
+ a| 
+AFF_Default_ASA_A입니다
+ a| 
+배경
+ a| 
+없음
+
+
+
+ a| 
+AFF_계층화_AFF_A
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_계층화_AFF_C
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_Tiering_ASA_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_AFF_A
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_AFF_C
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_ASA_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_계층화_AFF_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_Encrypted_Tiering_AFF_C의 약어입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_계층화_ASA_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_Min50_AFF_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_Min50_AFF_C입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
+
+
+
+ a| 
+AFF_암호화된_Min50_ASA_A입니다
+ a| 
+둘 다 해당되며
+ a| 
+둘 다 해당되며
 
 
 

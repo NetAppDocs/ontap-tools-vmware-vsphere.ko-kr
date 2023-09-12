@@ -2,7 +2,7 @@
 permalink: configure/task_enable_datastore_mounting_across_different_subnets.html 
 sidebar: sidebar 
 keywords:  
-summary: 'iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 VMware vSphere 기본 설정 파일에 대한 ONTAP 툴을 수정해야 합니다. 기본 설정 파일을 수정하지 않으면 가상 스토리지 콘솔\(VSC\)에서 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.' 
+summary: iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 VMware vSphere 기본 설정 파일에 대한 ONTAP 툴을 수정해야 합니다. 기본 설정 파일을 수정하지 않으면 ONTAP 툴이 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다. 
 ---
 = 서로 다른 서브넷에 데이터 저장소 마운트를 설정합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토
 
 
 [role="lead"]
-iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 VMware vSphere 기본 설정 파일에 대한 ONTAP 툴을 수정해야 합니다. 기본 설정 파일을 수정하지 않으면 VSC(가상 스토리지 콘솔)에서 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.
+iSCSI 또는 NFS를 사용하고 서브넷이 ESXi 호스트와 스토리지 시스템 간에 서로 다른 경우 VMware vSphere 기본 설정 파일에 대한 ONTAP 툴을 수정해야 합니다. 기본 설정 파일을 수정하지 않으면 ONTAP 툴이 데이터 저장소를 마운트할 수 없기 때문에 데이터 저장소 프로비저닝이 실패합니다.
 
 * 이 작업에 대한 정보 *
 

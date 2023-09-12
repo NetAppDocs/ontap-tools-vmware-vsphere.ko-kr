@@ -82,7 +82,7 @@ NetApp Virtual Storage Console > 정책 기반 관리 > 관리 또는 privilege.
  a| 
 VSC 관리자
  a| 
-스토리지 기능 프로필 및 임계값 설정과 관련된 VSC 및 VASA 공급자 작업
+스토리지 기능 프로파일 및 임계값 설정과 관련된 ONTAP 툴 및 VASA Provider 작업
 
 |===
 

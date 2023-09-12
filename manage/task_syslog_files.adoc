@@ -15,14 +15,15 @@ syslog를 사용하여 시스템 로그를 중앙 집중식 로깅 서버로 전
 
 * 이 작업에 대한 정보 *
 
-VMware vSphere 9.12 릴리즈용 ONTAP 툴은 이전 2.0 syslog API를 제거하며 상호 인증을 지원하는 새로운 3.0 syslog 관련 API를 포함합니다. syslog를 설정하려면 다음 단계를 따르십시오.
+ONTAP 툴은 VMware vSphere 9.12 이상용 ONTAP 툴을 통해 이전 2.0 syslog API를 제거합니다. 상호 인증을 지원하는 새로운 3.0 syslog 관련 API가 포함되어 있습니다.
+syslog를 설정하려면 다음 단계를 따르십시오.
 
 * 단계 *
 
 . 세션 ID를 얻으려면 _POST/2.0/security/user/login을 실행하십시오.
 . 위의 응답에서 받은 sessionid를 전달하여 _POST/3.0/appliance-management/logging-client-certificate_를 실행합니다.
 +
-그러면 VP 서버 및 VSC 서버에 대한 인증서가 생성됩니다.
+그러면 VP 서버와 ONTAP 툴 서버에 대한 인증서가 생성됩니다.
 
 . 두 인증서를 모두 syslog 서버에 복사하고 syslog 서버에서 신뢰할 수 있도록 합니다.
 +

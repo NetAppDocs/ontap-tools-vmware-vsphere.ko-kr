@@ -29,7 +29,7 @@ VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for
 
 * 단계 *
 
-. NetApp Support 사이트에서 다운로드한 '.vib' 파일의 이름을 NetAppNasPlugin.vib 로 변경하여 VSC 에서 사용하는 미리 정의된 이름과 일치하도록 합니다.
+. 의 이름을 바꿉니다 `.vib` NetApp Support 사이트에서 NetAppNasPlugin.vib로 다운로드한 파일로, ONTAP 도구에서 사용하는 미리 정의된 이름과 일치합니다.
 . ONTAP 도구 홈 페이지에서 * 설정 * 을 클릭합니다.
 . NFS VAAI Tools * 탭을 클릭합니다.
 . 기존 버전 * 섹션에서 * 변경 * 을 클릭합니다.
@@ -40,6 +40,6 @@ VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for
 
 . 설치가 완료되면 ESXi 호스트를 재부팅합니다.
 +
-ESXi 호스트를 재부팅하면 VSC가 NFS VAAI 플러그인을 자동으로 감지합니다. 플러그인을 활성화하기 위해 추가 단계를 수행할 필요가 없습니다.
+ESXi 호스트를 재부팅하면 ONTAP 툴이 자동으로 NFS VAAI 플러그인을 감지합니다. 플러그인을 활성화하기 위해 추가 단계를 수행할 필요가 없습니다.
 
 

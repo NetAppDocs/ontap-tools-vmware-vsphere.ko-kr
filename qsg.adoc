@@ -19,7 +19,7 @@ summary: VMware vSphere용 ONTAP 툴을 구축하고 초기화하는 방법에 �
 
 
 [role="lead"]
-VMware vSphere용 ONTAP 툴은 VSC, VASA 공급자, SRA(스토리지 복제 어댑터) 확장을 포함하는 단일 vCenter Server 플러그인입니다. VSC는 ESXi 호스트 설정을 구성하고 모범 사례를 사용하여 ONTAP 스토리지를 프로비저닝하므로 모든 ONTAP vSphere 환경에 권장됩니다. VASA Provider는 가상 볼륨(VVol) 지원에 필요하며 SRA는 VMware Site Recovery Manager와 함께 작동합니다.
+VMware vSphere용 ONTAP 툴은 ONTAP 툴, VASA Provider 및 SRA(Storage Replication Adapter) 확장을 포함한 단일 vCenter Server 플러그인입니다. ONTAP 툴은 ESXi 호스트 설정을 구성하고 모범 사례를 사용하여 ONTAP 스토리지를 프로비저닝하므로 모든 ONTAP vSphere 환경에 권장됩니다. VASA Provider는 가상 볼륨(VVol) 지원에 필요하며 SRA는 VMware Site Recovery Manager와 함께 작동합니다.
 
 
 
