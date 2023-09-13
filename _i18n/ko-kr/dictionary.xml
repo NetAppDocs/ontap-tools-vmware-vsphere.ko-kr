@@ -2107,7 +2107,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="e35bb7c62e5e99a4dd4c45dc7401d654" category="paragraph">게스트 OS(운영 체제) 스크립트의 ISO 이미지는 VMware vSphere 서버용 툴에 마운트됩니다. 게스트 OS 스크립트를 사용하여 가상 머신에 대한 스토리지 시간 초과를 설정하려면 vSphere Client에서 스크립트를 마운트해야 합니다.</block>
   <block id="7a7c304e2893cb9575f4c95e13bd9557" category="paragraph">가상 머신을 관리하는 ELM(vCenter Server)에 등록된 ONTAP 툴 인스턴스의 복사본에서 스크립트를 설치해야 합니다. 환경에 vCenter Server가 여러 개 포함된 경우 스토리지 시간 초과 값을 설정할 가상 머신이 포함된 인스턴스를 선택해야 합니다.</block>
   <block id="955b51e13e470f907369543549a3a405" category="inline-link">VMware vSphere 9.13용 ONTAP 툴 릴리즈 노트</block>
-  <block id="5e6870560e6c8c9613501cc132ae6c39" category="paragraph">자세한 내용은 를 참조하십시오<block ref="a04b4fbd78e27d3612eea8f3ed389176" category="inline-link-rx"></block>.</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="b1659ef2c01d8401d9bc67bd39f2ad1d" category="inline-link">VMware vSphere 9.13용 ONTAP 툴에 대한 고지 사항</block>
@@ -2131,4 +2130,5 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="5693a336860dc6b738a1f289ec743b63" category="sidebar">VMware vSphere 9.13용 ONTAP 툴 문서</block>
   <block id="48c1a759d48445c3852e48203f0d0aae" category="sidebar">ONTAP 툴 및 VASA Provider 로그 파일</block>
   <block id="b1ea6eb22e631a7bdaef7c4f2b598432" category="sidebar">ONTAP 도구에 대한 SSL 인증서를 다시 생성합니다</block>
+  <block id="ccfe3ded2b336756061426e3beb4ea84" category="paragraph">자세한 내용은 를 참조하십시오<block ref="217abffc61852464bf1ed6a3818c434b" category="inline-link-rx"></block>.</block>
 </blocks>
