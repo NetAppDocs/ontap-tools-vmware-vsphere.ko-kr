@@ -25,7 +25,7 @@ NOTE: SRM(Site Recovery Manager)에서 리소스는 리소스 풀, ESXi 호스�
 . vCenter Server에 로그인하고 * Site Recovery * > * Sites * 를 클릭합니다.
 . 보호된 사이트를 선택한 다음 * 관리 * 를 클릭합니다.
 . 관리 탭에서 * 리소스 매핑 * 을 선택합니다.
-. 를 클릭합니다 image:../media/new_resource_mappings.gif[""] 아이콘을 클릭하여 새 리소스 매핑을 생성합니다.
+. 를 클릭합니다 image:../media/new_resource_mappings.gif["지구본 아이콘"] 아이콘을 클릭하여 새 리소스 매핑을 생성합니다.
 +
 자원 매핑 작성 마법사가 나타납니다.
 

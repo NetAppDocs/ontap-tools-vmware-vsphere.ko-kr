@@ -10,6 +10,8 @@ entries:
     url: "/protect/task_configure_storage_replication_adapter_for_san_environment.html"
   - title: 확장성이 높은 환경에 맞게 스토리지 구성
     url: "/protect/reference_configure_storage_replication_adapter_for_highly_scaled_environment.html"
+  - title: 공유 복구 사이트 구성에서 SRM을 사용하여 SRA를 구성합니다
+    url: "/protect/configure_sra_with_srm_shared_site.html"
 - title: SRM 어플라이언스에서 SRA를 구성합니다
   url: "/protect/task_configure_sra_on_srm_appliance.html"
 - title: SRA 자격 증명을 업데이트합니다

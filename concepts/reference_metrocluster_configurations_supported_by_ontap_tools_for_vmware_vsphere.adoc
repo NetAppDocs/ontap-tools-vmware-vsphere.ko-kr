@@ -14,9 +14,6 @@ summary: VMware vSphere용 ONTAP 툴은 ONTAP용 MetroCluster IP 및 FC 구성�
 VMware vSphere용 ONTAP 툴은 ONTAP용 MetroCluster IP 및 FC 구성을 사용하는 환경을 지원합니다. 대부분의 지원은 자동입니다. 그러나 ONTAP 툴과 VASA Provider를 통해 MetroCluster 환경을 사용하면 몇 가지 차이점이 있을 수 있습니다.
 
 
-NOTE: SRA는 MetroCluster 구성을 지원하지 않습니다.
-
-
 
 == MetroCluster 구성 및 ONTAP 도구
 
@@ -37,3 +34,17 @@ VASA Provider는 MetroCluster 구성을 사용하는 환경을 자동으로 지�
 
 
 NOTE: VASA Provider는 전환 후 보조 사이트의 SVM 이름에 ""-mc" 접미사를 추가하지 않습니다.
+
+
+
+== MetroCluster 구성 및 SRA
+
+SRA(스토리지 복제 어댑터)는 FC 프로토콜을 통해 MCC(MetroCluster 구성)를 사용하는 환경을 지원합니다.
+
+MCC 및 SRA 구성을 위한 사전 요구사항이므로 모든 SVM(스토리지 가상 머신) 이름은 MCC 클러스터에서 고유해야 합니다. 이름이 고유하지 않으면 충돌이 발생하고 SRA 워크플로가 실패합니다.
+
+필요한 조치:
+
+. MCC 스위치오버 또는 스위치백을 수행한 후에는 소스 클러스터의 _snapmirror list -destinations_ 명령이 새 SVM 이름(<vserver_name>-mc)을 사용한 올바른 출력이 표시되는지 확인합니다. 명령을 실행하는 데 최대 30분이 걸릴 수 있습니다.
+. 다른 SRA 워크플로우를 진행하기 전에 SRM UI에서 DiscoverDevices 작업을 수행합니다. 이 작업을 통해 SRM은 스위치오버 또는 스위치백 후 SVM 이름의 변경 사항을 인식하게 됩니다.
+

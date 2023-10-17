@@ -1,0 +1,18 @@
+---
+permalink: protect/configure_sra_with_srm_shared_site.html 
+sidebar: sidebar 
+keywords: SRA with SRM 
+summary: VMware vSphere용 ONTAP 툴은 VMware SRM 공유 복구 사이트 구성을 지원합니다. 
+---
+= 공유 복구 사이트 구성에서 SRM을 사용하여 SRA를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere용 ONTAP 툴은 VMware의 SRM 공유 복구 사이트 구성을 지원합니다. 자세한 내용은 다음을 참조하십시오. https://docs.vmware.com/en/Site-Recovery-Manager/8.6/com.vmware.srm.install_config.doc/GUID-EBF84252-DF37-43CD-ADC8-E90F5254F315.html["공유 복구 사이트 구성의 사이트 복구 관리자"]. 복구 사이트의 Site Recovery Manager Server 인스턴스는 동일한 vCenter Server 인스턴스에 연결됩니다.
+
+SRM 공유 복구 사이트 구성에서 각 SRM 서버에는 전용 SRA 인스턴스(SRM과 SRA 간의 1:1 관계)가 있어야 합니다. VCF 모드에서 각 SRM 서버에 대해 전용 SRA 인스턴스로 작동하도록 OTV를 구성합니다. vCenter에 등록되고 데이터 저장소 프로비저닝과 같은 비 SRA 작업에 사용되는 비 SRA 지원 ONTAP 툴 어플라이언스를 구축할 수도 있습니다.
+
+를 클릭합니다 https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["SRM 공유 복구 사이트에서 SRA를 구성하는 방법"] KB 문서에서는 SRM 공유 복구 사이트 구성을 지원하도록 SRA를 설정하는 절차에 대해 자세히 설명합니다.
