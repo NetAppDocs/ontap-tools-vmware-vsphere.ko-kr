@@ -5,17 +5,14 @@ keywords: QSG, ONTAP tools for VMware vSphere, Quick start guide, Installing
 summary: VMware vSphere용 ONTAP 툴을 구축하고 초기화하는 방법에 대한 지침은 에 나와 있습니다. 
 ---
 = VMware vSphere용 ONTAP 툴 빠른 시작
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

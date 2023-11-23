@@ -2128,8 +2128,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="b1caae1e6a180ff384d708f6f5f51304" category="admonition">ONTAP 도구 유지 관리 콘솔에서 관리자 암호를 변경한 후 ONTAP 도구에서 SRA가 활성화 및 구성된 경우 에 제공된 * SRA 자격 증명 업데이트 * 절차를 수행하십시오 <block ref="1e7a640d1bcd6b5c87262f4ec3ea69d7" category="inline-link-macro-rx"></block> 섹션을 참조하십시오. 이러한 지침을 따르지 않으면 SRM에 오류가 보고됩니다.</block>
   <block id="bdc5a4ba1115f3f724e1f81e7f41eeef" category="list-text">데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Resize non-vVols datastore * 를 선택합니다.</block>
   <block id="2d7ee85ca6eba61e2ebc56fcd9749a22" category="section-title">MetroCluster 구성 및 SRA</block>
-  <block id="566082b04c4b3f59fa2abd9407221d29" category="paragraph">SRA(스토리지 복제 어댑터)는 FC 프로토콜을 통해 MCC(MetroCluster 구성)를 사용하는 환경을 지원합니다.</block>
-  <block id="dd316d5ffd2f84622629d92855047e4d" category="paragraph">MCC 및 SRA 구성을 위한 사전 요구사항이므로 모든 SVM(스토리지 가상 머신) 이름은 MCC 클러스터에서 고유해야 합니다. 이름이 고유하지 않으면 충돌이 발생하고 SRA 워크플로가 실패합니다.</block>
   <block id="a3a5ab624299236efd1aa00751d3e9d9" category="paragraph">필요한 조치:</block>
   <block id="9a5bef2e6baedf8812a9649b615baf1a" category="list-text">MCC 스위치오버 또는 스위치백을 수행한 후에는 소스 클러스터의 _snapmirror list -destinations_ 명령이 새 SVM 이름(&lt;vserver_name&gt;-mc)을 사용한 올바른 출력이 표시되는지 확인합니다. 명령을 실행하는 데 최대 30분이 걸릴 수 있습니다.</block>
   <block id="44a62aa72367cca25b9e3f92da55ace0" category="list-text">다른 SRA 워크플로우를 진행하기 전에 SRM UI에서 DiscoverDevices 작업을 수행합니다. 이 작업을 통해 SRM은 스위치오버 또는 스위치백 후 SVM 이름의 변경 사항을 인식하게 됩니다.</block>
@@ -2154,4 +2152,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="c65d22128372567906e7fa3a79c5aa8c" category="list-text">VMware vSphere 9.12 이상용 ONTAP 툴에서 ONTAP를 통한 인증은 인증서를 통해 수행됩니다. CA 서명 인증서 또는 자체 서명 인증서를 추가할 수 있습니다. 를 참조하십시오. <block ref="6424e4a6ccc5b08f64694eae7a99760f" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="ce1bc9deb1a63ccda9fedbd2789b5462" category="paragraph">속성의 기본값은 85%로 설정되어 있습니다.* FIPS가 활성화되어 있지만 FIPS가 지원되지 않는 이전 버전의 vCenter를 사용하는 최신 ONTAP 도구 릴리스로 업그레이드한 후에도 배포가 계속 작동합니다.
 하지만 vCenter를 최신 FIPS 지원 버전으로 업그레이드하고 이전 버전의 ONTAP 툴을 사용하는 경우 vCenter에서 FIPS가 비활성화되어 있는 경우에만 구축이 작동합니다.</block>
+  <block id="700f785cc3b0c94782ea099d30974628" category="paragraph">SRA(스토리지 복제 어댑터)는 NFS, iSCSI 및 FCP 프로토콜을 통해 MCC(MetroCluster 구성)를 사용하는 환경을 지원합니다.</block>
+  <block id="b0cf503432f798961e23d246f3541857" category="paragraph">MCC SRA 구성을 위한 사전 요구사항이므로 모든 SVM(스토리지 가상 머신) 이름은 MCC 클러스터에서 고유해야 합니다. 이름이 고유하지 않으면 충돌이 발생하고 SRA 워크플로가 실패합니다.</block>
 </blocks>
