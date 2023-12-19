@@ -10,7 +10,7 @@ entries:
   url: "/concepts/concept_manage_disaster_recovery_setup_using_srm.html"
 - title: 역할 기반 액세스 제어
   entries:
-  - title: ONTAP 도구에 대한 역할 기반 액세스 제어 개요
+  - title: ONTAP 툴에 대한 역할 기반 액세스 제어 개요
     url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
   - title: vCenter Server 권한의 구성 요소입니다
     url: "/concepts/reference_components_that_make_up_vcenter_server_permissions.html"
