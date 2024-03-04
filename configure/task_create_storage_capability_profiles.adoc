@@ -72,7 +72,7 @@ _ 이(가) 현재 워크플로우를 닫고 입력한 데이터를 제거하고 
 이름 및 설명 탭의 * 설명 * 필드를 사용하여 SCP(Storage Capability Profile)의 용도를 설명할 수 있습니다. 사용 중인 응용 프로그램에 따라 다른 프로필을 설정하는 것이 좋은 방법이므로 적절한 설명을 제공하는 것이 좋습니다.
 
 예를 들어, 비즈니스 크리티컬 애플리케이션에는 AFF 및 ASA 플랫폼 등과 같이 더 우수한 성능을 지원하는 기능이 포함된 프로필이 필요합니다. 테스트 또는 교육에 사용되는 데이터 저장소는 더 낮은 성능의 Flash Array 하이브리드 플랫폼의 프로필을 사용할 수 있으며, 모든 스토리지 효율성 기능 및 계층화를 통해 비용을 제어할 수 있습니다.
-플랫폼 유형과 비대칭 플래그의 조합은 SCP의 유형을 결정합니다. 예: Platinum_ASA_A, Platinum_AFF_A, Platinum_AFF_C
+플랫폼 유형과 비대칭 플래그의 조합은 SCP의 유형을 결정합니다. 예: Platinum_ASA_A, Platinum_ASA_C, Platinum_AFF_A, Platinum_AFF_C
 
 vCenter Server에 대해 ""Linked"" 모드를 설정한 경우 스토리지 용량 프로필을 생성할 vCenter Server를 선택해야 합니다.
 

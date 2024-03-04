@@ -518,7 +518,6 @@
   <block id="442ea0eca66e22693105f5c322b9b5bc" category="summary">ONTAP 툴을 구성하려면 스토리지 시스템을 구성하고, 스토리지 기능 프로필을 생성하고, 데이터 저장소를 프로비저닝하며, 재해 복구를 위해 SRA를 선택적으로 구성해야 합니다.</block>
   <block id="d9d16dc3acbe809713bf4f3dbd3f8e9a" category="doc">ONTAP 도구 구성 워크플로</block>
   <block id="8aaac5ebacc67a7b948b0cfc0d1ddfb1" category="image-alt">ONTAP 도구 구성 워크플로</block>
-  <block id="8c9aff8d70d2347574f52228c778a94e" category="doc">기존 데이터 저장소 및 가상 머신을 구성합니다</block>
   <block id="4de1c4f6191ac837f89defd159014d4f" category="doc">VMware vSphere용 ONTAP 툴을 구성합니다</block>
   <block id="04bb4e8cfaa2cf221d467d6c433ac8cf" category="list-text">UNMAP 설정을 비롯한 ESXi 호스트 설정 확인</block>
   <block id="bd12dce47bd477f58597d2dfef8ab312" category="list-text">게스트 운영 체제에 대한 시간 초과 값을 추가하는 중입니다</block>
@@ -604,7 +603,6 @@
   <block id="8cc26aabe4ce86b5e0e7cfb0b18110c4" category="list-text">이전 버전의 VMware vSphere용 ONTAP 툴에서 최신 버전의 ONTAP 툴로 업그레이드한 후에는 기존 스토리지 기능 프로파일(7.2 버전 이전에 생성됨)을 수정할 수 없습니다.</block>
   <block id="d403cd608320f1549dc6fc7b8fad8226" category="paragraph">기존 스토리지 기능 프로필은 이전 버전과의 호환성을 위해 유지됩니다. 기본 템플릿을 사용하지 않는 경우 최신 버전의 ONTAP 도구로 업그레이드하는 동안 기존 템플릿이 재정의되어 스토리지 기능 프로필의 성능과 관련된 새 QoS 메트릭을 반영합니다.</block>
   <block id="a73487c98f2dda3222e7778da1b41360" category="list-text">기존 스토리지 기능 프로필을 수정하거나 사용하여 새 가상 데이터 저장소 또는 VM 스토리지 정책을 프로비저닝할 수 없습니다.</block>
-  <block id="b73838ffcbb69f170964cafa4454f6e6" category="list-text">모든 새 데이터 저장소에 새 스토리지 용량 프로필을 사용해야 합니다.</block>
   <block id="7deb656020bcedda6285cd3a18ecf57b" category="doc">알람 임계값을 구성합니다</block>
   <block id="24f4a7fbd8b6f9c8b1467252fea39f5d" category="list-text">ONTAP 도구 홈 페이지에서 * 설정 * 을 클릭합니다.</block>
   <block id="d1303cd6e27c4cbc7126489a14f39ec4" category="list-text">통합 어플라이언스 설정 * 을 클릭합니다.</block>
@@ -890,17 +888,6 @@
   <block id="5197eea883ca59d7937354026b874ca4" category="list-text">필요한 " Max IOPS " 값이 있는 새 스토리지 기능 프로필을 사용하여 VVol 데이터 저장소를 생성합니다.</block>
   <block id="18dbb135de69baaffd8148a83fae1346" category="list-text">VM 스토리지 정책을 생성한 다음 새 VM 스토리지 정책을 새 스토리지 용량 프로필과 매핑합니다.</block>
   <block id="1ac07dc16e0fcfd15ecacc73434fddf4" category="list-text">새로운 VM Storage Policy를 사용하여 기존 가상 머신을 새로 생성한 VVOL 데이터 저장소로 마이그레이션합니다.</block>
-  <block id="593947f8d5e4e5056e4cbc0df44b31ba" category="summary">이 가이드를 사용하여 스토리지 용량 할당, 최적화, 데이터 저장소 및 가상 시스템 모니터링과 관련된 작업에 대한 정보를 빠르게 찾을 수 있습니다.</block>
-  <block id="6cbc3d316243b777216f4f72ff0a0869" category="doc">이 가이드의 사용 여부를 결정합니다</block>
-  <block id="06ccfbdd4bca45f6352514dad9991bf7" category="paragraph">* 본 가이드 사용에 대한 요구 사항 *</block>
-  <block id="62418c82e837c2de8717d422c47f1704" category="paragraph">이 가이드는 다음과 같은 가정을 기반으로 합니다.</block>
-  <block id="2a4ebfe287de523c0821df3c92fcb0c2" category="list-text">수행 중인 작업에 필요한 기능이 설치되었습니다.</block>
-  <block id="4128e8f68603e53206775205d1f0397e" category="paragraph">이러한 기능에는 VMware VAAI용 NFS 플러그인, ONTAP용 VASA 공급자, 스토리지 복제 어댑터가 포함될 수 있습니다.</block>
-  <block id="385efce5a9724c9f179860be1b8c1a16" category="list-text">vCenter Server와 ONTAP 모두에 대한 역할 기반 액세스 제어(RBAC)가 설정되었습니다.</block>
-  <block id="777e62cd03e65fc88d5dd8bf6e074b5f" category="paragraph">필요한 권한 및 권한이 모두 없는 경우 마법사를 진행하는 동안 수행 중인 작업이 작동하는 것처럼 보이지만 여전히 성공적으로 완료되지 못할 수 있습니다.</block>
-  <block id="fd80a621abb064d6b42d01e151f1b653" category="paragraph">이 가이드에 나와 있는 대부분의 작업은 타겟 데이터 저장소 또는 가상 머신에서 한 번에 한 작업만 수행해야 합니다.</block>
-  <block id="6e1cc1c43c963fb2f7be56194436c0bc" category="inline-link">NetApp 커뮤니티: VMware vSphere용 Virtual Storage Console</block>
-  <block id="b117a32af6ce3993d0558888d48066aa" category="paragraph"><block ref="b117a32af6ce3993d0558888d48066aa" category="inline-link-rx"></block></block>
   <block id="37cb7cba8a11cb5f31e25fa717c59190" category="summary">기존 VVol(VMware Virtual Volumes) 데이터 저장소를 편집하여 기본 스토리지 기능 프로필을 변경할 수 있습니다. 기본 스토리지 기능 프로필은 주로 스왑 VVOL에 사용됩니다.</block>
   <block id="1beae669357c3fbe10db97be0339d159" category="doc">VVOL 데이터 저장소를 편집합니다</block>
   <block id="5025113f793ed6f71d046e496cae4a91" category="paragraph">기존 VVol(VMware Virtual Volumes) 데이터 저장소를 편집하여 기본 스토리지 기능 프로필을 변경할 수 있습니다. 기본 스토리지 기능 프로필은 주로 스왑 VVOL에 사용됩니다.</block>
@@ -1374,25 +1361,9 @@
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
-  <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오</block>
   <block id="e695b432b77d6bddfcb785c76f5e5442" category="sidebar">ONTAP 도구 빠른 시작</block>
   <block id="3d7fe3e43f9f24fffe5ed0d546d12f13" category="sidebar">ONTAP 툴 구축</block>
   <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">ONTAP 툴을 업그레이드합니다</block>
-  <block id="21e2a89d708329706ec6ed3fc989a1f6" category="sidebar">ONTAP 도구를 사용합니다</block>
-  <block id="317bbf73ff27c5f981628c8fb83ebf22" category="sidebar">역할 기반 액세스 제어를 구성합니다</block>
-  <block id="48bc2d028cb2a507ef974230ca3ba793" category="sidebar">원격 진단 구성</block>
-  <block id="641e9457539249e880725760f91d5ee2" category="sidebar">고가용성을 구성합니다</block>
-  <block id="04edeb5424c826c14a69edb777edf395" category="sidebar">데이터 저장소 보호 및 관리</block>
-  <block id="eaf78ca462bf848b7c59c410077002b6" category="sidebar">데이터 저장소를 보호합니다</block>
-  <block id="c724784c65896d8b16350f4b0580dfd4" category="sidebar">가상 시스템 보호</block>
-  <block id="5267febc97a2cc385cc5c73995dc64df" category="sidebar">기존 데이터 저장소 및 가상 머신을 모니터링합니다</block>
-  <block id="3123ece3c3b36f605758cb0c9a28f904" category="sidebar">VVOL 데이터 저장소 및 가상 머신을 모니터링합니다</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
-  <block id="51cf1968b9a38ab03f7396d237ad0be6" category="sidebar">VMware용 이전 버전의 ONTAP 툴 설명서</block>
-  <block id="4c3c39a603eb21106d2df2836d4b456c" category="sidebar">NetApp 기술 자료 - ONTAP 툴</block>
-  <block id="bbf1057ad175e1e1664e224351019ac9" category="sidebar">NetApp 가져오기 유틸리티 - 비디오</block>
-  <block id="72393f9ef0b6b69526a30ac7ce5276bc" category="sidebar">NetApp 커뮤니티 - ONTAP 툴</block>
   <block id="f724dfae8a2bb3b34e049dcedf88d10d" category="sidebar">데이터 저장소와 가상 머신을 보호합니다</block>
   <block id="754290325c2ec09a93b1e1ede0871001" category="sidebar">스토리지 복제 어댑터를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="30dcbadaeab2008f15a279a602f8b6e2" category="sidebar">재해 복구를 위한 스토리지 시스템 구성</block>
@@ -1951,7 +1922,6 @@
   <block id="1582cc9629306ba6f3639270bdf4eb44" category="paragraph">생성되는 ONTAP 툴 및 VASA 인증서의 유형은 구축 중에 제공한 IP 주소(IPv4 또는 IPv6)에 따라 다릅니다. ONTAP 도구를 배포하는 동안 정적 IP 세부 정보와 DHCP를 입력하지 않은 경우 네트워크는 IPv4 및 IPv6 주소를 모두 제공합니다.</block>
   <block id="86bb68a12bd0cf7f26f81f22d3f0750c" category="paragraph">ONTAP 툴과 VASA 인증서는 모두 vCenter Server 등록 중에 사용되는 것과 동일한 유형의 IP 주소를 사용하여 생성됩니다.</block>
   <block id="82f408b562b890390f80688a77d415b7" category="inline-link">Swagger-UI에서 ONTAP 툴에 스토리지 추가</block>
-  <block id="388c8beb5db60ef8f333013e0bff7505" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료되면 스토리지 시스템을 추가하고 REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다.<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>.</block>
   <block id="3b7d87c8639d968f41f7f7a7da57f7bb" category="summary">VMware vSphere용 ONTAP 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 자격 증명은 ONTAP 툴 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 필요한 ONTAP 권한을 제공합니다.</block>
   <block id="81077972c7560c903eb8f825a5ccfb3f" category="paragraph">VMware vSphere용 ONTAP ® 툴은 스토리지 시스템을 검색하고 스토리지 자격 증명을 설정하는 단일 메커니즘을 제공합니다. 자격 증명은 ONTAP 툴 사용자가 스토리지 시스템을 사용하여 작업을 수행할 수 있도록 필요한 ONTAP 권한을 제공합니다.</block>
   <block id="206a8ab8f173d67e0c18c8ffd9a8c590" category="paragraph">ONTAP 툴이 스토리지 리소스를 표시하고 관리하기 전에 먼저 ONTAP 툴이 스토리지 시스템을 검색해야 합니다. 검색 프로세스 중에 스토리지 시스템에 대한 ONTAP 자격 증명을 제공해야 합니다. 각 스토리지 시스템에 할당된 사용자 이름 및 암호 쌍과 연결된 권한(또는 역할)입니다. 이러한 사용자 이름 및 암호 쌍은 ONTAP 역할 기반 액세스 제어(RBAC)를 사용하며 ONTAP 내에서 설정해야 합니다. ONTAP 도구 내에서는 이러한 자격 증명을 변경할 수 없습니다. ONTAP 시스템 관리자를 사용하여 ONTAP RBAC 역할을 정의할 수 있습니다.</block>
@@ -1997,7 +1967,6 @@
   <block id="fa0abf64888de4c94dacb5a7652d58d0" category="summary">ONTAP 툴은 수많은 환경을 지원합니다. 이러한 환경에서 일부 기능을 사용하려면 추가 구성이 필요할 수 있습니다.</block>
   <block id="41f0d5d36394297256afcd5376ca3397" category="paragraph">ESXi 호스트, 게스트 운영 체제 및 ONTAP 툴을 구성하기 위해 다음 작업 중 일부를 수행해야 할 수도 있습니다.</block>
   <block id="00d05dc82a56c2b5c54c0026652008fc" category="list-text">ONTAP 도구 SSL 인증서를 재생성하는 중입니다</block>
-  <block id="535f47691e05fee56d1f18e523c6a360" category="summary">ONTAP 툴을 사용하여 vCenter Server에서 데이터 저장소와 가상 머신을 구성할 수 있습니다. ONTAP 툴을 통해 프로비저닝한 데이터 저장소 및 가상 머신은 ONTAP 툴의 대시보드에 표시됩니다. 따라서 이러한 데이터 저장소와 가상 머신을 쉽게 모니터링하고 관리할 수 있습니다.</block>
   <block id="7d74f1d21f6854c7993e1b0275d74e28" category="admonition">스토리지 관리자를 구성할 때는 Virtual Storage Console의 Storage Systems 메뉴에서 스토리지 시스템을 추가하는 데 사용된 스토리지 시스템에 대해 동일한 접속 및 자격 증명을 사용해야 합니다. 예를 들어, 어레이 관리자 구성이 SVM 범위인 경우 ONTAP 툴에 있는 스토리지를 SVM 레벨에서 추가해야 합니다.</block>
   <block id="a1c0444b1a542c852fc2d20519caf067" category="admonition">vCenter 8.0에서 SRM(Site Recovery Manager) 워크플로가 실패하고 오류 메시지가 표시됩니다. VVOL 복제는 vCenter 7.0u3 릴리즈에서 정상적으로 작동합니다.</block>
   <block id="40bca699ad9d82790f8acf46746bf6bf" category="list-text">vSphere Client 메뉴에서 * NetApp ONTAP tools * &gt; * 설정 * &gt; * 관리 설정 * &gt; * 기능 관리 * &gt; * 스토리지 복제 어댑터(SRA) 사용 * 을 선택합니다</block>
@@ -2009,10 +1978,6 @@
   <block id="89320c6c07930c9881a6ac929a15a616" category="list-text"><block ref="43ee33685f5d1476018f13eeaa89da14" prefix="" category="inline-code"></block>VASA Provider를 통한 API 트래픽 및 외부 트래픽에 대한 정보 포함
 <block ref="e2d364adecadb42493d95a6c48245376" prefix="*" category="inline-code"></block>ONTAP 도구 설정에 대한 정보가 포함되어 있습니다</block>
   <block id="faf06ec17c1b33b9c2b3d7682971f5f7" category="list-text">ONTAP tools 서버:<block ref="d73aa7cfc3f8e89c37a2673bb667f1d8" prefix=" " category="inline-code"></block> 및<block ref="6fbea5707094c19c0cf0e7517f528702" prefix=" " category="inline-code"></block></block>
-  <block id="1f4ec73bb8d94c3cbed17be018e69c97" category="paragraph">이 설명서의 정보는 시스템 관리자가 아닌 ONTAP 도구 사용자를 위한 것입니다. 이 가이드에서는 VMware vSphere용 ONTAP ® 툴의 모든 구축 후 작업에 대한 정보를 제공합니다.</block>
-  <block id="4747dace70ccea8e51c1ab662498a395" category="list-text">ONTAP 도구를 설치하고 구성했습니다.</block>
-  <block id="4cc75885a6d06db585c32cea6a7d8485" category="list-text">ONTAP 툴은 사용 중인 모든 스토리지 시스템을 검색합니다.</block>
-  <block id="c2d7bb1d880bb0fddb8c0da4f36fbedf" category="paragraph">ONTAP 툴에 대한 질문이 있거나 다른 ONTAP 툴 사용자와 정보를 공유하려면 NetApp 커뮤니티 포럼을 방문하십시오.</block>
   <block id="88f7a3f25d4be5ba3ffcdaa56a5a8f85" category="list-text">vCenter Server 인스턴스에서 ONTAP 툴을 통해 관리되는 성능 메트릭과 함께 기존 데이터 저장소의 수입니다</block>
   <block id="e69424f143b8af4676d84ab6088e12fb" category="paragraph">ONTAP 툴은 VMware vSphere 9.12 이상용 ONTAP 툴을 통해 이전 2.0 syslog API를 제거합니다. 상호 인증을 지원하는 새로운 3.0 syslog 관련 API가 포함되어 있습니다.
 syslog를 설정하려면 다음 단계를 따르십시오.</block>
@@ -2023,8 +1988,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="b75a1f15b9d5c67a12df98a9f92a5966" category="paragraph">플래시 스토리지 하이브리드 시스템, ASA 및 AFF 시스템의 경우 공간 예비 공간을 일반 또는 씬 으로 구성할 수 있습니다.</block>
   <block id="9ce0d0c7f1eb71c44d9deec84bc83698" category="summary">ONTAP 툴을 사용하여 스토리지 용량 프로파일을 수동으로 생성하거나 데이터 저장소의 기능을 기반으로 프로파일을 자동으로 생성하거나 요구사항에 맞게 프로파일을 수정할 수 있습니다.</block>
   <block id="08356be0c93d53bb862523b5f265dc58" category="paragraph">이름 및 설명 탭의 * 설명 * 필드를 사용하여 SCP(Storage Capability Profile)의 용도를 설명할 수 있습니다. 사용 중인 응용 프로그램에 따라 다른 프로필을 설정하는 것이 좋은 방법이므로 적절한 설명을 제공하는 것이 좋습니다.</block>
-  <block id="0db06e45c833cc0383b061f129de7e01" category="paragraph">예를 들어, 비즈니스 크리티컬 애플리케이션에는 AFF 및 ASA 플랫폼 등과 같이 더 우수한 성능을 지원하는 기능이 포함된 프로필이 필요합니다. 테스트 또는 교육에 사용되는 데이터 저장소는 더 낮은 성능의 Flash Array 하이브리드 플랫폼의 프로필을 사용할 수 있으며, 모든 스토리지 효율성 기능 및 계층화를 통해 비용을 제어할 수 있습니다.
-플랫폼 유형과 비대칭 플래그의 조합은 SCP의 유형을 결정합니다. 예: Platinum_ASA_A, Platinum_AFF_A, Platinum_AFF_C</block>
   <block id="357990fd8e31e2fb0a3bad1794beb33c" category="list-text">Flash Array 하이브리드 스토리지를 선택하는 경우 공간 예약(일반 또는 씬)을 구성하고, 데이터 중복 제거, 압축 및 암호화를 설정할 수 있습니다.</block>
   <block id="13144f962def59576c0e52e4bc8fd480" category="paragraph">이 속성은 플래시 어레이 하이브리드 스토리지에 적용되지 않으므로 계층화 속성이 비활성화됩니다.</block>
   <block id="89bf031d8a89602b6558e06d692d13a1" category="list-text">ASA 스토리지를 선택하는 경우 암호화 및 계층화를 활성화할 수 있습니다.</block>
@@ -2142,4 +2105,17 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="142666c1fbe08e639361aca9fb6d3d5a" category="list-text">기존 ONTAP 도구 어플라이언스를 최신 릴리즈로 업그레이드하십시오.</block>
   <block id="7ffdc51b9c93dfaa755052457f971d9e" category="list-text">vCenter Server에서 콘솔을 열고 ONTAP 툴 어플라이언스 가상 머신을 엽니다.</block>
   <block id="d0119a1425315c47822975d16de6de70" category="sidebar">ONTAP 툴에 대한 역할 기반 액세스 제어 개요</block>
+  <block id="b98d139729a71b493dcd4c3f860f1947" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료된 후 스토리지 시스템을 추가, 삭제 또는 수정하고, REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다.<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>.</block>
+  <block id="32f68a60cef40faedbc6af20298c1a1e" category="paragraph">삭제</block>
+  <block id="3e75383a5992a6d15fb81e872e46e256" category="paragraph">를 누릅니다</block>
+  <block id="3609cc991ef06b80256315c4e79537aa" category="paragraph">플래티넘_ASA_C</block>
+  <block id="d84c449b5ba5c99192b66c773c0134a7" category="paragraph">AFF_NVMe_ASA_C입니다</block>
+  <block id="f456be3bdce5629c658724dad4f3a865" category="paragraph">AFF_일반_ASA_C</block>
+  <block id="eae2a40fbc4ae52edc2b32231150c9e6" category="paragraph">AFF_Default_ASA_C의 약어입니다</block>
+  <block id="3fbc1f1a3ba06f7917f54e41b9123e21" category="paragraph">AFF_Tiering_ASA_C입니다</block>
+  <block id="2c539e94dde16d8a3ef8f6da22c85df3" category="paragraph">AFF_암호화된_ASA_C</block>
+  <block id="65e13e4d0253abff89ed1874b8274341" category="paragraph">AFF_암호화된_계층화_ASA_C</block>
+  <block id="eb8ad81730e4bb2e83e5a8fd73176d69" category="paragraph">AFF_Encrypted_Min50_ASA_C입니다</block>
+  <block id="f5117d7744e4edc2e74fa77f9eff59ed" category="paragraph">예를 들어, 비즈니스 크리티컬 애플리케이션에는 AFF 및 ASA 플랫폼 등과 같이 더 우수한 성능을 지원하는 기능이 포함된 프로필이 필요합니다. 테스트 또는 교육에 사용되는 데이터 저장소는 더 낮은 성능의 Flash Array 하이브리드 플랫폼의 프로필을 사용할 수 있으며, 모든 스토리지 효율성 기능 및 계층화를 통해 비용을 제어할 수 있습니다.
+플랫폼 유형과 비대칭 플래그의 조합은 SCP의 유형을 결정합니다. 예: Platinum_ASA_A, Platinum_ASA_C, Platinum_AFF_A, Platinum_AFF_C</block>
 </blocks>
