@@ -13,7 +13,12 @@ summary: VMware vSphere용 ONTAP 툴은 VMware 클라우드 기반 환경에 구
 [role="lead"]
 VMware vSphere용 ONTAP 툴은 VCF(VMware Cloud Foundation) 환경에 구축할 수 있습니다. VCF 구축의 주요 목적은 클라우드 설정에서 ONTAP 툴을 사용하고 vCenter Server 없이 컨테이너를 생성하는 것입니다.
 
-VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료된 후 스토리지 시스템을 추가, 삭제 또는 수정하고, REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Swagger-UI에서 ONTAP 툴에 스토리지 추가"].
+VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료된 후 스토리지 시스템을 추가, 삭제 또는 수정하고, REST API를 사용하여 컨테이너를 생성할 수 있습니다.
+
+
+NOTE: 스토리지 시스템 수정 및 삭제는 VMware vSphere 9.13P1 릴리즈용 ONTAP 툴에서 지원됩니다.
+
+다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다. https://kb.netapp.com/mgmt/OTV/SRA/Storage_Replication_Adapter%3A_How_to_configure_SRA_in_a_SRM_Shared_Recovery_Site["Swagger-UI에서 ONTAP 툴에 스토리지 추가"].
 
 API 호출을 인증하는 _appliance-api-token_을 생성하는 새로운 API가 도입되었습니다. 기존 API 중 일부는 _appliance-API-token_header를 포함하도록 수정되었습니다. Swagger는 ONTAP tools 9.12 릴리스 이후 버전에서 1.0 API를 지원하지 않습니다. 이전에는 1.0에서 있었던 포인터는 2.0 또는 3.0 API로 이동됩니다.
 
@@ -469,7 +474,7 @@ AFF_Encrypted_Min50_ASA_C입니다
 |===
 ONTAP 패치 API를 사용하여 적절한 값을 설정할 수 있습니다.
 
-"https://<machine_IP>/api/storage/volumes/{uuid}`
+`\https://<machine_IP>/api/storage/volumes/{uuid}`
 
 ONTAP 도구의 VCF 배포에서는 컨테이너 생성 워크플로만 사용할 수 있습니다. 데이터 저장소 프로비저닝, 스토리지 기능 프로필 생성 또는 재해 복구 등의 다른 워크플로우를 사용하려면 swagger 페이지를 사용하여 vCenter Server에 ONTAP 툴을 등록해야 합니다. ONTAP 툴 9.12 이후 vCenter에 ONTAP 툴을 등록하는 작업은 swagger 페이지에서 수행됩니다. VCF 모드에서 ONTAP 도구의 제한 사항은 플러그인을 등록할 때까지 재해 복구를 위해 SRA를 구성할 수 없다는 것입니다. VCF 모드 없이 ONTAP Tool을 배포하면 자동으로 등록이 수행된다.
 

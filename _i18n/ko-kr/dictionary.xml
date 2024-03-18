@@ -75,7 +75,6 @@
   <block id="5e1704d048056f60cd52da145783b87a" category="paragraph">"성자" 사용자 이름을 사용하여 유지보수 콘솔에 액세스해야 합니다. 배포 중에 "성자" 사용자의 암호를 설정할 수 있습니다. ONTAP 도구의 유지 관리 콘솔에 있는 응용 프로그램 구성 메뉴를 사용하여 암호를 변경할 수 있습니다.</block>
   <block id="3ccb3d325e94c9cead4b14776fb8b7b9" category="section-title">vCenter Server 관리자 자격 증명</block>
   <block id="b19fd86dea68ed488be8497c5a5a1006" category="paragraph">ONTAP 툴을 구축하는 동안 vCenter Server에 대한 관리자 자격 증명을 설정할 수 있습니다.</block>
-  <block id="193d005cb01e094b239bfe309208043b" category="paragraph">vCenter Server의 암호가 변경되면 구축 중에 제공한 ONTAP 툴의 IP 주소가 "https://&lt;IP&gt;:8143/Register.html`" URL을 사용하여 관리자 암호를 업데이트할 수 있습니다.</block>
   <block id="b3f561292de7a8bb813996ddb8a7ecc8" category="section-title">vCenter Server IP 주소입니다</block>
   <block id="848dc593bf6584726275eb1e486945c8" category="list-text">ONTAP 툴을 등록할 vCenter Server 인스턴스의 IP 주소(IPv4 또는 IPv6)를 제공해야 합니다.</block>
   <block id="084994822fcbe487283393a201841b18" category="list-text">vCenter Server에 등록하는 데 사용되는 ONTAP 툴 IP 주소는 구축 마법사에 입력한 vCenter Server IP 주소(IPv4 또는 IPv6) 유형에 따라 달라집니다.</block>
@@ -819,7 +818,6 @@
   <block id="dd4ec0ac4e58f7c32a01244ae91150b1" category="list-text">트레이스</block>
   <block id="9ff27fc85a44a3274e7e779c13f7577a" category="paragraph">로그 수준을 설정하면 다음 파일이 업데이트됩니다.</block>
   <block id="f1f409d06227655b44db47cffc05ae2f" category="list-text">VASA 공급자 서버:'vvolvp.log','error.log','netapp.log'</block>
-  <block id="82ad51135403b59dbf2e19b9982d1c0f" category="paragraph">또한 VASA Provider CLI(Web Command-Line Interface) 페이지에는 수행된 API 호출, 반환된 오류 및 여러 성능 관련 카운터가 포함되어 있습니다. 웹 CLI 페이지는 에 있습니다 <block ref="60696c971270edd12bf40744ca6e0cf8" category="inline-link-rx"></block>.</block>
   <block id="66ae26e6d4dd1727aa0786080b6219f2" category="summary">게스트 운영 체제 \(OS\) 시간 초과 스크립트는 Windows 게스트 운영 체제에 대한 SCSI 입출력 시간 초과 설정을 설정합니다. 60초 제한 시간 또는 190초 제한 시간을 지정할 수 있습니다. 설정을 적용하려면 Windows 게스트 OS를 재부팅해야 합니다.</block>
   <block id="7b8f32b2dda74c3ca3a4614786b11eb6" category="doc">Windows 게스트 운영 체제에 대한 시간 초과 값을 설정합니다</block>
   <block id="8f99b37e0b0a3744f41d37baeb0fec53" category="paragraph">게스트 운영 체제(OS) 시간 초과 스크립트는 Windows 게스트 운영 체제에 대한 SCSI 입출력 시간 초과 설정을 설정합니다. 60초 제한 시간 또는 190초 제한 시간을 지정할 수 있습니다. 설정을 적용하려면 Windows 게스트 OS를 재부팅해야 합니다.</block>
@@ -1091,7 +1089,6 @@
   <block id="4d8ecd07a11e4292fdaa38add537c853" category="paragraph">오류가 발생하면 '/opt/netapp/vscserver/log' 디렉토리와 '/opt/netapp/vpserver/log' 디렉토리에서 로그 파일을 확인할 수 있습니다.</block>
   <block id="12debcad98cde6bc76a4aa6bac9742ee" category="list-text">VASA Provider에 대한 모든 로그 정보를 포함하는 vvolvp.log입니다</block>
   <block id="8b28bb54fe2fc80e5ec8e4e48ed0accb" category="list-text">VASA 공급자 서버: vvolvp.log, error.log, netapp.log 등</block>
-  <block id="de33e3a6ad25d740280844d02cc80048" category="paragraph">또한 VASA Provider CLI(Web Command-Line Interface) 페이지에는 수행된 API 호출, 반환된 오류 및 여러 성능 관련 카운터가 포함되어 있습니다. 웹 CLI 페이지는 https://&lt;IP_address_or_hostname&gt;:9083/stats` 에 있습니다.</block>
   <block id="3b755298c40309da82f4d6bef8254398" category="summary">VVOL 데이터 저장소 마운트 대화 상자를 사용하여 하나 이상의 추가 호스트에 VVol(VMware Virtual Volumes) 데이터 저장소를 마운트할 수 있습니다. 데이터 저장소를 마운트하면 추가 호스트에 대한 스토리지 액세스가 가능합니다.</block>
   <block id="4f3d8287647170b16320a50c9b202bcf" category="doc">VVOL 데이터 저장소를 마운트합니다</block>
   <block id="df2eac0c6937008db0e38ef8bd5bc8a0" category="paragraph">VVOL 데이터 저장소 마운트 대화 상자를 사용하여 하나 이상의 추가 호스트에 VVol(VMware Virtual Volumes) 데이터 저장소를 마운트할 수 있습니다. 데이터 저장소를 마운트하면 추가 호스트에 대한 스토리지 액세스가 가능합니다.</block>
@@ -1434,7 +1431,6 @@
   <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 ASA 및 승인된 AFF 시스템과 함께 사용할 경우 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 최대 VMFS LUN 및 64TB 볼륨 크기까지 지원합니다.</block>
   <block id="1e188467952fdbff98e3068f89af769c" category="summary">ONTAP 툴은 데이터 센터에서 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다.</block>
   <block id="fa9a1fa5791bef6093574e858ba2d47b" category="list-text">컨테이너 재조정 작업 중에 시간 초과가 발생하면 VASA Provider property_enable.update.vVol.through.discovery_to true 로 설정하여 ONTAP 툴과 ONTAP 간에 일관된 데이터를 얻을 수 있습니다.</block>
-  <block id="60afe711e6d90f5258f84b999aac0489" category="paragraph">VVOL과 함께 사용할 경우 스토리지 성능 프로필도 개별 가상 머신의 스토리지 성능을 설정하고 성능 요구사항을 가장 충족하는 VVOL 데이터 저장소의 FlexVol 볼륨에 배치합니다. 성능에 대한 최소 및/또는 최대 IOPS로 QoS 정책을 지정할 수 있습니다. 처음에 가상 시스템을 프로비저닝할 때 기본 정책을 사용하거나 비즈니스 요구사항이 변경될 경우 나중에 VM 스토리지 정책을 변경할 수 있습니다. 이번 릴리즈의 ONTAP 툴에 대한 기본 스토리지 기능 프로필은 다음과 같습니다.</block>
   <block id="a0df72576daf9a1137d39f7553d36e82" category="list-text">브론즈</block>
   <block id="ae430c36b97e2fb5fad06eb10d89e8f4" category="paragraph">ONTAP 툴을 사용하면 동일한 VVOL 데이터 저장소에서 다양한 IOPS 요구 사항에 따라 가상 머신의 프로비저닝을 지원하는 새로운 스토리지 기능 프로필로 모든 가상 볼륨(VVol) 데이터 저장소를 구성할 수 있습니다. IOPS 요구 사항이 있는 VM 프로비저닝 워크플로우를 실행하는 동안 모든 VVol 데이터스토어가 호환 가능한 데이터 저장소 목록에 나열됩니다.</block>
   <block id="c6f512f075fd780d9ff517c7dab198c4" category="list-text">VVOL(가상 볼륨) 데이터 저장소 수준에서 QoS 메트릭을 구성할 수 있습니다.</block>
@@ -1496,7 +1492,6 @@
   <block id="a9ded1e5ce5d75814730bb4caaf49419" category="paragraph">배경</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="paragraph">없음</block>
   <block id="e67d8326d1f77267e6e78263e9cb1ec1" category="paragraph">ONTAP 패치 API를 사용하여 적절한 값을 설정할 수 있습니다.</block>
-  <block id="dbc193f27160367293b40befb64f71f4" category="paragraph">"https://&lt;machine_IP&gt;/api/storage/volumes/{uuid}`</block>
   <block id="dc6f079855bc9a7477861302bbb0343f" category="image-alt">VMware Cloud Foundation 구축 워크플로우</block>
   <block id="6e87afa480416c8595b0460888551386" category="paragraph"><block ref="6e87afa480416c8595b0460888551386" category="inline-link-macro-rx"></block></block>
   <block id="1415c1c83a97d2309236d6acbf410723" category="list-text">Kerberos 인증의 경우 다음이 필요합니다.</block>
@@ -1544,7 +1539,6 @@
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
   <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">ONTAP 도구 IP 주소 및 암호를 사용하여 SRM 구성:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.</block>
   <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
-  <block id="b8e3b3982008f247b4868b6fd9b104d8" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block></block>
   <block id="0e28dc8bb869d015f17f333c6255226d" category="list-text">VAAI용 NFS 플러그인의 설치 패키지를 다운로드해야 합니다 <block ref="d7d0fd6d41e4cc9c277d6e7d82ae6981" prefix="(" category="inline-code"></block>)NetApp Support 사이트 를 클릭합니다.<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
   <block id="389fed57e0f06c0d1d884e132105585a" category="list-text">vSphere 6.5가 더 이상 사용되지 않고 vSphere 8.x는 지원되지 않으므로 vSphere 7.x 릴리즈가 있어야 합니다.</block>
   <block id="5ccc8ee8b61049069fbdba29f36f4627" category="paragraph">를 다운로드할 수 있습니다<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 에서 VMware vSphere용 ONTAP 도구에 대한 바이너리(_.ova_) 및 서명된 인증서가 포함된 파일입니다<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
@@ -1722,7 +1716,6 @@
   <block id="dde1ab39b3b1ff05662ea4c283967fca" category="list-text">ONTAP 9.7 이상을 사용하고 있습니다.</block>
   <block id="c301bc2e4655439adfd195c651966633" category="paragraph">유지 관리 콘솔을 사용하여 ONTAP 도구 사후 배포의 관리자 암호를 변경할 수 있습니다. 암호가 90일 후에 만료됩니다.</block>
   <block id="f3f47521549e89ed7cb7b073ea8a7d66" category="list-text">를 입력합니다<block ref="1679091c5a880faf6fb5e6087eb1b2dc" prefix=" " category="inline-code"></block> '관리자' 사용자 암호 변경 * 을 선택합니다.</block>
-  <block id="4fe6063d6d8500b42fd9878de1689157" category="list-text">최소 8자 및 최대 30자의 암호를 입력합니다. 암호에는 대문자, 하한, 숫자 및 특수 문자가 하나 이상 포함되어야 합니다. 암호 만료 경고는 암호 재설정 75일 후에 표시됩니다. 새 암호는 마지막으로 사용한 암호와 같을 수 없습니다.</block>
   <block id="2223c21ac625f0e9df4fbd3476db44ed" category="paragraph">암호 권장 사항을 따르지 않을 경우 유지보수 콘솔 옵션은 암호 변경으로 제한됩니다. 암호가 만료되면 암호를 변경하라는 메시지가 표시됩니다.</block>
   <block id="9566e142d595702f8d77be59e617fade" category="list-text">로그 무결성 보고서</block>
   <block id="e5c7f658fde95383afe704dfbf972436" category="list-text">데이터 저장소 유형: NFS 및 VMFS</block>
@@ -1756,7 +1749,6 @@
   <block id="97fc3f527fcf5f2673ee38cac43498eb" category="summary">이 섹션의 단계를 사용하여 VASA 정리를 수행합니다.</block>
   <block id="9f64b9be27f2e46d6913ffbc8b3b03af" category="doc">VASA 정리</block>
   <block id="11d1a9834ac9b448ace82c1a42780815" category="admonition">VASA Cleanup을 수행하기 전에 모든 VVol 데이터 저장소를 제거하는 것이 좋습니다.</block>
-  <block id="2c734b5da4f9e3b7fcbf2c02a71c6e53" category="list-text">로 이동하여 플러그인 등록을 취소합니다<block ref="60aa91ba7cfb922f9bc759ea6fa20945" category="inline-link-rx"></block></block>
   <block id="d7475ffdd032873add1b8a5a4d38f4b7" category="list-text">vCenter에서 플러그인을 더 이상 사용할 수 없는지 확인합니다.</block>
   <block id="d86275478cf593221823bb3a9cfc752c" category="list-text">VMware vSphere VM용 ONTAP 툴을 종료합니다</block>
   <block id="1cc37019e315de376331f2c623d689df" category="list-text">VMware vSphere VM용 ONTAP 툴을 삭제합니다</block>
@@ -1768,7 +1760,6 @@
   <block id="1c52dcdd4491d0706b3364ecaca3636e" category="list-text">재동기화의 소스에 볼륨 효율성이 설정되지 않은 경우</block>
   <block id="9fff6c8ee7fb3c43cbe3124a1d4883a7" category="list-text">재동기화 시간을 줄이는 것이 네트워크에서 가능한 모든 스토리지 효율성을 유지하는 것보다 더 중요합니다.</block>
   <block id="91a71eb29f05d0e0d765dd24efd35e07" category="paragraph">다음 단계에 따라 quick_resync 플래그를 활성화합니다.</block>
-  <block id="992e4c552a6e3e8132e2ff5dcf4d9ba2" category="list-text">https://&lt;IP address&gt;: 9083_에서 제어판에 로그인하고 웹 기반 CLI 인터페이스를 클릭합니다.</block>
   <block id="933360919bcc7a54c2c15a9ba3062f75" category="list-text">명령을 실행합니다<block ref="a20fbe11e2f20ab8ef5cc0bc3aa22e41" prefix=" " category="inline-code"></block>.</block>
   <block id="ba2a1e4d95dc56709260e82cca20a789" category="list-text">명령을 실행합니다<block ref="6d83e9fce5e947159c3c34b9f499e80e" prefix=" " category="inline-code"></block>.</block>
   <block id="bec4fe8b0a1c02393fd0700875750a56" category="list-text">기존 vSphere 웹 클라이언트 또는 vSphere-UI에서 로그아웃합니다.</block>
@@ -1883,7 +1874,6 @@
   <block id="2ecc9eaf40eeff2a5d5bfdebc62550bb" category="inline-link">SRM 공유 복구 사이트에서 SRA를 구성하는 방법</block>
   <block id="15057a3e38aae03f9f465ba7ab620903" category="paragraph">를 클릭합니다<block ref="5415c0f790a03b5f7964b877faa0433d" category="inline-link-rx"></block> KB 문서에서는 SRM 공유 복구 사이트 구성을 지원하도록 SRA를 설정하는 절차에 대해 자세히 설명합니다.</block>
   <block id="cd407a7dc68ec4931863b0a4b9511c12" category="summary">VMware vSphere용 ONTAP 툴은 SRA 기능을 ONTAP 툴과 함께 사용하여 재해 복구를 구성할 수 있는 옵션을 제공합니다.</block>
-  <block id="75d26898739bfbd118ceb40ee609588b" category="list-text">다음 URL을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스합니다.<block ref="65934cfc97d2d08e8dbabc6019658190" category="inline-link-rx"></block>그런 다음 VMware SRM Appliance Management Interface의 Storage Replication Adapters 로 이동합니다.</block>
   <block id="fcfc4d0541fcfaef918a6982404c79f6" category="paragraph">ONTAP 툴이 VMFS 데이터 저장소의 크기를 조정할 때 포함된 볼륨의 크기를 조정하도록 하려면 VMFS 데이터 저장소를 처음 프로비저닝할 때 Storage attributes 섹션의 * Use existing volume * 옵션을 사용하지 말고 대신 각 데이터 저장소에 대한 새 볼륨을 자동으로 생성하도록 해야 합니다.</block>
   <block id="51f5ef577515311d873f15616c367953" category="summary">VASA Provider(VP) 가상 어플라이언스가 손실되었거나 액세스할 수 없거나 작동하지 않는 경우 VP 재해 복구를 수행해야 할 수 있습니다. </block>
   <block id="b8d4b381d817836a8a1f3e5c51418019" category="doc">VASA Provider 재해 복구</block>
@@ -1917,7 +1907,6 @@
   <block id="68ebbba5fb36a973cd5157cd94e42fc9" category="list-text">표준 ONTAP 도구 역할을 수정한 경우 해당 역할을 복사하여 변경 내용을 저장해야 합니다.</block>
   <block id="f66ea2f32309f5fd90d089228f08f046" category="paragraph">ONTAP 도구는 ONTAP 도구 서비스를 다시 시작할 때마다 표준 역할을 현재 기본값으로 덮어씁니다.</block>
   <block id="b071f3cf67c6e55902fe91a4007f42ae" category="paragraph">ONTAP 도구에 대한 SSL 인증서 재생성</block>
-  <block id="6e8b75f6c005f85260a875936558a351" category="paragraph">ONTAP 툴은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. ONTAP 툴을 vCenter Server에 등록하는 데 사용되는 계정입니다 <block ref="7bf1a148120c785c8303f17e0bb4f7eb" prefix="(" category="inline-code"></block>vCenter Server 관리자 또는 관리자 역할에 할당된 vCenter Server 관리자여야 합니다. ONTAP 도구를 관리자로 실행하려면 모든 작업에 필요한 모든 권한과 권한이 있어야 합니다.</block>
   <block id="d28eff23707dc2a1b9f4540d883d2254" category="paragraph">회사에서 vSphere 객체에 대한 액세스를 제한하도록 요구하는 경우 vCenter Server 요구 사항을 충족하기 위해 표준 ONTAP 툴 역할을 생성하고 사용자에게 할당할 수 있습니다.</block>
   <block id="1582cc9629306ba6f3639270bdf4eb44" category="paragraph">생성되는 ONTAP 툴 및 VASA 인증서의 유형은 구축 중에 제공한 IP 주소(IPv4 또는 IPv6)에 따라 다릅니다. ONTAP 도구를 배포하는 동안 정적 IP 세부 정보와 DHCP를 입력하지 않은 경우 네트워크는 IPv4 및 IPv6 주소를 모두 제공합니다.</block>
   <block id="86bb68a12bd0cf7f26f81f22d3f0750c" category="paragraph">ONTAP 툴과 VASA 인증서는 모두 vCenter Server 등록 중에 사용되는 것과 동일한 유형의 IP 주소를 사용하여 생성됩니다.</block>
@@ -2087,7 +2076,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="cb0eb789784bc1c28019248b139aa546" category="list-text">플랫폼 유형이 * 플래시 하이브리드 어레이 * 이고 비대칭 플래그가 NA인 경우 FAS 유형의 스토리지 시스템을 고려합니다</block>
   <block id="f1ce8dcec161ff2f113d348ca0cb13b7" category="paragraph">이후 화면의 옵션은 선택한 스토리지 시스템 유형에 따라 업데이트됩니다.</block>
   <block id="4c562d1bf4f44c1dea6880cf5f7c1b38" category="list-text">다음 단계에 따라 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다.</block>
-  <block id="50fce173a632a46be0efad62b804d700" category="list-text">로 이동합니다<block ref="f8da18b508d6d7bd8607d1819bb6853a" category="inline-link-rx"></block></block>
   <block id="17bddb22e3ffe2551674423453213a3c" category="list-text">VSC_ONTAP_User_Privileges.zip 파일을 다운로드합니다</block>
   <block id="4f6121e5bb76cb70c000ee442fa10d0b" category="list-text">다운로드한 VSC_ONTAP_User_Privileges.zip 파일의 압축을 풉니다</block>
   <block id="06960d6ada7a46af36237c9d1496b5d3" category="list-text">System Manager에 액세스합니다</block>
@@ -2105,7 +2093,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="142666c1fbe08e639361aca9fb6d3d5a" category="list-text">기존 ONTAP 도구 어플라이언스를 최신 릴리즈로 업그레이드하십시오.</block>
   <block id="7ffdc51b9c93dfaa755052457f971d9e" category="list-text">vCenter Server에서 콘솔을 열고 ONTAP 툴 어플라이언스 가상 머신을 엽니다.</block>
   <block id="d0119a1425315c47822975d16de6de70" category="sidebar">ONTAP 툴에 대한 역할 기반 액세스 제어 개요</block>
-  <block id="b98d139729a71b493dcd4c3f860f1947" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료된 후 스토리지 시스템을 추가, 삭제 또는 수정하고, REST API를 사용하여 컨테이너를 생성할 수 있습니다. 다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다.<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>.</block>
   <block id="32f68a60cef40faedbc6af20298c1a1e" category="paragraph">삭제</block>
   <block id="3e75383a5992a6d15fb81e872e46e256" category="paragraph">를 누릅니다</block>
   <block id="3609cc991ef06b80256315c4e79537aa" category="paragraph">플래티넘_ASA_C</block>
@@ -2118,4 +2105,20 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="eb8ad81730e4bb2e83e5a8fd73176d69" category="paragraph">AFF_Encrypted_Min50_ASA_C입니다</block>
   <block id="f5117d7744e4edc2e74fa77f9eff59ed" category="paragraph">예를 들어, 비즈니스 크리티컬 애플리케이션에는 AFF 및 ASA 플랫폼 등과 같이 더 우수한 성능을 지원하는 기능이 포함된 프로필이 필요합니다. 테스트 또는 교육에 사용되는 데이터 저장소는 더 낮은 성능의 Flash Array 하이브리드 플랫폼의 프로필을 사용할 수 있으며, 모든 스토리지 효율성 기능 및 계층화를 통해 비용을 제어할 수 있습니다.
 플랫폼 유형과 비대칭 플래그의 조합은 SCP의 유형을 결정합니다. 예: Platinum_ASA_A, Platinum_ASA_C, Platinum_AFF_A, Platinum_AFF_C</block>
+  <block id="27f262ec74ac82537b4fcf302c54dd8a" category="paragraph">VCF 모드를 사용하면 vCenter Server 없이도 스토리지에 대한 컨테이너를 생성할 수 있습니다. VASA Provider는 VCF 모드에서 ONTAP 도구를 배포한 후에 기본적으로 활성화됩니다. 구축이 완료된 후 스토리지 시스템을 추가, 삭제 또는 수정하고, REST API를 사용하여 컨테이너를 생성할 수 있습니다.</block>
+  <block id="0217011105625dba328834ca1b076000" category="admonition">스토리지 시스템 수정 및 삭제는 VMware vSphere 9.13P1 릴리즈용 ONTAP 툴에서 지원됩니다.</block>
+  <block id="e76565c604215fd9c06d43c315eb188d" category="paragraph">다음 문서에는 VCF가 활성화된 경우 ONTAP 도구에 스토리지를 추가하는 절차가 나와 있습니다.<block ref="3ac4be985d9966f37c32d23f811ada05" category="inline-link-rx"></block>.</block>
+  <block id="4bbb01941f5b07d2c77548cf3627e172" category="paragraph"><block ref="8869387a67183bd24545ffe85b9a9099" prefix="" category="inline-code"></block></block>
+  <block id="a53757e05292decc5f6fbbac2023d065" category="paragraph">ONTAP 툴은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. ONTAP 툴을 vCenter Server에 등록하는 데 사용되는 계정입니다 <block ref="9e93c09e34f4524b408348d13e66e374" prefix="(" category="inline-code"></block>vCenter Server 관리자 또는 관리자 역할에 할당된 vCenter Server 관리자여야 합니다. ONTAP 도구를 관리자로 실행하려면 모든 작업에 필요한 모든 권한과 권한이 있어야 합니다.</block>
+  <block id="6d8436bffc0c48236c84f818b9aaae0b" category="paragraph">vCenter Server의 암호가 변경되면 다음 URL을 사용하여 관리자 암호를 업데이트할 수 있습니다.<block ref="fcb4077147c7d02d070a79e490ef6b9c" prefix=" " category="inline-code"></block> 여기서 IP 주소는 구축 중에 제공하는 ONTAP 툴의 IP 주소입니다.</block>
+  <block id="72b2d9b8e8dba06573c834c69c8207cf" category="list-text">의 제어판에 로그인합니다<block ref="dfe4a562f2165dbf9c7017bc505a6f5c" prefix=" " category="inline-code"></block> 웹 기반 CLI 인터페이스를 클릭합니다.</block>
+  <block id="dfa8f17815ffab3fe541542d5b0f37e5" category="paragraph">또한 VASA Provider CLI(Web Command-Line Interface) 페이지에는 수행된 API 호출, 반환된 오류 및 여러 성능 관련 카운터가 포함되어 있습니다. 웹 CLI 페이지는 에 있습니다<block ref="18344335552dd6e1ba0bd43973f07969" prefix=" " category="inline-code"></block>.</block>
+  <block id="3467919a817c841564b809d390b05b2f" category="list-text">로 이동합니다<block ref="a1afc5f2659cc45b14fe27c88adc3dcc" prefix=" " category="inline-code"></block></block>
+  <block id="55790f65126c3a4269e6740e4f1a44da" category="paragraph">VVOL과 함께 사용할 경우 스토리지 성능 프로필도 개별 가상 머신의 스토리지 성능을 설정하고 성능 요구사항을 가장 충족하는 VVOL 데이터 저장소의 FlexVol 볼륨에 배치합니다. 성능에 대한 최소 및/또는 최대 IOPS로 QoS 정책을 지정할 수 있습니다. 처음에 가상 시스템을 프로비저닝할 때 기본 정책을 사용하거나 비즈니스 요구사항이 변경될 경우 나중에 VM 스토리지 정책을 변경할 수 있습니다.</block>
+  <block id="84e0c68591a59a6230fff09d282535b1" category="admonition">ASA-C 스토리지 기능 프로필은 VMware vSphere 9.13P1 이상용 ONTAP 툴을 통해 지원됩니다.</block>
+  <block id="6a171e02a385dc4d31b563dd71329f38" category="paragraph">이번 릴리즈의 ONTAP 툴에 대한 기본 스토리지 기능 프로필은 다음과 같습니다.</block>
+  <block id="8b0a036d076285ea830ca8290e260a77" category="list-text">로 이동하여 플러그인 등록을 취소합니다<block ref="3668afd07686ea27a6f1590042360bee" prefix=" " category="inline-code"></block></block>
+  <block id="4b8bd3e99bfcc26c0f74b6bf405ef012" category="list-text">최소 8자, 최대 30자로 암호를 입력하십시오. 암호에는 대문자, 하한, 숫자 및 특수 문자가 하나 이상 포함되어야 합니다. 암호 만료 경고는 암호 재설정 75일 후에 표시됩니다. 새 암호는 마지막으로 사용한 암호와 같을 수 없습니다. 90일마다 암호를 변경해야 합니다.</block>
+  <block id="062f397773db685232413bdf1cdc77d6" category="list-text">URL:\https://:&lt;srm_ip&gt;:5480을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스한 다음 VMware SRM 어플라이언스 관리 인터페이스의 스토리지 복제 어댑터로 이동합니다.</block>
+  <block id="02d748a182bd49eb68c66826e023ae52" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="80e6857610e0d41189fe70adcfa7e87b" prefix=" " category="inline-code"></block></block>
 </blocks>

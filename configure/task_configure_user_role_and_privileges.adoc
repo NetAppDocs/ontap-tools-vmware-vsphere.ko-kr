@@ -17,7 +17,7 @@ ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용�
 
 * 다음 단계에 따라 ONTAP 도구에서 ONTAP 권한 파일을 다운로드해야 합니다.
 +
-** 로 이동합니다 https://{virtual_appliance_IP}:9083/vsc/config/[]
+** 로 이동합니다 `\https://{virtual_appliance_IP}:9083/vsc/config/`
 ** VSC_ONTAP_User_Privileges.zip 파일을 다운로드합니다
 ** 다운로드한 VSC_ONTAP_User_Privileges.zip 파일의 압축을 풉니다
 ** System Manager에 액세스합니다

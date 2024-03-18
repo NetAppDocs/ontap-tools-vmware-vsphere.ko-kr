@@ -32,7 +32,7 @@ SRM 어플라이언스에 SRA를 구성하면 SRA 자격 증명이 SRM 어플라
 . "cd /var/log/vmware/srm" 명령을 실행하여 로그 디렉토리로 이동합니다.
 . 로그 위치에 SRA에서 사용하는 Docker ID를 얻기 위한 명령을 입력합니다. docker ps -l
 . 컨테이너 ID에 로그인하려면 docker exec -it -u SRM <컨테이너 ID>sh' 명령을 입력합니다
-. 명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다. `perl command.pl -I <otv-IP> administrator <otv-password>`
+. 명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다. `perl command.pl -I administrator '<otv-password>'`
 +
 스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.
 

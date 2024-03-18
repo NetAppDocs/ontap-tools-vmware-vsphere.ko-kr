@@ -40,7 +40,7 @@ VASA Provider 및 SRA 기능을 유연하게 사용하면 기업에 필요한 �
 * SRM 어플라이언스 * 용
 
 +
-.. 다음 URL을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스합니다. https://:<srm_ip>:5480[]그런 다음 VMware SRM Appliance Management Interface의 Storage Replication Adapters 로 이동합니다.
+.. URL:\https://:<srm_ip>:5480을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스한 다음 VMware SRM 어플라이언스 관리 인터페이스의 스토리지 복제 어댑터로 이동합니다.
 .. 새 어댑터 * 를 클릭합니다.
 .. SRA 플러그인의 _.tar.gz_installer를 SRM에 업로드합니다.
 .. 어댑터를 다시 검색하여 SRM 스토리지 복제 어댑터 페이지에서 세부 정보가 업데이트되었는지 확인합니다.

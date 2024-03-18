@@ -32,7 +32,7 @@ SRA에서 Reprotect 및 Restore 작업을 수행하기 위해 quick_resync 플�
 다음 단계에 따라 quick_resync 플래그를 활성화합니다.
 
 .단계
-. https://<IP address>: 9083_에서 제어판에 로그인하고 웹 기반 CLI 인터페이스를 클릭합니다.
+. 의 제어판에 로그인합니다 `/https://<IP address>:9083` 웹 기반 CLI 인터페이스를 클릭합니다.
 . 명령을 실행합니다 `vp updateconfig -key=snapmirror.quick.resync.enabled -value=true`.
 . 명령을 실행합니다 `vp reloadconfig`.
 

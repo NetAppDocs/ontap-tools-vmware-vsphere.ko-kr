@@ -34,4 +34,4 @@ VMware vSphere용 ONTAP 툴의 유지 관리 메뉴를 사용하면 요구 사�
 * VASA 공급자 서버:'vvolvp.log','error.log','netapp.log'
 
 
-또한 VASA Provider CLI(Web Command-Line Interface) 페이지에는 수행된 API 호출, 반환된 오류 및 여러 성능 관련 카운터가 포함되어 있습니다. 웹 CLI 페이지는 에 있습니다 'https://<IP_address_or_hostname>:9083/stats'[].
+또한 VASA Provider CLI(Web Command-Line Interface) 페이지에는 수행된 API 호출, 반환된 오류 및 여러 성능 관련 카운터가 포함되어 있습니다. 웹 CLI 페이지는 에 있습니다 `\https://<IP_address_or_hostname>:9083/stats`.
