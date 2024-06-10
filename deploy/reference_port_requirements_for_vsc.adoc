@@ -28,7 +28,7 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
  a| 
 9083
  a| 
-VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.
+VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. ESXi 호스트에서 ONTAP 툴 어플라이언스로 연결되는 방화벽에서 이 포트를 활성화해야 합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.
 
 
 

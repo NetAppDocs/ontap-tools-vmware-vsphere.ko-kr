@@ -1,0 +1,50 @@
+---
+indexpage:
+  title: VMware vSphere용 ONTAP 툴 설명서
+  lead: VMware vSphere용 ONTAP 툴을 사용하면 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할
+    수 있습니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리스 정보
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886292
+    - title: VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오
+      url: "/concepts/concept_virtual_storage_console_overview.html"
+    - title: ONTAP 도구 빠른 시작
+      url: "/qsg.html"
+    - title: ONTAP 툴 구축
+      url: "/deploy/task_deploy_ontap_tools.html"
+    - title: ONTAP 툴을 업그레이드합니다
+      url: "/deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html"
+  - title: ONTAP 도구를 사용합니다
+    links:
+    - title: 기존 데이터 저장소 프로비저닝
+      url: "/configure/task_provision_datastores.html"
+    - title: VVOL 데이터 저장소를 프로비저닝합니다
+      url: "/configure/task_provision_vvols_datastores.html"
+    - title: 역할 기반 액세스 제어를 구성합니다
+      url: "/concepts/concept_vcenter_server_role_based_access_control_features_in_vsc_for_vmware_vsphere.html"
+    - title: 원격 진단 구성
+      url: "/manage/task_configure_vasa_provider_to_use_ssh_for_remote_diag_access.html"
+    - title: 고가용성을 구성합니다
+      url: "/concepts/concept_configure_high_availability_for_ontap_tools_for_vmware_vsphere.html"
+  - title: 데이터 저장소 보호 및 관리
+    links:
+    - title: 데이터 저장소를 보호합니다
+      url: "/protect/task_enable_storage_replication_adapter.html"
+    - title: 가상 시스템 보호
+      url: "/protect/concept_configure_replication_for_vvols_datastore.html"
+    - title: 기존 데이터 저장소 및 가상 머신을 모니터링합니다
+      url: "/manage/task_monitor_datastores_using_the_traditional_dashboard.html"
+    - title: VVOL 데이터 저장소 및 가상 머신을 모니터링합니다
+      url: "/manage/task_monitor_vvols_datastores_and_virtual_machines_using_vvols_dashboard.html"
+  - title: 더 많은 리소스
+    links:
+    - title: VMware용 이전 버전의 ONTAP 툴 설명서
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63792
+    - title: NetApp 기술 자료 - ONTAP 툴
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/VSC_and_VASA_Provider
+    - title: NetApp 가져오기 유틸리티 - 비디오
+      url: https://www.youtube.com/watch?v=CEQmIEzNVfA
+    - title: NetApp 커뮤니티 - ONTAP 툴
+      url: https://community.netapp.com/t5/VMware-Solutions-Discussions/bd-p/vmware-solutions-discussions

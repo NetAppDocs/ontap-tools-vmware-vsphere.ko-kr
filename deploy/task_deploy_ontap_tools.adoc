@@ -68,7 +68,9 @@ ONTAP 도구에 대한 _.ova_file의 URL을 제공합니다.
 |===
 . 세부 정보를 입력하여 구축 마법사를 사용자 지정합니다.
 +
-(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다. 자세한 내용은 다음을 참조하십시오.
+(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. ONTAP 도구는 사용자 세부 정보를 인코딩된 형식으로 저장합니다. ONTAP 툴과 vCenter 간의 통신에는 이러한 vCenter 사용자 세부 정보가 사용됩니다.
+IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다.
+자세한 내용은 다음을 참조하십시오.
 
 +
 ** link:../deploy/reference_considerations_for_deploying_ontap_tools_for_vmware_vsphere.html["배포 사용자 지정 고려 사항"]
@@ -80,6 +82,10 @@ ONTAP 도구에 대한 _.ova_file의 URL을 제공합니다.
 배포가 완료될 때까지 기다리면 작업 탭에서 배포 진행률을 볼 수 있습니다.
 
 . ONTAP 툴 가상 머신의 전원을 켠 다음 ONTAP 툴을 실행하는 가상 머신의 콘솔을 엽니다.
++
+
+NOTE: ONTAP 툴 가상 머신을 관리하는 VVOL 데이터 저장소에 저장하지 마십시오.
+
 . 배포가 완료된 후 ONTAP 도구가 실행 중인지 확인합니다.
 . vCenter Server에 ONTAP 툴이 등록되지 않은 경우 를 사용합니다 `\https://appliance_ip:8143/Register.html` ONTAP 도구 인스턴스를 등록합니다. Register.html 을 클릭하면 Swagger 페이지로 이동합니다. ONTAP 툴 9.12 이후 vCenter에 ONTAP 툴을 등록하는 작업은 swagger 페이지에서 수행됩니다.
 +

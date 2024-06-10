@@ -50,8 +50,7 @@ json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용�
 . _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all _
 
 
-json 파일을 사용하여 사용자 정의된 SVM 범위 사용자로 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려면 다음을 수행합니다
-업그레이드 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere와 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 활성화하십시오.
+json 파일을 사용하여 사용자 정의된 SVM 범위 사용자와 함께 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려는 경우 그런 다음 업그레이드 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere와 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 사용하도록 설정합니다.
 
 . _security login role create -role <existing-role-name> -cmddirname "security certificate install" -access all -vserver <vserver-name> _
 . _security login role create -role <existing-role-name> -cmddirname "security certificate show" -access all -vserver <vserver-name> _

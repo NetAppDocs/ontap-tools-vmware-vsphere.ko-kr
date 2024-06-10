@@ -257,7 +257,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">릴리스 정보</block>
   <block id="01de6d9be7e1aa419839bb0c0de0ebde" category="paragraph">해결된 문제, 알려진 문제, 주의 및 제한 사항을 비롯하여 VMware vSphere용 ONTAP 툴 릴리스에 대한 중요 정보를 제공합니다.</block>
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="summary">VMware vSphere용 ONTAP 툴을 사용하면 vCenter Server 환경에서 가상 데이터 저장소를 구성, 관리 및 보호할 수 있습니다.</block>
-  <block id="46c4d9bfa1c229940459326940489ab0" category="doc">VMware vSphere용 ONTAP 툴 설명서</block>
   <block id="4d8a36e89d60df4f15c6f6597fde0cfb" category="summary">VVol 데이터스토어에 구성된 가상 머신을 관리하고 가상 디스크에 대한 복제와 같은 서비스를 사용하도록 VM 스토리지 정책을 구성해야 합니다. 기존 데이터 저장소의 경우 이러한 VM 스토리지 정책을 사용하는 것은 선택 사항입니다.</block>
   <block id="a516453a3eb4409632c360b203b4b3c4" category="doc">VM 스토리지 정책을 구성합니다</block>
   <block id="72dbdb05aac24fdc1ce2d8ba2643d9b9" category="paragraph">vSphere 웹 클라이언트는 기본 스토리지 정책을 제공합니다. 그러나 정책을 만들고 이를 가상 머신에 할당할 수 있습니다.</block>
@@ -320,7 +319,6 @@
   <block id="a00d4477c9c1974aff09f6ea5b44859d" category="paragraph">네트워크 매핑 페이지에는 보호된 사이트 리소스와 복구 사이트 리소스가 표시됩니다. 사용자 환경의 다른 네트워크에 대해서도 동일한 단계를 수행할 수 있습니다.</block>
   <block id="652ad8bc056a4a1827fa19aee589e718" category="summary">SRM이 SRA와 통신하려면 자격 증명을 수정한 경우 SRM 서버에서 SRA 자격 증명을 업데이트해야 합니다.</block>
   <block id="dfb1f7e164fa9a18cdccdd70cc836871" category="doc">SRA 자격 증명을 업데이트합니다</block>
-  <block id="91041cdb80acf69ffc64bea820b683a1" category="list-text">다음을 사용하여 '/SRM/SRA/confdirectory'의 내용을 삭제합니다.</block>
   <block id="c8c76585229a8fa67ac61e761baed2fc" category="list-text">'cd/srm/srs/conf'</block>
   <block id="bc5ad92fecd3f6eeb4473c9df6479d46" category="list-text">rm-rf *</block>
   <block id="42f35b3ef9c82737da1f02ca0b45f308" category="list-text">perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
@@ -1453,7 +1451,6 @@
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">새로운 사용자 배포</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</block>
-  <block id="ff22f9429bb46603451057ba28a08029" category="paragraph">(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다. 자세한 내용은 다음을 참조하십시오.</block>
   <block id="db87f0e7d398509389710de2acd5bc37" category="list-text"><block ref="db87f0e7d398509389710de2acd5bc37" category="inline-link-macro-rx"></block></block>
   <block id="4782e61635c721d2ac646cbaa6066487" category="inline-link-macro">ONTAP 툴을 위한 VMware 클라우드 기반 구축 모드입니다</block>
   <block id="86c1acfce4de432d234f580b141148df" category="list-text"><block ref="86c1acfce4de432d234f580b141148df" category="inline-link-macro-rx"></block></block>
@@ -1537,8 +1534,6 @@
   <block id="f41a0f70d00fe5c4c096315736c1c5f5" category="paragraph">사용자 인터페이스를 사용하여 IPv4 또는 IPv6를 구성하려면 다음 섹션을 참조하십시오.</block>
   <block id="9e61293b777b055e3576d637f3d16625" category="list-text"><block ref="9e61293b777b055e3576d637f3d16625" category="inline-link-macro-rx"></block></block>
   <block id="c012b5b3ff136d3277c106ffd47bf52e" category="list-text"><block ref="c012b5b3ff136d3277c106ffd47bf52e" category="inline-link-macro-rx"></block></block>
-  <block id="a88efd6c9b7763df783d278ede79c4a6" category="list-text">ONTAP 도구 IP 주소 및 암호를 사용하여 SRM 구성:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다.</block>
-  <block id="092016eb57c00c965fc19b3bff7ff343" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block></block>
   <block id="0e28dc8bb869d015f17f333c6255226d" category="list-text">VAAI용 NFS 플러그인의 설치 패키지를 다운로드해야 합니다 <block ref="d7d0fd6d41e4cc9c277d6e7d82ae6981" prefix="(" category="inline-code"></block>)NetApp Support 사이트 를 클릭합니다.<block ref="eb2c61027d5e6c8b35692c1e74187026" category="inline-link-rx"></block></block>
   <block id="389fed57e0f06c0d1d884e132105585a" category="list-text">vSphere 6.5가 더 이상 사용되지 않고 vSphere 8.x는 지원되지 않으므로 vSphere 7.x 릴리즈가 있어야 합니다.</block>
   <block id="5ccc8ee8b61049069fbdba29f36f4627" category="paragraph">를 다운로드할 수 있습니다<block ref="daf4de58883c030f033f07e61debf025" prefix=" " category="inline-code"></block> 에서 VMware vSphere용 ONTAP 도구에 대한 바이너리(_.ova_) 및 서명된 인증서가 포함된 파일입니다<block ref="c28762f698ce57f013f1f9dff01575ab" category="inline-link-rx"></block>.</block>
@@ -1623,7 +1618,6 @@
   <block id="7aab78a1b39daabb0255f06097941141" category="paragraph">_ 이(가) 현재 워크플로우를 닫고 입력한 데이터를 제거하고 스토리지 용량 프로파일 생성 워크플로우를 엽니다. 계속하시겠습니까? _</block>
   <block id="f604eb859718e32220986583f0dd60f8" category="list-text">Yes * 를 클릭하여 Create storage capability profile 창을 엽니다.</block>
   <block id="f5881ae95eaddf3eaa37ea9dfa5a4025" category="paragraph">vCenter Server를 지정해야 하는 작업을 수행하는 경우 화면 왼쪽 상단 모서리에 있는 * instance * 선택기에 사용 가능한 vCenter Server가 영숫자 순서로 표시됩니다. 기본 vCenter Server는 항상 드롭다운 목록의 첫 번째 서버입니다.</block>
-  <block id="3ba26e2ef418a8000e72bed69c2b1204" category="list-text">vSphere 8.0 릴리즈에서는 NVMe/FC 프로토콜이 지원됩니다.</block>
   <block id="cfbd5fccaf4fd8045e424e51da259e46" category="paragraph">NFS *, * VMFS * 또는 * VVol * 유형을 선택하여 데이터 저장소를 구성할 수 있습니다. VVOL 유형을 선택하면 NVMe/FC 프로토콜을 사용할 수 있습니다.</block>
   <block id="18da7537a6d6a586cd1724bd68e0f65b" category="admonition">NVMe/FC 프로토콜은 ONTAP 9.91P3 이상 릴리즈에서 지원됩니다.</block>
   <block id="ee3acded2da3caf4c3251cbe51ed714f" category="list-text">NFS: NFS3 또는 NFS4.1 프로토콜을 사용하여 NFS 데이터 저장소를 프로비저닝할 수 있습니다.</block>
@@ -2045,8 +2039,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="47036403afaaf8ca717ff4a9ab5e937f" category="admonition">ONTAP 툴 9.12에서 업그레이드 모든 스토리지 시스템 인증 및 통신 프로세스가 ONTAP 스토리지 인증서를 자동 신뢰하여 기본 인증에서 인증서 기반 인증으로 변경됩니다. 사용자가 수행할 작업이 없습니다.</block>
   <block id="58219ebdf648f85e26c26438bb61d686" category="paragraph">json 파일을 사용하여 사용자 지정 생성 클러스터 범위 사용자로 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려는 경우
 업그레이드하기 전에 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere 및 ONTAP용 ONTAP 툴 간에 인증서 기반 통신을 활성화하십시오.</block>
-  <block id="c8651a1e5e8dc4eb77c21ebfee7aa345" category="paragraph">json 파일을 사용하여 사용자 정의된 SVM 범위 사용자로 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려면 다음을 수행합니다
-업그레이드 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere와 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 활성화하십시오.</block>
   <block id="89ee3f6f60ef2fe23bff96f279b6d85a" category="summary">VMware vSphere 환경에서 ONTAP 툴을 다운로드하여 구축한 다음 ONTAP 툴, VASA Provider 및 SRA를 사용하여 수행하려는 작업에 따라 필요한 애플리케이션을 구성해야 합니다.</block>
   <block id="7c3f9f49cd79868d0fe504cc021d45ff" category="doc">VMware vSphere용 ONTAP 툴을 구축 또는 업그레이드합니다</block>
   <block id="5ee2d67e9c2037d55fb50ede660fd324" category="list-text">의 이름을 바꿉니다<block ref="74f7b54ea713d9f5b69839982911bbf7" prefix=" " category="inline-code"></block> NetApp Support 사이트에서 NetAppNasPlugin.vib로 다운로드한 파일로, ONTAP 도구에서 사용하는 미리 정의된 이름과 일치합니다.</block>
@@ -2120,5 +2112,40 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="8b0a036d076285ea830ca8290e260a77" category="list-text">로 이동하여 플러그인 등록을 취소합니다<block ref="3668afd07686ea27a6f1590042360bee" prefix=" " category="inline-code"></block></block>
   <block id="4b8bd3e99bfcc26c0f74b6bf405ef012" category="list-text">최소 8자, 최대 30자로 암호를 입력하십시오. 암호에는 대문자, 하한, 숫자 및 특수 문자가 하나 이상 포함되어야 합니다. 암호 만료 경고는 암호 재설정 75일 후에 표시됩니다. 새 암호는 마지막으로 사용한 암호와 같을 수 없습니다. 90일마다 암호를 변경해야 합니다.</block>
   <block id="062f397773db685232413bdf1cdc77d6" category="list-text">URL:\https://:&lt;srm_ip&gt;:5480을 사용하여 VMware SRM 어플라이언스 관리 인터페이스에 액세스한 다음 VMware SRM 어플라이언스 관리 인터페이스의 스토리지 복제 어댑터로 이동합니다.</block>
-  <block id="02d748a182bd49eb68c66826e023ae52" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="80e6857610e0d41189fe70adcfa7e87b" prefix=" " category="inline-code"></block></block>
+  <block id="fad46460446354fa80d2500a2f1c2238" category="list-text">ONTAP 도구 IP 주소 및 암호를 사용하여 SRM 구성:<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>. 암호 값을 따옴표로 묶어야 합니다.
+스토리지 자격 증명이 저장되었음을 확인하는 성공 메시지가 표시됩니다. SRA는 제공된 IP 주소, 포트 및 자격 증명을 사용하여 SRA 서버와 통신할 수 있습니다.</block>
+  <block id="86e0bf9c3c7b551354475df97b7d9009" category="list-text"><block ref="4222690b3b5a5c9afb047223bc02154e" prefix="" category="inline-code"></block>. 암호 값을 따옴표로 묶어야 합니다.</block>
+  <block id="48ac6224163e1e40df5fddadacfd3cab" category="list-text">명령을 사용하여 ONTAP 도구 IP 주소 및 암호로 SRM을 구성합니다.<block ref="4222690b3b5a5c9afb047223bc02154e" prefix=" " category="inline-code"></block>. 암호 값을 따옴표로 묶어야 합니다.</block>
+  <block id="68e962ea1c22b4a4ce454c6d0243fb84" category="paragraph">SRM 시스템 폴더 캐시된 ONTAP 도구 사용자 이름 암호를 삭제하고 SRA를 다시 설치해야 합니다.</block>
+  <block id="3642e7476d2c39d4c6204e36acaa5431" category="list-text">다음 명령을 실행하여 SRM 컴퓨터 폴더 캐시된 ONTAP 도구 사용자 이름 암호를 삭제합니다.</block>
+  <block id="98ea8bb5748846a8eb48ec17775dd65c" category="list-text"><block ref="73be5ab307e7055f684cc317b6aff741" prefix="" category="inline-code"></block></block>
+  <block id="9aac114d9a8bbe576d39d35cf5fad65b" category="list-text"><block ref="5ec1d0f6687a4c1e0107632871d4a131" prefix="" category="inline-code"></block></block>
+  <block id="be886d30990ecb1cd7da9458a1301ba3" category="list-text"><block ref="ed73a6dfaf2769c449bcf6ac1257b40e" prefix="" category="inline-code"></block></block>
+  <block id="2a7f66eb3c213058f0136bcf65d63f11" category="list-text"><block ref="1c2934a64ebf7e159bf45c1e6c30b478" prefix="" category="inline-code"></block></block>
+  <block id="c6503e5473d2858467146e434dedb32e" category="list-text">perl 명령을 실행하여 새 자격 증명으로 SRA를 구성합니다.</block>
+  <block id="d2ef96c1cd4e9e918af9cc6fe693d19c" category="list-text"><block ref="3e82875f30595fcc3e2ea7112a52aec3" prefix="" category="inline-code"></block></block>
+  <block id="9f39a8ba317fa65df6bf0329cacd5667" category="paragraph">json 파일을 사용하여 사용자 정의된 SVM 범위 사용자와 함께 스토리지 시스템을 추가하고 9.12 이상 버전으로 업그레이드하려는 경우 그런 다음 업그레이드 전에 클러스터 관리자 액세스 권한이 있는 ONTAP CLI에서 아래 명령을 실행하여 VMware vSphere와 ONTAP용 ONTAP 툴 간의 인증서 기반 통신을 사용하도록 설정합니다.</block>
+  <block id="6b93e6fdc6e3dbf8009c665ddf94abcf" category="paragraph">(선택 사항) vCenter 구성 또는 VCF 활성화 섹션에서 * VCF(VMware Cloud Foundation) * 활성화 * 확인란을 선택하고 ONTAP 툴 자격 증명에 대한 암호를 제공합니다. ONTAP 도구는 사용자 세부 정보를 인코딩된 형식으로 저장합니다. ONTAP 툴과 vCenter 간의 통신에는 이러한 vCenter 사용자 세부 정보가 사용됩니다.
+IP 주소를 제공할 필요는 없지만 비밀번호를 입력해야 합니다.
+자세한 내용은 다음을 참조하십시오.</block>
+  <block id="8cc72bf41639ac37b90eb2211ba395af" category="admonition">ONTAP 툴 가상 머신을 관리하는 VVOL 데이터 저장소에 저장하지 마십시오.</block>
+  <block id="fb65092a2b1818d2f28038d58c52a701" category="paragraph">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. ESXi 호스트에서 ONTAP 툴 어플라이언스로 연결되는 방화벽에서 이 포트를 활성화해야 합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.</block>
+  <block id="552de149f7e69b0800ade32a13e7e6f1" category="list-text">vSphere 8.0 릴리즈에서는 VVOL 데이터 저장소에 NVMe/FC 프로토콜이 지원됩니다.</block>
+  <block id="26ffc687a7267f96a389530199971cd1" category="sidebar">VMware vSphere용 ONTAP 툴 설명서</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">VMware vSphere용 ONTAP 툴에 대해 자세히 알아보십시오</block>
+  <block id="21e2a89d708329706ec6ed3fc989a1f6" category="sidebar">ONTAP 도구를 사용합니다</block>
+  <block id="317bbf73ff27c5f981628c8fb83ebf22" category="sidebar">역할 기반 액세스 제어를 구성합니다</block>
+  <block id="48bc2d028cb2a507ef974230ca3ba793" category="sidebar">원격 진단 구성</block>
+  <block id="641e9457539249e880725760f91d5ee2" category="sidebar">고가용성을 구성합니다</block>
+  <block id="04edeb5424c826c14a69edb777edf395" category="sidebar">데이터 저장소 보호 및 관리</block>
+  <block id="eaf78ca462bf848b7c59c410077002b6" category="sidebar">데이터 저장소를 보호합니다</block>
+  <block id="c724784c65896d8b16350f4b0580dfd4" category="sidebar">가상 시스템 보호</block>
+  <block id="5267febc97a2cc385cc5c73995dc64df" category="sidebar">기존 데이터 저장소 및 가상 머신을 모니터링합니다</block>
+  <block id="3123ece3c3b36f605758cb0c9a28f904" category="sidebar">VVOL 데이터 저장소 및 가상 머신을 모니터링합니다</block>
+  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
+  <block id="51cf1968b9a38ab03f7396d237ad0be6" category="sidebar">VMware용 이전 버전의 ONTAP 툴 설명서</block>
+  <block id="4c3c39a603eb21106d2df2836d4b456c" category="sidebar">NetApp 기술 자료 - ONTAP 툴</block>
+  <block id="bbf1057ad175e1e1664e224351019ac9" category="sidebar">NetApp 가져오기 유틸리티 - 비디오</block>
+  <block id="72393f9ef0b6b69526a30ac7ce5276bc" category="sidebar">NetApp 커뮤니티 - ONTAP 툴</block>
 </blocks>
