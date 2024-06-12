@@ -4,9 +4,9 @@ title: ONTAP 도구를 구성합니다
 entries:
 - title: ONTAP 도구 구성 워크플로
   url: "/configure/concept_workflow_for_configuring_the_unified_appliance.html"
-- title: ESXi 설정을 구성합니다
+- title: ESXi 호스트 설정을 구성합니다
   entries:
-  - title: ESXi 서버 경로 다중화 및 시간 초과 설정을 구성합니다
+  - title: ESXi 호스트 서버 경로 다중화 및 시간 초과 설정을 구성합니다
     url: "/configure/task_configure_esx_server_multipathing_and_timeout_settings.html"
   - title: ONTAP 툴을 사용하여 설정된 ESXi 호스트 값입니다
     url: "/configure/reference_esxi_host_values_set_by_vsc_for_vmware_vsphere.html"

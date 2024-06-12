@@ -2,7 +2,7 @@
 permalink: configure/concept_requirements_for_registering_vsc_in_multiple_vcenter_servers_environment.html 
 sidebar: sidebar 
 keywords:  
-summary: '단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 ONTAP 툴 인스턴스 하나를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.' 
+summary: '단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP ® 툴을 사용하는 경우, VMware vSphere용 ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 하나의 ONTAP 툴 인스턴스를 등록해야 합니다. 이렇게 하면 단일 vSphere HTML5 클라이언트에서 연결된 모드와 연결되지 않은 모드 모두에서 vCenter 6.0 이상을 실행하는 모든 서버를 관리할 수 있습니다.' 
 ---
 = 여러 vCenter Server 환경에서 ONTAP 툴을 등록하기 위한 요구 사항
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: '단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Serve
 
 
 [role="lead"]
-단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우 ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 ONTAP 툴 인스턴스 하나를 등록해야 합니다. 이렇게 하면 vCenter 7.0 이상을 실행하는 모든 서버를 단일 vSphere HTML5 클라이언트에서 연결 모드 및 연결되지 않은 모드로 관리할 수 있습니다.
+단일 VMware vSphere HTML5 클라이언트에서 여러 vCenter Server 인스턴스를 관리하는 환경에서 VMware vSphere용 ONTAP 툴을 사용하는 경우 VMware vSphere용 ONTAP 툴과 vCenter Server 간에 1:1 페어링이 이루어지도록 각 vCenter Server에 하나의 ONTAP 툴 인스턴스를 등록해야 합니다. 이렇게 하면 vCenter 7.0 이상을 실행하는 모든 서버를 단일 vSphere HTML5 클라이언트에서 연결 모드 및 연결되지 않은 모드로 관리할 수 있습니다.
 
 
 NOTE: vCenter Server에서 ONTAP 툴을 사용하려면 관리할 모든 vCenter Server 인스턴스에 대해 하나의 ONTAP 툴 인스턴스를 설정하거나 등록해야 합니다. 등록된 각 ONTAP 도구 인스턴스는 동일한 버전이어야 합니다.
@@ -28,7 +28,7 @@ vSphere HTML5 클라이언트를 사용하여 여러 vCenter Server에서 ONTAP 
 ONTAP 툴 서버 A를 vCenter Server A와 vCenter Server B 모두에 등록할 수 없습니다
 
 +
-VMware 인벤토리에 ONTAP Tools 서버가 등록되어 있지 않지만 ONTAP 툴에 등록된 vCenter Server가 하나 이상 있는 vCenter Server가 포함되어 있는 경우 그런 다음 ONTAP 툴의 인스턴스를 보고 ONTAP 툴이 등록된 vCenter Server에 대해 ONTAP 툴 작업을 수행할 수 있습니다.
+VMware 인벤토리에 ONTAP Tools 서버가 등록되어 있지 않지만 ONTAP 툴에 등록된 vCenter Server가 하나 이상 있는 vCenter Server가 포함되어 있는 경우 그런 다음 VMware vSphere용 ONTAP 툴의 인스턴스를 보고 ONTAP 툴이 등록된 vCenter Server에 대한 ONTAP 툴 작업을 수행할 수 있습니다.
 
 * SSO(Single Sign-On)에 등록된 각 vCenter Server에 대해 ONTAP 툴별 보기 권한이 있어야 합니다.
 +

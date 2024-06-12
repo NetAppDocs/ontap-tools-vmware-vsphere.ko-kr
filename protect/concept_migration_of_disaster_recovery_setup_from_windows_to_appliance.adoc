@@ -15,7 +15,7 @@ summary: '재해 복구에 Windows 기반 사이트 복구 관리자\(SRM\)를 �
 
 재해 복구 마이그레이션과 관련된 단계는 다음과 같습니다.
 
-. 기존 ONTAP 도구 어플라이언스를 최신 릴리즈로 업그레이드하십시오.
+. VMware vSphere 어플라이언스용 기존 ONTAP 툴을 최신 릴리즈로 업그레이드하십시오.
 +
 link:../deploy/task_upgrade_to_the_9_8_ontap_tools_for_vmware_vsphere.html["ONTAP 툴의 최신 릴리즈로 업그레이드하십시오"]
 

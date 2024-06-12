@@ -28,7 +28,7 @@ ONTAP 도구는 다음과 같은 기본 양방향 TCP 포트를 사용합니다.
  a| 
 9083
  a| 
-VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. ESXi 호스트에서 ONTAP 툴 어플라이언스로 연결되는 방화벽에서 이 포트를 활성화해야 합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.
+VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. ESXi 호스트에서 VMware vSphere 어플라이언스용 ONTAP 툴까지 방화벽에서 이 포트를 활성화해야 합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.
 
 
 
@@ -49,7 +49,7 @@ ONTAP 도구는 이 포트에서 보안 통신을 수신합니다. 이 포트는
  a| 
 8443
  a| 
-이 포트는 원격 플러그인 서비스에 사용됩니다.
+이 포트는 VMware vSphere 플러그인 서비스용 ONTAP 툴에 사용됩니다.
 
 
 
@@ -63,4 +63,4 @@ ONTAP 도구는 ONTAP에 반향 요청을 전송하여 도달 여부를 확인�
 
 NOTE: ONTAP 도구를 배포하기 전에 ICMP(인터넷 제어 메시지 프로토콜)를 활성화해야 합니다.
 
-ICMP가 비활성화되어 있으면 ONTAP 툴의 초기 구성이 실패하고 구축 후 ONTAP 툴이 ONTAP 툴 및 VASA Provider 서비스를 시작할 수 없습니다. 구축 후에는 ONTAP 툴 및 VASA Provider 서비스를 수동으로 설정해야 합니다.
+ICMP가 비활성화되어 있으면 ONTAP 툴의 초기 구성이 실패하고 구축 후 ONTAP 툴이 VMware vSphere 및 VASA Provider 서비스용 ONTAP 툴을 시작할 수 없습니다. 구축 후 VMware vSphere 및 VASA Provider 서비스에 대한 ONTAP 툴을 수동으로 활성화해야 합니다.

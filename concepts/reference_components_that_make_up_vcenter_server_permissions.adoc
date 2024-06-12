@@ -73,7 +73,7 @@ NetApp ONTAP 툴 콘솔 > 뷰
 * VSC 읽기 전용
 
  a| 
-모든 ONTAP 툴 및 VASA 공급자 관련 작업에는 보기 권한이 필요합니다.
+VMware vSphere 및 VASA 공급자별 작업을 위한 모든 ONTAP 툴에 보기 권한이 필요합니다.
 
 
 
@@ -82,7 +82,7 @@ NetApp Virtual Storage Console > 정책 기반 관리 > 관리 또는 privilege.
  a| 
 VSC 관리자
  a| 
-스토리지 기능 프로파일 및 임계값 설정과 관련된 ONTAP 툴 및 VASA Provider 작업
+스토리지 기능 프로파일 및 임계값 설정과 관련된 VMware vSphere 및 VASA Provider 작업을 위한 ONTAP 툴
 
 |===
 
@@ -98,6 +98,6 @@ VSC 관리자
 Active Directory(또는 로컬 vCenter Server 머신)를 사용하여 사용자 및 사용자 그룹을 설정할 수 있습니다. 그런 다음 vCenter Server 권한을 사용하여 이러한 사용자 또는 그룹에 액세스 권한을 부여하여 특정 ONTAP 툴 작업을 수행할 수 있도록 설정할 수 있습니다.
 
 
-NOTE: 이러한 vCenter Server 사용 권한은 ONTAP 툴 vCenter 사용자에게 적용되며 ONTAP 툴 관리자에게는 적용되지 않습니다. 기본적으로 ONTAP 도구 관리자는 제품에 대한 모든 액세스 권한을 가지며, 이러한 권한을 부여하지 않아도 됩니다.
+NOTE: 이러한 vCenter Server 사용 권한은 ONTAP 툴 vCenter 사용자에게 적용되며, VMware vSphere 관리자를 위한 ONTAP 툴에는 적용되지 않습니다. 기본적으로 VMware vSphere 관리자용 ONTAP 툴은 제품에 대한 모든 액세스 권한을 가지며 해당 툴에 할당된 권한이 필요하지 않습니다.
 
 사용자 및 그룹에 할당된 역할이 없습니다. vCenter Server 권한의 일부이기 때문에 역할에 액세스할 수 있습니다.

@@ -31,7 +31,7 @@ ONTAP 툴의 9.7.1 릴리즈로 업그레이드하기 전에 VASA 공급자 기�
 . 관리 설정 탭에서 * 기능 관리 * 를 클릭합니다.
 . Manage Capabilities 대화 상자에서 사용할 VASA Provider 확장을 선택합니다.
 . VVOL 데이터 저장소의 복제 기능을 사용하려면 * VVol 복제 활성화 * 전환 버튼을 사용합니다.
-. ONTAP 도구의 IP 주소와 관리자 암호를 입력한 다음 * 적용 * 을 클릭합니다.
+. VMware vSphere용 ONTAP 툴의 IP 주소와 관리자 암호를 입력한 다음 * 적용 * 을 클릭합니다.
 +
 
 NOTE: VASA Provider 확장을 설정한 후에도 VASA Provider 상태가 ""Offline""으로 표시되면 ""/var/log/vmware/vmware-SPS/SPS.log" 파일에서 VASA Provider와의 연결 오류를 확인하거나 ""VMware-SPS"" 서비스를 다시 시작하십시오.

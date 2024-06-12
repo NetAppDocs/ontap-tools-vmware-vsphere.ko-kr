@@ -52,7 +52,7 @@ vSphere Client 홈 페이지입니다
 
 
  a| 
-ESXi 호스트 시스템 포틀릿입니다
+ESXi 호스트 시스템 포틀릿
  a| 
 .. ONTAP 도구의 개요 섹션에서 * 기존 대시보드 * 탭을 클릭합니다.
 .. Edit ESXi Host Settings * 를 클릭합니다.

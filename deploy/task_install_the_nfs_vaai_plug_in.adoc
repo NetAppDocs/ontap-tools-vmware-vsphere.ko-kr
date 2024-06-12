@@ -41,6 +41,6 @@ VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for
 
 . 설치가 완료되면 ESXi 호스트를 재부팅합니다.
 +
-ESXi 호스트를 재부팅하면 ONTAP 툴이 자동으로 NFS VAAI 플러그인을 감지합니다. 플러그인을 활성화하기 위해 추가 단계를 수행할 필요가 없습니다.
+ESXi 호스트를 재부팅하면 VMware vSphere용 ONTAP 툴이 NFS VAAI 플러그인을 자동으로 감지합니다. 플러그인을 활성화하기 위해 추가 단계를 수행할 필요가 없습니다.
 
 

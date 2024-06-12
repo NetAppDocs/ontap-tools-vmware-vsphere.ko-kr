@@ -2,7 +2,7 @@
 permalink: configure/task_configure_user_role_and_privileges.html 
 sidebar: sidebar 
 keywords: user roles 
-summary: ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다. 
+summary: VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다. 
 ---
 = 사용자 역할 및 권한을 구성합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일�
 
 
 [role="lead"]
-ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다.
+VMware vSphere 및 ONTAP System Manager용 ONTAP 툴과 함께 제공되는 JSON 파일을 사용하여 스토리지 시스템을 관리하기 위한 새로운 사용자 역할을 구성할 수 있습니다.
 
 * 필요한 것 *
 
@@ -22,7 +22,7 @@ ONTAP 툴 및 ONTAP System Manager와 함께 제공되는 JSON 파일을 사용�
 ** 다운로드한 VSC_ONTAP_User_Privileges.zip 파일의 압축을 풉니다
 ** System Manager에 액세스합니다
 +
-KB 문서 - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["가상 스토리지 콘솔: JSON 파일을 검색하여 사용자 역할 및 권한을 구성하는 방법"] ONTAP 권한 파일을 WebCLI에서 다운로드하는 방법에 대한 지침을 참조하십시오.
+KB 문서 - https://kb.netapp.com/mgmt/OTV/Virtual_Storage_Console/Virtual_Storage_Console%3A_How_to_retrieve_the_JSON_file_to_configure_user_roles_and_privileges["가상 스토리지 콘솔: JSON 파일을 검색하여 사용자 역할 및 권한을 구성하는 방법"] ONTAP 권한 파일을 웹 CLI에서 다운로드하는 방법에 대한 지침을 참조하십시오.
 
 
 
