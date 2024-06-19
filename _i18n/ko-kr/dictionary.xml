@@ -189,28 +189,19 @@
   <block id="fa43d63ba917729629ab7f912cf6f6ca" category="paragraph">SRA(Storage Replication Adapter)에 권장되는 설정에 따라 스토리지 시간 초과 간격을 구성하여 고도로 확장된 환경에서 최적의 성능을 발휘하도록 해야 합니다.</block>
   <block id="383c9f9f08441de49a64fa51e25ad9c9" category="section-title">저장소 공급자 설정</block>
   <block id="68c185224c05d2129a14987da1b847a6" category="paragraph">확장 환경의 경우 SRM에서 다음 시간 초과 값을 설정해야 합니다.</block>
-  <block id="fe4c6a5e7bd6793b37370e4e46daf998" category="cell">고급 설정</block>
-  <block id="2d454f7be17f2289142fb73539ba0c06" category="cell">시간 초과 값</block>
-  <block id="cfb1af8547e34b1470b19edbde9418b8" category="paragraph">StorageProvider.재서명시간 초과</block>
   <block id="341bac145cc58ec7a7ab03eba3971c0b" category="paragraph">설정 값을 900초에서 12000초로 늘립니다.</block>
-  <block id="084a7cbae7a12c6ad6f1f66a39e88f9b" category="paragraph">storageProvider.hostRescandDelaySec을 참조하십시오</block>
   <block id="072b030ba126b2f4b2374f342be9ed44" category="paragraph">60</block>
-  <block id="aa18dc2961636b24cb5d5f9e925404a9" category="paragraph">storageProvider.hostRescanRepeatCnt 를 참조하십시오</block>
   <block id="98f13708210194c475687be6106a3b84" category="paragraph">20</block>
-  <block id="c1533677fede32792c4b54cf81865145" category="paragraph">storageProvider.hostRescanTimeoutSec을 참조하십시오</block>
   <block id="9df3b59d2f557fab39346b37532a0832" category="paragraph">높은 값 설정(예: 99999)</block>
-  <block id="3868919c1577c6c9fcb90f12ff7241a9" category="paragraph">StorageProvider.autoResignatureMode 옵션도 활성화해야 합니다.</block>
   <block id="7ab0999b0811be49a9148b1092cf0095" category="paragraph">스토리지 공급자 설정 수정에 대한 자세한 내용은 VMware 설명서를 참조하십시오.</block>
   <block id="7ceb96cf2f53ab82cf68115087e42798" category="inline-link">VMware vSphere 설명서: 스토리지 공급자 설정 변경</block>
   <block id="6b9647887381f9ce12a57a287e1bafbd" category="paragraph"><block ref="6b9647887381f9ce12a57a287e1bafbd" category="inline-link-rx"></block></block>
   <block id="6deaa5e1cafca832bac1b468485b9454" category="section-title">저장소 설정</block>
-  <block id="202667bd06a4b1c9918ebf1e566e60f2" category="paragraph">크기가 큰 환경의 경우 storage.commandTimeout 및 storage.maxConcurrentCommandCnt 시간 제한 간격을 99,999초로 설정해야 합니다.</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.</block>
   <block id="e8e75924ea6b1743aedaf9cdc60f2811" category="paragraph">또한 SRA가 vvol.properties 파일에서 단일 작업을 수행하는 최대 시간을 설정해야 합니다. offtap.operation.timeout.period.seconds=86400</block>
   <block id="0a757269d3671e08f4647a4a3f39c7af" category="inline-link">NetApp 기술 자료 답변 1001111: ONTAP용 NetApp 스토리지 복제 어댑터 4.0/7.X 사이징 가이드</block>
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 설명서: 스토리지 설정 변경</block>
-  <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
   <block id="988a8cbd50f072106aa0cc7589031a95" category="doc">ONTAP 툴을 구축하는 방법</block>
   <block id="0efacb73c35dfad8adbb34de54b95af2" category="list-text">vCenter Server 환경을 구성하고 설정해야 합니다.</block>
   <block id="ba4e8017753da6e2cad1d40cac107160" category="list-text">가상 머신에 대해 ESXi 호스트를 설정해야 합니다.</block>
@@ -453,7 +444,6 @@
   <block id="abc76e74279f9441a4a6c363c930ab48" category="paragraph">'torageProvider.hostRescanRepeatCnt'를 선택합니다</block>
   <block id="d9ad1cd9ed6154c08811ffdbeec40f42" category="paragraph">'torageProvider.hostRescanTimeoutSec'입니다</block>
   <block id="c30b7c029fe2d9044307db1e0f6ea417" category="paragraph">또한 'torageProvider.autoResignatureMode` 옵션을 활성화해야 합니다.</block>
-  <block id="686f64fc789747485a424cbfcfd51b54" category="paragraph">고도로 확장된 환경의 경우 'torage.commandTimeout` 및 'storage.maxConcurrentCommandCnt' 시간 제한 간격을 99,999초로 설정해야 합니다.</block>
   <block id="22bf2e5e3e861785a0e8f1eb7bd7492e" category="doc">SRA를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="84bd345b022206ae6f8ba4389abae9b4" category="list-text">ONTAP 툴을 구축해야 합니다.</block>
   <block id="ca11a9887f9c1b0920793fa77409fe5e" category="inline-link">Site Recovery Manager 설치 및 구성 사이트 복구 관리자 8.2</block>
@@ -1410,7 +1400,6 @@
   <block id="2efb0fa4cef9462e9a212abf6778b626" category="list-text">iSCSI 서브넷 액세스에 대해 위의 단계를 반복하고 * 적용 * 을 클릭합니다.</block>
   <block id="e9df7d5252c2104198351b64e368569b" category="paragraph">최상의 성능과 성공적인 페일오버를 보장하기 위해 VMware vSphere용 ONTAP 툴을 사용하여 ESXi 호스트에서 시간 초과 및 기타 값을 설정할 수 있습니다. ONTAP 툴 세트가 제공하는 가치는 내부 NetApp 테스트를 기반으로 합니다.</block>
   <block id="56cfa018d4e9a7aa0b73e64b0dd88f77" category="paragraph">"다른 서브넷에 데이터 저장소 마운트 설정"을 참조하십시오.</block>
-  <block id="ec2fa05ad1e1cd992e000b32058b54e0" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 ASA 및 승인된 AFF 시스템과 함께 사용할 경우 VMFS5 및 VMFS6 데이터 저장소 프로비저닝을 최대 VMFS LUN 및 64TB 볼륨 크기까지 지원합니다.</block>
   <block id="1e188467952fdbff98e3068f89af769c" category="summary">ONTAP 툴은 데이터 센터에서 FlexVol 볼륨을 재조정하는 명령을 지원합니다. 주요 목표는 FlexVol 볼륨 간에 공간 활용률을 고르게 하는 것입니다. ONTAP 툴은 공간 사용, 씬 프로비저닝, LUN 수 및 스토리지 기능 프로필을 기준으로 기존 볼륨 간에 VVOL을 재배포합니다.</block>
   <block id="a0df72576daf9a1137d39f7553d36e82" category="list-text">브론즈</block>
   <block id="ae430c36b97e2fb5fad06eb10d89e8f4" category="paragraph">ONTAP 툴을 사용하면 동일한 VVOL 데이터 저장소에서 다양한 IOPS 요구 사항에 따라 가상 머신의 프로비저닝을 지원하는 새로운 스토리지 기능 프로필로 모든 가상 볼륨(VVol) 데이터 저장소를 구성할 수 있습니다. IOPS 요구 사항이 있는 VM 프로비저닝 워크플로우를 실행하는 동안 모든 VVol 데이터스토어가 호환 가능한 데이터 저장소 목록에 나열됩니다.</block>
@@ -1743,7 +1732,6 @@
   <block id="5547d8d27b62c49e4555e1f79122a342" category="paragraph"><block ref="9e427bf42ac054021120757914ef1809" prefix="" category="inline-code"></block></block>
   <block id="b8ace162f3094fd5ac1138ced112d7a7" category="list-text">VMware vSphere Client 서비스를 시작합니다.<block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix=" " category="inline-code"></block></block>
   <block id="02026f27af003e00469addac855d370b" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>. 주제입니다 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.</block>
-  <block id="36716d5924fd9465137a810fd76c2f48" category="paragraph">VASA Provider와 SRA(Storage Replication Adapter)가 모두 활성화되면 이 포트를 사용하여 vCenter Server와 통신합니다. 이 포트는 TCP/IP 설정을 얻는 데도 필요합니다. 이 포트는 VP 지원 번들을 다운로드하고, Web-CLI 사용자 인터페이스를 액세스하고, VMware에서 VP로 경로 통신을 제어하는 데 사용됩니다.</block>
   <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 443 포트는 보안 연결에 대해 기본적으로 설정됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다.</block>
   <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 툴은 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
   <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
@@ -2162,4 +2150,6 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 FC �
   <block id="c4d7bfe92b4693a00e8289e45547ab0d" category="paragraph">SRM 공유 복구 사이트 구성에서 각 SRM 서버에는 전용 SRA 인스턴스(SRM과 SRA 간의 1:1 관계)가 있어야 합니다. VCF 모드에서 각 SRM 서버에 대해 전용 SRA 인스턴스로 작동하도록 OTV를 구성합니다. vCenter에 등록되고 데이터 저장소 프로비저닝과 같은 비 SRA 작업에 사용되는 VMware vSphere 어플라이언스용 비 SRA 지원 ONTAP 툴을 구축할 수도 있습니다.</block>
   <block id="ffb65cab8d95fee8d80abc7ceaa0a0ec" category="list-text">재보호 작업 후 VMware vSphere용 ONTAP 툴에 데이터 저장소가 표시되지 않으면 스토리지 시스템 검색을 실행하거나 다음 예약된 검색 작업을 기다려야 합니다.</block>
   <block id="1030a4736944c363305ecfdc816d75b0" category="sidebar">ESXi 호스트 설정을 구성합니다</block>
+  <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">시간 초과에 도달하면 의 값을 늘리십시오<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 및<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 더 높은 값으로.</block>
+  <block id="7e2e86e08ed241dcd1c4a60663089958" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 모든 ASA 시스템 및 ONTAP 9.12.1P2 이상을 실행하는 다른 모든 시스템에서 사용할 경우 VMFS5 및 VMFS6 데이터 저장소를 최대 VMFS LUN 및 64TB의 볼륨 크기로 프로비저닝할 수 있도록 지원합니다.</block>
 </blocks>
