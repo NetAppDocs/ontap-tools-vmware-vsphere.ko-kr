@@ -2152,4 +2152,7 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 FC �
   <block id="1030a4736944c363305ecfdc816d75b0" category="sidebar">ESXi 호스트 설정을 구성합니다</block>
   <block id="5f479a62f2104046972d10f2cbf88255" category="paragraph">시간 초과에 도달하면 의 값을 늘리십시오<block ref="e7a7316b2dab3875c5aa0977c256ae38" prefix=" " category="inline-code"></block> 및<block ref="b6c033f4806640a2a2858512cf9f8c1b" prefix=" " category="inline-code"></block> 더 높은 값으로.</block>
   <block id="7e2e86e08ed241dcd1c4a60663089958" category="list-text">ONTAP 툴은 ONTAP 9.8 이상을 실행하는 모든 ASA 시스템 및 ONTAP 9.12.1P2 이상을 실행하는 다른 모든 시스템에서 사용할 경우 VMFS5 및 VMFS6 데이터 저장소를 최대 VMFS LUN 및 64TB의 볼륨 크기로 프로비저닝할 수 있도록 지원합니다.</block>
+  <block id="df5910bf5ed161a784cc7b4fb3fc0a84" category="list-text">* SunRPC.MaxConnPerIP *</block>
+  <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">vSphere 7.0 이상을 사용하는 경우 이 값을 128으로 설정해야 합니다.</block>
+  <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">상호 운용성 매트릭스 툴(IMT)에는 지원되는 버전의 ONTAP, vCenter Server, ESXi 호스트, 플러그인 애플리케이션, SRM(사이트 복구 관리자)에 대한 최신 정보가 포함되어 있습니다. <block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block>지원되는 모든 업그레이드 경로 정보는 을 참조하십시오.</block>
 </blocks>

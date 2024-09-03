@@ -15,6 +15,8 @@ summary: 여기에 제공된 지침에 따라 기존 9.10 이상의 설정에서
 
 * 필요한 것 *
 
+상호 운용성 매트릭스 툴(IMT)에는 지원되는 버전의 ONTAP, vCenter Server, ESXi 호스트, 플러그인 애플리케이션, SRM(사이트 복구 관리자)에 대한 최신 정보가 포함되어 있습니다.  https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["상호 운용성 매트릭스 툴"^]지원되는 모든 업그레이드 경로 정보는 을 참조하십시오.
+
 * 최신 버전의 ONTAP 도구에 대해 _.iso_file을 다운로드해야 합니다.
 * 업그레이드 후 ONTAP 도구가 최적으로 작동하도록 최소 12GB RAM을 예약해야 합니다.
 * vSphere Client 브라우저 캐시를 정리해야 합니다.
