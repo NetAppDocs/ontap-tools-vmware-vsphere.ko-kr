@@ -1160,8 +1160,6 @@
   <block id="66c5b34575bb610e09f6281aecda93e6" category="paragraph">HA를 구성하는 절차는 vCenter Server 버전에 따라 다릅니다. 예를 들어 다음 참조 링크를 사용하여 필요한 vCenter Server 버전을 선택하여 HA 구성 단계를 볼 수 있습니다.</block>
   <block id="9c506678975809e892cfdd7c14758cae" category="inline-link">VMware vSphere 설명서: 내결함성 요구 사항, 제한 사항 및 라이센스</block>
   <block id="20422418e9f27ff480459f880734075a" category="paragraph"><block ref="20422418e9f27ff480459f880734075a" category="inline-link-rx"></block></block>
-  <block id="6b894d7e8f2bb219ece874c3c249c3f7" category="inline-link">가상 스토리지 콘솔에 대한 RBAC 구성 방법</block>
-  <block id="14d107055fdbd0aa4ef3c23300469f88" category="paragraph"><block ref="14d107055fdbd0aa4ef3c23300469f88" category="inline-link-rx"></block></block>
   <block id="8169f681458fdeab0f3382d2821b913f" category="section-title">VMware vSphere용 ONTAP 툴에 필요한 제품 레벨 권한입니다</block>
   <block id="f205df396c677fd2dbb183f5747cadfa" category="cell">* 권한 *</block>
   <block id="74d56f13e9a7c977cac9a88a879fcbfc" category="paragraph">루트 개체는 보기 권한이 포함된 권한을 할당하는 데 권장되는 장소입니다.</block>
@@ -1419,7 +1417,6 @@
   <block id="1242e163636ceb52703fad8214a2bedc" category="list-text">ONTAP 9.8P1 이상의 스토리지를 구성해야 합니다.</block>
   <block id="2dc470ea65bfb20ee49093121123d780" category="list-text">최신 버전의 ONTAP 도구에 대해 _.iso_file을 다운로드해야 합니다.</block>
   <block id="c24f54bbbe4e8d99ba7daa84a6860772" category="list-text">이전 버전에서 ONTAP 도구의 최신 릴리즈로 업그레이드할 경우 vvol.properties 파일에 'vVol.rebalance.threshold' 속성이 없는 것으로 나타납니다.</block>
-  <block id="a7189062665fe6b8b3263ee857e62834" category="paragraph">VMware를 처음 사용하는 경우 NetApp ONTAP 툴 제품을 사용하지 않은 경우, ONTAP 툴을 구축하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.</block>
   <block id="78b9c306d2b9e90dc4612872a3412b17" category="image-alt">새로운 사용자 배포</block>
   <block id="7f92b985b9e4bff91f2d31ae0cc7bdd7" category="list-text">SRA 4.0P1을 사용하는 경우 먼저 SRA9.6으로 업그레이드한 다음 SRA 9.6 릴리스의 현재 위치 업그레이드를 수행해야 합니다. 나중에 ONTAP 도구의 최신 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="e2444e964cdc125f0e5e638cd372f502" category="paragraph">VSC, VASA Provider, SRA를 위한 가상 어플라이언스 7.2 또는 7.2.1 릴리즈를 사용하는 경우 유니파이드 어플라이언스의 9.7P1 이상 릴리즈로 직접 업그레이드할 수 없습니다. 먼저 기존 설정을 가상 어플라이언스의 9.7 릴리즈로 업그레이드한 다음 최신 릴리즈로 업그레이드해야 합니다.</block>
@@ -1650,7 +1647,6 @@
   <block id="148d96a120a3dbbdac7376feadd4f4e7" category="paragraph">이 항목에서 설명한 단계를 실행해야 합니다 <block ref="a7b1731ee7a384d42899d1089c98fcd0" category="inline-link-macro-rx"></block></block>
   <block id="50344e3c61009efb2aa76acc2330e318" category="list-text">vSphere Client 페이지에서 * Policies and Profiles * 를 클릭합니다.</block>
   <block id="f9945d9a9730b8841a7d9375a4e7d470" category="list-text">VM 스토리지 정책 페이지에서 * 생성 * 을 클릭합니다.</block>
-  <block id="ef9991a7cf13c45bcebdc7db419b4a5b" category="summary">VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템을 사용하는 VMware 환경에서 가상 머신에 대한 엔드 투 엔드 라이프사이클 관리를 제공합니다. 관리자는 vCenter Server 내의 스토리지를 직접 관리할 수 있으므로 VMware 환경의 스토리지 및 데이터 관리가 간소화됩니다.</block>
   <block id="35b93a81a0436a7a2cfd708e05194805" category="paragraph">ONTAP 툴은 vSphere 클라이언트와 통합되며 SSO(Single Sign-On) 서비스를 사용할 수 있습니다. vCenter Server 인스턴스가 여러 개 있는 환경에서는 관리하려는 각 vCenter Server 인스턴스에 고유한 ONTAP 툴 등록 인스턴스가 있어야 합니다.</block>
   <block id="b0fc0bed1deb4cd0ac1733c83406a338" category="list-text">ONTAP System Manager 9.8P1 이상을 사용하여 클러스터 관리자 또는 SVM 관리자 역할을 생성합니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="36a3e078a9ae64bd58305972fd6b6a14" category="paragraph">새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
@@ -2155,4 +2151,9 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 FC �
   <block id="df5910bf5ed161a784cc7b4fb3fc0a84" category="list-text">* SunRPC.MaxConnPerIP *</block>
   <block id="4a8c1c4202dd77901215a87452e10629" category="paragraph">vSphere 7.0 이상을 사용하는 경우 이 값을 128으로 설정해야 합니다.</block>
   <block id="34881aef32159ff28f8619a31ff308a3" category="paragraph">상호 운용성 매트릭스 툴(IMT)에는 지원되는 버전의 ONTAP, vCenter Server, ESXi 호스트, 플러그인 애플리케이션, SRM(사이트 복구 관리자)에 대한 최신 정보가 포함되어 있습니다. <block ref="c4e3c5dd56e9c0925a46d52133eef091" category="inline-link-rx"></block>지원되는 모든 업그레이드 경로 정보는 을 참조하십시오.</block>
+  <block id="dc00c7eca4a9deab6a54899a9976ba3a" category="inline-link">VMware vSphere용 ONTAP 툴: RBAC 구성</block>
+  <block id="788b65c29277d612dded28375da10d63" category="paragraph"><block ref="788b65c29277d612dded28375da10d63" category="inline-link-rx"></block></block>
+  <block id="7230ef1fabe08177b3b9d5485ebc25c0" category="summary">VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템을 사용하는 VMware 환경에서 가상 머신에 대한 엔드 투 엔드 라이프사이클 관리를 제공합니다. 관리자는 vCenter Server 내의 스토리지를 직접 관리할 수 있으므로 VMware 환경의 스토리지 및 데이터 관리가 간소화됩니다.</block>
+  <block id="47635be81cb27fe24be3c1541e49e8c2" category="doc">ONTAP 툴 개요</block>
+  <block id="693059892f5ca1ab1683c98e037ee404" category="summary">VMware를 처음 접하고 NetApp ONTAP 툴 제품을 사용한 적이 없는 경우 ONTAP 툴을 배포하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.</block>
 </blocks>

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템을 사용하는 VMware 환경에서 가상 머신에 대한 엔드 투 엔드 라이프사이클 관리를 제공합니다. 관리자는 vCenter Server 내의 스토리지를 직접 관리할 수 있으므로 VMware 환경의 스토리지 및 데이터 관리가 간소화됩니다. 
 ---
-= ONTAP 도구 개요
+= ONTAP 툴 개요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
