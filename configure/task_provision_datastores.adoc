@@ -223,4 +223,4 @@ https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/concept_kerbero
 
 https://docs.netapp.com/us-en/ontap/nfs-config/create-kerberos-config-task.html["데이터 LIF에서 Kerberos를 사용하도록 설정합니다"]
 
-https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-BDCB7500-72EC-4B6B-9574-CFAEAF95AE81.html["Kerberos 인증을 위해 ESXi 호스트를 구성합니다"]
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-storage-7-0.html["vSphere 스토리지"]

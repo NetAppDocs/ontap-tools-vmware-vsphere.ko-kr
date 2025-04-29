@@ -2,7 +2,7 @@
 section: concepts
 title: 개념
 entries:
-- title: ONTAP 도구 개요
+- title: ONTAP 툴 개요
   url: "/concepts/concept_virtual_storage_console_overview.html"
 - title: VVOL을 위한 VASA 공급자 구성
   url: "/concepts/concept_configure_vvols_datastores.html"

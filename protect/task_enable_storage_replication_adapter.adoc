@@ -19,7 +19,7 @@ VMware vSphere용 ONTAP 툴은 SRA 기능을 ONTAP 툴과 함께 사용하여 �
 * ONTAP 툴을 구축해야 합니다.
 * 을(를) 다운로드해야 합니다 `.tar.gz` SRM(Site Recovery Manager) 재해 복구 솔루션을 구성하려는 경우에만 SRM 어플라이언스에 대한 파일입니다.
 +
-https://docs.vmware.com/en/Site-Recovery-Manager/8.2/com.vmware.srm.install_config.doc/GUID-B3A49FFF-E3B9-45E3-AD35-093D896596A0.html["Site Recovery Manager 설치 및 구성 사이트 복구 관리자 8.2"] 자세한 정보가 있습니다.
+https://techdocs.broadcom.com/us/en/vmware-cis/live-recovery/site-recovery-manager/8-8/site-recovery-manager-installation-and-configuration-8-8.html["Site Recovery Manager 설치 및 구성 Site Recovery Manager"] 자세한 내용은 을 참조하십시오.
 
 
 

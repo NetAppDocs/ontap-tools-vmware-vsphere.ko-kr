@@ -130,8 +130,6 @@
   <block id="a919e368cdc2a31db9bf251c27d9df05" category="paragraph">데이터 저장소에 대한 IOPS를 보려면 스토리지 입출력 제어를 설정하거나 스토리지 입출력 제어 구성에서 스토리지 입출력 통계 수집 해제 확인란을 선택 취소해야 합니다. VMware의 Enterprise Plus 라이센스가 있는 경우에만 스토리지 I/O 제어를 활성화할 수 있습니다.</block>
   <block id="334d1eb45fc0c2dc8df94b8b513b8df4" category="inline-link">스토리지 입출력 제어 문제 해결</block>
   <block id="1a5f6041f129f43810f85de306ad33b2" category="list-text"><block ref="1a5f6041f129f43810f85de306ad33b2" category="inline-link-rx"></block></block>
-  <block id="6cb4e4fceb86a9c3efe7f9d4e5d29473" category="inline-link">스토리지 입출력 제어 요구 사항</block>
-  <block id="fcafb33f3f1e5ad308452fccb673af13" category="list-text"><block ref="fcafb33f3f1e5ad308452fccb673af13" category="inline-link-rx"></block></block>
   <block id="c78cdaf254148594556f4223226172c2" category="summary">VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.</block>
   <block id="e1f59101bee140f72feebf78fe15f214" category="doc">NFS VAAI 플러그인을 설치합니다</block>
   <block id="85637215a3126011e3e4c6bca49d2263" category="paragraph">VMware vSphere용 ONTAP 툴의 GUI를 사용하여 VAAI(VMware vStorage APIs for Array Integration)용 NetApp NFS 플러그인을 설치할 수 있습니다.</block>
@@ -193,15 +191,10 @@
   <block id="072b030ba126b2f4b2374f342be9ed44" category="paragraph">60</block>
   <block id="98f13708210194c475687be6106a3b84" category="paragraph">20</block>
   <block id="9df3b59d2f557fab39346b37532a0832" category="paragraph">높은 값 설정(예: 99999)</block>
-  <block id="7ab0999b0811be49a9148b1092cf0095" category="paragraph">스토리지 공급자 설정 수정에 대한 자세한 내용은 VMware 설명서를 참조하십시오.</block>
-  <block id="7ceb96cf2f53ab82cf68115087e42798" category="inline-link">VMware vSphere 설명서: 스토리지 공급자 설정 변경</block>
-  <block id="6b9647887381f9ce12a57a287e1bafbd" category="paragraph"><block ref="6b9647887381f9ce12a57a287e1bafbd" category="inline-link-rx"></block></block>
   <block id="6deaa5e1cafca832bac1b468485b9454" category="section-title">저장소 설정</block>
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">지정된 시간 제한 간격이 최대값입니다. 최대 시간 초과에 도달할 때까지 기다릴 필요가 없습니다. 대부분의 명령이 설정된 최대 시간 제한 간격 내에 완료됩니다.</block>
   <block id="e8e75924ea6b1743aedaf9cdc60f2811" category="paragraph">또한 SRA가 vvol.properties 파일에서 단일 작업을 수행하는 최대 시간을 설정해야 합니다. offtap.operation.timeout.period.seconds=86400</block>
   <block id="0a757269d3671e08f4647a4a3f39c7af" category="inline-link">NetApp 기술 자료 답변 1001111: ONTAP용 NetApp 스토리지 복제 어댑터 4.0/7.X 사이징 가이드</block>
-  <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">자세한 내용은 SAN Provider 설정 수정에 대한 VMware 설명서를 참조하십시오.</block>
-  <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager 설명서: 스토리지 설정 변경</block>
   <block id="988a8cbd50f072106aa0cc7589031a95" category="doc">ONTAP 툴을 구축하는 방법</block>
   <block id="0efacb73c35dfad8adbb34de54b95af2" category="list-text">vCenter Server 환경을 구성하고 설정해야 합니다.</block>
   <block id="ba4e8017753da6e2cad1d40cac107160" category="list-text">가상 머신에 대해 ESXi 호스트를 설정해야 합니다.</block>
@@ -329,8 +322,6 @@
   <block id="b1615a1d50989bbe005256e6352c9d57" category="doc">Windows SRM에서 SRM 어플라이언스로 마이그레이션</block>
   <block id="f728e6376c02d0120eb394fe6b65bfd0" category="paragraph">재해 복구에 Windows 기반 SRM(Site Recovery Manager)을 사용하고 동일한 설정에 SRM 어플라이언스를 사용하려는 경우 Windows 재해 복구 설정을 어플라이언스 기반 SRM으로 마이그레이션해야 합니다.</block>
   <block id="fa7482ecdf6cd8902f31cda90682fe24" category="paragraph">재해 복구 마이그레이션과 관련된 단계는 다음과 같습니다.</block>
-  <block id="3061b3ff6d3a7fe53051f50f814b02de" category="inline-link">Windows용 Site Recovery Manager에서 Site Recovery Manager 가상 어플라이언스로 마이그레이션합니다</block>
-  <block id="e98071b2fdde8378fcd32e609913ab66" category="paragraph">을 참조하십시오<block ref="7cf7ce0cd4f57deb650bf40ef131cabd" category="inline-link-rx"></block> 를 참조하십시오</block>
   <block id="a239701adb72159a71164b036c18a53a" category="doc">보호 및 복구 사이트 리소스를 구성합니다</block>
   <block id="49edcb0066d3b891ad806cbde28538ff" category="summary">보호된 가상 머신(VM\)의 복구 사이트에서 vCenter 인벤토리에 있는 위치를 보유하도록 자리 표시자 데이터 저장소를 구성해야 합니다. 자리 표시자 VM이 작고 수백 킬로바이트 이하만 사용하기 때문에 자리 표시자 데이터 저장소는 크기가 클 필요가 없습니다.</block>
   <block id="a079415d00c6083e09f585ea2ed56548" category="doc">자리 표시자 데이터 저장소를 구성합니다</block>
@@ -352,8 +343,6 @@
   <block id="4ce79230c72f0359b458399d56031022" category="paragraph">SRA(Storage Replication Adapter)가 스토리지 시스템을 검색할 수 있도록 vSphere Client를 사용하여 생성한 보호 사이트와 복구 사이트를 페어링해야 합니다.</block>
   <block id="ebde4da5602c98263fc58710c4b589e0" category="list-text">보호 및 복구 사이트에 SRM(Site Recovery Manager)을 설치해야 합니다.</block>
   <block id="b5fb2ba5a0a01abb440ea27ebd61c5f1" category="list-text">보호 및 복구 사이트에 SRA를 설치해야 합니다.</block>
-  <block id="0fefea8dcd9753fb17e8b5ff6b39df51" category="paragraph">SnapMirror 팬아웃 구성은 소스 볼륨이 서로 다른 두 대상에 복제되는 구성입니다. SRM이 대상에서 가상 시스템을 복구해야 하는 경우 복구 중에 문제가 발생합니다.</block>
-  <block id="5f8d93450cd44e3871d6c107dd6e8857" category="admonition">SRA(Storage Replication Adapter)는 팬아웃 SnapMirror 구성을 지원하지 않습니다.</block>
   <block id="00e7213846eef210f46aa733cb151439" category="list-text">vSphere Client 홈 페이지에서 * Site Recovery * 를 두 번 클릭한 다음 * Sites * 를 클릭합니다.</block>
   <block id="0cb204757fc030d9ca635551827fb5fc" category="list-text">Objects * &gt; * Actions * &gt; * Pair Sites * 를 클릭합니다.</block>
   <block id="175196fb642ea5ad4b3eb3694afac00f" category="list-text">사이트 복구 관리자 서버 페어링 대화 상자에서 보호 사이트의 플랫폼 서비스 컨트롤러 주소를 입력한 후 * 다음 * 을 클릭합니다.</block>
@@ -446,8 +435,6 @@
   <block id="c30b7c029fe2d9044307db1e0f6ea417" category="paragraph">또한 'torageProvider.autoResignatureMode` 옵션을 활성화해야 합니다.</block>
   <block id="22bf2e5e3e861785a0e8f1eb7bd7492e" category="doc">SRA를 활성화하여 데이터 저장소를 보호합니다</block>
   <block id="84bd345b022206ae6f8ba4389abae9b4" category="list-text">ONTAP 툴을 구축해야 합니다.</block>
-  <block id="ca11a9887f9c1b0920793fa77409fe5e" category="inline-link">Site Recovery Manager 설치 및 구성 사이트 복구 관리자 8.2</block>
-  <block id="21413bf2dcddaddb1f8a1454ec4abc3b" category="paragraph"><block ref="e42f99038872ff68e0cbb992333123a1" category="inline-link-rx"></block> 자세한 정보가 있습니다.</block>
   <block id="2e325540aabc952fa9cfee2e2d552f85" category="paragraph">VASA Provider 및 SRA 기능을 유연하게 사용하면 기업에 필요한 워크플로만 실행할 수 있습니다.</block>
   <block id="d04db61ce6dc44c27b00d3ca2edab147" category="list-text">관리 설정 * 탭에서 * 기능 관리 * 를 클릭합니다.</block>
   <block id="60f7799622f57bacad4169ec05a5cf08" category="list-text">Manage Capabilities* 대화 상자에서 사용할 SRA 확장을 선택합니다.</block>
@@ -994,8 +981,6 @@
   <block id="96175e97c8c13423e6a60249fa770130" category="summary">ONTAP 툴의 기존 대시보드를 사용하여 기존 데이터 저장소와 가상 머신을 모니터링할 수 있습니다. 대시보드 데이터를 사용하여 데이터 저장소 사용량을 분석하고 수정 조치를 취하여 가상 머신이 공간 관련 제약으로 실행되지 않도록 방지할 수 있습니다.</block>
   <block id="211c9db57cb6ce5c2e16c1ff37eaa820" category="doc">기존 대시보드를 사용하여 성능 데이터를 분석합니다</block>
   <block id="096926a9260db65d51c453dd6fe63a06" category="paragraph">스토리지 I/O 제어 구성 대화 상자에서 * 스토리지 I/O 제어 활성화 및 통계 수집 * 또는 * 스토리지 I/O 제어 비활성화를 선택해야 하지만 통계 수집 * 옵션을 활성화해야 합니다. VMware의 Enterprise Plus 라이센스가 있는 경우에만 스토리지 I/O 제어를 활성화할 수 있습니다.</block>
-  <block id="5900a4191170b6191797e473524d5bfd" category="inline-link">VMware vSphere 설명서: 스토리지 입출력 제어 설정</block>
-  <block id="b7a328ea0603bc67c4f6c59226da970a" category="paragraph"><block ref="b7a328ea0603bc67c4f6c59226da970a" category="inline-link-rx"></block></block>
   <block id="4a7619cde2c717f99a4aa51b8332f2e5" category="paragraph">기존 대시보드에는 vCenter Server에서 얻은 IOPS, 공간 활용, 지연 시간 및 커밋된 용량 메트릭이 표시됩니다. ONTAP는 기존 대시보드에 애그리게이트 공간 절약 메트릭을 제공합니다. 특정 애그리게이트의 공간 절약 효과를 볼 수 있습니다. 이러한 성능 매개 변수를 사용하여 가상 환경의 성능 병목 현상을 파악하고 수정 조치를 취하여 문제를 해결할 수 있습니다.</block>
   <block id="5960c445ac5a2790a032c7ff020b22e3" category="admonition">직접 스토리지 가상 시스템(SVM)에 구성된 FlexGroup 데이터 저장소에는 파일 모니터링이 지원되지 않습니다.</block>
   <block id="77fc87b2d4510a0bda82e14b45856ab6" category="paragraph">ONTAP 툴의 기존 대시보드를 사용하면 NFS 데이터 저장소 또는 VMFS 데이터 저장소를 볼 수 있습니다. 데이터 저장소를 클릭하여 vCenter Server 인스턴스에서 제공하는 데이터 저장소 세부 정보 보기로 이동하여 vCenter Server의 데이터 저장소 문제를 확인하고 해결할 수 있습니다.</block>
@@ -1158,8 +1143,6 @@
   <block id="b9284b1fbd19aed3679134bfb4eb640c" category="paragraph">운영 가상 시스템에 장애를 일으키는 하드웨어 장애가 있는 경우 보조 가상 머신이 운영 가상 머신이 중지된 위치를 즉시 감지합니다. 보조 가상 시스템은 네트워크 연결, 트랜잭션 또는 데이터의 손실 없이 계속 실행됩니다.</block>
   <block id="95954e13c3fd02d60d2176c6788c994a" category="paragraph">시스템은 vCenter Server 인스턴스에 대해 vSphere FT를 구성하기 위한 CPU 요구 사항, 가상 머신 제한 요구 사항 및 라이센스 요구 사항을 충족해야 합니다.</block>
   <block id="66c5b34575bb610e09f6281aecda93e6" category="paragraph">HA를 구성하는 절차는 vCenter Server 버전에 따라 다릅니다. 예를 들어 다음 참조 링크를 사용하여 필요한 vCenter Server 버전을 선택하여 HA 구성 단계를 볼 수 있습니다.</block>
-  <block id="9c506678975809e892cfdd7c14758cae" category="inline-link">VMware vSphere 설명서: 내결함성 요구 사항, 제한 사항 및 라이센스</block>
-  <block id="20422418e9f27ff480459f880734075a" category="paragraph"><block ref="20422418e9f27ff480459f880734075a" category="inline-link-rx"></block></block>
   <block id="8169f681458fdeab0f3382d2821b913f" category="section-title">VMware vSphere용 ONTAP 툴에 필요한 제품 레벨 권한입니다</block>
   <block id="f205df396c677fd2dbb183f5747cadfa" category="cell">* 권한 *</block>
   <block id="74d56f13e9a7c977cac9a88a879fcbfc" category="paragraph">루트 개체는 보기 권한이 포함된 권한을 할당하는 데 권장되는 장소입니다.</block>
@@ -1180,7 +1163,6 @@
   <block id="170336d7d650a6a38e5469968a0ba832" category="paragraph">VASA Provider는 SRA(Storage Replication Adapter)의 기능을 기본적으로 제공합니다. 데이터 센터에서 VVOL 데이터 저장소를 구성한 경우 VVOL 데이터 저장소의 복구를 위해 SRA를 별도로 설치할 필요가 없습니다. SRM(Site Recovery Manager)에서는 보호 사이트와 복구 사이트를 페어링해야 합니다. 사이트 페어링이 발생한 후 SRM 구성의 다음 부분에서는 SRM이 스토리지 시스템과 통신하여 디바이스 및 디바이스 복제를 검색할 수 있도록 스토리지 쌍을 설정하는 작업을 수행합니다. 스토리지 쌍을 구성하려면 먼저 SRM에서 사이트 쌍을 만들어야 합니다.</block>
   <block id="2d0eaddd1a04cec4c27cb40ac1c3f413" category="paragraph">이번 릴리즈의 ONTAP 도구에서는 재해 복구를 위해 동기식 SnapMirror 구성을 사용하는 옵션을 제공합니다.</block>
   <block id="539dd82a460517760883ce4ae5bda489" category="admonition">VMware SRM(Site Recovery Manager)은 VVOL 데이터 저장소의 재해 복구를 관리하기 위해 SRA를 사용하지 않습니다. 대신 VASA Provider를 사용하여 ONTAP 9.7 이상의 클러스터에서 VVOL 데이터 저장소의 복제 및 페일오버 제어를 수행할 수 있습니다.</block>
-  <block id="539018505dde88069c03ead0e16d021b" category="doc">ONTAP 도구 개요</block>
   <block id="088edf0a41c67ef0d8cab2de751c7631" category="paragraph">ONTAP 툴의 각 구성 요소는 스토리지를 보다 효율적으로 관리하는 데 도움이 되는 기능을 제공합니다.</block>
   <block id="527b7aa10737dcb10d3d402f476806ea" category="section-title">가상 스토리지 콘솔(VSC)</block>
   <block id="cd4b13dbc29722160a07355d3fdfd2a7" category="paragraph">VSC를 사용하면 다음 작업을 수행할 수 있습니다.</block>
@@ -1240,8 +1222,6 @@
   <block id="75e793d9133889f56a982d718f5f5c1f" category="paragraph">HA(고가용성)를 위해 VMware vSphere용 ONTAP 툴을 구축할 vSphere 환경을 구성할 수 있습니다. VMware HA 기능은 가상 환경에서 하드웨어 장애 및 운영 체제 장애로부터 페일오버 보호 기능을 제공합니다.</block>
   <block id="193f5724aa76560510625d6930654372" category="paragraph">VMware HA 기능은 가상 시스템을 모니터링하여 운영 체제 장애 및 하드웨어 장애를 감지합니다. 장애가 감지되면 VMware HA 기능은 리소스 풀의 다른 물리적 서버에서 가상 머신을 다시 시작합니다. 서버 오류가 감지되면 수동 개입이 필요하지 않습니다.</block>
   <block id="fddbfde8381a8cd2ead18c94350d2a14" category="paragraph">VMware HA 구성 절차는 vCenter Server 버전에 따라 다릅니다. 예를 들어 다음 참조 링크를 사용하여 필요한 vCenter Server 버전을 선택하여 VMware HA 구성 단계를 볼 수 있습니다.</block>
-  <block id="1d5795cd94cc0753911dd6bc7e4121e0" category="inline-link">VMware vSphere 설명서: vSphere HA 클러스터 생성 및 사용</block>
-  <block id="57913afe7758e6ac629330a6211986c2" category="paragraph"><block ref="57913afe7758e6ac629330a6211986c2" category="inline-link-rx"></block></block>
   <block id="431526444f5217c0c4d88bbb5bd31943" category="summary">고가용성 \(HA\)을 위해 VMware vSphere용 ONTAP 툴이 구축되는 vSphere 환경을 구성할 수 있습니다. VMware HA 기능은 가상 환경에서 하드웨어 장애 및 운영 체제 장애로부터 페일오버 보호 기능을 제공합니다.</block>
   <block id="a3a3f39887f64ae51ced6d024f11ac31" category="summary">vCenter Server는 권한이 아닌 권한을 인식합니다. 각 vCenter Server 권한은 세 가지 구성 요소로 구성됩니다.</block>
   <block id="054195114e28f4a480374b34e3d89663" category="doc">vCenter Server 권한의 구성 요소입니다</block>
@@ -1489,8 +1469,6 @@
   <block id="7fe6d5584982526cfe5bb1b708c9e10f" category="paragraph"><block ref="7fe6d5584982526cfe5bb1b708c9e10f" category="inline-link-rx"></block></block>
   <block id="1a69d38f7b46901c58e85d024e87b034" category="inline-link">데이터 LIF에서 Kerberos를 사용하도록 설정합니다</block>
   <block id="bcafb10f2c5e3e1c946d39793d902146" category="paragraph"><block ref="bcafb10f2c5e3e1c946d39793d902146" category="inline-link-rx"></block></block>
-  <block id="b292d4b33c15cd5429a4aec0164b62f4" category="inline-link">Kerberos 인증을 위해 ESXi 호스트를 구성합니다</block>
-  <block id="2775eee214a07dd3ad16007a75341d1d" category="paragraph"><block ref="2775eee214a07dd3ad16007a75341d1d" category="inline-link-rx"></block></block>
   <block id="f05d67a2632f89a349f888bc1abd2314" category="paragraph">VVOL 데이터 저장소의 재조정은 LUN 이동 또는 파일 이동을 통해 수행됩니다. VVOL을 재조정하는 동안 고려하는 기준은 다음과 같습니다.</block>
   <block id="4240120fee603161e3f32fa6a4127dc3" category="list-text">NFS VVOL 데이터 저장소는 지원되지 않습니다</block>
   <block id="d9feb2b730ded2731ab499f4b64cca33" category="paragraph"><block ref="ccafd2400edf7c1aa273a76ad605940f" category="inline-link-rx"></block></block>
@@ -1651,7 +1629,6 @@
   <block id="b0fc0bed1deb4cd0ac1733c83406a338" category="list-text">ONTAP System Manager 9.8P1 이상을 사용하여 클러스터 관리자 또는 SVM 관리자 역할을 생성합니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="36a3e078a9ae64bd58305972fd6b6a14" category="paragraph">새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오 <block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="057bdc0890b14e869dc32365d6dbda14" category="paragraph">새 사용자 역할을 생성하려면 ONTAP를 실행하는 스토리지 시스템에서 관리자로 로그인해야 합니다. ONTAP 시스템 관리자 9.8P1 이상을 사용하여 ONTAP 역할을 생성할 수 있습니다. 을 참조하십시오<block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="f1ca65352f21d33a199ffdf014a20d67" category="paragraph"><block ref="f1ca65352f21d33a199ffdf014a20d67" category="inline-link-rx"></block></block>
   <block id="1466c5e3d8ac799469615631f5db8a88" category="paragraph">VVOL 데이터 저장소는 스토리지 컨테이너 내에 있는 하나 이상의 FlexVol 볼륨으로 구성됩니다(백업 스토리지라고도 함). 가상 머신은 하나의 VVol 데이터 저장소 또는 여러 개의 VVol 데이터 저장소에 분산될 수 있습니다.</block>
   <block id="367487e8977d682a06a2d074eae19af2" category="paragraph">여러 FlexVol 볼륨이 있는 VVOL 데이터 저장소를 생성할 수 있지만 스토리지 컨테이너 내의 모든 FlexVol 볼륨은 동일한 프로토콜(NFS, iSCSI, FCP 또는 NVMe/FC)과 동일한 스토리지 가상 머신(SVM)을 사용해야 합니다.</block>
   <block id="334fd1b4d225ec3c1fa03aefe5252275" category="summary">Syslog는 시스템 로그를 중앙 집중식 로깅 서버로 보내는 데 사용됩니다.</block>
@@ -1730,7 +1707,6 @@
   <block id="02026f27af003e00469addac855d370b" category="paragraph">최신 버전의 ONTAP 도구를 배포하려는 경우 해당 항목을 확인해야 합니다 <block ref="44969696c082c6abaae247e8c1723287" category="inline-link-macro-rx"></block>. 주제입니다 <block ref="6db555bae030dd891aa85762ae9d5b14" category="inline-link-macro-rx"></block> 데이터 이동 없는 업그레이드 수행에 대한 정보가 있습니다.</block>
   <block id="71a6973fa992a434c0d25fb07bd6f07d" category="paragraph">자격 증명을 구성한 방법에 따라 VMware vCenter Server와 스토리지 시스템은 이 포트에서 보안 통신을 수신합니다. 이 포트는 클라이언트-서버 통신 아키텍처에서 사용됩니다. 443 포트는 보안 연결에 대해 기본적으로 설정됩니다. 클라이언트는 REST API를 사용하는 모든 자동화 클라이언트일 수 있으며, 서버에 대한 연결을 시작하고, 엔드포인트는 데이터를 교환합니다.</block>
   <block id="94694a876801fa4851e5478564de6f4a" category="paragraph">ONTAP 툴은 VMware vCenter Server vCSA(Virtual Appliance)와 함께 사용할 수 있습니다. ESXi 시스템이 포함된 지원되는 vSphere에 ONTAP 툴을 구축해야 합니다.</block>
-  <block id="9abf7c4d6f8e5b536137c70ad41a5f3b" category="paragraph"><block ref="9abf7c4d6f8e5b536137c70ad41a5f3b" category="inline-link-rx"></block></block>
   <block id="b90d3b6f6e5b0c0e2c25f2558f90408c" category="paragraph">데이터 저장소 프로비저닝이 실패하면 VMware vSphere용 ONTAP 도구에서 다음 오류 메시지를 기록합니다.</block>
   <block id="0d488d3f24d754594c736226d7e87fa7" category="image-alt">권장 값 설정 화면</block>
   <block id="7dcb0e2e13022cf76e7deec88d9063e3" category="list-text">vSphere 클라이언트에서 * 메뉴 * &gt; * NetApp ONTAP 툴 * 을 선택합니다.</block>
@@ -1984,7 +1960,6 @@ syslog를 설정하려면 다음 단계를 따르십시오.</block>
   <block id="ccfe3ded2b336756061426e3beb4ea84" category="paragraph">자세한 내용은 를 참조하십시오<block ref="217abffc61852464bf1ed6a3818c434b" category="inline-link-rx"></block>.</block>
   <block id="6b755c3a1874f7019319a35d01e96329" category="summary">VMware vSphere용 ONTAP 툴은 VMware SRM 공유 복구 사이트 구성을 지원합니다.</block>
   <block id="5cb1b5d35d8f16f8985026d5b5525e36" category="doc">공유 복구 사이트 구성에서 SRM을 사용하여 SRA를 구성합니다</block>
-  <block id="d2762e1fc358c658239fdcddc79a0a08" category="paragraph">VMware vSphere용 ONTAP 툴은 VMware의 SRM 공유 복구 사이트 구성을 지원합니다. 자세한 내용은 다음을 참조하십시오.<block ref="0ffb02f2a9ebd31e751e8881460965d1" category="inline-link-rx"></block>. 복구 사이트의 Site Recovery Manager Server 인스턴스는 동일한 vCenter Server 인스턴스에 연결됩니다.</block>
   <block id="a33b1ca1347bc4bdbea174ce943f9442" category="list-text">를 클릭합니다 <block ref="3f896c9984ff9d00635de374ef7890db" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 새 리소스 매핑을 생성합니다.</block>
   <block id="b1caae1e6a180ff384d708f6f5f51304" category="admonition">ONTAP 도구 유지 관리 콘솔에서 관리자 암호를 변경한 후 ONTAP 도구에서 SRA가 활성화 및 구성된 경우 에 제공된 * SRA 자격 증명 업데이트 * 절차를 수행하십시오 <block ref="1e7a640d1bcd6b5c87262f4ec3ea69d7" category="inline-link-macro-rx"></block> 섹션을 참조하십시오. 이러한 지침을 따르지 않으면 SRM에 오류가 보고됩니다.</block>
   <block id="bdc5a4ba1115f3f724e1f81e7f41eeef" category="list-text">데이터 저장소를 마우스 오른쪽 버튼으로 클릭하고 * NetApp ONTAP tools * &gt; * Resize non-vVols datastore * 를 선택합니다.</block>
@@ -2156,4 +2131,26 @@ ESXi 호스트에서 매핑된 LUN에 대한 LUN 액세스를 확인하여 FC �
   <block id="7230ef1fabe08177b3b9d5485ebc25c0" category="summary">VMware vSphere용 ONTAP 툴은 NetApp 스토리지 시스템을 사용하는 VMware 환경에서 가상 머신에 대한 엔드 투 엔드 라이프사이클 관리를 제공합니다. 관리자는 vCenter Server 내의 스토리지를 직접 관리할 수 있으므로 VMware 환경의 스토리지 및 데이터 관리가 간소화됩니다.</block>
   <block id="47635be81cb27fe24be3c1541e49e8c2" category="doc">ONTAP 툴 개요</block>
   <block id="693059892f5ca1ab1683c98e037ee404" category="summary">VMware를 처음 접하고 NetApp ONTAP 툴 제품을 사용한 적이 없는 경우 ONTAP 툴을 배포하고 구성하기 전에 vCenter Server를 구성하고 ESXi 호스트를 설정해야 합니다.</block>
+  <block id="65448065a2f2f124958039e28edbabea" category="inline-link">vSphere 가용성</block>
+  <block id="fbb57199ec923b67225d34045004bf6b" category="paragraph"><block ref="fbb57199ec923b67225d34045004bf6b" category="inline-link-rx"></block></block>
+  <block id="b43fbfd98dfaf4b96f25257f3e9b2fb2" category="inline-link">내결함성 요구 사항, 제한 및 라이센스</block>
+  <block id="a64b4ff92d509abdca37912d111d8b75" category="paragraph"><block ref="a64b4ff92d509abdca37912d111d8b75" category="inline-link-rx"></block></block>
+  <block id="9eb2bd2480a35c698be7fc3c56207ade" category="inline-link">vSphere HA 클러스터 생성 및 사용</block>
+  <block id="8ba8db309cceba7f21a793574c1afe8d" category="paragraph"><block ref="8ba8db309cceba7f21a793574c1afe8d" category="inline-link-rx"></block></block>
+  <block id="d5a602ee44affae0e4490dbbdbaa5f11" category="inline-link">vSphere 스토리지</block>
+  <block id="d8c3126ce2b45ce0418b727a648690c0" category="paragraph"><block ref="d8c3126ce2b45ce0418b727a648690c0" category="inline-link-rx"></block></block>
+  <block id="98ce2155c1121498c5a221338cbeabba" category="inline-link">vSphere 리소스 관리</block>
+  <block id="39fb4c28a1b3e9f759d4f64e35c4a186" category="list-text"><block ref="39fb4c28a1b3e9f759d4f64e35c4a186" category="inline-link-rx"></block></block>
+  <block id="ea27a0fe6615456106a8a8e14128e542" category="inline-link">Site Recovery Manager 설치 및 구성</block>
+  <block id="c54cdda5633175090273d24b51dc5af3" category="paragraph">자세한 단계는 를 참조하십시오<block ref="6cc195dce48bd2dd3ffe672df568b352" category="inline-link-rx"></block></block>
+  <block id="fe59e60e6aae6c7bf8042ac60c40cebe" category="paragraph">VMware vSphere용 ONTAP 툴은 VMware의 SRM 공유 복구 사이트 구성을 지원합니다. 자세한 내용은 다음을 참조하십시오<block ref="75e1fea3675e833813f99378d6c8fa43" category="inline-link-rx"></block>. 복구 사이트의 Site Recovery Manager Server 인스턴스는 동일한 vCenter Server 인스턴스에 연결됩니다.</block>
+  <block id="06c1fc03fbada06f75d3f177d952839e" category="paragraph">저장소 공급자 설정 수정에 대한 자세한 내용은 Broadcom 설명서를 참조하십시오.</block>
+  <block id="1766c36b7d852fbd898c8f3e8757adf1" category="inline-link">저장소 공급자 설정을 변경합니다</block>
+  <block id="41b16f1277747476a53e60ae7f8ab4f1" category="paragraph"><block ref="41b16f1277747476a53e60ae7f8ab4f1" category="inline-link-rx"></block></block>
+  <block id="8238925ee972c823b0ce36f54dc053b2" category="paragraph">SAN 공급자 설정 수정에 대한 Broadcom 설명서에서 자세한 내용을 확인할 수 있습니다.</block>
+  <block id="09662246d40be3f3890675feb3a8d887" category="inline-link">저장소 설정을 변경합니다</block>
+  <block id="0d951b75f45de16bce85b82098223cfd" category="paragraph"><block ref="0d951b75f45de16bce85b82098223cfd" category="inline-link-rx"></block></block>
+  <block id="d2a8cc12733d837b21d04e966da18849" category="inline-link">Site Recovery Manager 설치 및 구성 Site Recovery Manager</block>
+  <block id="aa7e72b3419247f39d0e6b1a10ecde90" category="paragraph"><block ref="e8cde9e1b38fd82f2c0a7be37ca3e90f" category="inline-link-rx"></block> 자세한 내용은 을 참조하십시오.</block>
+  <block id="1131b5ba310f0132fa89f2e2bc52cb0c" category="paragraph">SnapMirror 팬아웃 구성은 소스 볼륨이 서로 다른 두 대상에 복제되는 구성입니다. SRM이 대상에서 가상 시스템을 복구해야 하는 경우 복구 중에 문제가 발생합니다. * 단계 *</block>
 </blocks>
